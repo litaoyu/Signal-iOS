@@ -126,7 +126,7 @@ class InternalDiskUsageViewController: OWSTableViewController2 {
 
         if TSConstants.isUsingProductionService {
             let stagingSharedDataSize = folderSizeRecursive(
-                ofPath: FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: TSConstantsStaging().applicationGroup)!.path,
+                ofPath: FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: TSConstantsProduction().applicationGroup)!.path,
             )
             diskUsageSection.add(.copyableItem(label: "Staging app group size", value: byteCountFormatter.string(for: stagingSharedDataSize)))
             totalFilesystemSize += stagingSharedDataSize ?? 0

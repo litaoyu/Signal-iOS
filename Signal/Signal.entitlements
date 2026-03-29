@@ -19,7 +19,7 @@
 	<array/>
 	<key>com.apple.developer.in-app-payments</key>
 	<array>
-		<string>merchant.$(SIGNAL_MERCHANTID)</string>
+		<string>merchant.org.wooyun.signalfoundation</string>
 	</array>
 	<key>com.apple.developer.networking.carrier-constrained.app-optimized</key>
 	<true/>

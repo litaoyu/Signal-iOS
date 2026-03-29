@@ -14652,7 +14652,6 @@
 			isa = PBXGroup;
 			children = (
 				F94261FF289B1B5400460798 /* Account */,
-				D92EFDED2F69B9D00031D257 /* AttachmentBackfill */,
 				50ED28002F0EDAFB00E57C54 /* Attachments */,
 				F945FE4B298481D800C835C7 /* Calls */,
 				D985D86229B91C2B0087C90C /* ChangePhoneNumber */,
@@ -15862,7 +15861,6 @@
 					};
 					453518671FC635DD00210559 = {
 						CreatedOnToolsVersion = 9.2;
-						DevelopmentTeam = U68MSDN6DR;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -15988,9 +15986,9 @@
 			projectRoot = "";
 			targets = (
 				D221A088169C9E5E00537ABF /* Signal */,
-				D221A0A9169C9E5F00537ABF /* SignalTests */,
-				453518671FC635DD00210559 /* SignalShareExtension */,
 				342FFE8727245850000AC89F /* SignalNSE */,
+				453518671FC635DD00210559 /* SignalShareExtension */,
+				D221A0A9169C9E5F00537ABF /* SignalTests */,
 				34A954A7271A471200B05242 /* SignalUI */,
 				34A954B0271A471300B05242 /* SignalUITests */,
 				F9C5C896289451B900548EEE /* SignalServiceKit */,
@@ -20093,7 +20091,6 @@
 				F915A77229CB6F6F00EB6F68 /* AccountDataReportTest.swift in Sources */,
 				F908C67B29F08E4E00C3EFC4 /* AppExpiryTest.swift in Sources */,
 				66B1E2702CB48C53005F43AC /* Array+SSKTest.swift in Sources */,
-				D92EFDEF2F69B9D80031D257 /* AttachmentBackfillManagerTest.swift in Sources */,
 				669573082C1B9ECD0092B755 /* AttachmentDownloadQueueDBTests.swift in Sources */,
 				66BE13CC2C1D02700081A1ED /* AttachmentDownloadStoreTests.swift in Sources */,
 				664013302C00155E00F10FC4 /* AttachmentStoreTests.swift in Sources */,
@@ -20575,6 +20572,7 @@
 				CODE_SIGN_ENTITLEMENTS = SignalNSE/SignalNSE.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9NZ6N4W77Z;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -20589,6 +20587,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.SignalNSE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SIGNAL_BUNDLEID_PREFIX = org.wooyun;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -20624,6 +20623,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = "SignalNSE/SignalNSE-AppStore.entitlements";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9NZ6N4W77Z;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -20643,6 +20643,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.SignalNSE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = org.wooyun;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -20680,6 +20681,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = SignalNSE/SignalNSE.entitlements;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9NZ6N4W77Z;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -20699,6 +20701,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.SignalNSE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = org.wooyun;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -20736,6 +20739,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = SignalNSE/SignalNSE.entitlements;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9NZ6N4W77Z;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -20755,6 +20759,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.SignalNSE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = org.wooyun;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -21230,6 +21235,7 @@
 				CODE_SIGN_ENTITLEMENTS = SignalShareExtension/SignalShareExtension.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9NZ6N4W77Z;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -21246,6 +21252,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.shareextension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SIGNAL_BUNDLEID_PREFIX = org.wooyun;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -21279,6 +21286,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = "SignalShareExtension/SignalShareExtension-AppStore.entitlements";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9NZ6N4W77Z;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -21300,6 +21308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.shareextension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = org.wooyun;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -21421,13 +21430,14 @@
 			baseConfigurationReference = 4FD665383260B4FC0A94CE02 /* Pods-Signal.testable release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-color AppIcon-bubbles AppIcon-white AppIcon-dark AppIcon-dark-variant AppIcon-chat AppIcon-yellow AppIcon-news AppIcon-notes AppIcon-weather AppIcon-wave";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-color";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Signal/Signal.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9NZ6N4W77Z;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -21450,6 +21460,7 @@
 				PRODUCT_NAME = Signal;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = org.wooyun;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -21541,6 +21552,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = SignalShareExtension/SignalShareExtension.entitlements;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9NZ6N4W77Z;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -21562,6 +21574,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.shareextension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = org.wooyun;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -21680,13 +21693,14 @@
 			baseConfigurationReference = 67391FF368D9A60FC8B73F0E /* Pods-Signal.profiling.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-color AppIcon-bubbles AppIcon-white AppIcon-dark AppIcon-dark-variant AppIcon-chat AppIcon-yellow AppIcon-news AppIcon-notes AppIcon-weather AppIcon-wave";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-color";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Signal/Signal.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9NZ6N4W77Z;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_SOURCE_FILE_NAMES[arch=*]" = Signal/test/Assets/input_video.mp4;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -21709,6 +21723,7 @@
 				PRODUCT_NAME = Signal;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = org.wooyun;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -21800,6 +21815,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = SignalShareExtension/SignalShareExtension.entitlements;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9NZ6N4W77Z;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -21821,6 +21837,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal.shareextension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = org.wooyun;
 				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -22045,7 +22062,7 @@
 			baseConfigurationReference = 5F85041386A219C9710EAB41 /* Pods-Signal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-color AppIcon-bubbles AppIcon-white AppIcon-dark AppIcon-dark-variant AppIcon-chat AppIcon-yellow AppIcon-news AppIcon-notes AppIcon-weather AppIcon-wave";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-color";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = YES;
@@ -22055,6 +22072,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9NZ6N4W77Z;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_SOURCE_FILE_NAMES[arch=*]" = Signal/test/Assets/input_video.mp4;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -22076,6 +22094,7 @@
 				PRODUCT_NAME = Signal;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = org.wooyun;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -22087,13 +22106,14 @@
 			baseConfigurationReference = A566C0C0B69138202C0367E6 /* Pods-Signal.app store release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-color AppIcon-bubbles AppIcon-white AppIcon-dark AppIcon-dark-variant AppIcon-chat AppIcon-yellow AppIcon-news AppIcon-notes AppIcon-weather AppIcon-wave";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-color";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Signal/Signal-AppStore.entitlements";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9NZ6N4W77Z;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_SOURCE_FILE_NAMES[arch=*]" = Signal/test/Assets/input_video.mp4;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -22113,9 +22133,11 @@
 				LLVM_LTO = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(SIGNAL_BUNDLEID_PREFIX).signal";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = org.wooyun.signal;
 				PRODUCT_NAME = Signal;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				SIGNAL_BUNDLEID_PREFIX = org.wooyun;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

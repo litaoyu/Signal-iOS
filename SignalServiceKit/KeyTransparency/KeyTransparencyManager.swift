@@ -207,42 +207,29 @@ public final class KeyTransparencyManager {
             keyTransparencyStore: keyTransparencyStore,
         )
 
-        let existingKeyTransparencyBlob: Data?
+        
         let selfCheckState: KeyTransparencyStore.SelfCheckState?
         (
-            existingKeyTransparencyBlob,
+            
             selfCheckState,
         ) = db.read { tx in
             return (
-                keyTransparencyStore.getKeyTransparencyBlob(
-                    aci: params.aciInfo.aci,
-                    tx: tx,
-                ),
                 keyTransparencyStore.selfCheckState(tx: tx),
             )
         }
 
         if params.isLocalUser {
-            if existingKeyTransparencyBlob != nil {
-                logger.info("Monitoring for self.")
-
-                try await ktClient.monitor(
-                    for: .`self`,
-                    account: params.aciInfo,
-                    e164: params.e164Info,
-                    usernameHash: params.username?.hash,
-                    store: libSignalStore,
-                )
-            } else {
-                logger.info("Searching for self.")
-
-                try await ktClient.search(
-                    account: params.aciInfo,
-                    e164: params.e164Info,
-                    usernameHash: params.username?.hash,
-                    store: libSignalStore,
-                )
-            }
+            let isE164Discoverable = true  // 根据实际情况设置
+                    
+            logger.info("Checking for self.")
+            
+            try await ktClient.check(
+                for: .self(isE164Discoverable: isE164Discoverable),
+                account: params.aciInfo,
+                e164: params.e164Info,
+                usernameHash: params.username?.hash,
+                store: libSignalStore
+            )
         } else {
             // Require a self-check to succeed before checking others.
             switch selfCheckState {
@@ -254,24 +241,17 @@ public final class KeyTransparencyManager {
                 throw OWSGenericError("Cannot check other with failed self-check.")
             }
 
-            if existingKeyTransparencyBlob != nil {
-                logger.info("Monitoring for other.")
-
-                try await ktClient.monitor(
-                    for: .other,
-                    account: params.aciInfo,
-                    e164: params.e164Info,
-                    store: libSignalStore,
-                )
-            } else {
-                logger.info("Searching for other.")
-
-                try await ktClient.search(
-                    account: params.aciInfo,
-                    e164: params.e164Info,
-                    store: libSignalStore,
-                )
-            }
+            let isE164Discoverable = true  // 根据实际情况设置
+                    
+            logger.info("Checking for self.")
+            
+            try await ktClient.check(
+                for: .self(isE164Discoverable: isE164Discoverable),
+                account: params.aciInfo,
+                e164: params.e164Info,
+                usernameHash: params.username?.hash,
+                store: libSignalStore
+            )
         }
     }
 

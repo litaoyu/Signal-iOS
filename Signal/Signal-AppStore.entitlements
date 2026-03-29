@@ -19,7 +19,7 @@
 	<array/>
 	<key>com.apple.developer.in-app-payments</key>
 	<array>
-		<string>merchant.$(SIGNAL_MERCHANTID)</string>
+		<string>merchant.org.wooyun.signalfoundation</string>
 	</array>
 	<key>com.apple.developer.networking.carrier-constrained.app-optimized</key>
 	<true/>
@@ -27,8 +27,6 @@
 	<array>
 		<string>messaging-8001</string>
 	</array>
-	<key>com.apple.developer.pushkit.unrestricted-voip</key>
-	<true/>
 	<key>com.apple.developer.ubiquity-kvstore-identifier</key>
 	<string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
 	<key>com.apple.developer.usernotifications.communication</key>

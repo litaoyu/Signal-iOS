@@ -41,8 +41,12 @@ void TrapDebugger(void)
     if (!enabled) {
         return;
     }
-
-    __builtin_debugtrap();
+    if (IsDebuggerAttached()) {
+        NSLog(@"##@@!! debug mode");
+    }
+    
+    
+//    __builtin_debugtrap();
 }
 
 #endif // DEBUG

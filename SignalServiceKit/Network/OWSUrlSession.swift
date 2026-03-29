@@ -60,7 +60,8 @@ public class OWSURLSession: OWSURLSessionProtocol {
     // directly and not touch the protocol.
 
     public static let defaultSecurityPolicy = HttpSecurityPolicy.systemDefault
-    public static let signalServiceSecurityPolicy = HttpSecurityPolicy.signalCaPinned
+//    public static let signalServiceSecurityPolicy = HttpSecurityPolicy.signalCaPinned
+    public static let signalServiceSecurityPolicy = HttpSecurityPolicy.systemDefault
 
     public static var defaultConfigurationWithCaching: URLSessionConfiguration {
         .ephemeral

@@ -1512,7 +1512,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         AssertIsOnMainThread()
-
+        let token = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
+        print("##@@!! 推送token deviceToken \(token)")
         if didAppLaunchFail {
             return
         }

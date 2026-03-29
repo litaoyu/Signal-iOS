@@ -81,7 +81,7 @@ public class TSConstants {
         case .production:
             return TSConstantsProduction()
         case .staging:
-            return TSConstantsStaging()
+            return TSConstantsProduction()
         }
     }()
 
@@ -151,26 +151,43 @@ public struct MrEnclave: Equatable {
 
 // MARK: - Production
 
+// MARK: - Production
+
 public class TSConstantsProduction: TSConstantsProtocol {
 
     public init() {}
 
-    public let mainServiceURL = "https://chat.signal.org"
-    public let textSecureCDN0ServerURL = "https://cdn.signal.org"
-    public let textSecureCDN2ServerURL = "https://cdn2.signal.org"
-    public let textSecureCDN3ServerURL = "https://cdn3.signal.org"
-    public let storageServiceURL = "https://storage.signal.org"
-    public let sfuURL = "https://sfu.voip.signal.org"
-    public let sfuTestURL = "https://sfu.test.voip.signal.org"
-    public let svr2URL = "wss://svr2.signal.org"
-    public let registrationCaptchaURL = "https://signalcaptchas.org/registration/generate.html"
-    public let challengeCaptchaURL = "https://signalcaptchas.org/challenge/generate.html"
-    public let kUDTrustRoots = ["BXu6QIKVz5MA8gstzfOgRQGqyLqOwNKHL6INkv3IHWMF", "BUkY0I+9+oPgDCn4+Ac6Iu813yvqkDr/ga8DzLxFxuk6"]
+    public let mainServiceURL = "https://chat.notechat.me"
+    public let textSecureCDN0ServerURL = "https://chat.notechat.me"
+    public let textSecureCDN2ServerURL = "https://chat.notechat.me"
+    public let textSecureCDN3ServerURL = "https://upload.notechat.me"
+//    public let storageServiceURL = "https://storage.signal.org"
+    public let storageServiceURL = "https://storage.notechat.me"
+
+//    public let sfuURL = "https://sfu.voip.signal.org"
+//    public let sfuTestURL = "https://sfu.test.voip.signal.org"
+    public let sfuURL = "https://calling.notechat.me"
+    public let sfuTestURL = "https://calling.notechat.me"
+    
+//    public let svr2URL = "wss://svr2.signal.org"
+    public let svr2URL = "wss://chat.notechat.me"
+
+//    public let registrationCaptchaURL = "https://signalcaptchas.org/registration/generate.html"
+//    public let challengeCaptchaURL = "https://signalcaptchas.org/challenge/generate.html"
+    public let registrationCaptchaURL = ""
+    public let challengeCaptchaURL = ""
+    
+//    public let kUDTrustRoots = ["BXu6QIKVz5MA8gstzfOgRQGqyLqOwNKHL6INkv3IHWMF", "BUkY0I+9+oPgDCn4+Ac6Iu813yvqkDr/ga8DzLxFxuk6"]
+    public let kUDTrustRoots = ["Bc9JVWTApS5ejX3C0A6PijspWuaVO7eaTCl5qUZyrfl+"]
     public let updatesURL = "https://updates.signal.org"
     public let updates2URL = "https://updates2.signal.org"
+//    public let updatesURL = ""
+//    public let updates2URL = ""
 
-    public let censorshipFReflectorHost = "reflector-signal.global.ssl.fastly.net"
-    public let censorshipGReflectorHost = "reflector-nrgwuv7kwq-uc.a.run.app"
+//    public let censorshipFReflectorHost = "reflector-signal.global.ssl.fastly.net"
+//    public let censorshipGReflectorHost = "reflector-nrgwuv7kwq-uc.a.run.app"
+    public let censorshipFReflectorHost = ""
+    public let censorshipGReflectorHost = ""
 
     public let serviceCensorshipPrefix = "service"
     public let cdn0CensorshipPrefix = "cdn"
@@ -203,58 +220,58 @@ public class TSConstantsProduction: TSConstantsProtocol {
 
 // MARK: - Staging
 
-public class TSConstantsStaging: TSConstantsProtocol {
-
-    public init() {}
-
-    public let mainServiceURL = "https://chat.staging.signal.org"
-    public let textSecureCDN0ServerURL = "https://cdn-staging.signal.org"
-    public let textSecureCDN2ServerURL = "https://cdn2-staging.signal.org"
-    public let textSecureCDN3ServerURL = "https://cdn3-staging.signal.org"
-    public let storageServiceURL = "https://storage-staging.signal.org"
-    public let sfuURL = "https://sfu.staging.voip.signal.org"
-    public let svr2URL = "wss://svr2.staging.signal.org"
-    public let registrationCaptchaURL = "https://signalcaptchas.org/staging/registration/generate.html"
-    public let challengeCaptchaURL = "https://signalcaptchas.org/staging/challenge/generate.html"
-    // There's no separate test SFU for staging.
-    public let sfuTestURL = "https://sfu.test.voip.signal.org"
-    public let kUDTrustRoots = ["BbqY1DzohE4NUZoVF+L18oUPrK3kILllLEJh2UnPSsEx", "BYhU6tPjqP46KGZEzRs1OL4U39V5dlPJ/X09ha4rErkm"]
-    // There's no separate updates endpoint for staging.
-    public let updatesURL = "https://updates.signal.org"
-    public let updates2URL = "https://updates2.signal.org"
-
-    public let censorshipFReflectorHost = "reflector-staging-signal.global.ssl.fastly.net"
-    public let censorshipGReflectorHost = "reflector-nrgwuv7kwq-uc.a.run.app"
-
-    public let serviceCensorshipPrefix = "service-staging"
-    public let cdn0CensorshipPrefix = "cdn-staging"
-    public let cdn2CensorshipPrefix = "cdn2-staging"
-    public let cdn3CensorshipPrefix = "cdn3-staging"
-    public let storageServiceCensorshipPrefix = "storage-staging"
-    public let svr2CensorshipPrefix = "svr2-staging"
-
-    public let svr2Enclave = MrEnclave("97f151f6ed078edbbfd72fa9cae694dcc08353f1f5e8d9ccd79a971b10ffc535")
-
-    // An array of previously used enclaves that we should try and restore
-    // key material from during registration. These must be ordered from
-    // newest to oldest, so we check the latest enclaves for backups before
-    // checking earlier enclaves.
-    public let svr2PreviousEnclaves: [MrEnclave] = [
-        MrEnclave("a75542d82da9f6914a1e31f8a7407053b99cc99a0e7291d8fbd394253e19b036"),
-    ]
-
-    public let applicationGroup = "group." + Bundle.main.bundleIdPrefix + ".signal.group.staging"
-
-    /// We *might* need to clear credentials (or perform some other migration)
-    /// when this value changes, depending on how it's changing. If you do need
-    /// to perform a migration, check out `ZkParamsMigrator`.
-    public let serverPublicParams = Data(base64Encoded: "ABSY21VckQcbSXVNCGRYJcfWHiAMZmpTtTELcDmxgdFbtp/bWsSxZdMKzfCp8rvIs8ocCU3B37fT3r4Mi5qAemeGeR2X+/YmOGR5ofui7tD5mDQfstAI9i+4WpMtIe8KC3wU5w3Inq3uNWVmoGtpKndsNfwJrCg0Hd9zmObhypUnSkfYn2ooMOOnBpfdanRtrvetZUayDMSC5iSRcXKpdlukrpzzsCIvEwjwQlJYVPOQPj4V0F4UXXBdHSLK05uoPBCQG8G9rYIGedYsClJXnbrgGYG3eMTG5hnx4X4ntARBgELuMWWUEEfSK0mjXg+/2lPmWcTZWR9nkqgQQP0tbzuiPm74H2wMO4u1Wafe+UwyIlIT9L7KLS19Aw8r4sPrXZSSsOZ6s7M1+rTJN0bI5CKY2PX29y5Ok3jSWufIKcgKOnWoP67d5b2du2ZVJjpjfibNIHbT/cegy/sBLoFwtHogVYUewANUAXIaMPyCLRArsKhfJ5wBtTminG/PAvuBdJ70Z/bXVPf8TVsR292zQ65xwvWTejROW6AZX6aqucUjlENAErBme1YHmOSpU6tr6doJ66dPzVAWIanmO/5mgjNEDeK7DDqQdB1xd03HT2Qs2TxY3kCK8aAb/0iM0HQiXjxZ9HIgYhbtvGEnDKW5ILSUydqH/KBhW4Pb0jZWnqN/YgbWDKeJxnDbYcUob5ZY5Lt5ZCMKuaGUvCJRrCtuugSMaqjowCGRempsDdJEt+cMaalhZ6gczklJB/IbdwENW9KeVFPoFNFzhxWUIS5ML9riVYhAtE6JE5jX0xiHNVIIPthb458cfA8daR0nYfYAUKogQArm0iBezOO+mPk5vCNWI+wwkyFCqNDXz/qxl1gAntuCJtSfq9OC3NkdhQlgYQ==")!
-
-    public let callLinkPublicParams = Data(base64Encoded: "AHILOIrFPXX9laLbalbA9+L1CXpSbM/bTJXZGZiuyK1JaI6dK5FHHWL6tWxmHKYAZTSYmElmJ5z2A5YcirjO/yfoemE03FItyaf8W1fE4p14hzb5qnrmfXUSiAIVrhaXVwIwSzH6RL/+EO8jFIjJ/YfExfJ8aBl48CKHgu1+A6kWynhttonvWWx6h7924mIzW0Czj2ROuh4LwQyZypex4GuOPW8sgIT21KNZaafgg+KbV7XM1x1tF3XA17B4uGUaDbDw2O+nR1+U5p6qHPzmJ7ggFjSN6Utu+35dS1sS0P9N")!
-
-    public let backupServerPublicParams = Data(base64Encoded: "AHYrGb9IfugAAJiPKp+mdXUx+OL9zBolPYHYQz6GI1gWjpEu5me3zVNSvmYY4zWboZHif+HG1sDHSuvwFd0QszSwuSF4X4kRP3fJREdTZ5MCR0n55zUppTwfHRW2S4sdQ0JGz7YDQIJCufYSKh0pGNEHL6hv79Agrdnr4momr3oXdnkpVBIp3HWAQ6IbXQVSG18X36GaicI1vdT0UFmTwU2KTneluC2eyL9c5ff8PcmiS+YcLzh0OKYQXB5ZfQ06d6DiINvDQLy75zcfUOniLAj0lGJiHxGczin/RXisKSR8")!
-
-}
+//public class TSConstantsStaging: TSConstantsProtocol {
+//
+//    public init() {}
+//
+//    public let mainServiceURL = "https://chat.staging.signal.org"
+//    public let textSecureCDN0ServerURL = "https://cdn-staging.signal.org"
+//    public let textSecureCDN2ServerURL = "https://cdn2-staging.signal.org"
+//    public let textSecureCDN3ServerURL = "https://cdn3-staging.signal.org"
+//    public let storageServiceURL = "https://storage-staging.signal.org"
+//    public let sfuURL = "https://sfu.staging.voip.signal.org"
+//    public let svr2URL = "wss://svr2.staging.signal.org"
+//    public let registrationCaptchaURL = "https://signalcaptchas.org/staging/registration/generate.html"
+//    public let challengeCaptchaURL = "https://signalcaptchas.org/staging/challenge/generate.html"
+//    // There's no separate test SFU for staging.
+//    public let sfuTestURL = "https://sfu.test.voip.signal.org"
+//    public let kUDTrustRoots = ["BbqY1DzohE4NUZoVF+L18oUPrK3kILllLEJh2UnPSsEx", "BYhU6tPjqP46KGZEzRs1OL4U39V5dlPJ/X09ha4rErkm"]
+//    // There's no separate updates endpoint for staging.
+//    public let updatesURL = "https://updates.signal.org"
+//    public let updates2URL = "https://updates2.signal.org"
+//
+//    public let censorshipFReflectorHost = "reflector-staging-signal.global.ssl.fastly.net"
+//    public let censorshipGReflectorHost = "reflector-nrgwuv7kwq-uc.a.run.app"
+//
+//    public let serviceCensorshipPrefix = "service-staging"
+//    public let cdn0CensorshipPrefix = "cdn-staging"
+//    public let cdn2CensorshipPrefix = "cdn2-staging"
+//    public let cdn3CensorshipPrefix = "cdn3-staging"
+//    public let storageServiceCensorshipPrefix = "storage-staging"
+//    public let svr2CensorshipPrefix = "svr2-staging"
+//
+//    public let svr2Enclave = MrEnclave("97f151f6ed078edbbfd72fa9cae694dcc08353f1f5e8d9ccd79a971b10ffc535")
+//
+//    // An array of previously used enclaves that we should try and restore
+//    // key material from during registration. These must be ordered from
+//    // newest to oldest, so we check the latest enclaves for backups before
+//    // checking earlier enclaves.
+//    public let svr2PreviousEnclaves: [MrEnclave] = [
+//        MrEnclave("a75542d82da9f6914a1e31f8a7407053b99cc99a0e7291d8fbd394253e19b036"),
+//    ]
+//
+//    public let applicationGroup = "group." + Bundle.main.bundleIdPrefix + ".signal.group.staging"
+//
+//    /// We *might* need to clear credentials (or perform some other migration)
+//    /// when this value changes, depending on how it's changing. If you do need
+//    /// to perform a migration, check out `ZkParamsMigrator`.
+//    public let serverPublicParams = Data(base64Encoded: "ABSY21VckQcbSXVNCGRYJcfWHiAMZmpTtTELcDmxgdFbtp/bWsSxZdMKzfCp8rvIs8ocCU3B37fT3r4Mi5qAemeGeR2X+/YmOGR5ofui7tD5mDQfstAI9i+4WpMtIe8KC3wU5w3Inq3uNWVmoGtpKndsNfwJrCg0Hd9zmObhypUnSkfYn2ooMOOnBpfdanRtrvetZUayDMSC5iSRcXKpdlukrpzzsCIvEwjwQlJYVPOQPj4V0F4UXXBdHSLK05uoPBCQG8G9rYIGedYsClJXnbrgGYG3eMTG5hnx4X4ntARBgELuMWWUEEfSK0mjXg+/2lPmWcTZWR9nkqgQQP0tbzuiPm74H2wMO4u1Wafe+UwyIlIT9L7KLS19Aw8r4sPrXZSSsOZ6s7M1+rTJN0bI5CKY2PX29y5Ok3jSWufIKcgKOnWoP67d5b2du2ZVJjpjfibNIHbT/cegy/sBLoFwtHogVYUewANUAXIaMPyCLRArsKhfJ5wBtTminG/PAvuBdJ70Z/bXVPf8TVsR292zQ65xwvWTejROW6AZX6aqucUjlENAErBme1YHmOSpU6tr6doJ66dPzVAWIanmO/5mgjNEDeK7DDqQdB1xd03HT2Qs2TxY3kCK8aAb/0iM0HQiXjxZ9HIgYhbtvGEnDKW5ILSUydqH/KBhW4Pb0jZWnqN/YgbWDKeJxnDbYcUob5ZY5Lt5ZCMKuaGUvCJRrCtuugSMaqjowCGRempsDdJEt+cMaalhZ6gczklJB/IbdwENW9KeVFPoFNFzhxWUIS5ML9riVYhAtE6JE5jX0xiHNVIIPthb458cfA8daR0nYfYAUKogQArm0iBezOO+mPk5vCNWI+wwkyFCqNDXz/qxl1gAntuCJtSfq9OC3NkdhQlgYQ==")!
+//
+//    public let callLinkPublicParams = Data(base64Encoded: "AHILOIrFPXX9laLbalbA9+L1CXpSbM/bTJXZGZiuyK1JaI6dK5FHHWL6tWxmHKYAZTSYmElmJ5z2A5YcirjO/yfoemE03FItyaf8W1fE4p14hzb5qnrmfXUSiAIVrhaXVwIwSzH6RL/+EO8jFIjJ/YfExfJ8aBl48CKHgu1+A6kWynhttonvWWx6h7924mIzW0Czj2ROuh4LwQyZypex4GuOPW8sgIT21KNZaafgg+KbV7XM1x1tF3XA17B4uGUaDbDw2O+nR1+U5p6qHPzmJ7ggFjSN6Utu+35dS1sS0P9N")!
+//
+//    public let backupServerPublicParams = Data(base64Encoded: "AHYrGb9IfugAAJiPKp+mdXUx+OL9zBolPYHYQz6GI1gWjpEu5me3zVNSvmYY4zWboZHif+HG1sDHSuvwFd0QszSwuSF4X4kRP3fJREdTZ5MCR0n55zUppTwfHRW2S4sdQ0JGz7YDQIJCufYSKh0pGNEHL6hv79Agrdnr4momr3oXdnkpVBIp3HWAQ6IbXQVSG18X36GaicI1vdT0UFmTwU2KTneluC2eyL9c5ff8PcmiS+YcLzh0OKYQXB5ZfQ06d6DiINvDQLy75zcfUOniLAj0lGJiHxGczin/RXisKSR8")!
+//
+//}
 
 #if TESTABLE_BUILD
 
