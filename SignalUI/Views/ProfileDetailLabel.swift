@@ -3,8 +3,8 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 //
 
-import UIKit
 public import SignalServiceKit
+import UIKit
 
 // MARK: - ProfileDetailLabel
 
@@ -316,10 +316,13 @@ public extension ProfileDetailLabel {
     ) -> ProfileDetailLabel {
         let copyPhoneNumber: () -> Void = { [weak viewController] in
             UIPasteboard.general.string = phoneNumber
-            viewController?.presentToast(text: OWSLocalizedString(
-                "COPIED_TO_CLIPBOARD",
-                comment: "Indicator that a value has been copied to the clipboard.",
-            ))
+            viewController?.presentToast(
+                text: OWSLocalizedString(
+                    "COPIED_TO_CLIPBOARD",
+                    comment: "Indicator that a value has been copied to the clipboard.",
+                ),
+                image: UIImage(named: "copy"),
+            )
         }
         let formattedPhoneNumber = PhoneNumber.bestEffortFormatPartialUserSpecifiedTextToLookLikeAPhoneNumber(phoneNumber)
 

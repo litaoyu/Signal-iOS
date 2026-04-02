@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 //
 
+import CommonCrypto
 import CryptoKit
 import Foundation
 import System
@@ -21,6 +22,49 @@ public enum Cryptography {
             }
         } while bytesRead > 0
         return Data(sha256.finalize())
+    }
+
+    static func decrypt(encryptedData: Data, key: Data, iv: Data) throws -> Data {
+        return try _crypt(op: CCOperation(kCCDecrypt), inputData: encryptedData, key: key, iv: iv)
+    }
+
+    static func encrypt(plaintextData: Data, key: Data, iv: Data) throws -> Data {
+        return try _crypt(op: CCOperation(kCCEncrypt), inputData: plaintextData, key: key, iv: iv)
+    }
+
+    private static func _crypt(op: CCOperation, inputData: Data, key: Data, iv: Data) throws -> Data {
+        var outputData = Data(count: inputData.count + kCCBlockSizeAES128)
+        guard iv.count == kCCBlockSizeAES128 else {
+            throw OWSGenericError("iv must be \(kCCBlockSizeAES128) bytes")
+        }
+        var outputDataCount = 0
+        let result = key.withUnsafeBytes { key in
+            return iv.withUnsafeBytes { iv in
+                return inputData.withUnsafeBytes { inputData in
+                    return outputData.withUnsafeMutableBytes { outputData in
+                        return CCCrypt(
+                            op,
+                            CCAlgorithm(kCCAlgorithmAES),
+                            CCOptions(kCCOptionPKCS7Padding),
+                            key.baseAddress,
+                            key.count,
+                            iv.baseAddress,
+                            inputData.baseAddress,
+                            inputData.count,
+                            outputData.baseAddress,
+                            outputData.count,
+                            &outputDataCount,
+                        )
+                    }
+                }
+            }
+        }
+
+        guard result == kCCSuccess else {
+            throw OWSGenericError("CCCrypt failure: \(result)")
+        }
+
+        return outputData.prefix(outputDataCount)
     }
 }
 
@@ -90,6 +134,16 @@ public protocol EncryptedFileHandle {
     /// Reads plaintext data synchronously, starting at the current offset, up to the specified number of bytes.
     /// Returns empty data when the end of file is reached.
     func read(upToCount: Int) throws -> Data
+}
+
+enum CryptographyError: Error {
+    /// The caller-provided plaintext length was longer than the encrypted
+    /// length.
+    case ciphertextLengthLessThanPlaintextLength
+
+    /// The caller-provided plaintext length was longer than the decrypted
+    /// length (i.e., the length after removing PKCS#7 padding).
+    case decryptedLengthLessThanPlaintextLength
 }
 
 public extension Cryptography {
@@ -771,7 +825,7 @@ public extension Cryptography {
 
         private var virtualOffset: UInt64 = 0
 
-        private var cipherContext: CipherContext
+        private var cipherContext: CipherContext?
         /// Buffers the output of the cipherContext if the last read requested fewer bytes than the cipherContext output.
         /// CCCryptor documentation says: "the output length is never larger than the input length plus the block size."
         /// To ensure we always have enough room in the buffer, we allocate two block lengths.
@@ -810,6 +864,12 @@ public extension Cryptography {
 
             switch paddingDecryptionStrategy {
             case .customPadding(let plaintextLength):
+                // The plaintext length MUST be less than the ciphertext length. There will
+                // *always* be at least one padding byte in a well-formed encrypted file,
+                // so we can detect many length mismatches early.
+                guard plaintextLength <= self.ciphertextLength else {
+                    throw CryptographyError.ciphertextLengthLessThanPlaintextLength
+                }
                 // The sender gave us the expected length; easy option.
                 // We truncate everything after this length in the final output.
                 self.plaintextLength = plaintextLength
@@ -1000,9 +1060,13 @@ public extension Cryptography {
                 let expectedPlaintextLength: Int
                 if numCiphertextBytesToRead == 0 {
                     // If we are at the end of the file, we want to finalize.
-                    expectedPlaintextLength = try cipherContext.outputLengthForFinalize()
+                    expectedPlaintextLength = try self.cipherContext?.outputLengthForFinalize() ?? {
+                        throw OWSAssertionError("already finalized")
+                    }()
                 } else {
-                    expectedPlaintextLength = try cipherContext.outputLength(forUpdateWithInputLength: numCiphertextBytesToRead)
+                    expectedPlaintextLength = try self.cipherContext?.outputLength(forUpdateWithInputLength: numCiphertextBytesToRead) ?? {
+                        throw OWSAssertionError("already finalized")
+                    }()
                 }
 
                 // We need to reference either `outputBuffer` or a tmp buffer, depending
@@ -1038,11 +1102,14 @@ public extension Cryptography {
                     // If we are at the end of the file, finalize the cipher context
                     // instead of reading from disk and updating.
                     actualPlaintextLength = try writeToBuffer {
-                        return try cipherContext.finalize(
-                            output: &$0,
-                            offsetInOutput: $1,
-                            outputLength: expectedPlaintextLength,
-                        )
+                        return try cipherContext.take()?.finalize(
+                            output: &$0[($0.startIndex + $1)..<($0.startIndex + $1 + expectedPlaintextLength)],
+                        ) ?? { throw OWSAssertionError("already finalized") }()
+                    }
+                    // Make sure that the plaintextLength is no longer than the actual number
+                    // of plaintext bytes.
+                    guard remainingByteCount.partialValue <= (bytesWrittenToOutput + actualPlaintextLength) else {
+                        throw CryptographyError.decryptedLengthLessThanPlaintextLength
                     }
                 } else {
                     // Otherwise we aren't at the end of the file, read and update.
@@ -1056,13 +1123,10 @@ public extension Cryptography {
                     }
                     try ciphertextHandler?(ciphertextBuffer.prefix(ciphertextLength))
                     actualPlaintextLength = try writeToBuffer {
-                        return try cipherContext.update(
-                            input: ciphertextBuffer,
-                            inputLength: ciphertextLength,
-                            output: &$0,
-                            offsetInOutput: $1,
-                            outputLength: expectedPlaintextLength,
-                        )
+                        return try cipherContext?.update(
+                            input: ciphertextBuffer.prefix(ciphertextLength),
+                            output: &$0[($0.startIndex + $1)..<($0.startIndex + $1 + expectedPlaintextLength)],
+                        ) ?? { throw OWSAssertionError("already finalized") }()
                     }
                 }
 

@@ -12,6 +12,7 @@ extension Upload.Constants {
 }
 
 public enum AttachmentUpload {
+
     // MARK: - Upload Entrypoint
 
     /// The main entry point into the CDN2/CDN3 upload flow.
@@ -405,8 +406,8 @@ extension Upload {
             self.networkManager = networkManager
         }
 
-        func start() async throws -> Upload.Form {
-            let request = OWSRequestFactory.allocAttachmentRequestV4()
+        func fetchForm(encryptedByteLength: UInt32) async throws -> Upload.Form {
+            let request = OWSRequestFactory.allocAttachmentRequestV4(encryptedByteLength: encryptedByteLength)
             return try await fetchUploadForm(request: request)
         }
 

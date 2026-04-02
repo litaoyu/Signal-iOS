@@ -165,8 +165,11 @@ public class MessageProcessor {
     }
 
     private func drainPendingEnvelopes() {
+        let tsAccountManager = DependenciesBridge.shared.tsAccountManager
+
         guard CurrentAppContext().shouldProcessIncomingMessages else { return }
-        guard DependenciesBridge.shared.tsAccountManager.registrationStateWithMaybeSneakyTransaction.isRegistered else { return }
+        guard tsAccountManager.registrationStateWithMaybeSneakyTransaction.isRegistered else { return }
+        guard tsAccountManager.storedDeviceIdWithMaybeTransaction.ifValid != nil else { return }
         guard SSKEnvironment.shared.messagePipelineSupervisorRef.isMessageProcessingPermitted else { return }
 
         queueForProcessing.async {
@@ -223,12 +226,14 @@ public class MessageProcessor {
             startTime = CACurrentMediaTime()
 
             // This is only called via `drainPendingEnvelopes`, and that confirms that
-            // we're registered. If we're registered, we must have `LocalIdentifiers`,
-            // so this (generally) shouldn't fail.
-            guard let localIdentifiers = DependenciesBridge.shared.tsAccountManager.localIdentifiers(tx: tx) else {
+            // we're registered. Consequently, this generally shouldn't fail.
+            let tsAccountManager = DependenciesBridge.shared.tsAccountManager
+            guard let registeredState = try? tsAccountManager.registeredState(tx: tx) else {
                 return
             }
-            let localDeviceId = DependenciesBridge.shared.tsAccountManager.storedDeviceId(tx: tx)
+            guard let localDeviceId = tsAccountManager.storedDeviceId(tx: tx).ifValid else {
+                return
+            }
 
             var remainingEnvelopes = batchEnvelopes[...]
             while
@@ -244,7 +249,7 @@ public class MessageProcessor {
                     // stop processing envelopes.
                     let relatedRequests = buildNextCombinedRequest(
                         envelopes: &remainingEnvelopes,
-                        localIdentifiers: localIdentifiers,
+                        localIdentifiers: registeredState.localIdentifiers,
                         localDeviceId: localDeviceId,
                         tx: tx,
                     )
@@ -255,7 +260,7 @@ public class MessageProcessor {
                     }
                     handle(
                         relatedRequests: relatedRequests,
-                        localIdentifiers: localIdentifiers,
+                        registeredState: registeredState,
                         transaction: tx,
                     )
                 }
@@ -285,7 +290,7 @@ public class MessageProcessor {
     private func buildNextCombinedRequest(
         envelopes: inout ArraySlice<ReceivedEnvelope>,
         localIdentifiers: LocalIdentifiers,
-        localDeviceId: LocalDeviceId,
+        localDeviceId: DeviceId,
         tx: DBWriteTransaction,
     ) -> [ProcessingRequest] {
         var results = [ProcessingRequest]()
@@ -307,12 +312,12 @@ public class MessageProcessor {
         return results
     }
 
-    private func handle(relatedRequests: [ProcessingRequest], localIdentifiers: LocalIdentifiers, transaction: DBWriteTransaction) {
+    private func handle(relatedRequests: [ProcessingRequest], registeredState: RegisteredState, transaction: DBWriteTransaction) {
         // Efficiently handle delivery receipts for the same message by fetching the sent message only
         // once and only using one updateWith... to update the message with new recipient state.
         BatchingDeliveryReceiptContext.withDeferredUpdates(transaction: transaction) { context in
             for request in relatedRequests {
-                handleProcessingRequest(request, context: context, localIdentifiers: localIdentifiers, tx: transaction)
+                handleProcessingRequest(request, context: context, registeredState: registeredState, tx: transaction)
             }
         }
     }
@@ -320,7 +325,7 @@ public class MessageProcessor {
     private func reallyHandleProcessingRequest(
         _ request: ProcessingRequest,
         context: DeliveryReceiptContext,
-        localIdentifiers: LocalIdentifiers,
+        registeredState: RegisteredState,
         transaction: DBWriteTransaction,
     ) {
         switch request.state {
@@ -335,7 +340,7 @@ public class MessageProcessor {
             )
             SSKEnvironment.shared.messageReceiverRef.finishProcessingEnvelope(decryptedEnvelope, tx: transaction)
         case .messageReceiverRequest(let messageReceiverRequest):
-            SSKEnvironment.shared.messageReceiverRef.handleRequest(messageReceiverRequest, context: context, localIdentifiers: localIdentifiers, tx: transaction)
+            SSKEnvironment.shared.messageReceiverRef.handleRequest(messageReceiverRequest, context: context, registeredState: registeredState, tx: transaction)
             SSKEnvironment.shared.messageReceiverRef.finishProcessingEnvelope(messageReceiverRequest.decryptedEnvelope, tx: transaction)
         case .clearPlaceholdersOnly(let decryptedEnvelope):
             SSKEnvironment.shared.messageReceiverRef.finishProcessingEnvelope(decryptedEnvelope, tx: transaction)
@@ -347,10 +352,10 @@ public class MessageProcessor {
     private func handleProcessingRequest(
         _ request: ProcessingRequest,
         context: DeliveryReceiptContext,
-        localIdentifiers: LocalIdentifiers,
+        registeredState: RegisteredState,
         tx: DBWriteTransaction,
     ) {
-        reallyHandleProcessingRequest(request, context: context, localIdentifiers: localIdentifiers, transaction: tx)
+        reallyHandleProcessingRequest(request, context: context, registeredState: registeredState, transaction: tx)
         tx.addSyncCompletion { request.receivedEnvelope.completion() }
     }
 
@@ -402,7 +407,7 @@ private struct ProcessingRequest {
 private struct ProcessingRequestBuilder {
     let receivedEnvelope: ReceivedEnvelope
     let blockingManager: BlockingManager
-    let localDeviceId: LocalDeviceId
+    let localDeviceId: DeviceId
     let localIdentifiers: LocalIdentifiers
     let messageDecrypter: OWSMessageDecrypter
     let messageReceiver: MessageReceiver
@@ -410,7 +415,7 @@ private struct ProcessingRequestBuilder {
     init(
         _ receivedEnvelope: ReceivedEnvelope,
         blockingManager: BlockingManager,
-        localDeviceId: LocalDeviceId,
+        localDeviceId: DeviceId,
         localIdentifiers: LocalIdentifiers,
         messageDecrypter: OWSMessageDecrypter,
         messageReceiver: MessageReceiver,
@@ -566,7 +571,7 @@ private extension MessageProcessor {
     func processingRequest(
         for envelope: ReceivedEnvelope,
         localIdentifiers: LocalIdentifiers,
-        localDeviceId: LocalDeviceId,
+        localDeviceId: DeviceId,
         tx: DBWriteTransaction,
     ) -> ProcessingRequest {
         assertOnQueue(queueForProcessing)
@@ -608,7 +613,7 @@ private struct ReceivedEnvelope {
     func decryptIfNeeded(
         messageDecrypter: OWSMessageDecrypter,
         localIdentifiers: LocalIdentifiers,
-        localDeviceId: LocalDeviceId,
+        localDeviceId: DeviceId,
         tx: DBWriteTransaction,
     ) throws -> DecryptionResult {
         // Figure out what type of envelope we're dealing with.
@@ -623,6 +628,7 @@ private struct ReceivedEnvelope {
                     validatedEnvelope,
                     cipherType: cipherType,
                     localIdentifiers: localIdentifiers,
+                    localDeviceId: localDeviceId,
                     tx: tx,
                 ),
             )

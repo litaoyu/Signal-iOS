@@ -4,8 +4,8 @@
 //
 
 import AVFAudio
-public import SignalServiceKit
 import LibSignalClient
+public import SignalServiceKit
 import SignalUI
 public import UIKit
 
@@ -516,12 +516,10 @@ extension ConversationViewController: MessageActionsDelegate {
                 pinMessage: unpinMessage,
                 modalDelegate: modalDelegate,
                 completion: { [weak self] in
-                    self?.presentToast(
-                        text: OWSLocalizedString(
-                            "PINNED_MESSAGE_TOAST",
-                            comment: "Text to show on a toast when someone unpins a message",
-                        ),
-                    )
+                    self?.presentToastCVC(OWSLocalizedString(
+                        "PINNED_MESSAGE_TOAST",
+                        comment: "Text to show on a toast when someone unpins a message",
+                    ))
                 },
             )
         }
