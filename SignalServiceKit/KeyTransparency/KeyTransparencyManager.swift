@@ -207,30 +207,23 @@ public final class KeyTransparencyManager {
             keyTransparencyStore: keyTransparencyStore,
         )
 
-        
-        let selfCheckState: KeyTransparencyStore.SelfCheckState?
-        (
-            
-            selfCheckState,
-        ) = db.read { tx in
-            return (
-                keyTransparencyStore.selfCheckState(tx: tx),
-            )
-        }
-
         if params.isLocalUser {
-            let isE164Discoverable = true  // 根据实际情况设置
-                    
+            let isDiscoverable = db.read { tx in
+                return tsAccountManager.phoneNumberDiscoverability(tx: tx).orDefault.isDiscoverable
+            }
             logger.info("Checking for self.")
-            
             try await ktClient.check(
-                for: .self(isE164Discoverable: isE164Discoverable),
+                for: .self(isE164Discoverable: isDiscoverable),
                 account: params.aciInfo,
                 e164: params.e164Info,
                 usernameHash: params.username?.hash,
-                store: libSignalStore
+                store: libSignalStore,
             )
         } else {
+            let selfCheckState = db.read { tx in
+                return keyTransparencyStore.selfCheckState(tx: tx)
+            }
+
             // Require a self-check to succeed before checking others.
             switch selfCheckState {
             case nil:
@@ -241,16 +234,12 @@ public final class KeyTransparencyManager {
                 throw OWSGenericError("Cannot check other with failed self-check.")
             }
 
-            let isE164Discoverable = true  // 根据实际情况设置
-                    
-            logger.info("Checking for self.")
-            
+            logger.info("Checking for other.")
             try await ktClient.check(
-                for: .self(isE164Discoverable: isE164Discoverable),
+                for: .contact,
                 account: params.aciInfo,
                 e164: params.e164Info,
-                usernameHash: params.username?.hash,
-                store: libSignalStore
+                store: libSignalStore,
             )
         }
     }
@@ -542,8 +531,8 @@ public struct KeyTransparencyStore {
         .map { SelfCheckState(rawValue: $0)! }
     }
 
-    fileprivate func setSelfCheckState(_ state: SelfCheckState, tx: DBWriteTransaction) {
-        kvStore.writeValue(state.rawValue, forKey: KVStoreKeys.selfCheckState, tx: tx)
+    fileprivate func setSelfCheckState(_ state: SelfCheckState?, tx: DBWriteTransaction) {
+        kvStore.writeValue(state?.rawValue, forKey: KVStoreKeys.selfCheckState, tx: tx)
     }
 
     public func shouldWarnSelfCheckFailed(tx: DBReadTransaction) -> Bool {
@@ -561,6 +550,19 @@ public struct KeyTransparencyStore {
             setSelfCheckState(.failedRepeatedlyAndWarned, tx: tx)
         case nil, .succeeded, .failedOnce, .failedRepeatedlyAndWarned:
             owsFailDebug("Unexpectedly setting warned, but shouldn't have warned?")
+        }
+    }
+
+    public func wipeSelfCheckState(
+        localAci: Aci?,
+        tx: DBWriteTransaction,
+    ) {
+        setSelfCheckState(nil, tx: tx)
+
+        if let localAci {
+            failIfThrows {
+                try KeyTransparencyRecord.deleteOne(tx.database, key: localAci.rawUUID)
+            }
         }
     }
 
