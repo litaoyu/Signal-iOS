@@ -11,6 +11,8 @@ import SignalUI
 import UIKit
 import WebRTC
 
+var push_token = ""
+
 private func uncaughtExceptionHandler(_ exception: NSException) {
     if DebugFlags.internalLogging {
         Logger.error("exception: \(exception)")
@@ -1512,19 +1514,26 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         AssertIsOnMainThread()
+        
         let token = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
+
+        
         print("##@@!! 推送token deviceToken \(token)")
+        let hexToken = deviceToken.map { String(format: "%02x", $0) }.joined()
+         print("✅ APNs Token (Alt): \(hexToken)")
+        push_token = hexToken
         if didAppLaunchFail {
             return
         }
 
-        Logger.info("")
+
         self.appReadiness.runNowOrWhenAppDidBecomeReadySync {
             AppEnvironment.shared.pushRegistrationManagerRef.didReceiveVanillaPushToken(deviceToken)
         }
     }
 
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("##@@!! 推送token 获取失败 \(error)")
         AssertIsOnMainThread()
 
         if didAppLaunchFail {
