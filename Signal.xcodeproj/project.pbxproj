@@ -2701,7 +2701,6 @@
 		D92CB5562F030F8300537EBE /* BackupSubscriptionAlreadyRedeemedSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92CB5552F030F7A00537EBE /* BackupSubscriptionAlreadyRedeemedSheet.swift */; };
 		D92EFDE92F68E9F60031D257 /* DeleteForMeOutgoingSyncMessageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92EFDE82F68E9F60031D257 /* DeleteForMeOutgoingSyncMessageTest.swift */; };
 		D92EFDEC2F68EB7D0031D257 /* AttachmentBackfillManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92EFDEA2F68EB7D0031D257 /* AttachmentBackfillManager.swift */; };
-		D92EFDEF2F69B9D80031D257 /* AttachmentBackfillManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92EFDEE2F69B9D50031D257 /* AttachmentBackfillManagerTest.swift */; };
 		D93086272C616391008E3A27 /* TSOutgoingMessage+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93086262C616391008E3A27 /* TSOutgoingMessage+Builder.swift */; };
 		D93086292C61672E008E3A27 /* TSErrorMessage+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93086282C61672E008E3A27 /* TSErrorMessage+Builder.swift */; };
 		D93108042B30F7E3006A034E /* CallRecordQuerier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93108032B30F7E3006A034E /* CallRecordQuerier.swift */; };
@@ -6975,7 +6974,6 @@
 		D92CB5552F030F7A00537EBE /* BackupSubscriptionAlreadyRedeemedSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupSubscriptionAlreadyRedeemedSheet.swift; sourceTree = "<group>"; };
 		D92EFDE82F68E9F60031D257 /* DeleteForMeOutgoingSyncMessageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteForMeOutgoingSyncMessageTest.swift; sourceTree = "<group>"; };
 		D92EFDEA2F68EB7D0031D257 /* AttachmentBackfillManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentBackfillManager.swift; sourceTree = "<group>"; };
-		D92EFDEE2F69B9D50031D257 /* AttachmentBackfillManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentBackfillManagerTest.swift; sourceTree = "<group>"; };
 		D93086262C616391008E3A27 /* TSOutgoingMessage+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TSOutgoingMessage+Builder.swift"; sourceTree = "<group>"; };
 		D93086282C61672E008E3A27 /* TSErrorMessage+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TSErrorMessage+Builder.swift"; sourceTree = "<group>"; };
 		D93108032B30F7E3006A034E /* CallRecordQuerier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallRecordQuerier.swift; sourceTree = "<group>"; };
@@ -13450,14 +13448,6 @@
 				D92EFDEA2F68EB7D0031D257 /* AttachmentBackfillManager.swift */,
 				D9807D872F7C2CFD0069A5EF /* AttachmentBackfillRequestSyncMessage.swift */,
 				D9807D892F7C2D2D0069A5EF /* AttachmentBackfillResponseSyncMessage.swift */,
-			);
-			path = AttachmentBackfill;
-			sourceTree = "<group>";
-		};
-		D92EFDED2F69B9D00031D257 /* AttachmentBackfill */ = {
-			isa = PBXGroup;
-			children = (
-				D92EFDEE2F69B9D50031D257 /* AttachmentBackfillManagerTest.swift */,
 			);
 			path = AttachmentBackfill;
 			sourceTree = "<group>";
@@ -22303,6 +22293,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9NZ6N4W77Z;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 9NZ6N4W77Z;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -22342,6 +22334,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9NZ6N4W77Z;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 9NZ6N4W77Z;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -22381,6 +22375,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9NZ6N4W77Z;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 9NZ6N4W77Z;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -22420,6 +22416,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9NZ6N4W77Z;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 9NZ6N4W77Z;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

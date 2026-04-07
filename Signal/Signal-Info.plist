@@ -10,7 +10,16 @@
 		<string>LazyDatabaseMigratorTask</string>
 	</array>
 	<key>BuildDetails</key>
-	<dict/>
+	<dict>
+		<key>DateTime</key>
+		<string>Tue Apr  7 15:33:32 UTC 2026</string>
+		<key>SignalCommit</key>
+		<string>cc6beb4d856461c1c003818f2a2d26a39d184203 修改编译问题</string>
+		<key>Timestamp</key>
+		<integer>1775576012</integer>
+		<key>XCodeVersion</key>
+		<string>2600.2600</string>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -66,6 +75,13 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
+			<key>calling.notechat.me</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
 			<key>signal.org</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
