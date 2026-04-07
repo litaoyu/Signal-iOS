@@ -354,10 +354,13 @@ extension ConversationViewController: CVComponentDelegate {
     // MARK: -
 
     public func didTapUndownloadableMedia() {
-        let toast = ToastController(text: OWSLocalizedString(
-            "UNAVAILABLE_MEDIA_TAP_TOAST",
-            comment: "Toast shown when tapping older media that can no longer be downloaded",
-        ))
+        let toast = ToastController(
+            text: OWSLocalizedString(
+                "UNAVAILABLE_MEDIA_TAP_TOAST",
+                comment: "Toast shown when tapping older media that can no longer be downloaded",
+            ),
+            image: .photoSlash,
+        )
         let inset = (self.inputToolbar?.height ?? 0) + 16
         toast.presentToastView(from: .bottom, of: self.view, inset: inset)
     }
@@ -994,7 +997,7 @@ extension ConversationViewController: CVComponentDelegate {
         )
         dismissKeyBoard()
 
-        self.present(promptBuilder.build(for: message, allowRetrySend: !thread.isTerminatedGroup), animated: true)
+        self.present(promptBuilder.build(for: message, isTerminatedGroup: thread.isTerminatedGroup), animated: true)
     }
 
     public func didTapGroupMigrationLearnMore() {
@@ -1041,6 +1044,11 @@ extension ConversationViewController: CVComponentDelegate {
     public func didTapShowConversationSettingsAndShowMemberRequests() {
         AssertIsOnMainThread()
 
+        if thread.isTerminatedGroup {
+            showUnableToTakeActionInEndedGroupSheet()
+            return
+        }
+
         showConversationSettingsAndShowMemberRequests()
     }
 
@@ -1050,6 +1058,11 @@ extension ConversationViewController: CVComponentDelegate {
         requesterAci: Aci,
     ) {
         AssertIsOnMainThread()
+
+        if thread.isTerminatedGroup {
+            showUnableToTakeActionInEndedGroupSheet()
+            return
+        }
 
         let actionSheet = ActionSheetController(
             title: OWSLocalizedString(
@@ -1353,6 +1366,7 @@ extension ConversationViewController: CVComponentDelegate {
             pollManager: DependenciesBridge.shared.pollMessageManager,
             db: DependenciesBridge.shared.db,
             databaseChangeObserver: DependenciesBridge.shared.databaseChangeObserver,
+            isTerminatedGroup: thread.isTerminatedGroup,
         )
         pollDetails.delegate = self
         self.present(OWSNavigationController(rootViewController: pollDetails), animated: true)

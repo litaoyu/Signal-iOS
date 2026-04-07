@@ -10,12 +10,21 @@ import UIKit
 
 public class GroupViewUtils {
 
-    public static func formatGroupMembersLabel(memberCount: Int) -> String {
-        let format = OWSLocalizedString(
-            "GROUP_MEMBER_COUNT_LABEL_%d",
-            tableName: "PluralAware",
-            comment: "The 'group member count' indicator when there are no members in the group.",
-        )
+    public static func formatGroupMembersLabel(memberCount: Int, isTerminated: Bool) -> String {
+        let format: String
+        if isTerminated {
+            format = OWSLocalizedString(
+                "CONVERSATION_SETTINGS_FORMER_MEMBERS_SECTION_TITLE_%d",
+                tableName: "PluralAware",
+                comment: "Format for the section title of the 'members' section in conversation settings view after a group has been terminated. Embeds: {{ the number of former group members }}.",
+            )
+        } else {
+            format = OWSLocalizedString(
+                "GROUP_MEMBER_COUNT_LABEL_%d",
+                tableName: "PluralAware",
+                comment: "The 'group member count' indicator when there are no members in the group.",
+            )
+        }
         return String.localizedStringWithFormat(format, memberCount)
     }
 
@@ -62,10 +71,21 @@ public class GroupViewUtils {
                 ),
             )
         } else {
-            OWSActionSheets.showActionSheet(title: OWSLocalizedString(
-                "UPDATE_GROUP_FAILED",
-                comment: "Error indicating that a group could not be updated.",
-            ))
+            switch error {
+            case GroupsV2Error.terminatedGroupInviteLink:
+                OWSActionSheets.showActionSheet(
+                    title: nil,
+                    message: OWSLocalizedString(
+                        "END_GROUP_ACTION_ERROR",
+                        comment: "Description for error sheet that says the user can no longer take this action because the group has ended.",
+                    ),
+                )
+            default:
+                OWSActionSheets.showActionSheet(title: OWSLocalizedString(
+                    "UPDATE_GROUP_FAILED",
+                    comment: "Error indicating that a group could not be updated.",
+                ))
+            }
         }
     }
 

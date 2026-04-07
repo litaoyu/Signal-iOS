@@ -80,7 +80,7 @@ class AttachmentUploadManagerMockHelper {
     var mockInteractionStore = MockInteractionStore()
     var mockStoryStore = StoryStoreImpl()
     var mockAttachmentStore = AttachmentStore()
-    lazy var mockAttachmentUploadStore = AttachmentUploadStoreMock(attachmentStore: mockAttachmentStore)
+    var mockAttachmentUploadStore = AttachmentUploadStoreMock()
     var mockAttachmentThumbnailService = MockAttachmentThumbnailService()
     var mockAttachmentEncrypter = AttachmentUploadManagerImpl.Mocks.AttachmentEncrypter()
     var mockBackupRequestManager = AttachmentUploadManagerImpl.Mocks.BackupRequestManager()
@@ -102,10 +102,23 @@ class AttachmentUploadManagerMockHelper {
     // auth set the active location Requests (and the active URL)
     var activeUploadRequestMocks = [MockRequestType]()
 
+    func getUploadedAttachment(id: Attachment.IDType) -> AttachmentStream {
+        return mockDB.read { tx in
+            guard
+                let attachment = mockAttachmentStore.fetch(id: id, tx: tx),
+                let attachmentStream = attachment.asStream()
+            else {
+                owsFail("Missing stream for attachment: \(id)")
+            }
+
+            return attachmentStream
+        }
+    }
+
     func setup(encryptedSize: UInt32, unencryptedSize: UInt32) -> Attachment.IDType {
         return setup(
             encryptedUploadSize: encryptedSize,
-            mockAttachment: MockAttachmentStream.mock(
+            mockAttachment: AttachmentStream.mock(
                 streamInfo: .mock(
                     encryptedByteCount: encryptedSize,
                     unencryptedByteCount: unencryptedSize,
@@ -323,7 +336,7 @@ class AttachmentUploadManagerMockHelper {
     }
 
     enum UploadResultType {
-        case success
+        case success(_ code: Int)
         case failure(code: Int)
         case networkError
         case networkTimeout
@@ -346,10 +359,10 @@ class AttachmentUploadManagerMockHelper {
                     responseHeaders: HttpHeaders(),
                     responseData: nil,
                 ))
-            case .success:
+            case .success(let code):
                 return HTTPResponse(
                     requestUrl: request.url!,
-                    status: 200,
+                    status: code,
                     headers: HttpHeaders(),
                     bodyData: nil,
                 )

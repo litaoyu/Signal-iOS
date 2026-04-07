@@ -545,7 +545,7 @@ extension AppSetup.GlobalsContinuation {
         )
 
         let orphanedAttachmentStore = OrphanedAttachmentStore()
-        let attachmentUploadStore = AttachmentUploadStore(attachmentStore: attachmentStore)
+        let attachmentUploadStore = AttachmentUploadStore()
         let attachmentDownloadStore = AttachmentDownloadStore(dateProvider: dateProvider)
 
         let orphanedBackupAttachmentStore = OrphanedBackupAttachmentStore()
@@ -571,6 +571,16 @@ extension AppSetup.GlobalsContinuation {
             signalService: signalService,
             sleepTimer: Upload.Wrappers.SleepTimer(),
             storyStore: storyStore,
+        )
+
+        let attachmentBackfillManager = AttachmentBackfillManager(
+            attachmentStore: attachmentStore,
+            attachmentUploadManager: attachmentUploadManager,
+            db: db,
+            interactionStore: interactionStore,
+            recipientDatabaseTable: recipientDatabaseTable,
+            syncMessageSender: messageSenderJobQueue,
+            threadStore: threadStore,
         )
 
         let backupAttachmentDownloadQueueStatusManager = BackupAttachmentDownloadQueueStatusManagerImpl(
@@ -1096,6 +1106,7 @@ extension AppSetup.GlobalsContinuation {
         )
 
         let inactivePrimaryDeviceStore = InactivePrimaryDeviceStore()
+        let keyTransparencyStore = KeyTransparencyStore()
 
         let registrationStateChangeManager = RegistrationStateChangeManagerImpl(
             authCredentialStore: authCredentialStore,
@@ -1108,6 +1119,7 @@ extension AppSetup.GlobalsContinuation {
             db: db,
             dmConfigurationStore: disappearingMessagesConfigurationStore,
             identityManager: identityManager,
+            keyTransparencyStore: keyTransparencyStore,
             networkManager: networkManager,
             notificationPresenter: notificationPresenter,
             paymentsEvents: paymentsEvents,
@@ -1234,7 +1246,6 @@ extension AppSetup.GlobalsContinuation {
             whoAmIManager: whoAmIManager,
         ))
 
-        let keyTransparencyStore = KeyTransparencyStore()
         let keyTransparencyManager = KeyTransparencyManager(
             chatConnectionManager: chatConnectionManager,
             dateProvider: dateProvider,
@@ -1666,6 +1677,7 @@ extension AppSetup.GlobalsContinuation {
             attachmentManager: attachmentManager,
             attachmentStore: attachmentStore,
             attachmentThumbnailService: attachmentThumbnailService,
+            attachmentBackfillManager: attachmentBackfillManager,
             attachmentUploadManager: attachmentUploadManager,
             attachmentValidationBackfillMigrator: attachmentValidationBackfillMigrator,
             attachmentViewOnceManager: attachmentViewOnceManager,

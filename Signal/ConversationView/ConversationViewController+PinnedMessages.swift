@@ -3,8 +3,8 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 //
 
-import SignalUI
 public import SignalServiceKit
+import SignalUI
 public import UIKit
 
 protocol PinnedMessageInteractionManagerDelegate: AnyObject {
@@ -283,10 +283,11 @@ extension ConversationViewController: UIContextMenuInteractionDelegate {
         _ interaction: UIContextMenuInteraction,
         configurationForMenuAtLocation location: CGPoint,
     ) -> UIContextMenuConfiguration? {
-        return UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { _ in
+        return UIContextMenuConfiguration(identifier: nil, previewProvider: nil) { [weak self] _ in
             var actions: [UIAction] = []
-            actions.append(contentsOf: [
-                UIAction(
+            guard let self else { return UIMenu() }
+            if !thread.isTerminatedGroup {
+                actions.append(UIAction(
                     title: OWSLocalizedString(
                         "PINNED_MESSAGES_UNPIN",
                         comment: "Action menu item to unpin a message",
@@ -300,7 +301,10 @@ extension ConversationViewController: UIContextMenuInteractionDelegate {
                             modalDelegate: self,
                         )
                     }
-                },
+                })
+            }
+
+            actions.append(contentsOf: [
                 UIAction(
                     title: OWSLocalizedString(
                         "PINNED_MESSAGES_GO_TO_MESSAGE",
@@ -377,12 +381,10 @@ extension ConversationViewController: PinnedMessageInteractionManagerDelegate {
             for message in threadViewModel.pinnedMessages {
                 await handleActionUnpinAsync(message: message)
             }
-            presentToast(
-                text: OWSLocalizedString(
-                    "PINNED_MESSAGE_TOAST",
-                    comment: "Text to show on a toast when someone unpins a message",
-                ),
-            )
+            presentToastCVC(OWSLocalizedString(
+                "PINNED_MESSAGE_TOAST",
+                comment: "Text to show on a toast when someone unpins a message",
+            ))
         }
     }
 }

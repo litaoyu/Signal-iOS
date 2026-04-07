@@ -434,7 +434,6 @@ extension StoryContextMenuGenerator {
             owsFailDebug("Cannot delete a message without specifying its thread!")
             return nil
         }
-
         return .init(
             style: .destructive,
             title: OWSLocalizedString(
@@ -481,16 +480,34 @@ extension StoryContextMenuGenerator {
         willDelete: @escaping (@escaping () -> Void) -> Void,
         didDelete: @escaping (Bool) -> Void,
     ) {
-        let actionSheet = ActionSheetController(
-            message: OWSLocalizedString(
+        let actionSheetMessage: String
+        if thread.isTerminatedGroup {
+            actionSheetMessage = OWSLocalizedString(
+                "STORIES_DELETE_STORY_FOR_ME_ACTION_SHEET_TITLE",
+                comment: "Title asking the user if they are sure they want to delete their story for themselves only.",
+            )
+        } else {
+            actionSheetMessage = OWSLocalizedString(
                 "STORIES_DELETE_STORY_ACTION_SHEET_TITLE",
                 comment: "Title asking the user if they are sure they want to delete their story",
-            ),
+            )
+        }
+
+        let actionSheet = ActionSheetController(
+            message: actionSheetMessage,
         )
         actionSheet.addAction(.init(title: CommonStrings.deleteButton, style: .destructive, handler: { _ in
             willDelete {
                 SSKEnvironment.shared.databaseStorageRef.write { transaction in
-                    message.remotelyDelete(for: thread, transaction: transaction)
+                    if thread.isTerminatedGroup {
+                        // We can't send messages to terminated groups,
+                        // including a remote-delete. However, we want to
+                        // sync this delete across our devices. To that end,
+                        // "remotely delete" just for the local user.
+                        message.remotelyDeleteForJustLocalUser(transaction: transaction)
+                    } else {
+                        message.remotelyDelete(for: thread, transaction: transaction)
+                    }
                 }
                 didDelete(true)
             }

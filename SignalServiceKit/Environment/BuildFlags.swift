@@ -75,7 +75,7 @@ public enum BuildFlags {
     }
 
     public enum KeyTransparency {
-        public static let enabled = build <= .dev
+        public static let enabled = build <= .internal
         public static let conservativeSelfCheck = build <= .internal
     }
 
@@ -87,8 +87,12 @@ public enum BuildFlags {
     }
 
     public enum GroupTerminate {
-        public static let receive = build <= .dev
-        public static let send = build <= .dev
+        public static let receive = true
+        public static let send = build <= .internal
+    }
+
+    public enum AttachmentBackfill {
+        public static let handleRequests = build <= .dev
     }
 }
 

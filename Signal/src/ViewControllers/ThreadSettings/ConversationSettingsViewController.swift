@@ -335,6 +335,7 @@ class ConversationSettingsViewController: OWSTableViewController2, BadgeCollecti
         }
 
         updateTableContents()
+        updateNavigationBar()
     }
 
     // MARK: -
@@ -653,8 +654,10 @@ class ConversationSettingsViewController: OWSTableViewController2, BadgeCollecti
                 showEndGroupConfirmation(title: nil, description: finalConfirmationDescription, action: {
                     Task { @MainActor in
                         do {
-                            try await ModalActivityIndicatorViewController.presentAndPropagateResult(from: self) {
-                                try await GroupManager.terminateGroup(groupModel: groupModelV2)
+                            try await ModalActivityIndicatorViewController.presentAndPropagateResult(from: self) { [weak self] in
+                                guard let self else { return }
+                                guard let groupThread = thread as? TSGroupThread else { return }
+                                try await GroupManager.terminateGroup(groupModel: groupModelV2, threadId: groupThread.sqliteRowId!)
                             }
                             self.reloadThreadAndUpdateContent()
                         } catch {
@@ -711,8 +714,9 @@ class ConversationSettingsViewController: OWSTableViewController2, BadgeCollecti
             thread,
             isBlocked: threadViewModel.isBlocked,
             from: self,
-        ) { [weak self] _ in
+        ) { [weak self] didBlock in
             self?.reloadThreadAndUpdateContent()
+            self?.presentToast(text: ReportSpamUIUtils.successfulReportText(didBlock: didBlock))
         }
     }
 
@@ -1145,9 +1149,10 @@ extension ConversationSettingsViewController: GroupPermissionsSettingsDelegate {
 extension ConversationSettingsViewController: DatabaseChangeDelegate {
 
     func databaseChangesDidUpdate(databaseChanges: DatabaseChanges) {
-        if databaseChanges.didUpdate(tableName: TSGroupMember.databaseTableName) {
+        if databaseChanges.didUpdate(tableName: TSGroupMember.databaseTableName) || databaseChanges.didUpdateThreads {
             updateMutualGroupThreads()
             updateTableContents()
+            reloadThreadAndUpdateContent()
         }
     }
 

@@ -206,6 +206,9 @@ private class ConversationBannerView: UIView {
         /// Should be 0 if this is not a pinned messages banner.
         let totalPinnedMessageCount: Int
 
+        /// Whether the banner is in a group that has been terminated.
+        let isTerminatedGroup: Bool
+
         func makeContentView() -> any UIView & UIContentView {
             return ConversationBannerContentView(configuration: self)
         }
@@ -496,17 +499,21 @@ private class ConversationBannerView: UIView {
 
         private func pinMessageMenu() -> UIMenu {
             var actions: [UIAction] = []
+            guard let configuration = self.configuration as? ContentConfiguration else { return UIMenu() }
+
+            if !configuration.isTerminatedGroup {
+                actions.append(UIAction(
+                    title: OWSLocalizedString(
+                        "PINNED_MESSAGES_UNPIN",
+                        comment: "Action menu item to unpin a message",
+                    ),
+                    image: .pinSlash,
+                ) { [weak self] _ in
+                    self?.pinnedMessageInteractionDelegate?.unpinMessage(message: nil, modalDelegate: nil)
+                })
+            }
             actions.append(
                 contentsOf: [
-                    UIAction(
-                        title: OWSLocalizedString(
-                            "PINNED_MESSAGES_UNPIN",
-                            comment: "Action menu item to unpin a message",
-                        ),
-                        image: .pinSlash,
-                    ) { [weak self] _ in
-                        self?.pinnedMessageInteractionDelegate?.unpinMessage(message: nil, modalDelegate: nil)
-                    },
                     UIAction(
                         title: OWSLocalizedString(
                             "PINNED_MESSAGES_GO_TO_MESSAGE",
@@ -796,6 +803,7 @@ private extension ConversationViewController {
             },
             leadingAccessoryView: DoubleProfileImageView(primaryImage: avatar1, secondaryImage: avatar2),
             totalPinnedMessageCount: 0,
+            isTerminatedGroup: thread.isTerminatedGroup,
         )
 
         return ConversationBannerView(configuration: bannerConfiguration)
@@ -890,6 +898,7 @@ private extension ConversationViewController {
             },
             leadingAccessoryView: DoubleProfileImageView(primaryImage: avatar1, secondaryImage: avatar2),
             totalPinnedMessageCount: 0,
+            isTerminatedGroup: thread.isTerminatedGroup,
         )
 
         return ConversationBannerView(configuration: bannerConfiguration)
@@ -1016,6 +1025,10 @@ private extension ConversationViewController {
             return nil
         }
 
+        guard !thread.isTerminatedGroup else {
+            return nil
+        }
+
         // We will skip this read if the above checks fail, which will be most of the time.
         guard
             SSKEnvironment.shared.databaseStorageRef.read(block: { tx in
@@ -1060,6 +1073,7 @@ private extension ConversationViewController {
                 return imageView
             }(),
             totalPinnedMessageCount: 0,
+            isTerminatedGroup: thread.isTerminatedGroup,
         )
         return ConversationBannerView(configuration: bannerConfiguration)
     }
@@ -1129,6 +1143,7 @@ private extension ConversationViewController {
                 return imageView
             }(),
             totalPinnedMessageCount: 0,
+            isTerminatedGroup: thread.isTerminatedGroup,
         )
 
         return ConversationBannerView(configuration: bannerConfiguration)
@@ -1212,6 +1227,7 @@ extension ConversationViewController {
                 }
             },
             totalPinnedMessageCount: threadViewModel.pinnedMessages.count,
+            isTerminatedGroup: thread.isTerminatedGroup,
         )
 
         let banner = ConversationBannerView(configuration: bannerConfiguration)

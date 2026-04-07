@@ -335,7 +335,6 @@
 		346B66311F4E29B200E5122F /* CropScaleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346B66301F4E29B200E5122F /* CropScaleImageViewController.swift */; };
 		346C19DF25ACDF0B00061D3A /* DataSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346C19DE25ACDF0B00061D3A /* DataSettingsTableViewController.swift */; };
 		346C19E125ACE9AE00061D3A /* MediaDownloadSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346C19E025ACE9AE00061D3A /* MediaDownloadSettingsViewController.swift */; };
-		346CD5C226306578004162D6 /* UnknownThreadWarningInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346CD5C126306578004162D6 /* UnknownThreadWarningInteraction.swift */; };
 		346E09012662FBBE0042375E /* ChatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346E09002662FBBE0042375E /* ChatListCell.swift */; };
 		346EAA1225013CDF00E8AB6F /* SendMessageFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EAA1125013CDF00E8AB6F /* SendMessageFlow.swift */; };
 		346EAA14250199A400E8AB6F /* MemberRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346EAA13250199A300E8AB6F /* MemberRequestView.swift */; };
@@ -755,6 +754,7 @@
 		5073EACB2C4F3A16001FBB3E /* LinkPreviewFetcherTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073EACA2C4F3A16001FBB3E /* LinkPreviewFetcherTest.swift */; };
 		5073EACD2C4F45F2001FBB3E /* CallLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50552C2D2BAC066A00815474 /* CallLink.swift */; };
 		5073EACF2C4F469A001FBB3E /* CallLinkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073EACE2C4F469A001FBB3E /* CallLinkFetcher.swift */; };
+		507529172F6494C2000F72F0 /* CipherContextTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507529162F6494C2000F72F0 /* CipherContextTest.swift */; };
 		5075C21729CA1EE700A260D2 /* GroupMemberUpdaterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075C21629CA1EE700A260D2 /* GroupMemberUpdaterTest.swift */; };
 		5077B5B82BBC7FE600EF399E /* ContactTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5077B5B72BBC7FE600EF399E /* ContactTest.swift */; };
 		50791B1D2D037A9800D747F8 /* PhoneNumberCountryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50791B1C2D037A9800D747F8 /* PhoneNumberCountryTest.swift */; };
@@ -989,7 +989,6 @@
 		663F81D92E78C2740033D2AE /* OrphanedBackupAttachmentScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F81D82E78C2580033D2AE /* OrphanedBackupAttachmentScheduler.swift */; };
 		663F94082CED62EC002C9063 /* OWSProgressTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663F94072CED62E5002C9063 /* OWSProgressTest.swift */; };
 		6640132A2BFEB9C700F10FC4 /* SingleOrDoubleTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664013292BFEB9C700F10FC4 /* SingleOrDoubleTapGestureRecognizer.swift */; };
-		6640132C2BFFB8F500F10FC4 /* Attachment+ConstructionParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6640132B2BFFB8F500F10FC4 /* Attachment+ConstructionParams.swift */; };
 		6640132E2BFFDC2700F10FC4 /* AttachmentReference+ConstructionParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6640132D2BFFDC2700F10FC4 /* AttachmentReference+ConstructionParams.swift */; };
 		664013302C00155E00F10FC4 /* AttachmentStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6640132F2C00155E00F10FC4 /* AttachmentStoreTests.swift */; };
 		6640639E294D20A900997E0B /* OutgoingCallEventSyncMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6640639D294D20A900997E0B /* OutgoingCallEventSyncMessage.swift */; };
@@ -2701,6 +2700,8 @@
 		D92CA9EF2F500EA500FDE32D /* LeaveGroupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92CA9EE2F500EA500FDE32D /* LeaveGroupCoordinator.swift */; };
 		D92CB5562F030F8300537EBE /* BackupSubscriptionAlreadyRedeemedSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92CB5552F030F7A00537EBE /* BackupSubscriptionAlreadyRedeemedSheet.swift */; };
 		D92EFDE92F68E9F60031D257 /* DeleteForMeOutgoingSyncMessageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92EFDE82F68E9F60031D257 /* DeleteForMeOutgoingSyncMessageTest.swift */; };
+		D92EFDEC2F68EB7D0031D257 /* AttachmentBackfillManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92EFDEA2F68EB7D0031D257 /* AttachmentBackfillManager.swift */; };
+		D92EFDEF2F69B9D80031D257 /* AttachmentBackfillManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92EFDEE2F69B9D50031D257 /* AttachmentBackfillManagerTest.swift */; };
 		D93086272C616391008E3A27 /* TSOutgoingMessage+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93086262C616391008E3A27 /* TSOutgoingMessage+Builder.swift */; };
 		D93086292C61672E008E3A27 /* TSErrorMessage+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93086282C61672E008E3A27 /* TSErrorMessage+Builder.swift */; };
 		D93108042B30F7E3006A034E /* CallRecordQuerier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93108032B30F7E3006A034E /* CallRecordQuerier.swift */; };
@@ -2906,6 +2907,9 @@
 		D979DA162B8D1FDD000EEAB8 /* BadgeCountFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D979DA152B8D1FDD000EEAB8 /* BadgeCountFetcher.swift */; };
 		D97C43962D7F74F300BA41E0 /* recipient_contacts_05.txtproto in Resources */ = {isa = PBXBuildFile; fileRef = D97C43952D7F74F300BA41E0 /* recipient_contacts_05.txtproto */; };
 		D97C43972D7F74F300BA41E0 /* recipient_contacts_05.binproto in Resources */ = {isa = PBXBuildFile; fileRef = D97C43942D7F74F300BA41E0 /* recipient_contacts_05.binproto */; };
+		D9807D862F7C2C0A0069A5EF /* AttachmentBackfillInboundRequestRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9807D842F7C2BEF0069A5EF /* AttachmentBackfillInboundRequestRecord.swift */; };
+		D9807D882F7C2D020069A5EF /* AttachmentBackfillRequestSyncMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9807D872F7C2CFD0069A5EF /* AttachmentBackfillRequestSyncMessage.swift */; };
+		D9807D8A2F7C2D310069A5EF /* AttachmentBackfillResponseSyncMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9807D892F7C2D2D0069A5EF /* AttachmentBackfillResponseSyncMessage.swift */; };
 		D985D86829B94EC60087C90C /* ChangePhoneNumberPniManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D985D86329B91C400087C90C /* ChangePhoneNumberPniManagerTest.swift */; };
 		D987C8CF2E1CBE00004072BC /* BackupTestFlightEntitlementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D987C8CE2E1CBDFB004072BC /* BackupTestFlightEntitlementManager.swift */; };
 		D98ACAA72E0CA11F00FA497F /* BackupAttachmentUploadQueueStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98ACAA62E0CA11F00FA497F /* BackupAttachmentUploadQueueStatusManager.swift */; };
@@ -4425,7 +4429,6 @@
 		346B66301F4E29B200E5122F /* CropScaleImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropScaleImageViewController.swift; sourceTree = "<group>"; };
 		346C19DE25ACDF0B00061D3A /* DataSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSettingsTableViewController.swift; sourceTree = "<group>"; };
 		346C19E025ACE9AE00061D3A /* MediaDownloadSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaDownloadSettingsViewController.swift; sourceTree = "<group>"; };
-		346CD5C126306578004162D6 /* UnknownThreadWarningInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnknownThreadWarningInteraction.swift; sourceTree = "<group>"; };
 		346E09002662FBBE0042375E /* ChatListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListCell.swift; sourceTree = "<group>"; };
 		346EAA1125013CDF00E8AB6F /* SendMessageFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageFlow.swift; sourceTree = "<group>"; };
 		346EAA13250199A300E8AB6F /* MemberRequestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberRequestView.swift; sourceTree = "<group>"; };
@@ -5017,6 +5020,7 @@
 		5073EAC82C4F323F001FBB3E /* LinkPreviewSettingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkPreviewSettingManager.swift; sourceTree = "<group>"; };
 		5073EACA2C4F3A16001FBB3E /* LinkPreviewFetcherTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkPreviewFetcherTest.swift; sourceTree = "<group>"; };
 		5073EACE2C4F469A001FBB3E /* CallLinkFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CallLinkFetcher.swift; path = SignalUI/Calls/CallLinkFetcher.swift; sourceTree = SOURCE_ROOT; };
+		507529162F6494C2000F72F0 /* CipherContextTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CipherContextTest.swift; sourceTree = "<group>"; };
 		5075C21629CA1EE700A260D2 /* GroupMemberUpdaterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMemberUpdaterTest.swift; sourceTree = "<group>"; };
 		5077B5B72BBC7FE600EF399E /* ContactTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTest.swift; sourceTree = "<group>"; };
 		50791B1C2D037A9800D747F8 /* PhoneNumberCountryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberCountryTest.swift; sourceTree = "<group>"; };
@@ -5252,7 +5256,6 @@
 		663F81D82E78C2580033D2AE /* OrphanedBackupAttachmentScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrphanedBackupAttachmentScheduler.swift; sourceTree = "<group>"; };
 		663F94072CED62E5002C9063 /* OWSProgressTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWSProgressTest.swift; sourceTree = "<group>"; };
 		664013292BFEB9C700F10FC4 /* SingleOrDoubleTapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleOrDoubleTapGestureRecognizer.swift; sourceTree = "<group>"; };
-		6640132B2BFFB8F500F10FC4 /* Attachment+ConstructionParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Attachment+ConstructionParams.swift"; sourceTree = "<group>"; };
 		6640132D2BFFDC2700F10FC4 /* AttachmentReference+ConstructionParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttachmentReference+ConstructionParams.swift"; sourceTree = "<group>"; };
 		6640132F2C00155E00F10FC4 /* AttachmentStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentStoreTests.swift; sourceTree = "<group>"; };
 		6640639D294D20A900997E0B /* OutgoingCallEventSyncMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutgoingCallEventSyncMessage.swift; sourceTree = "<group>"; };
@@ -6971,6 +6974,8 @@
 		D92CA9EE2F500EA500FDE32D /* LeaveGroupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveGroupCoordinator.swift; sourceTree = "<group>"; };
 		D92CB5552F030F7A00537EBE /* BackupSubscriptionAlreadyRedeemedSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupSubscriptionAlreadyRedeemedSheet.swift; sourceTree = "<group>"; };
 		D92EFDE82F68E9F60031D257 /* DeleteForMeOutgoingSyncMessageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteForMeOutgoingSyncMessageTest.swift; sourceTree = "<group>"; };
+		D92EFDEA2F68EB7D0031D257 /* AttachmentBackfillManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentBackfillManager.swift; sourceTree = "<group>"; };
+		D92EFDEE2F69B9D50031D257 /* AttachmentBackfillManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentBackfillManagerTest.swift; sourceTree = "<group>"; };
 		D93086262C616391008E3A27 /* TSOutgoingMessage+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TSOutgoingMessage+Builder.swift"; sourceTree = "<group>"; };
 		D93086282C61672E008E3A27 /* TSErrorMessage+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TSErrorMessage+Builder.swift"; sourceTree = "<group>"; };
 		D93108032B30F7E3006A034E /* CallRecordQuerier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallRecordQuerier.swift; sourceTree = "<group>"; };
@@ -7186,6 +7191,9 @@
 		D97C43942D7F74F300BA41E0 /* recipient_contacts_05.binproto */ = {isa = PBXFileReference; lastKnownFileType = file; path = recipient_contacts_05.binproto; sourceTree = "<group>"; };
 		D97C43952D7F74F300BA41E0 /* recipient_contacts_05.txtproto */ = {isa = PBXFileReference; lastKnownFileType = text; path = recipient_contacts_05.txtproto; sourceTree = "<group>"; };
 		D97C9FF12DD3FB7200191CE2 /* BackupDisablingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupDisablingManager.swift; sourceTree = "<group>"; };
+		D9807D842F7C2BEF0069A5EF /* AttachmentBackfillInboundRequestRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentBackfillInboundRequestRecord.swift; sourceTree = "<group>"; };
+		D9807D872F7C2CFD0069A5EF /* AttachmentBackfillRequestSyncMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentBackfillRequestSyncMessage.swift; sourceTree = "<group>"; };
+		D9807D892F7C2D2D0069A5EF /* AttachmentBackfillResponseSyncMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentBackfillResponseSyncMessage.swift; sourceTree = "<group>"; };
 		D98300B12936E6C70018FDC2 /* SubscriptionConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionConfigManager.swift; sourceTree = "<group>"; };
 		D985D86329B91C400087C90C /* ChangePhoneNumberPniManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePhoneNumberPniManagerTest.swift; sourceTree = "<group>"; };
 		D987C8CE2E1CBDFB004072BC /* BackupTestFlightEntitlementManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupTestFlightEntitlementManager.swift; sourceTree = "<group>"; };
@@ -9659,12 +9667,13 @@
 			path = ZeroKnowledge;
 			sourceTree = "<group>";
 		};
-		501AD1C22AF17A0B001B796A /* Curve25519 */ = {
+		501AD1C22AF17A0B001B796A /* Cryptography */ = {
 			isa = PBXGroup;
 			children = (
+				507529162F6494C2000F72F0 /* CipherContextTest.swift */,
 				501AD1C32AF17A16001B796A /* ECKeyPairTest.swift */,
 			);
-			path = Curve25519;
+			path = Cryptography;
 			sourceTree = "<group>";
 		};
 		5033D46C29DCA8DE007FEADA /* URLs */ = {
@@ -9928,7 +9937,6 @@
 				88DBDFB8263731C800C2101C /* DefaultDisappearingMessageTimerInteraction.swift */,
 				88D1D40322EF8A9700F472C5 /* ThreadDetailsInteraction.swift */,
 				34B6A904218B4C90007C4606 /* TypingIndicatorInteraction.swift */,
-				346CD5C126306578004162D6 /* UnknownThreadWarningInteraction.swift */,
 				4CFF115223A9C2130007F9D7 /* UnreadIndicatorInteraction.swift */,
 			);
 			path = DynamicInteractions;
@@ -10074,7 +10082,6 @@
 		66144B3B2BFD22EE00E2C9CD /* Records */ = {
 			isa = PBXGroup;
 			children = (
-				6640132B2BFFB8F500F10FC4 /* Attachment+ConstructionParams.swift */,
 				66144B3C2BFD22FA00E2C9CD /* AttachmentRecord.swift */,
 				6640132D2BFFDC2700F10FC4 /* AttachmentReference+ConstructionParams.swift */,
 				66144B3E2BFD3AA700E2C9CD /* AttachmentReference+Records.swift */,
@@ -13436,6 +13443,25 @@
 			path = CallRecord;
 			sourceTree = "<group>";
 		};
+		D92EFDEB2F68EB7D0031D257 /* AttachmentBackfill */ = {
+			isa = PBXGroup;
+			children = (
+				D9807D842F7C2BEF0069A5EF /* AttachmentBackfillInboundRequestRecord.swift */,
+				D92EFDEA2F68EB7D0031D257 /* AttachmentBackfillManager.swift */,
+				D9807D872F7C2CFD0069A5EF /* AttachmentBackfillRequestSyncMessage.swift */,
+				D9807D892F7C2D2D0069A5EF /* AttachmentBackfillResponseSyncMessage.swift */,
+			);
+			path = AttachmentBackfill;
+			sourceTree = "<group>";
+		};
+		D92EFDED2F69B9D00031D257 /* AttachmentBackfill */ = {
+			isa = PBXGroup;
+			children = (
+				D92EFDEE2F69B9D50031D257 /* AttachmentBackfillManagerTest.swift */,
+			);
+			path = AttachmentBackfill;
+			sourceTree = "<group>";
+		};
 		D931080C2B338D00006A034E /* CallsTab */ = {
 			isa = PBXGroup;
 			children = (
@@ -14592,6 +14618,7 @@
 			isa = PBXGroup;
 			children = (
 				F9C5C9BA289453B100548EEE /* Account */,
+				D92EFDEB2F68EB7D0031D257 /* AttachmentBackfill */,
 				7255A4C32B98D5A800E95368 /* Attachments */,
 				720547F12B9C8F5E00E2CF2F /* Avatars */,
 				665C0D5A2ADF537000539A37 /* Backups */,
@@ -14657,7 +14684,7 @@
 				D985D86229B91C2B0087C90C /* ChangePhoneNumber */,
 				50E0198E2CC2491A0063EA48 /* Concurrency */,
 				F9426205289B1B5500460798 /* Contacts */,
-				501AD1C22AF17A0B001B796A /* Curve25519 */,
+				501AD1C22AF17A0B001B796A /* Cryptography */,
 				5056B3BD2DEED70F00F55320 /* DateProvider */,
 				F94261C7289B1B5300460798 /* Devices */,
 				D98BC5342EE390B50052A81F /* Expiration */,
@@ -18763,7 +18790,6 @@
 				F93BCB9A29EDE86400E3C6A0 /* UIDevice+CanUpgradeOperatingSystem.swift in Sources */,
 				342FFE7A271EF581000AC89F /* UIResponder+OWS.swift in Sources */,
 				342FFE7B271EF581000AC89F /* UIStoryboard+OWS.swift in Sources */,
-				346CD5C226306578004162D6 /* UnknownThreadWarningInteraction.swift in Sources */,
 				4CFF115323A9C2130007F9D7 /* UnreadIndicatorInteraction.swift in Sources */,
 				7653A1F22B06D3F00071CCC3 /* UpdateSystemContacts.swift in Sources */,
 				5033D47029DCACEF007FEADA /* UrlOpener.swift in Sources */,
@@ -18904,9 +18930,12 @@
 				C1DAA75A2C1742680078AE84 /* ArchivedPaymentStore.swift in Sources */,
 				F9C5CE0A289453B400548EEE /* Array+SSK.swift in Sources */,
 				F9C5CDF7289453B400548EEE /* Atomics.swift in Sources */,
-				6640132C2BFFB8F500F10FC4 /* Attachment+ConstructionParams.swift in Sources */,
 				66D7B91D2B97C5330005C98B /* Attachment+ContentType.swift in Sources */,
 				66E1AD762B8FD0B700C56B7B /* Attachment.swift in Sources */,
+				D9807D862F7C2C0A0069A5EF /* AttachmentBackfillInboundRequestRecord.swift in Sources */,
+				D92EFDEC2F68EB7D0031D257 /* AttachmentBackfillManager.swift in Sources */,
+				D9807D882F7C2D020069A5EF /* AttachmentBackfillRequestSyncMessage.swift in Sources */,
+				D9807D8A2F7C2D310069A5EF /* AttachmentBackfillResponseSyncMessage.swift in Sources */,
 				66C38A3A2D4055DC004B6B15 /* AttachmentBackupPointer.swift in Sources */,
 				C1FE1F612C80CDC30031860B /* AttachmentBackupThumbnail.swift in Sources */,
 				661BFE002C07C5F30065435B /* AttachmentContentValidator.swift in Sources */,
@@ -20120,6 +20149,7 @@
 				661396AF28BE881E00E0C4DF /* ChainedPromiseTest.swift in Sources */,
 				D985D86829B94EC60087C90C /* ChangePhoneNumberPniManagerTest.swift in Sources */,
 				F9C9610B29A91026001E4A09 /* ChatServiceAuthTest.swift in Sources */,
+				507529172F6494C2000F72F0 /* CipherContextTest.swift in Sources */,
 				501E4DAE2D13439E00D883C7 /* CompletionSerializerTest.swift in Sources */,
 				50CF74192E0A0EB7002DCA93 /* ConcurrentTaskQueueTest.swift in Sources */,
 				509527FA2E26F02B00A03829 /* ConnectionLockTest.swift in Sources */,
