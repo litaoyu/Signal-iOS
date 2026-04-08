@@ -206,51 +206,55 @@ class AudioMessageView: ManualStackView {
         measurementBuilder: CVCellMeasurement.Builder,
         presentation: AudioPresenter,
     ) -> CGSize {
-        owsAssertDebug(maxWidth > 0)
-
-        var outerSubviewInfos = [ManualStackSubviewInfo]()
-        if let topLabelConfig = presentation.topLabelConfig {
-            let topLabelSize = CGSize(width: 0, height: topLabelConfig.font.lineHeight)
-            outerSubviewInfos.append(topLabelSize.asManualSubviewInfo)
+        return DispatchQueue.main.sync {
+            owsAssertDebug(maxWidth > 0)
+            
+            var outerSubviewInfos = [ManualStackSubviewInfo]()
+            if let topLabelConfig = presentation.topLabelConfig {
+                let topLabelSize = CGSize(width: 0, height: topLabelConfig.font.lineHeight)
+                outerSubviewInfos.append(topLabelSize.asManualSubviewInfo)
+            }
+            
+            var topInnerSubviewInfos = [ManualStackSubviewInfo]()
+            let leftViewSize = CGSize(square: Constants.animationSize)
+            topInnerSubviewInfos.append(leftViewSize.asManualSubviewInfo(hasFixedSize: true))
+            
+            topInnerSubviewInfos.append(CGSize(width: 12, height: 0).asManualSubviewInfo(hasFixedWidth: true))
+            
+            let waveformSize = CGSize(width: 0, height: Constants.waveformHeight)
+            topInnerSubviewInfos.append(waveformSize.asManualSubviewInfo(hasFixedHeight: true))
+            
+            topInnerSubviewInfos.append(CGSize(width: 6, height: 0).asManualSubviewInfo(hasFixedWidth: true))
+            
+            let topInnerStackMeasurement = ManualStackView.measure(
+                config: topInnerStackConfig,
+                measurementBuilder: measurementBuilder,
+                measurementKey: Self.measurementKey_topInnerStack,
+                subviewInfos: topInnerSubviewInfos,
+            )
+            let topInnerStackSize = topInnerStackMeasurement.measuredSize
+            outerSubviewInfos.append(topInnerStackSize.ceil.asManualSubviewInfo)
+            
+            let bottomInnerStackMeasurement = ManualStackView.measure(
+                config: bottomInnerStackConfig(presentation: presentation),
+                measurementBuilder: measurementBuilder,
+                measurementKey: Self.measurementKey_bottomInnerStack,
+                subviewInfos: presentation.bottomSubviewGenerators(conversationStyle: nil).map { $0.measurementInfo(maxWidth) },
+            )
+            let bottomInnerStackSize = bottomInnerStackMeasurement.measuredSize
+            outerSubviewInfos.append(bottomInnerStackSize.ceil.asManualSubviewInfo)
+            
+            let outerStackMeasurement = ManualStackView.measure(
+                config: outerStackConfig,
+                measurementBuilder: measurementBuilder,
+                measurementKey: Self.measurementKey_outerStack,
+                subviewInfos: outerSubviewInfos,
+                maxWidth: maxWidth,
+            )
+            return outerStackMeasurement.measuredSize
+            
+            
         }
-
-        var topInnerSubviewInfos = [ManualStackSubviewInfo]()
-        let leftViewSize = CGSize(square: Constants.animationSize)
-        topInnerSubviewInfos.append(leftViewSize.asManualSubviewInfo(hasFixedSize: true))
-
-        topInnerSubviewInfos.append(CGSize(width: 12, height: 0).asManualSubviewInfo(hasFixedWidth: true))
-
-        let waveformSize = CGSize(width: 0, height: Constants.waveformHeight)
-        topInnerSubviewInfos.append(waveformSize.asManualSubviewInfo(hasFixedHeight: true))
-
-        topInnerSubviewInfos.append(CGSize(width: 6, height: 0).asManualSubviewInfo(hasFixedWidth: true))
-
-        let topInnerStackMeasurement = ManualStackView.measure(
-            config: topInnerStackConfig,
-            measurementBuilder: measurementBuilder,
-            measurementKey: Self.measurementKey_topInnerStack,
-            subviewInfos: topInnerSubviewInfos,
-        )
-        let topInnerStackSize = topInnerStackMeasurement.measuredSize
-        outerSubviewInfos.append(topInnerStackSize.ceil.asManualSubviewInfo)
-
-        let bottomInnerStackMeasurement = ManualStackView.measure(
-            config: bottomInnerStackConfig(presentation: presentation),
-            measurementBuilder: measurementBuilder,
-            measurementKey: Self.measurementKey_bottomInnerStack,
-            subviewInfos: presentation.bottomSubviewGenerators(conversationStyle: nil).map { $0.measurementInfo(maxWidth) },
-        )
-        let bottomInnerStackSize = bottomInnerStackMeasurement.measuredSize
-        outerSubviewInfos.append(bottomInnerStackSize.ceil.asManualSubviewInfo)
-
-        let outerStackMeasurement = ManualStackView.measure(
-            config: outerStackConfig,
-            measurementBuilder: measurementBuilder,
-            measurementKey: Self.measurementKey_outerStack,
-            subviewInfos: outerSubviewInfos,
-            maxWidth: maxWidth,
-        )
-        return outerStackMeasurement.measuredSize
     }
 
     // MARK: - View Configs

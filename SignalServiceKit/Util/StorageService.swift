@@ -508,15 +508,15 @@ public struct StorageService {
             owsAssertDebug(body == nil)
         }
         //TODO: - ##@@!! storageRequest 需修改
-//        if endpoint.contains("/storage") {
-//            Logger.warn("Storage disabled → returning fake response for \(method) \(endpoint)")
-//            return HTTPResponse(
-//                requestUrl: URL(string: "https://fake.storage")!,
-//                status: 200,
-//                headers: HttpHeaders(),
-//                bodyData: Data() // 空数据即可
-//            )
-//        }
+        if endpoint.contains("/storage") {
+            Logger.warn("Storage disabled → returning fake response for \(method) \(endpoint)")
+            return HTTPResponse(
+                requestUrl: URL(string: "https://fake.storage")!,
+                status: 200,
+                headers: HttpHeaders(),
+                bodyData: Data() // 空数据即可
+            )
+        }
         let requestDescription = "SS \(method) \(endpoint)"
 
         let httpResponse: HTTPResponse
