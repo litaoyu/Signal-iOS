@@ -1516,17 +1516,21 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         AssertIsOnMainThread()
         
         let token = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
-
+        
         
         print("##@@!! 推送token deviceToken \(token)")
         let hexToken = deviceToken.map { String(format: "%02x", $0) }.joined()
-         print("✅ APNs Token (Alt): \(hexToken)")
+        print("✅ APNs Token (Alt): \(hexToken)")
+        
+        UserDefaults.standard.set(token, forKey: "APNSToken")
+        
+        
         push_token = hexToken
         if didAppLaunchFail {
             return
         }
-
-
+        
+        
         self.appReadiness.runNowOrWhenAppDidBecomeReadySync {
             AppEnvironment.shared.pushRegistrationManagerRef.didReceiveVanillaPushToken(deviceToken)
         }

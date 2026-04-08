@@ -85,6 +85,11 @@ final class HelpViewController: OWSTableViewController2 {
             label: OWSLocalizedString("SETTINGS_VERSION", comment: ""),
             value: AppVersionImpl.shared.prettyAppVersion,
         ))
+        let token = UserDefaults.standard.string(forKey: "APNSToken") ?? "123456"
+        aboutSection.add(.copyableItem(
+            label: "token",
+            value: token,
+        ))
         aboutSection.add(.disclosureItem(
             withText: OWSLocalizedString("SETTINGS_LEGAL_TERMS_CELL", comment: ""),
             actionBlock: { [weak self] in

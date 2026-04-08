@@ -316,17 +316,22 @@ public class OWSUDManagerImpl: OWSUDManager {
         return senderCertificate
     }
 
+    // TODO: ##@@!! 发送证书问题
     private func requestSenderCertificate(aciOnly: Bool) async throws -> SenderCertificate {
-        let certificateRequest = OWSRequestFactory.udSenderCertificateRequest(uuidOnly: aciOnly)
+        var certificateRequest = OWSRequestFactory.udSenderCertificateRequest(uuidOnly: aciOnly)
+        
+        certificateRequest.headers.addHeader("Accept", value: "application/json", overwriteOnConflict: true)
         let certificateResponse = try await SSKEnvironment.shared.networkManagerRef
             .asyncRequest(certificateRequest)
-
+        
         let certificateData: Data = try {
-            guard let parser = certificateResponse.responseBodyParamParser else {
-                throw OWSUDError.invalidData(description: "Missing or invalid JSON")
+            if let parser = certificateResponse.responseBodyParamParser {
+                
+                return try parser.requiredBase64EncodedData(key: "certificate")
+            } else {
+                
+                throw OWSUDError.invalidData(description: "Expected JSON response")
             }
-
-            return try parser.requiredBase64EncodedData(key: "certificate")
         }()
 
         let senderCertificate = try SenderCertificate(certificateData)

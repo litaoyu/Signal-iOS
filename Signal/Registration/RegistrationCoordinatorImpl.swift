@@ -3979,7 +3979,7 @@ public class RegistrationCoordinatorImpl: RegistrationCoordinator {
         }
     }
 
-    // TODO: - backupToSVR修改
+    // TODO: ##@@!! backupToSVR修改
     @MainActor
     private func backupToSVR(
         pin: String,
@@ -3988,95 +3988,89 @@ public class RegistrationCoordinatorImpl: RegistrationCoordinator {
         accountIdentity: AccountIdentity,
         failureCount: Int,
     ) async -> RegistrationStep {
-
-        logger.info("SVR disabled, skipping backup")
-
-        let masterKey = accountEntropyPool.getMasterKey()
-
-        await db.awaitableWrite { tx in
-            updateMasterKeyAndLocalState(
-                masterKey: masterKey,
-                tx: tx,
-            )
-
-            deps.ows2FAManager.markPinEnabled(
-                pin: pin,
-                resetReminderInterval: resetPINReminderInterval,
-                tx: tx,
-            )
+        
+        if true{
+            logger.info("SVR disabled, skipping backup")
+            
+            let masterKey = accountEntropyPool.getMasterKey()
+            
+            await db.awaitableWrite { tx in
+                updateMasterKeyAndLocalState(
+                    masterKey: masterKey,
+                    tx: tx,
+                )
+                
+                deps.ows2FAManager.markPinEnabled(
+                    pin: pin,
+                    resetReminderInterval: resetPINReminderInterval,
+                    tx: tx,
+                )
+            }
+            
+            inMemoryState.hasBackedUpToSVR = false
+            inMemoryState.didSkipSVRBackup = true
+            
+            return await nextStep()
         }
-
-        inMemoryState.hasBackedUpToSVR = false
-        inMemoryState.didSkipSVRBackup = true
-
-        return await nextStep()
+        
+        let maxAutomaticRetries = Constants.networkErrorRetries
+        
+        logger.info("")
+        
+        let authMethod: SVR.AuthMethod
+        let backupAuthMethod = SVR.AuthMethod.chatServerAuth(accountIdentity.authedAccount)
+        if let svrAuthCredential = inMemoryState.svrAuthCredential {
+            authMethod = .svrAuth(svrAuthCredential, backup: backupAuthMethod)
+        } else {
+            authMethod = backupAuthMethod
+        }
+        
+        let masterKey = accountEntropyPool.getMasterKey()
+        do {
+            let backedUpMasterKey = try await deps.svr.backupMasterKey(
+                pin: pin,
+                masterKey: masterKey,
+                authMethod: authMethod,
+            ).awaitable()
+            
+            inMemoryState.hasBackedUpToSVR = true
+            await db.awaitableWrite { tx in
+                logger.info("Setting pin code after SVR backup")
+                updateMasterKeyAndLocalState(
+                    masterKey: backedUpMasterKey,
+                    tx: tx,
+                )
+                deps.ows2FAManager.markPinEnabled(
+                    pin: pin,
+                    resetReminderInterval: resetPINReminderInterval,
+                    tx: tx,
+                )
+            }
+            
+            return await nextStep()
+        } catch {
+            if error.isNetworkFailureOrTimeout {
+                if failureCount < maxAutomaticRetries {
+                    let minimumBackoff = OWSOperation.retryIntervalForExponentialBackoff(failureCount: failureCount + 1)
+                    try? await Task.sleep(nanoseconds: minimumBackoff.clampedNanoseconds)
+                    return await backupToSVR(
+                        pin: pin,
+                        resetPINReminderInterval: resetPINReminderInterval,
+                        accountEntropyPool: accountEntropyPool,
+                        accountIdentity: accountIdentity,
+                        failureCount: failureCount + 1,
+                    )
+                }
+                return .showErrorSheet(.networkError)
+            }
+            logger.error("Failed to back up to SVR with error: \(error)")
+            // We want to let people get through registration even if backups
+            // go wrong. Show an error but let the user continue when they try the next step.
+            inMemoryState.didSkipSVRBackup = true
+            return .showErrorSheet(.genericError)
+        }
     }
-//    @MainActor
-//    private func backupToSVR(
-//        pin: String,
-//        resetPINReminderInterval: Bool,
-//        accountEntropyPool: SignalServiceKit.AccountEntropyPool,
-//        accountIdentity: AccountIdentity,
-//        failureCount: Int,
-//    ) async -> RegistrationStep {
-//        let maxAutomaticRetries = Constants.networkErrorRetries
-//
-//        logger.info("")
-//
-//        let authMethod: SVR.AuthMethod
-//        let backupAuthMethod = SVR.AuthMethod.chatServerAuth(accountIdentity.authedAccount)
-//        if let svrAuthCredential = inMemoryState.svrAuthCredential {
-//            authMethod = .svrAuth(svrAuthCredential, backup: backupAuthMethod)
-//        } else {
-//            authMethod = backupAuthMethod
-//        }
-//
-//        let masterKey = accountEntropyPool.getMasterKey()
-//        do {
-//            let backedUpMasterKey = try await deps.svr.backupMasterKey(
-//                pin: pin,
-//                masterKey: masterKey,
-//                authMethod: authMethod,
-//            ).awaitable()
-//
-//            inMemoryState.hasBackedUpToSVR = true
-//            await db.awaitableWrite { tx in
-//                logger.info("Setting pin code after SVR backup")
-//                updateMasterKeyAndLocalState(
-//                    masterKey: backedUpMasterKey,
-//                    tx: tx,
-//                )
-//                deps.ows2FAManager.markPinEnabled(
-//                    pin: pin,
-//                    resetReminderInterval: resetPINReminderInterval,
-//                    tx: tx,
-//                )
-//            }
-//
-//            return await nextStep()
-//        } catch {
-//            if error.isNetworkFailureOrTimeout {
-//                if failureCount < maxAutomaticRetries {
-//                    let minimumBackoff = OWSOperation.retryIntervalForExponentialBackoff(failureCount: failureCount + 1)
-//                    try? await Task.sleep(nanoseconds: minimumBackoff.clampedNanoseconds)
-//                    return await backupToSVR(
-//                        pin: pin,
-//                        resetPINReminderInterval: resetPINReminderInterval,
-//                        accountEntropyPool: accountEntropyPool,
-//                        accountIdentity: accountIdentity,
-//                        failureCount: failureCount + 1,
-//                    )
-//                }
-//                return .showErrorSheet(.networkError)
-//            }
-//            logger.error("Failed to back up to SVR with error: \(error)")
-//            // We want to let people get through registration even if backups
-//            // go wrong. Show an error but let the user continue when they try the next step.
-//            inMemoryState.didSkipSVRBackup = true
-//            return .showErrorSheet(.genericError)
-//        }
-//    }
-
+    
     @MainActor
     private func restoreFromStorageService(
         accountIdentity: AccountIdentity,
