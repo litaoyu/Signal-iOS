@@ -1,3 +1,6 @@
 [submodule "SignalServiceKit/tests/MessageBackup/Signal-Message-Backup-Tests"]
 	path = SignalServiceKit/tests/MessageBackup/Signal-Message-Backup-Tests
 	url = https://github.com/signalapp/Signal-Message-Backup-Tests
+[submodule "Pods"]
+	path = Pods
+	url = git@github.com:signalapp/Signal-Pods.git
