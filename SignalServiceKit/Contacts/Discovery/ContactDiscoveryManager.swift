@@ -123,23 +123,23 @@ public final class ContactDiscoveryManagerImpl: ContactDiscoveryManager {
     }
     // TODO: ##@@!! 联系人需需要改
     public func lookUp(phoneNumbers: Set<String>, mode: ContactDiscoveryMode) async throws -> [SignalRecipient] {
-        return []
-//        let isStateful = try await withCheckedThrowingContinuation { continuation in
-//            let pendingRequest = PendingRequest(mode: mode, continuation: continuation)
-//            lock.withLock {
-//                pendingRequests.append(pendingRequest)
-//                processPendingRequests()
-//            }
-//        }
-//        defer {
-//            if isStateful {
-//                lock.withLock {
-//                    hasActiveStatefulRequest = false
-//                    processPendingRequests()
-//                }
-//            }
-//        }
-//        return try await sendRequest(forPhoneNumbers: phoneNumbers, mode: mode)
+//        return []
+        let isStateful = try await withCheckedThrowingContinuation { continuation in
+            let pendingRequest = PendingRequest(mode: mode, continuation: continuation)
+            lock.withLock {
+                pendingRequests.append(pendingRequest)
+                processPendingRequests()
+            }
+        }
+        defer {
+            if isStateful {
+                lock.withLock {
+                    hasActiveStatefulRequest = false
+                    processPendingRequests()
+                }
+            }
+        }
+        return try await sendRequest(forPhoneNumbers: phoneNumbers, mode: mode)
     }
 
     // MARK: - Sending Requests
