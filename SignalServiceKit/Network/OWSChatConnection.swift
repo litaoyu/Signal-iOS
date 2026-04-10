@@ -392,7 +392,29 @@ public class OWSChatConnection {
 
             return try await waitUntilReadyAndPerformRequest {
                 let response = try await self.makeRequestInternal(request, requestId: requestId)
-                request.logger.info("HTTP \(response.responseStatusCode) <- \(requestDescription)")
+                request.logger.info("HTTP \(response.responseStatusCode) <- \(requestDescription) response \(response)")
+                
+            
+                if let data = response.responseBodyData {
+                    
+                
+                    print("###############")
+                    print("url-> \(request)")
+                    
+                    request.printBody(request.body)
+                    
+                    if let string = String(data: data, encoding: .utf8) {
+                        print("Response Body String: \(string)")
+                    } else {
+                        print("Response Body Data (hex): \(data)")
+                    }
+                    
+                    print("###############")
+                    
+                    
+                    
+                   
+                }
                 return response
             }
         } catch {

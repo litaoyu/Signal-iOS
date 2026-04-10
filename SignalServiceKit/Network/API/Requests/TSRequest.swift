@@ -22,7 +22,41 @@ public struct TSRequest: CustomDebugStringConvertible {
             return try JSONSerialization.data(withJSONObject: parameters, options: [])
         }
     }
-
+    public func printBody(_ body: Body) {
+        switch body {
+        case .parameters(let params):
+            print("Body Type: Parameters")
+            print("Parameters: \(params)")
+            
+            // 尝试格式化为 JSON
+            do {
+                let jsonData = try JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
+                if let jsonString = String(data: jsonData, encoding: .utf8) {
+                    print("Pretty JSON:\n\(jsonString)")
+                }
+            } catch {
+                print("Failed to format parameters as JSON: \(error)")
+            }
+            
+        case .data(let data):
+            print("Body Type: Data")
+            print("Data Size: \(data.count) bytes")
+            
+            // 尝试解码为字符串
+            if let string = String(data: data, encoding: .utf8) {
+                print("String Content: \(string)")
+            }
+            // 尝试解码为 JSON
+            else if let json = try? JSONSerialization.jsonObject(with: data, options: []) {
+                print("JSON Object: \(json)")
+            }
+            // 显示十六进制
+            else {
+                let hexString = data.prefix(100).map { String(format: "%02x", $0) }.joined()
+                print("Hex (first 100 bytes): \(hexString)")
+            }
+        }
+    }
     public init(
         url: URL,
         method: String = "GET",
