@@ -1630,9 +1630,9 @@ class CallsListViewController: OWSViewController, HomeTabViewController, CallSer
     private func updateEmptyStateMessage() {
         switch (viewModelLoader.isEmpty, searchTerm) {
         case (true, .some(let searchTerm)) where !searchTerm.isEmpty:
-            noSearchResultsView.text = String(
-                format: Strings.searchNoResultsFoundLabelFormat,
-                arguments: [searchTerm],
+            noSearchResultsView.text = String.nonPluralLocalizedStringWithFormat(
+                Strings.searchNoResultsFoundLabelFormat,
+                searchTerm,
             )
             noSearchResultsView.alpha = 1
             emptyStateMessageView.alpha = 0
@@ -2328,12 +2328,14 @@ private extension CallsListViewController {
 
             config.image = Theme.iconImage(icon)
 
-            return UIButton(
+            let button = UIButton(
                 configuration: config,
                 primaryAction: UIAction { [weak self] _ in
                     self?.detailsTapped(viewModel: viewModel)
                 },
             )
+            button.setCompressionResistanceHorizontalHigh()
+            return button
         }
 
         private func makeJoinButton(viewModel: CallViewModel) -> UIButton {
@@ -2496,7 +2498,7 @@ private extension CallsListViewController {
                 if viewModel.callRecords.count <= 1 {
                     return viewModel.title
                 } else {
-                    return String(format: Strings.coalescedCallsTitleFormat, viewModel.title, "\(viewModel.callRecords.count)")
+                    return String.nonPluralLocalizedStringWithFormat(Strings.coalescedCallsTitleFormat, viewModel.title, "\(viewModel.callRecords.count)")
                 }
             }()
             titleLabel.text = titleText

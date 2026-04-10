@@ -300,7 +300,7 @@ public class GroupV2UpdatesImpl: GroupV2Updates {
 
 // MARK: - Refresh group from service
 
-private extension GroupV2UpdatesImpl {
+public extension GroupV2UpdatesImpl {
 
     // Fetch group state from service and apply.
     //
@@ -363,6 +363,7 @@ private extension GroupV2UpdatesImpl {
                 secretParams: secretParams,
                 spamReportingMetadata: spamReportingMetadata,
                 options: options,
+                skipTerminatedGroup: false,
             )
         }
     }
@@ -407,6 +408,10 @@ private extension GroupV2UpdatesImpl {
                 break
             }
         }
+
+        // Retry avatar downloads that were skipped because of the thread not
+        // yet existing at the time of the snapshot being applied.
+        try await SSKEnvironment.shared.groupsV2Ref.downloadAndApplyGroupAvatarIfSkipped(secretParams)
     }
 
     private func tryToApplyGroupChangesFromService(
@@ -711,17 +716,23 @@ private extension GroupV2UpdatesImpl {
 
     // MARK: - Current Snapshot
 
-    private func fetchAndApplyCurrentGroupV2SnapshotFromService(
+    func fetchAndApplyCurrentGroupV2SnapshotFromService(
         secretParams: GroupSecretParams,
         spamReportingMetadata: GroupUpdateSpamReportingMetadata,
         options: TSGroupModelOptions,
+        skipTerminatedGroup: Bool,
     ) async throws {
-        let snapshotResponse = try await SSKEnvironment.shared.groupsV2Ref.fetchLatestSnapshot(
+        let groupsV2 = SSKEnvironment.shared.groupsV2Ref
+        let snapshotResponse = try await groupsV2.fetchLatestSnapshot(
             secretParams: secretParams,
             justUploadedAvatars: nil,
         )
 
         let groupV2Snapshot = snapshotResponse.groupSnapshot
+
+        if skipTerminatedGroup, groupV2Snapshot.isTerminated {
+            throw GroupsV2Error.skipRestoringTerminatedGroup
+        }
 
         try await SSKEnvironment.shared.databaseStorageRef.awaitableWrite { transaction in
             guard let localIdentifiers = DependenciesBridge.shared.tsAccountManager.localIdentifiers(tx: transaction) else {
@@ -774,11 +785,11 @@ private extension GroupV2UpdatesImpl {
             // If the group state includes a stale profile key for the
             // local user, schedule an update to fix that.
             if let localProfileKey, let profileKey = groupV2Snapshot.profileKeys[localAci], profileKey != localProfileKey.keyData {
-                SSKEnvironment.shared.groupsV2Ref.updateLocalProfileKeyInGroup(groupId: newGroupModel.groupId, transaction: transaction)
+                groupsV2.updateLocalProfileKeyInGroup(groupId: newGroupModel.groupId, transaction: transaction)
             }
 
             if let groupSendEndorsementsResponse = snapshotResponse.groupSendEndorsementsResponse {
-                SSKEnvironment.shared.groupsV2Ref.handleGroupSendEndorsementsResponse(
+                groupsV2.handleGroupSendEndorsementsResponse(
                     groupSendEndorsementsResponse,
                     groupThreadId: groupThread.sqliteRowId!,
                     secretParams: secretParams,
@@ -788,6 +799,10 @@ private extension GroupV2UpdatesImpl {
                 )
             }
         }
+
+        // Retry avatar downloads that were skipped because of the thread not
+        // yet existing at the time of the snapshot being applied.
+        try await groupsV2.downloadAndApplyGroupAvatarIfSkipped(secretParams)
     }
 
     private func didAddLocalUserToV2Group(
@@ -900,7 +915,8 @@ extension GroupsV2Error: IsRetryableProvider {
             .groupBlocked,
             .localUserBlockedFromJoining,
             .groupChangeProtoForIncompatibleRevision,
-            .serviceRequestHitRecoverable400:
+            .serviceRequestHitRecoverable400,
+            .skipRestoringTerminatedGroup:
             return false
         }
     }

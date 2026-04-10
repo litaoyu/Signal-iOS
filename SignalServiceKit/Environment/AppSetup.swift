@@ -578,6 +578,7 @@ extension AppSetup.GlobalsContinuation {
             attachmentUploadManager: attachmentUploadManager,
             db: db,
             interactionStore: interactionStore,
+            notificationPresenter: notificationPresenter,
             recipientDatabaseTable: recipientDatabaseTable,
             syncMessageSender: messageSenderJobQueue,
             threadStore: threadStore,
@@ -621,6 +622,7 @@ extension AppSetup.GlobalsContinuation {
             dateProvider: dateProvider,
             interactionStore: interactionStore,
             remoteConfigProvider: remoteConfigProvider,
+            tsAccountManager: tsAccountManager,
         )
 
         let backupListMediaStore = BackupListMediaStore()
@@ -1632,6 +1634,7 @@ extension AppSetup.GlobalsContinuation {
         let messageFetcherJob = MessageFetcherJob()
 
         let backgroundMessageFetcherFactory = BackgroundMessageFetcherFactory(
+            attachmentBackfillManager: attachmentBackfillManager,
             chatConnectionManager: chatConnectionManager,
             groupMessageProcessorManager: groupMessageProcessorManager,
             messageProcessor: messageProcessor,

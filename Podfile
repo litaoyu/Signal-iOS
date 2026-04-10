@@ -11,13 +11,13 @@ source 'https://cdn.cocoapods.org/'
 pod 'blurhash', podspec: './ThirdParty/blurhash.podspec'
 pod 'SwiftProtobuf', "1.36.1"
 
-ENV['LIBSIGNAL_FFI_PREBUILD_CHECKSUM'] = 'c478b8d77ff39fcaaa6698b7e353bc7c3f04d25f100ae304843db3d963cef6d5'
-# pod 'LibSignalClient', git: 'https://github.com/signalapp/libsignal.git', tag: 'v0.91.0', testspecs: ["Tests"]
-pod 'LibSignalClient', path: '../libsignal', testspecs: ["Tests"]
+ENV['LIBSIGNAL_FFI_PREBUILD_CHECKSUM'] = 'e6eba8c54e3ea50be43858431e5e96210e1815ad897ff0f171f49c9c76214f77'
+#pod 'LibSignalClient', git: 'https://github.com/signalapp/libsignal.git', tag: 'v0.92.0', testspecs: ["Tests"]
+ pod 'LibSignalClient', path: '../libsignal', testspecs: ["Tests"]
 
-ENV['RINGRTC_PREBUILD_CHECKSUM'] = '89b51ec3e563cdabb96bb626f5af704ec2e26177bdff44970f2c0bcd76b5b0e2'
+ENV['RINGRTC_PREBUILD_CHECKSUM'] = 'c76c24d627c21c37257a4a657e58b21c4051b7eefb56bd7d296c1a8ad2c3075f'
 # ENV['RINGRTC_USE_FILE_BASED_CAMERA'] = '1'
-pod 'SignalRingRTC', git: 'https://github.com/signalapp/ringrtc', tag: 'v2.67.0', inhibit_warnings: true
+pod 'SignalRingRTC', git: 'https://github.com/signalapp/ringrtc', tag: 'v2.67.2', inhibit_warnings: true
 # pod 'SignalRingRTC', path: '../ringrtc', testspecs: ["Tests"]
 
 pod 'GRDB.swift/SQLCipher'
@@ -35,13 +35,11 @@ pod 'libPhoneNumber-iOS', git: 'https://github.com/signalapp/libPhoneNumber-iOS'
 
 pod 'SDWebImage'
 pod 'SDWebImageWebPCoder'
-pod 'libwebp' 
+pod 'libwebp'
 
 ###
 # third party pods
 ####
-
-pod 'Reachability', :inhibit_warnings => true
 
 def ui_pods
   pod 'BonMot', inhibit_warnings: true

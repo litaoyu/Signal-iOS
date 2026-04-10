@@ -491,7 +491,7 @@ class LinkedDevicesHostingController: HostingContainer<LinkedDevicesView> {
             )
         }
 
-        presentToast(text: String(format: title, deviceName))
+        presentToast(text: String.nonPluralLocalizedStringWithFormat(title, deviceName))
     }
 
     private func showUpdateFailureAlert(error: Error) {
@@ -710,7 +710,7 @@ class LinkedDevicesHostingController: HostingContainer<LinkedDevicesView> {
             "UNLINK_CONFIRMATION_ALERT_TITLE",
             comment: "Alert title for confirming device deletion",
         )
-        let title = String(format: titleFormat, displayableDevice.displayName)
+        let title = String.nonPluralLocalizedStringWithFormat(titleFormat, displayableDevice.displayName)
         let message = OWSLocalizedString(
             "UNLINK_CONFIRMATION_ALERT_BODY",
             comment: "Alert message to confirm unlinking a device",
@@ -890,8 +890,8 @@ struct LinkedDevicesView: View {
         }
 
         private func dateFormattedString(format: String, date: Date) -> String {
-            String(
-                format: format,
+            String.nonPluralLocalizedStringWithFormat(
+                format,
                 DateUtil.dateFormatter.string(from: date),
             )
         }
@@ -946,15 +946,6 @@ struct LinkedDevicesView: View {
                     Button {
                         guard let device else { return }
                         viewModel.present.send(
-                            .unlinkDeviceConfirmation(displayableDevice: device),
-                        )
-                    } label: {
-                        Label(LinkedDevicesView.unlinkString, image: "link-slash")
-                    }
-
-                    Button {
-                        guard let device else { return }
-                        viewModel.present.send(
                             .renameDevice(displayableDevice: device),
                         )
                     } label: {
@@ -965,6 +956,15 @@ struct LinkedDevicesView: View {
                             ),
                             image: "edit",
                         )
+                    }
+
+                    Button(role: .destructive) {
+                        guard let device else { return }
+                        viewModel.present.send(
+                            .unlinkDeviceConfirmation(displayableDevice: device),
+                        )
+                    } label: {
+                        Label(LinkedDevicesView.unlinkString, image: "link-slash")
                     }
                 } label: {
                     VStack(spacing: 0) {

@@ -34,6 +34,7 @@ public class CVComponentSticker: CVComponentBase, CVComponent {
     }
 
     public static let stickerSize: CGFloat = 175
+    private static let progressViewSize = CGSize.square(44)
 
     public func configureForRendering(
         componentView componentViewParam: CVComponentView,
@@ -82,10 +83,9 @@ public class CVComponentSticker: CVComponentBase, CVComponent {
                 let progressView = CVAttachmentProgressView(
                     direction: .upload(attachmentStream: attachmentStream.attachmentStream),
                     colorConfiguration: .init(conversationStyle: conversationStyle, isIncoming: isIncoming),
-                    mediaCache: mediaCache,
                 )
                 stackView.addSubview(progressView)
-                stackView.centerSubviewOnSuperview(progressView, size: progressView.layoutSize)
+                stackView.centerSubviewOnSuperview(progressView, size: Self.progressViewSize)
             case .pendingDownload:
                 break
             case .downloading:
@@ -132,10 +132,9 @@ public class CVComponentSticker: CVComponentBase, CVComponent {
                 downloadState: downloadState,
             ),
             colorConfiguration: .init(conversationStyle: conversationStyle, isIncoming: isIncoming),
-            mediaCache: mediaCache,
         )
         stackView.addSubview(progressView)
-        stackView.centerSubviewOnSuperview(progressView, size: progressView.layoutSize)
+        stackView.centerSubviewOnSuperview(progressView, size: Self.progressViewSize)
     }
 
     private var stackViewConfig: CVStackViewConfig {
@@ -238,8 +237,8 @@ public class CVComponentSticker: CVComponentBase, CVComponent {
 extension CVComponentSticker: CVAccessibilityComponent {
     public var accessibilityDescription: String {
         if let approximateEmoji = stickerMetadata?.firstEmoji {
-            return String(
-                format: OWSLocalizedString(
+            return String.nonPluralLocalizedStringWithFormat(
+                OWSLocalizedString(
                     "ACCESSIBILITY_LABEL_STICKER_FORMAT",
                     comment: "Accessibility label for stickers. Embeds {{ name of top emoji the sticker resembles }}",
                 ),

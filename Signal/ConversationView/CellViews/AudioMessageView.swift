@@ -128,11 +128,20 @@ class AudioMessageView: ManualStackView {
 
             let fillColorKeypath = AnimationKeypath(keypath: "**.Fill 1.Color")
             playPauseAnimation.setValueProvider(
-                presentation.playPauseAnimationColor(isIncoming: isIncoming),
+                ColorValueProvider(
+                    presentation.playPauseAnimationColor(
+                        isIncoming: isIncoming,
+                    ).lottieColorValue,
+                ),
                 keypath: fillColorKeypath,
             )
             playedDotAnimation.setValueProvider(
-                presentation.playedDotAnimationColor(conversationStyle: conversationStyle, isIncoming: isIncoming),
+                ColorValueProvider(
+                    presentation.playedDotAnimationColor(
+                        conversationStyle: conversationStyle,
+                        isIncoming: isIncoming,
+                    ).lottieColorValue,
+                ),
                 keypath: fillColorKeypath,
             )
 
@@ -151,9 +160,7 @@ class AudioMessageView: ManualStackView {
                     attachmentPointer: attachmentPointer.attachmentPointer,
                     downloadState: downloadState,
                 ),
-                diameter: Constants.animationSize,
                 colorConfiguration: .init(conversationStyle: conversationStyle, isIncoming: isIncoming),
-                mediaCache: mediaCache,
             )
         }
 

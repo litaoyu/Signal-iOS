@@ -5,7 +5,6 @@
 
 import Foundation
 public import LibSignalClient
-import Reachability
 
 public protocol NetworkManagerProtocol {
     func asyncRequestImpl(
@@ -39,9 +38,7 @@ public class NetworkManager: NetworkManagerProtocol {
         self.libsignalNet = libsignalNet
         if let libsignalNet {
             self.reachabilityDidChangeObserver = Task {
-                for await notification in NotificationCenter.default.notifications(named: .reachabilityChanged) {
-                    let reachability = notification.object as! Reachability
-                    Logger.info("New preferred network: \(reachability.currentReachabilityString()!)")
+                for await _ in NotificationCenter.default.notifications(named: SSKReachability.owsReachabilityDidChange) {
                     do {
                         Self.resetLibsignalNetProxySettings(libsignalNet, appReadiness: appReadiness)
                         try libsignalNet.networkDidChange()
@@ -56,9 +53,6 @@ public class NetworkManager: NetworkManagerProtocol {
             appReadiness.runNowOrWhenAppDidBecomeReadyAsync {
                 // We did this once already, but doing it properly depends on RemoteConfig.
                 self.resetLibsignalNetProxySettings()
-                // This is redundant with the instance in ReachabilityManager, but that's ok.
-                let reachability = Reachability.forInternetConnection()!
-                Logger.info("Initial preferred network: \(reachability.currentReachabilityString()!)")
             }
         } else {
             self.reachabilityDidChangeObserver = nil

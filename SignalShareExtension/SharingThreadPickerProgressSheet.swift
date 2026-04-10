@@ -106,8 +106,8 @@ public class SharingThreadPickerProgressSheet: ActionSheetController {
         // reach 100%.
         let totalCompleted = progressValues.filter { $0 == 1 }.count
 
-        progressLabel.text = String(
-            format: Self.progressFormat,
+        progressLabel.text = String.nonPluralLocalizedStringWithFormat(
+            Self.progressFormat,
             OWSFormat.formatInt(min(totalCompleted + 1, attachmentIds.count)),
             OWSFormat.formatInt(attachmentIds.count),
         )
@@ -128,12 +128,12 @@ public class SharingThreadPickerProgressSheet: ActionSheetController {
             owsFailDebug("Missing notificationAttachmentId.")
             return
         }
-        guard let progress = notification.userInfo?[Upload.Constants.uploadProgressKey] as? NSNumber else {
+        guard let progress = notification.userInfo?[Upload.Constants.uploadProgressKey] as? Float else {
             owsFailDebug("Missing progress.")
             return
         }
 
-        progressPerAttachment[notificationAttachmentId] = progress.floatValue
+        progressPerAttachment[notificationAttachmentId] = progress
 
         renderProgress()
     }

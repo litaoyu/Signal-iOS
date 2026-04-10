@@ -535,11 +535,11 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
             }
         }
 
-        func didCancel(
+        func didObsolete(
             record: DownloadTaskRecord,
             tx: DBWriteTransaction,
         ) throws {
-            Logger.info("Cancelled download of attachment \(record.record.attachmentId) from \(record.record.sourceType)")
+            Logger.info("Obsoleted download of attachment \(record.record.attachmentId) from \(record.record.sourceType)")
             let downloadKey = DownloadQueue.downloadKey(record: record.record)
             Task {
                 await downloadQueue.updateObservers(downloadKey: downloadKey, error: nil)
@@ -698,17 +698,23 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                 // only happen if the attachment got deleted between when we fetched the
                 // download queue record and now. Regardless, the record should now be deleted.
                 owsFailDebug("Attempting to download an attachment that doesn't exist!")
-                return .cancelled
+                return .obsolete
             }
 
             guard attachment.asStream() == nil else {
                 // Already a stream! No need to download.
-                return .cancelled
+                return .obsolete
             }
 
             switch self.downloadabilityChecker.downloadability(record, attachment: attachment) {
             case .downloadable:
                 break
+            case nil:
+                // Because of the foreign key relationship and cascading deletes, this should
+                // only happen if all the references got deleted between when we fetched the
+                // download queue record and now. Regardless, the record should now be deleted.
+                owsFailDebug("Attempting to download an attachment with no references \(record.attachmentId)")
+                return .obsolete
             case .blockedByActiveCall:
                 // This is a temporary setback; retry in a bit if the source allows it.
                 Logger.info("Skipping attachment download due to active call \(record.attachmentId)")
@@ -1108,7 +1114,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
         func downloadability(
             _ record: QueuedAttachmentDownloadRecord,
             attachment: Attachment,
-        ) -> Downloadability {
+        ) -> Downloadability? {
             // Check priority before opening a read.
             switch record.priority {
             case .userInitiated, .localClone:
@@ -1119,7 +1125,6 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
             }
             return db.read { tx in
                 var downloadability: Downloadability?
-
                 self.attachmentStore.enumerateAllReferences(
                     toAttachmentId: record.attachmentId,
                     tx: tx,
@@ -1135,10 +1140,6 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                     if downloadability == .downloadable {
                         stop = true
                     }
-                }
-                guard let downloadability else {
-                    owsFailDebug("Downloading attachment with no references")
-                    return .downloadable
                 }
                 return downloadability
             }
@@ -1275,14 +1276,6 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
             // If there's not a thread, err on the safe side and don't download it.
             guard let thread = threadStore.fetchThread(rowId: threadRowId, tx: tx) else {
                 return true
-            }
-
-            // If the message that created this attachment was the first message in the
-            // thread, the thread may not yet be marked visible. In that case, just
-            // check if the thread is whitelisted. We know we just received a message.
-            // TODO: Mark the thread visible before this point to share more logic.
-            guard thread.shouldThreadBeVisible else {
-                return !profileManager.isThread(inProfileWhitelist: thread, transaction: tx)
             }
 
             return threadStore.hasPendingMessageRequest(thread: thread, tx: tx)
@@ -1731,7 +1724,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                         return try await urlSession.performDownload(
                             requestUrl: requestUrl,
                             resumeData: resumeData,
-                            progress: wrappedProgressSource,
+                            progressBlock: wrappedProgressSource.asProgressBlock(),
                         )
                     }
                     downloadResponse = try await downloadTask!.value
@@ -1741,7 +1734,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                             urlPath,
                             method: .get,
                             headers: headers,
-                            progress: wrappedProgressSource,
+                            progressBlock: wrappedProgressSource.asProgressBlock(),
                         )
                     }
                     downloadResponse = try await downloadTask!.value
@@ -1788,11 +1781,11 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
 
             // Use a slightly non-zero value to ensure that the progress
             // indicator shows up as quickly as possible.
-            let progressTheta: Double = 0.001
+            let progressTheta: Float = 0.001
 
-            let fractionCompleted: Double
+            let fractionCompleted: Float
             if progress.completedUnitCount > 0 {
-                fractionCompleted = max(progressTheta, Double(progress.percentComplete))
+                fractionCompleted = max(progressTheta, progress.percentComplete)
             } else if expectedDownloadSizeBytes != nil {
                 fractionCompleted = progressTheta
             } else {
@@ -1809,7 +1802,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                     name: AttachmentDownloads.attachmentDownloadProgressNotification,
                     object: nil,
                     userInfo: [
-                        AttachmentDownloads.attachmentDownloadProgressKey: NSNumber(value: fractionCompleted),
+                        AttachmentDownloads.attachmentDownloadProgressKey: fractionCompleted,
                         AttachmentDownloads.attachmentDownloadAttachmentIDKey: attachmentId,
                     ],
                 )

@@ -50,7 +50,7 @@ public class PersistablePinnedMessageItem: NSObject, NSCopying, NSSecureCoding {
 }
 
 extension TSInfoMessage {
-    public func pinnedMessageUniqueId(transaction: DBReadTransaction) -> String? {
+    public func pinnedMessageUniqueId(threadUniqueId: String, transaction: DBReadTransaction) -> String? {
         guard let pinnedMessageItem: PersistablePinnedMessageItem = infoMessageValue(forKey: .pinnedMessage) else {
             return nil
         }
@@ -64,6 +64,7 @@ extension TSInfoMessage {
             let message = try? DependenciesBridge.shared.interactionStore.fetchMessage(
                 timestamp: UInt64(pinnedMessageItem.timestamp),
                 incomingMessageAuthor: localAci == pinnedMessageItem.originalMessageAuthorAci ? nil : pinnedMessageItem.originalMessageAuthorAci,
+                threadUniqueId: threadUniqueId,
                 transaction: transaction,
             )
         else {
@@ -115,6 +116,6 @@ extension TSInfoMessage {
             comment: "Shown when another user pins a message. Embeds {{ another user }}.",
         )
 
-        return String(format: formatString, displayName.resolvedValue())
+        return String.nonPluralLocalizedStringWithFormat(formatString, displayName.resolvedValue())
     }
 }

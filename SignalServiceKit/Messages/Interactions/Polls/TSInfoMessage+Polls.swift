@@ -48,7 +48,7 @@ public class PersistableEndPollItem: NSObject, NSCopying, NSSecureCoding {
 }
 
 extension TSInfoMessage {
-    public func pollInteractionUniqueId(transaction: DBReadTransaction) -> String? {
+    public func pollInteractionUniqueId(threadUniqueId: String, transaction: DBReadTransaction) -> String? {
         guard let endPollItem: PersistableEndPollItem = infoMessageValue(forKey: .endPoll) else {
             return nil
         }
@@ -64,6 +64,7 @@ extension TSInfoMessage {
             return try DependenciesBridge.shared.interactionStore.fetchMessage(
                 timestamp: UInt64(endPollItem.timestamp),
                 incomingMessageAuthor: localAci == incomingMessageAuthor ? nil : incomingMessageAuthor,
+                threadUniqueId: threadUniqueId,
                 transaction: transaction,
             )?.uniqueId
         } catch {
@@ -104,7 +105,7 @@ extension TSInfoMessage {
                 "POLL_ENDED_BY_YOU_CHAT_LIST_UPDATE",
                 comment: "Shown when the local user ends a poll. Embeds {{ poll question }}.",
             )
-            return String(format: formatString, question)
+            return String.nonPluralLocalizedStringWithFormat(formatString, question)
         }
 
         let displayName = SSKEnvironment.shared.contactManagerRef.displayName(
@@ -117,6 +118,6 @@ extension TSInfoMessage {
             comment: "Shown when another user ends a poll. Embeds {{ another user }} and {{ poll question }}.",
         )
 
-        return String(format: formatString, displayName.resolvedValue(), question)
+        return String.nonPluralLocalizedStringWithFormat(formatString, displayName.resolvedValue(), question)
     }
 }
