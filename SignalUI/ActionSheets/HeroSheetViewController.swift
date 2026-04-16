@@ -392,7 +392,7 @@ open class HeroSheetViewController: StackSheetViewController {
                 ),
                 HeroSheetViewController.Body.BulletPoint(
                     icon: UIImage(named: "heart")!,
-                    text: "Signal is a 501c3 nonprofit. US donations are tax deductible.",
+                    text: "Notelet is a 501c3 nonprofit. US donations are tax deductible.",
                 ),
             ],
         ),

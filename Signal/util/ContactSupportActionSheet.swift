@@ -23,10 +23,10 @@ enum ContactSupportActionSheet {
 
         fileprivate var asString: String {
             return switch self {
-            case .registrationPINMode(.v2NoReglock): "Signal PIN - iOS (V2 PIN without RegLock)"
-            case .registrationPINMode(.v2WithReglock): "Signal PIN - iOS (V2 PIN)"
-            case .registrationPINMode(.v2WithUnknownReglockState): "Signal PIN - iOS (V2 PIN with unknown reglock)"
-            case .deviceTransfer: "Signal iOS Transfer"
+            case .registrationPINMode(.v2NoReglock): "Notelet PIN - iOS (V2 PIN without RegLock)"
+            case .registrationPINMode(.v2WithReglock): "Notelet PIN - iOS (V2 PIN)"
+            case .registrationPINMode(.v2WithUnknownReglockState): "Notelet PIN - iOS (V2 PIN with unknown reglock)"
+            case .deviceTransfer: "Notelet iOS Transfer"
             case .backupExportFailed: "iOS Backup Export Failed"
             case .backupImportFailed: "iOS Backup Import Failed"
             case .backupDisableFailed: "iOS Backup Disable Failed"

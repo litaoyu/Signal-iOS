@@ -70,7 +70,7 @@ enum DebugLogs {
             }
         }
 
-        var supportFilter = "Signal - iOS Debug Log"
+        var supportFilter = "Notelet - iOS Debug Log"
         if let supportTag {
             supportFilter += " - \(supportTag)"
         }

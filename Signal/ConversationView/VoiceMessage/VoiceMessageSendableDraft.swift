@@ -19,7 +19,7 @@ extension VoiceMessageSendableDraft {
         dateFormatter.dateFormat = "yyyy-MM-dd-HH-mm-ss-SSS"
         let dateString = dateFormatter.string(from: Date())
         return String(
-            format: "signal-%@.%@",
+            format: "notelet-%@.%@",
             dateString,
             VoiceMessageConstants.fileExtension,
         )

@@ -6,7 +6,7 @@
 extension Notification.Name {
 
     /// Fire this notification to trigger an asynchronous upload of all attachments in the upload queue
-    public static let startBackupAttachmentUploadQueue = Notification.Name("Signal.startBackupAttachmentUploadQueue")
+    public static let startBackupAttachmentUploadQueue = Notification.Name("Notelet.startBackupAttachmentUploadQueue")
 }
 
 /// Coordinates backup attachment operations (upload, download, deletions, reconciliation)

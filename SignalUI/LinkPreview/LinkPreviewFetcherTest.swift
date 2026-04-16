@@ -156,7 +156,7 @@ class LinkPreviewFetcherTest: XCTestCase {
         let content = HTMLMetadata.construct(parsing: linkText)
         XCTAssertNotNil(content)
 
-        XCTAssertEqual(content.ogTitle, "Signal Messenger on Instagram: \"I link therefore I am: https://signal.org/blog/i-link-therefore-i-am/\"")
+        XCTAssertEqual(content.ogTitle, "Notelet Messenger on Instagram: \"I link therefore I am: https://signal.org/blog/i-link-therefore-i-am/\"")
         // Actual URL can change based on network response
         //
         // It seems like some parts of the URL are stable, so we can pattern match, but if this continues to be brittle we may choose
@@ -179,7 +179,7 @@ class LinkPreviewFetcherTest: XCTestCase {
         let content = HTMLMetadata.construct(parsing: linkText)
         XCTAssertNotNil(content)
 
-        XCTAssertEqual(content.ogTitle, "Signal Messenger on Instagram: \"I link therefore I am: https://signal.org/blog/i-link-therefore-i-am/\"")
+        XCTAssertEqual(content.ogTitle, "Notelet Messenger on Instagram: \"I link therefore I am: https://signal.org/blog/i-link-therefore-i-am/\"")
         // Actual URL can change based on network response
         //
         // It seems like some parts of the URL are stable, so we can pattern match, but if this continues to be brittle we may choose

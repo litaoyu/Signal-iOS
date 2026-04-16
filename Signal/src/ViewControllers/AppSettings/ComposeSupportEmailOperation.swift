@@ -59,7 +59,7 @@ struct SupportEmailModel {
             comment: "Default prompt for user description in support email requests",
         )
         self.emojiMood = emojiMood
-        self.supportFilter = supportFilter ?? "Signal iOS Support Request"
+        self.supportFilter = supportFilter ?? "Notelet iOS Support Request"
         self.debugLogPolicy = debugLogPolicy
         self.hasRecentChallenge = hasRecentChallenge
     }

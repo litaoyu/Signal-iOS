@@ -32,8 +32,8 @@ public class InviteFlow: NSObject {
         }
     }
 
-    private let installUrl = "https://signal.org/install/"
-    private let homepageUrl = "https://signal.org"
+    private let installUrl = "https://testflight.apple.com/join/FW9Szw4e"
+    private let homepageUrl = "https://testflight.apple.com/join/FW9Szw4e"
 
     private weak var presentingViewController: UIViewController?
     private weak var modalPresentationViewController: UIViewController?

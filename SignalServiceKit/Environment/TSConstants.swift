@@ -170,7 +170,7 @@ public class TSConstantsProduction: TSConstantsProtocol {
     public let sfuTestURL = "https://calling.notechat.me"
     
 //    public let svr2URL = "wss://svr2.signal.org"
-    public let svr2URL = "wss://chat.notechat.me"
+    public let svr2URL = "wss://svr2.notechat.me"
 
 //    public let registrationCaptchaURL = "https://signalcaptchas.org/registration/generate.html"
 //    public let challengeCaptchaURL = "https://signalcaptchas.org/challenge/generate.html"
@@ -196,14 +196,14 @@ public class TSConstantsProduction: TSConstantsProtocol {
     public let storageServiceCensorshipPrefix = "storage"
     public let svr2CensorshipPrefix = "svr2"
 
-    public let svr2Enclave = MrEnclave("1240acbd4aa26974184844c8a46b1022d3957ac8a76c1fd8f5b1a15141ee0708")
+    public let svr2Enclave = MrEnclave("a75542d82da9f6914a1e31f8a7407053b99cc99a0e7291d8fbd394253e19b036")
 
     // An array of previously used enclaves that we should try and restore
     // key material from during registration. These must be ordered from
     // newest to oldest, so we check the latest enclaves for backups before
     // checking earlier enclaves.
     public let svr2PreviousEnclaves: [MrEnclave] = [
-        MrEnclave("29cd63c87bea751e3bfd0fbd401279192e2e5c99948b4ee9437eafc4968355fb"),
+        MrEnclave("a75542d82da9f6914a1e31f8a7407053b99cc99a0e7291d8fbd394253e19b036"),
     ]
 
     public let applicationGroup = "group." + Bundle.main.bundleIdPrefix + ".signal.group"

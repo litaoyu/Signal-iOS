@@ -163,7 +163,7 @@ extension BackupArchive.ContactAddress {
 
 extension BackupArchive.ContactAddress: BackupArchive.LoggableId {
     public var typeLogString: String {
-        return "SignalRecipient"
+        return "NoteletRecipient"
     }
 
     public var idLogString: String {
