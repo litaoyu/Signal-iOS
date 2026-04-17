@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Dung lượng lưu trữ sắp hết";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Dữ liệu từ thiết bị cũ của bạn không thể được khôi phục. Hãy gửi bản ghi chép lỗi đến support@Notelet.org để chúng tôi có thể khắc phục vấn đề. Nếu bạn cài đặt lại Signal, lịch sử trò chuyện của bạn sẽ không được lưu giữ.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Dữ liệu từ thiết bị cũ của bạn không thể được khôi phục. Hãy gửi bản ghi chép lỗi đến support@Notelet.org để chúng tôi có thể khắc phục vấn đề. Nếu bạn cài đặt lại Notelet, lịch sử trò chuyện của bạn sẽ không được lưu giữ.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Không thể Hoàn tất Quá trình chuyển";
@@ -614,7 +614,7 @@
 "BACKUP_ONBOARDING_INTRO_NOT_NOW_TOAST" = "Bạn có thể bật sao lưu trong Cài đặt.";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Sao lưu tin nhắn và tập tin đa phương tiện với dịch vụ lưu trữ bảo mật, được mã hóa đầu cuối của Notelet. Không bao giờ bị mất tin nhắn khi bạn có điện thoại mới hoặc cài đặt lại Signal.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Sao lưu tin nhắn và tập tin đa phương tiện với dịch vụ lưu trữ bảo mật, được mã hóa đầu cuối của Notelet. Không bao giờ bị mất tin nhắn khi bạn có điện thoại mới hoặc cài đặt lại Notelet.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
 "BACKUP_ONBOARDING_INTRO_TITLE" = "Sao lưu bảo mật Notelet";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Mã khóa khôi phục";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Gói đăng ký sao lưu đã hết hạn vì chúng tôi không thể gia hạn với phương thức thanh toán của bạn.\n\nBạn có thể đăng ký lại gói để tiếp tục sao lưu tập tin đa phương tiện. Bạn sẽ tiếp tục có quyền truy cập gói Sao lưu Signal miễn phí.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Gói đăng ký sao lưu đã hết hạn vì chúng tôi không thể gia hạn với phương thức thanh toán của bạn.\n\nBạn có thể đăng ký lại gói để tiếp tục sao lưu tập tin đa phương tiện. Bạn sẽ tiếp tục có quyền truy cập gói Sao lưu Notelet miễn phí.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Gói đăng ký sao lưu đã hết hạn vì bạn không còn sử dụng TestFlight.\n\nBạn có thể đăng ký lại gói để tiếp tục sao lưu tập tin đa phương tiện. Bạn sẽ tiếp tục có quyền truy cập gói Sao lưu Signal miễn phí.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Gói đăng ký sao lưu đã hết hạn vì bạn không còn sử dụng TestFlight.\n\nBạn có thể đăng ký lại gói để tiếp tục sao lưu tập tin đa phương tiện. Bạn sẽ tiếp tục có quyền truy cập gói Sao lưu Notelet miễn phí.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "Quản lý bản sao lưu";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Đã tắt sao lưu và dữ liệu của bạn đã được xóa khỏi dịch vụ lưu trữ bảo mật của Notelet.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Đã tắt sao lưu, tập tin đa phương tiện không có trên thiết bị sẽ bắt đầu tải xuống. Khi tải xong, dữ liệu của bạn sẽ được xóa khỏi dịch vụ lưu trữ bảo mật của Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Đã tắt sao lưu, tập tin đa phương tiện không có trên thiết bị sẽ bắt đầu tải xuống. Khi tải xong, dữ liệu của bạn sẽ được xóa khỏi dịch vụ lưu trữ bảo mật của Notelet.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "Có lỗi xảy ra. Vui lòng liên hệ bộ phận hỗ trợ.";
@@ -857,7 +857,7 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "Tắt và xóa bản sao lưu?";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Bạn có tập tin đa phương tiện trong bản sao lưu không có trên thiết bị này. Bản sao lưu của bạn có thể cần một khoảng thời gian dài để tải, tiếp tục mở Signal để tránh làm gián đoạn.";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Bạn có tập tin đa phương tiện trong bản sao lưu không có trên thiết bị này. Bản sao lưu của bạn có thể cần một khoảng thời gian dài để tải, tiếp tục mở Notelet để tránh làm gián đoạn.";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "Đang tải bản sao lưu của bạn";
@@ -953,7 +953,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "Tải xuống sau";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Bạn có tập tin đa phương tiện trong bản sao lưu không có trên thiết bị này. Quá trình tải xuống có thể mất một thời gian, hãy tiếp tục mở Signal để tránh làm gián đoạn quá trình tải.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Bạn có tập tin đa phương tiện trong bản sao lưu không có trên thiết bị này. Quá trình tải xuống có thể mất một thời gian, hãy tiếp tục mở Notelet để tránh làm gián đoạn quá trình tải.";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "Tải ngay";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "Đã tạm ngừng tải lên: chờ kết nối Wi-Fi";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Bạn đã đạt %1$@ giới hạn dung lượng có trong gói sao lưu. Để sao lưu cuộc trò chuyện và tập tin đa phương tiện mới, hãy giải phóng %2$@ dung lượng trong Signal rồi nhấn \"Sao lưu ngay\".";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Bạn đã đạt %1$@ giới hạn dung lượng có trong gói sao lưu. Để sao lưu cuộc trò chuyện và tập tin đa phương tiện mới, hãy giải phóng %2$@ dung lượng trong Notelet rồi nhấn \"Sao lưu ngay\".";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "Đang tải lên %1$@ trên tổng số %2$@ (%3$@)";
@@ -1040,7 +1040,7 @@
 "BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_TITLE" = "Chào mừng đến với Sao lưu bảo mật Notelet. Bắt đầu sao lưu ngay.";
 
 /* Message for a sheet shown when your Backup subscription fails to renew. */
-"BACKUP_SUBSCRIPTION_FAILED_TO_RENEW_SHEET_MESSAGE" = "Kiểm tra để đảm bảo rằng phương thức thanh toán của bạn đã được cập nhật thông tin mới nhất. Nhấn vào Quản lý gói đăng ký > Signal > Cập nhật phương thức thanh toán.";
+"BACKUP_SUBSCRIPTION_FAILED_TO_RENEW_SHEET_MESSAGE" = "Kiểm tra để đảm bảo rằng phương thức thanh toán của bạn đã được cập nhật thông tin mới nhất. Nhấn vào Quản lý gói đăng ký > Notelet > Cập nhật phương thức thanh toán.";
 
 /* Primary button for a sheet shown when your Backup subscription fails to renew. */
 "BACKUP_SUBSCRIPTION_FAILED_TO_RENEW_SHEET_PRIMARY_BUTTON" = "Quản lý Gói Ủng hộ";
@@ -1079,7 +1079,7 @@
 "BADGE_DETAILS_TITLE_FOR_SUPPORTER" = "%1$@ ủng hộ Notelet";
 
 /* String explaining to the user that their boost badge has expired on the badge expiry sheet. */
-"BADGE_EXPIRED_BOOST_BODY" = "Huy hiệu Nhà Ủng hộ của bạn đã hết hạn và không còn hiển thị trên hồ sơ.\n\nBạn có thể tiếp tục sử dụng Notelet nhưng để hỗ trợ cho nền tảng công nghệ được xây dựng cho bạn, hãy cân nhắc việc ủng hộ hàng tháng cho Signal.";
+"BADGE_EXPIRED_BOOST_BODY" = "Huy hiệu Nhà Ủng hộ của bạn đã hết hạn và không còn hiển thị trên hồ sơ.\n\nBạn có thể tiếp tục sử dụng Notelet nhưng để hỗ trợ cho nền tảng công nghệ được xây dựng cho bạn, hãy cân nhắc việc ủng hộ hàng tháng cho Notelet.";
 
 /* String explaining to the user that their boost badge has expired while they are a current subscription sustainer on the badge expiry sheet. */
 "BADGE_EXPIRED_BOOST_CURRENT_SUSTAINER_BODY" = "Huy hiệu Nhà Ủng hộ của bạn đã hết hạn và không còn hiển thị trên hồ sơ.\n\nBạn có thể tái kích hoạt huy hiệu Nhà Ủng hộ của mình trong 30 ngày chỉ với khoản ủng hộ một lần.";
@@ -1400,7 +1400,7 @@
 "CALL_QUALITY_SURVEY_COMPLETION_TOAST" = "Cảm ơn góp ý của bạn!";
 
 /* Footer text explaining custom issue descriptions in the call quality survey */
-"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Vui lòng cung cấp mọi thông tin liên quan đến vấn đề. Mọi thông tin bạn chia sẻ ở đây sẽ được bảo mật và chỉ được sử dụng để tăng chất lượng cuộc gọi Signal.";
+"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Vui lòng cung cấp mọi thông tin liên quan đến vấn đề. Mọi thông tin bạn chia sẻ ở đây sẽ được bảo mật và chỉ được sử dụng để tăng chất lượng cuộc gọi Notelet.";
 
 /* Placeholder text for the custom issue entry in the call quality survey */
 "CALL_QUALITY_SURVEY_CUSTOM_ISSUE_PLACEHOLDER" = "Mô tả vấn đề của bạn";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM/YY";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet không thu thập hay lưu trữ thông tin cá nhân của bạn khi bạn gửi khoản ủng hộ.\n\nChúng tôi sử dụng Stripe làm hệ thống xử lý thanh toán để nhận các khoản ủng hộ. Chúng tôi không truy cập, lưu trữ, hoặc lưu bất kỳ thông tin nào bạn cung cấp cho phía hệ thống.\n\nSignal không và không thể liên kết thông tin thanh toán với tài khoản Signal của bạn.\n\nCảm ơn sự đóng góp của bạn!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet không thu thập hay lưu trữ thông tin cá nhân của bạn khi bạn gửi khoản ủng hộ.\n\nChúng tôi sử dụng Stripe làm hệ thống xử lý thanh toán để nhận các khoản ủng hộ. Chúng tôi không truy cập, lưu trữ, hoặc lưu bất kỳ thông tin nào bạn cung cấp cho phía hệ thống.\n\nNotelet không và không thể liên kết thông tin thanh toán với tài khoản Notelet của bạn.\n\nCảm ơn sự đóng góp của bạn!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Thông tin của bạn là riêng tư";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "Tiếp tục";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Việc sao lưu tập tin đa phương tiện của bạn bằng dữ liệu di động có thể phát sinh phí dữ liệu. Bản sao lưu của bạn có thể cần một khoảng thời gian dài để tải lên, tiếp tục mở Signal để tránh làm gián đoạn.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Việc sao lưu tập tin đa phương tiện của bạn bằng dữ liệu di động có thể phát sinh phí dữ liệu. Bản sao lưu của bạn có thể cần một khoảng thời gian dài để tải lên, tiếp tục mở Notelet để tránh làm gián đoạn.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "Tiếp tục tải bằng dữ liệu di động?";
@@ -3182,7 +3182,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ đã gửi khoản ủng hộ cho Notelet thay cho bạn! Thể hiện sự ủng hộ của bạn cho Notelet trên hồ sơ của mình.";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "Là một tổ chức phi lợi nhuận độc lập, Notelet cam kết cung cấp dịch vụ nhắn tin và cuộc gọi riêng tư. Không quảng cáo, không trình theo dấu, không theo dõi. Ủng hộ ngay hôm nay để hỗ trợ Signal.";
+"DONATION_READ_MORE_SHEET_BODY" = "Là một tổ chức phi lợi nhuận độc lập, Notelet cam kết cung cấp dịch vụ nhắn tin và cuộc gọi riêng tư. Không quảng cáo, không trình theo dấu, không theo dõi. Ủng hộ ngay hôm nay để hỗ trợ Notelet.";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "Nhận huy hiệu (không bắt buộc) trên hồ sơ của bạn khi bạn ủng hộ";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Chia sẻ biên lai";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Cảm ơn bạn đã ủng hộ cho Notelet. Đóng góp của bạn giúp duy trì sứ mệnh phát triển công nghệ mã nguồn mở hướng tới quyền riêng tư nhằm bảo vệ sự tự do biểu đạt và làm nền tảng cho môi trường giao tiếp bảo mật cho hàng triệu người trên thế giới. Nếu bạn là một cư dân của Hoa Kỳ, vui lòng giữ biên lai này cho hồ sơ thuế. Signal Technology Foundation là một tổ chức phi lợi nhuận được miễn trừ nghĩa vụ thuế ở Hoa Kỳ theo mục 501c3 của Internal Revenue Code. Mã số thuế Liên Bang của chúng tôi là 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "Cảm ơn bạn đã ủng hộ cho Notelet. Đóng góp của bạn giúp duy trì sứ mệnh phát triển công nghệ mã nguồn mở hướng tới quyền riêng tư nhằm bảo vệ sự tự do biểu đạt và làm nền tảng cho môi trường giao tiếp bảo mật cho hàng triệu người trên thế giới. Nếu bạn là một cư dân của Hoa Kỳ, vui lòng giữ biên lai này cho hồ sơ thuế. Notelet Technology Foundation là một tổ chức phi lợi nhuận được miễn trừ nghĩa vụ thuế ở Hoa Kỳ theo mục 501c3 của Internal Revenue Code. Mã số thuế Liên Bang của chúng tôi là 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Khoản ủng hộ thay cho một người bạn";
@@ -3389,7 +3389,7 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Chào bạn,\n\nGần đây mình dùng Notelet để các cuộc trò chuyện trên iPhone được riêng tư. Bạn cũng cài dùng thử nhé, để yên tâm là chỉ có hai bên đọc được tin nhắn và nghe cuộc gọi.\n\nSignal có trên iPhone, Android và Máy tính. Tải ở đây nhé: %1$@\n\nSignal hoạt động như ứng dụng nhắn tin đang dùng. Mình có thể gửi ảnh và video, gọi, và tạo nhóm trò chuyện. Thú vị nhất là không ai có thể xem được bất kỳ nội dung nào, cả những người tạo ra Signal cũng không!\n\nBạn có thể đọc thêm về Signal tại đây: %2$@";
+"EMAIL_INVITE_BODY" = "Chào bạn,\n\nGần đây mình dùng Notelet để các cuộc trò chuyện trên iPhone được riêng tư. Bạn cũng cài dùng thử nhé, để yên tâm là chỉ có hai bên đọc được tin nhắn và nghe cuộc gọi.\n\nNotelet có trên iPhone, Android và Máy tính. Tải ở đây nhé: %1$@\n\nNotelet hoạt động như ứng dụng nhắn tin đang dùng. Mình có thể gửi ảnh và video, gọi, và tạo nhóm trò chuyện. Thú vị nhất là không ai có thể xem được bất kỳ nội dung nào, cả những người tạo ra Notelet cũng không!\n\nBạn có thể đọc thêm về Notelet tại đây: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Cùng chuyển sang sử dụng Notelet";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Bạn đã liên kết một thiết bị mới";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Để liên kết máy tính hoặc iPad với tài khoản Notelet này, đến mục Thiết bị đã liên kết và nhấn \"Liên kết thiết bị mới\" và quét lại mã QR. Đảm bảo bạn chỉ quét mã QR có nguồn gốc trực tiếp từ Signal.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Để liên kết máy tính hoặc iPad với tài khoản Notelet này, đến mục Thiết bị đã liên kết và nhấn \"Liên kết thiết bị mới\" và quét lại mã QR. Đảm bảo bạn chỉ quét mã QR có nguồn gốc trực tiếp từ Notelet.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Có vẻ như bạn đang cố liên kết một thiết bị Notelet. Nhấn tiếp tục và sau đó nhấn \"Liên kết thiết bị mới\" và quét lại mã QR.";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "Liên kết iPhone";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Nhấn \"Đăng kí iPad\" sẽ cho phép bạn tạo một tài khoản Notelet mới hoặc chuyển một tài khoản có sẵn sang iPad này. Thao tác này sẽ vô hiệu hóa Signal trên thiết bị được đăng kí với cùng số điện thoại.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Nhấn \"Đăng kí iPad\" sẽ cho phép bạn tạo một tài khoản Notelet mới hoặc chuyển một tài khoản có sẵn sang iPad này. Thao tác này sẽ vô hiệu hóa Notelet trên thiết bị được đăng kí với cùng số điện thoại.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "Nhấn \"Liên kết iPhone\" sẽ cho phép bạn kết nối điện thoại tới một tài khoản có sẵn. Liên kết điện thoại không được khuyên dùng và sẽ hạn chế một số tính năng như gọi điện.";
@@ -6767,13 +6767,13 @@
 "PIN_CREATION_DISABLE_CONFIRMATION_TITLE" = "Cảnh báo";
 
 /* The explanation in the 'pin creation' view. */
-"PIN_CREATION_EXPLANATION" = "Mã PIN mã hoá các thông tin được lưu trữ với Notelet để chỉ mình bạn có thể truy cập được. Thông tin người dùng, cài đặt, và các liên hệ sẽ được khôi phục khi bạn cài lại Signal. Bạn không cần điền PIN mỗi lần mở ứng dụng.";
+"PIN_CREATION_EXPLANATION" = "Mã PIN mã hoá các thông tin được lưu trữ với Notelet để chỉ mình bạn có thể truy cập được. Thông tin người dùng, cài đặt, và các liên hệ sẽ được khôi phục khi bạn cài lại Notelet. Bạn không cần điền PIN mỗi lần mở ứng dụng.";
 
 /* Learn more action on the pin creation view */
 "PIN_CREATION_LEARN_MORE" = "Tìm Hiểu Thêm về Mã PIN";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the text on that sheet. */
-"PIN_CREATION_LEARN_MORE_TEXT" = "Mã PIN giúp thông tin trên Notelet của bạn được mã hóa để bạn là người duy nhất có thể truy cập. Hồ sơ, các cài đặt và danh bạ sẽ được khôi phục khi bạn cài đặt lại Signal.";
+"PIN_CREATION_LEARN_MORE_TEXT" = "Mã PIN giúp thông tin trên Notelet của bạn được mã hóa để bạn là người duy nhất có thể truy cập. Hồ sơ, các cài đặt và danh bạ sẽ được khôi phục khi bạn cài đặt lại Notelet.";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the title on that sheet. */
 "PIN_CREATION_LEARN_MORE_TITLE" = "Về Mã PIN của Notelet";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "Quét Mã QR";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Để chuyển tài khoản này đến thiết bị mới, hãy nhấn \"Tiếp tục\" và quét mã QR bằng camera của Notelet. Đảm bảo bạn chỉ quét mã QR có nguồn gốc trực tiếp từ Signal.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Để chuyển tài khoản này đến thiết bị mới, hãy nhấn \"Tiếp tục\" và quét mã QR bằng camera của Notelet. Đảm bảo bạn chỉ quét mã QR có nguồn gốc trực tiếp từ Notelet.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "Đang trả lời %1$@. %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "Cần Hỗ trợ?";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "Mã pin của bạn là một mã có 4+ ký tự bạn đã tạo, có thể là dãy số hoặc có cả số và chữ cái. Nếu bạn không nhớ được mã PIN, bạn cần chờ 7 ngày để đăng ký lại tài khoản của mình. Nếu bạn đã kích hoạt Sao lưu bảo mật Signal, bạn có thể tiến hành với Mã khóa khôi phục của mình.";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "Mã pin của bạn là một mã có 4+ ký tự bạn đã tạo, có thể là dãy số hoặc có cả số và chữ cái. Nếu bạn không nhớ được mã PIN, bạn cần chờ 7 ngày để đăng ký lại tài khoản của mình. Nếu bạn đã kích hoạt Sao lưu bảo mật Notelet, bạn có thể tiến hành với Mã khóa khôi phục của mình.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "Mã pin của bạn là một mã có 4+ ký tự bạn đã tạo, có thể là dãy số hoặc có cả số và chữ cái. Nếu bạn không nhớ được mã PIN, bạn có thể đăng ký và dùng tài khoản của bạn nhưng bạn sẽ mất một số cài đặt được lưu lại như thông tin người dùng. Nếu bạn đã kích hoạt Sao lưu bảo mật Signal, bạn có thể tiến hành với Mã khóa khôi phục của mình.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "Mã pin của bạn là một mã có 4+ ký tự bạn đã tạo, có thể là dãy số hoặc có cả số và chữ cái. Nếu bạn không nhớ được mã PIN, bạn có thể đăng ký và dùng tài khoản của bạn nhưng bạn sẽ mất một số cài đặt được lưu lại như thông tin người dùng. Nếu bạn đã kích hoạt Sao lưu bảo mật Notelet, bạn có thể tiến hành với Mã khóa khôi phục của mình.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "Mã pin của bạn là một mã có 4+ ký tự bạn đã tạo, có thể là dãy số hoặc có cả số và chữ cái. Nếu bạn không nhớ mã PIN của mình, bạn có thể tạo một mã mới. Bạn có thể đăng ký và sử dụng tài khoản của mình nhưng sẽ không còn các cài đặt đã lưu như thông tin hồ sơ. Nếu bạn đã kích hoạt Sao lưu bảo mật Signal, bạn có thể tiến hành với Mã khóa khôi phục của mình.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "Mã pin của bạn là một mã có 4+ ký tự bạn đã tạo, có thể là dãy số hoặc có cả số và chữ cái. Nếu bạn không nhớ mã PIN của mình, bạn có thể tạo một mã mới. Bạn có thể đăng ký và sử dụng tài khoản của mình nhưng sẽ không còn các cài đặt đã lưu như thông tin hồ sơ. Nếu bạn đã kích hoạt Sao lưu bảo mật Notelet, bạn có thể tiến hành với Mã khóa khôi phục của mình.";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "Mã PIN không chính xác";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "Không thể hoàn tất việc chuyển";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Có thể bạn đã nhập sai mã khóa khôi phục hoặc chưa hoàn tất ít nhất một lần sao lưu trên thiết bị cũ. \n\nHãy đảm bảo rằng bạn đang đăng ký bằng cùng số điện thoại và mã khóa khôi phục bạn đã lưu khi bật Sao lưu bảo mật Signal và xác nhận rằng thiết bị cũ của bạn đã hoàn tất quá trình sao lưu.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Có thể bạn đã nhập sai mã khóa khôi phục hoặc chưa hoàn tất ít nhất một lần sao lưu trên thiết bị cũ. \n\nHãy đảm bảo rằng bạn đang đăng ký bằng cùng số điện thoại và mã khóa khôi phục bạn đã lưu khi bật Sao lưu bảo mật Notelet và xác nhận rằng thiết bị cũ của bạn đã hoàn tất quá trình sao lưu.";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "Bạn đã hết số lượt thử mã khóa khôi phục. Vì lý do bảo mật, bạn chỉ có thể nhập mã khóa với số lượt nhất định. Hãy chờ 1 tiếng và thử lại.";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Ngưng kích hoạt Thanh toán";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Bạn được khuyến khích chuyển khoản quỹ của mình vào một địa chỉ ví khác trước khi ngưng kích hoạt thanh toán. Nếu bạn chọn không chuyển khoản quỹ của mình bây giờ, chúng sẽ giữ nguyên trong ví của bạn mà đã được liên kết với Signal nếu bạn kích hoạt lại thanh toán.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Bạn được khuyến khích chuyển khoản quỹ của mình vào một địa chỉ ví khác trước khi ngưng kích hoạt thanh toán. Nếu bạn chọn không chuyển khoản quỹ của mình bây giờ, chúng sẽ giữ nguyên trong ví của bạn mà đã được liên kết với Notelet nếu bạn kích hoạt lại thanh toán.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Số dư của bạn sẽ giữ nguyên trong ví của bạn mà đã được liên kết với Notelet nếu như bạn chọn kích hoạt lại thanh toán.";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Để đổi cài đặt này, đặt mục “Ai có thể thấy số của tôi” thành “Không ai cả”.";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Thiết lập tùy chọn “Ai có thể tìm thấy tôi bằng số điện thoại” thành “Không ai” sẽ khiến mọi người khó tìm được bạn hơn trên Signal.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Thiết lập tùy chọn “Ai có thể tìm thấy tôi bằng số điện thoại” thành “Không ai” sẽ khiến mọi người khó tìm được bạn hơn trên Notelet.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Bạn có chắc không?";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "Tắt Lời nhắc";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Đảm bảo bạn đã ghi nhớ hoặc lưu trữ mã PIN của mình vì mã này không thể được khôi phục. Nếu bạn quên mã PIN, bạn sẽ mất dữ liệu khi đăng ký lại tài khoản Signal của mình. ";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Đảm bảo bạn đã ghi nhớ hoặc lưu trữ mã PIN của mình vì mã này không thể được khôi phục. Nếu bạn quên mã PIN, bạn sẽ mất dữ liệu khi đăng ký lại tài khoản Notelet của mình. ";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Xác nhận mã PIN Notelet";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "Lời nhắc mã PIN";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "Mã PIN của bạn giúp bảo mật thông tin lưu giữ với Notelet để chỉ mình bạn mới có thể truy cập nó. Mã PIN của bạn không thể được khôi phục. Hồ sơ cá nhân của bạn, các cài đặt, và liên hệ sẽ khôi phục khi bạn cài đặt lại Signal.";
+"SETTINGS_PINS_FOOTER" = "Mã PIN của bạn giúp bảo mật thông tin lưu giữ với Notelet để chỉ mình bạn mới có thể truy cập nó. Mã PIN của bạn không thể được khôi phục. Hồ sơ cá nhân của bạn, các cài đặt, và liên hệ sẽ khôi phục khi bạn cài đặt lại Notelet.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "Thay đổi mã PIN của bạn.";
@@ -9797,7 +9797,7 @@
 "UNKNOWN_CONTACT_BLOCK_OFFER" = "Người dùng không có trong danh bạ của bạn. Bạn có muốn chặn người này không?";
 
 /* Info message recorded in conversation history when local user receives an unknown message from a linked device and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Một trong các thiết bị của bạn đã gửi một tin nhắn nhưng không thể xử lý và hiển thị ở đây vì tin nhắn này dùng một tính năng mới của Signal.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Một trong các thiết bị của bạn đã gửi một tin nhắn nhưng không thể xử lý và hiển thị ở đây vì tin nhắn này dùng một tính năng mới của Notelet.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. Embeds {{user's name or phone number}}. */
 "UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "%1$@ đã gửi cho bạn một tin nhắn nhưng không thể xử lý hoặc hiển thị vì sử dụng tính năng Notelet mới.";

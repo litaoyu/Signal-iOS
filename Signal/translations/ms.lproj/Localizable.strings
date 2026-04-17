@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Kekurangan Ruang Simpanan";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Data yang dipindahkan daripada peranti lama anda tidak dapat dipulihkan. Sila hantar log nyahpepijat ke support@Notelet.org supaya kami boleh menyelesaikan masalah ini. Jika anda memasang semula Signal, sejarah mesej anda akan hilang.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Data yang dipindahkan daripada peranti lama anda tidak dapat dipulihkan. Sila hantar log nyahpepijat ke support@Notelet.org supaya kami boleh menyelesaikan masalah ini. Jika anda memasang semula Notelet, sejarah mesej anda akan hilang.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Tidak Dapat Melengkapkan Pemindahan";
@@ -614,7 +614,7 @@
 "BACKUP_ONBOARDING_INTRO_NOT_NOW_TOAST" = "Anda boleh mendayakan sandaran dalam Tetapan.";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Sandarkan mesej dan media anda menggunakan perkhidmatan storan selamat yang disulitkan dari hujung ke hujung oleh Notelet. Mesej tidak akan pernah hilang apabila anda mendapat telefon baharu atau memasang semula Signal.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Sandarkan mesej dan media anda menggunakan perkhidmatan storan selamat yang disulitkan dari hujung ke hujung oleh Notelet. Mesej tidak akan pernah hilang apabila anda mendapat telefon baharu atau memasang semula Notelet.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
 "BACKUP_ONBOARDING_INTRO_TITLE" = "Sandaran Selamat Notelet";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Kunci pemulihan";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Langganan sandaran anda telah tamat tempoh kerana ia tidak dapat diperbaharui menggunakan kaedah pembayaran anda.\n\nUntuk meneruskan sandaran media, anda boleh melanggan semula. Anda akan terus mendapat akses kepada pelan Sandaran Signal percuma.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Langganan sandaran anda telah tamat tempoh kerana ia tidak dapat diperbaharui menggunakan kaedah pembayaran anda.\n\nUntuk meneruskan sandaran media, anda boleh melanggan semula. Anda akan terus mendapat akses kepada pelan Sandaran Notelet percuma.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Langganan sandaran anda telah tamat kerana anda tidak lagi menggunakan TestFlight.\n\nUntuk meneruskan sandaran media, anda boleh melanggan semula. Anda akan terus mendapat akses kepada pelan Sandaran Signal percuma.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Langganan sandaran anda telah tamat kerana anda tidak lagi menggunakan TestFlight.\n\nUntuk meneruskan sandaran media, anda boleh melanggan semula. Anda akan terus mendapat akses kepada pelan Sandaran Notelet percuma.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "Urus sandaran";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Sandaran telah dimatikan dan data anda telah dipadam daripada perkhidmatan storan selamat Notelet.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Sandaran telah dimatikan, sebarang media yang belum ada pada peranti sedang dimuat turun sekarang. Sebaik sahaja dimuat turun, data anda akan dipadam daripada perkhidmatan storan selamat Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Sandaran telah dimatikan, sebarang media yang belum ada pada peranti sedang dimuat turun sekarang. Sebaik sahaja dimuat turun, data anda akan dipadam daripada perkhidmatan storan selamat Notelet.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "Ralat telah berlaku. Sila hubungi sokongan.";
@@ -857,7 +857,7 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "Matikan dan padamkan sandaran?";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Anda mempunyai media dalam sandaran anda yang tiada pada peranti ini. Sandaran anda mungkin mengambil masa yang lama untuk dimuat turun, pastikan Signal dibuka untuk mengelakkan gangguan.";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Anda mempunyai media dalam sandaran anda yang tiada pada peranti ini. Sandaran anda mungkin mengambil masa yang lama untuk dimuat turun, pastikan Notelet dibuka untuk mengelakkan gangguan.";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "Memuat turun sandaran anda";
@@ -953,7 +953,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "Muat turun kemudian";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Anda mempunyai media dalam sandaran anda yang tiada pada peranti ini. Proses muat turun ini mungkin mengambil masa yang lama, pastikan Signal kekal dibuka untuk mengelakkan gangguan.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Anda mempunyai media dalam sandaran anda yang tiada pada peranti ini. Proses muat turun ini mungkin mengambil masa yang lama, pastikan Notelet kekal dibuka untuk mengelakkan gangguan.";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "Muat Turun Sekarang";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "Muat naik media dijeda: menunggu Wi-Fi";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Anda telah mencapai had storan %1$@ yang disertakan dengan pelan sandaran anda. Untuk membuat sandaran sembang dan media baharu, kosongkan %2$@ dalam Signal, kemudian ketik \"Sandar Sekarang.\"";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Anda telah mencapai had storan %1$@ yang disertakan dengan pelan sandaran anda. Untuk membuat sandaran sembang dan media baharu, kosongkan %2$@ dalam Notelet, kemudian ketik \"Sandar Sekarang.\"";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "Memuat naik %1$@ daripada %2$@ (%3$@)";
@@ -1400,7 +1400,7 @@
 "CALL_QUALITY_SURVEY_COMPLETION_TOAST" = "Terima kasih atas maklum balas anda!";
 
 /* Footer text explaining custom issue descriptions in the call quality survey */
-"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Sila sertakan sebarang butiran yang berkaitan dengan isu tersebut. Segala maklumat yang anda kongsikan di sini akan dirahsiakan dan hanya digunakan untuk membantu menambah baik panggilan di Signal.";
+"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Sila sertakan sebarang butiran yang berkaitan dengan isu tersebut. Segala maklumat yang anda kongsikan di sini akan dirahsiakan dan hanya digunakan untuk membantu menambah baik panggilan di Notelet.";
 
 /* Placeholder text for the custom issue entry in the call quality survey */
 "CALL_QUALITY_SURVEY_CUSTOM_ISSUE_PLACEHOLDER" = "Nyatakan isu anda";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "BB/TT";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet tidak mengumpul atau menyimpan sebarang maklumat peribadi anda semasa anda menderma.\n\nKami menggunakan Stripe sebagai pemproses pembayaran kami untuk menerima derma anda. Kami tidak mengakses atau menyimpan sebarang maklumat yang anda berikan kepada mereka.\n\nSignal tidak dan tidak boleh menyambung derma anda kepada akaun Signal anda.\n\nTerima kasih atas sokongan anda!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet tidak mengumpul atau menyimpan sebarang maklumat peribadi anda semasa anda menderma.\n\nKami menggunakan Stripe sebagai pemproses pembayaran kami untuk menerima derma anda. Kami tidak mengakses atau menyimpan sebarang maklumat yang anda berikan kepada mereka.\n\nNotelet tidak dan tidak boleh menyambung derma anda kepada akaun Notelet anda.\n\nTerima kasih atas sokongan anda!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Maklumat anda adalah peribadi";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "Sambung semula";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Menyandarkan media anda menggunakan data mudah alih boleh mengakibatkan caj data. Sandaran anda mungkin mengambil masa yang lama untuk dimuat turun, pastikan Signal dibuka untuk mengelakkan gangguan.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Menyandarkan media anda menggunakan data mudah alih boleh mengakibatkan caj data. Sandaran anda mungkin mengambil masa yang lama untuk dimuat turun, pastikan Notelet dibuka untuk mengelakkan gangguan.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "Sambung semula menggunakan data selular?";
@@ -2138,7 +2138,7 @@
 "CONTACT_SHARE_INVALID_CONTACT" = "Kenalan tidah sah.";
 
 /* Alert body when contacts disabled while trying to share a contact. */
-"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet perlukan akses kepada kenalan anda. Pergi ke Tetapan iOS dan hidupkan kenalan. Kenalan anda disulitkan dan tidak kelihatan kepada perkhidmatan Signal.";
+"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet perlukan akses kepada kenalan anda. Pergi ke Tetapan iOS dan hidupkan kenalan. Kenalan anda disulitkan dan tidak kelihatan kepada perkhidmatan Notelet.";
 
 /* Alert title when contacts disabled while trying to share a contact. */
 "CONTACT_SHARING_NO_ACCESS_TITLE" = "Benarkan Akses Kenalan";
@@ -3182,7 +3182,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ membuat derma kepada Notelet bagi pihak anda! Tunjukkan sokongan anda untuk Notelet pada profil anda.";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "Sebagai organisasi bukan untung yang bebas, Notelet komited terhadap pemesejan dan panggilan peribadi. Tiada iklan, tiada penjejak, tiada pengawasan. Derma hari ini untuk menyokong Signal.";
+"DONATION_READ_MORE_SHEET_BODY" = "Sebagai organisasi bukan untung yang bebas, Notelet komited terhadap pemesejan dan panggilan peribadi. Tiada iklan, tiada penjejak, tiada pengawasan. Derma hari ini untuk menyokong Notelet.";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "Dapatkan lencana pilihan pada profil anda apabila anda menderma";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Kongsi Resit";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Terima kasih kerana menyokong Notelet. Sumbangan anda membantu menampung misi membina teknologi privasi sumber terbuka yang melindungi pernyataan bebas dan membolehkan komunikasi global yang selamat untuk berjuta orang di seluruh dunia. Jika anda penduduk Amerika Syarikat, sila simpan resit ini untuk rekod cukai anda. Signal Technology Foundation merupakan organisasi bukan untung yang dikecualikan cukai di Amerika Syarikat di bawah seksyen 501c3 Kod Hasil dalam Negeri. ID Cukai Persekutuan kami ialah 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "Terima kasih kerana menyokong Notelet. Sumbangan anda membantu menampung misi membina teknologi privasi sumber terbuka yang melindungi pernyataan bebas dan membolehkan komunikasi global yang selamat untuk berjuta orang di seluruh dunia. Jika anda penduduk Amerika Syarikat, sila simpan resit ini untuk rekod cukai anda. Notelet Technology Foundation merupakan organisasi bukan untung yang dikecualikan cukai di Amerika Syarikat di bawah seksyen 501c3 Kod Hasil dalam Negeri. ID Cukai Persekutuan kami ialah 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Derma untuk Rakan";
@@ -3389,13 +3389,13 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Hei,\n\n Kebelakangan ini, saya menggunakan Notelet untuk memastikan sembang di iPhone saya kekal peribadi. Saya ingin anda memasangnya juga, jadi kita yakin yang hanya kita saja yang boleh membaca mesej atau mendengar panggilan kita.\n\nSignal tersedia untuk iPhone dan Android. Dapatkannya di sini: %1$@\n\nSignal berfungsi seperti aplikasi pemesejan yang anda gunakan sekarang. Kita boleh menghantar gambar dan video, membuat panggilan dan memulakan sembang kumpulan. Apa yang bagus, tiada orang lain dapat melihatnya, termasuklah orang yang mencipta Signal!\n\nAnda boleh membaca lebih lanjut mengenai Signal di sini: %2$@";
+"EMAIL_INVITE_BODY" = "Hei,\n\n Kebelakangan ini, saya menggunakan Notelet untuk memastikan sembang di iPhone saya kekal peribadi. Saya ingin anda memasangnya juga, jadi kita yakin yang hanya kita saja yang boleh membaca mesej atau mendengar panggilan kita.\n\nNotelet tersedia untuk iPhone dan Android. Dapatkannya di sini: %1$@\n\nNotelet berfungsi seperti aplikasi pemesejan yang anda gunakan sekarang. Kita boleh menghantar gambar dan video, membuat panggilan dan memulakan sembang kumpulan. Apa yang bagus, tiada orang lain dapat melihatnya, termasuklah orang yang mencipta Notelet!\n\nAnda boleh membaca lebih lanjut mengenai Notelet di sini: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Mari tukar ke Notelet";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Peranti anda tidak dikonfigurasi untuk menghantar e-mel. Untuk menghantar permintaan sokongan, sediakan e-mel pada peranti anda atau menghantar e-mel ke support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Peranti anda tidak dikonfigurasi untuk menghantar e-mel. Untuk menghantar permintaan sokongan, sediakan e-mel pada peranti anda atau menghantar e-mel ke support@notelet.org";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "E-mel tidak tersedia";
@@ -4997,7 +4997,7 @@
 "LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Menguruskan kenalan telefon tidak lagi tersedia pada iPad. Untuk menambah hubungan Notelet pada kenalan telefon anda, buka Notelet pada telefon anda.";
 
 /* Shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. */
-"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Menguruskan kenalan tidak lagi disokong pada iPad. Peranti ini akan terus menyegerakkan sebarang perubahan kepada senarai kenalan anda di Signal pada telefon anda.";
+"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Menguruskan kenalan tidak lagi disokong pada iPad. Peranti ini akan terus menyegerakkan sebarang perubahan kepada senarai kenalan anda di Notelet pada telefon anda.";
 
 /* A button shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. Tapping it opens a website with more details. */
 "LINKED_DEVICE_MANAGE_CONTACTS_LEARN_MORE" = "Ketahui lebih lanjut";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Anda Memautkan Peranti Baharu";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Untuk memautkan desktop atau iPad ke akaun Notelet ini, pergi ke Peranti Dipautkan, kemudian ketik \"Pautkan Peranti Baharu\" dan imbas semula kod QR. Pastikan anda hanya mengimbas kod QR yang diberikan secara terus oleh Signal.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Untuk memautkan desktop atau iPad ke akaun Notelet ini, pergi ke Peranti Dipautkan, kemudian ketik \"Pautkan Peranti Baharu\" dan imbas semula kod QR. Pastikan anda hanya mengimbas kod QR yang diberikan secara terus oleh Notelet.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Nampaknya anda sedang cuba memautkan peranti Notelet. Ketik teruskan, kemudian ketik \"Pautkan Peranti Baharu\" dan imbas semula kod QR.";
@@ -5969,7 +5969,7 @@
 "ONBOARDING_CHOOSE_RESTORE_METHOD_DESCRIPTION" = "Pilih cara anda ingin memulihkan sejarah mesej dan data akaun anda.";
 
 /* Message body displayed to a user during registration if there are no restore options available. */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Oleh kerana anda bertukar daripada Android ke iOS, satu-satunya cara untuk memindahkan mesej dan media anda ialah dengan mendayakan Sandaran Signal pada peranti lama anda.";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Oleh kerana anda bertukar daripada Android ke iOS, satu-satunya cara untuk memindahkan mesej dan media anda ialah dengan mendayakan Sandaran Notelet pada peranti lama anda.";
 
 /* Title displayed to a user during registration if there are no restore options available. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_TITLE" = "Tiada Sandaran untuk Dipulihkan";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "Pautkan iPhone";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Mengetik “Daftar iPad” akan membenarkan anda mencipta akaun Notelet baru atau mengalihkan akaun sedia ada kepada iPad ini. Ini akan menyahdayakan Signal pada sebarang peranti lain yang sedang didaftarkan dengan nombor telefon yang sama.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Mengetik “Daftar iPad” akan membenarkan anda mencipta akaun Notelet baru atau mengalihkan akaun sedia ada kepada iPad ini. Ini akan menyahdayakan Notelet pada sebarang peranti lain yang sedang didaftarkan dengan nombor telefon yang sama.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "Mengetik “Pautkan iPhone” akan membenarkan anda menyambungkan telefon anda kepada akaun sedia ada. Memautkan telefon anda secara umum tidak dicadangkan dan akan mengehadkan sesetengah fungsi, seperti panggilan.";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "Imbas Kod QR";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Untuk memindahkan akaun ini ke peranti baharu, ketik \"Teruskan\" dan imbas kod QR dengan kamera Notelet. Pastikan anda hanya mengimbas kod QR yang diberikan secara terus oleh Signal.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Untuk memindahkan akaun ini ke peranti baharu, ketik \"Teruskan\" dan imbas kod QR dengan kamera Notelet. Pastikan anda hanya mengimbas kod QR yang diberikan secara terus oleh Notelet.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "Membalas kepada %1$@. %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "Perlukan Bantuan?";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN anda ialah kod 4+ digit yang boleh mengandungi angka atau abjad angka. Jika anda terlupa PIN, anda perlu menunggu 7 hari sebelum boleh mendaftar semula akaun anda. Jika anda mendayakan Sandaran Selamat Signal, anda boleh meneruskan dengan Kunci Pemulihan anda.";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN anda ialah kod 4+ digit yang boleh mengandungi angka atau abjad angka. Jika anda terlupa PIN, anda perlu menunggu 7 hari sebelum boleh mendaftar semula akaun anda. Jika anda mendayakan Sandaran Selamat Notelet, anda boleh meneruskan dengan Kunci Pemulihan anda.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN anda ialah kod 4+ digit yang boleh mengandungi angka atau abjad angka. Jika anda terlupa PIN, anda masih boleh mendaftar dan menggunakan akaun anda, tetapi sesetengah tetapan yang disimpan seperti maklumat profil akan hilang. Jika anda mendayakan Sandaran Selamat Signal, anda boleh meneruskan dengan Kunci Pemulihan anda.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN anda ialah kod 4+ digit yang boleh mengandungi angka atau abjad angka. Jika anda terlupa PIN, anda masih boleh mendaftar dan menggunakan akaun anda, tetapi sesetengah tetapan yang disimpan seperti maklumat profil akan hilang. Jika anda mendayakan Sandaran Selamat Notelet, anda boleh meneruskan dengan Kunci Pemulihan anda.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN anda ialah kod 4+ digit yang boleh mengandungi angka atau abjad angka. Jika anda terlupa PIN, anda boleh mencipta yang baharu. Anda boleh mendaftar dan menggunakan akaun anda, tetapi beberapa tetapan yang disimpan seperti maklumat profil akan hilang. Jika anda mendayakan Sandaran Selamat Signal, anda boleh meneruskan dengan Kunci Pemulihan anda.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN anda ialah kod 4+ digit yang boleh mengandungi angka atau abjad angka. Jika anda terlupa PIN, anda boleh mencipta yang baharu. Anda boleh mendaftar dan menggunakan akaun anda, tetapi beberapa tetapan yang disimpan seperti maklumat profil akan hilang. Jika anda mendayakan Sandaran Selamat Notelet, anda boleh meneruskan dengan Kunci Pemulihan anda.";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "PIN tidak betul";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "Tidak dapat menyelesaikan pemindahan";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Anda mungkin telah memasukkan kunci pemulihan anda dengan salah atau anda belum melengkapkan sekurang-kurangnya satu sandaran pada peranti lama anda. \n\nPastikan anda mendaftar dengan nombor telefon dan kunci pemulihan yang sama yang anda simpan semasa mendayakan Sandaran Selamat Signal dan sahkan bahawa peranti lama anda telah melengkapkan sandaran.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Anda mungkin telah memasukkan kunci pemulihan anda dengan salah atau anda belum melengkapkan sekurang-kurangnya satu sandaran pada peranti lama anda. \n\nPastikan anda mendaftar dengan nombor telefon dan kunci pemulihan yang sama yang anda simpan semasa mendayakan Sandaran Selamat Notelet dan sahkan bahawa peranti lama anda telah melengkapkan sandaran.";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "Anda telah kehabisan percubaan untuk kunci pemulihan. Demi keselamatan anda, bilangan percubaan yang boleh dibuat adalah terhad. Tunggu 1 jam dan cuba lagi.";
@@ -8162,7 +8162,7 @@
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_COUNTRY" = "Lokasi";
 
 /* Table footer for the 'censorship circumvention' section when censorship circumvention can be manually enabled. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Jika didayakan, Notelet akan cuba memintas penapisan. Jangan mendayakan ciri ini melainkan jika anda berada di lokasi di mana Signal ditapis.";
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Jika didayakan, Notelet akan cuba memintas penapisan. Jangan mendayakan ciri ini melainkan jika anda berada di lokasi di mana Notelet ditapis.";
 
 /* Table footer for the 'censorship circumvention' section shown when censorship circumvention has been auto-enabled based on local phone number. */
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_AUTO_ENABLED" = "Pemintasan penapisan telah diaktifkan berdasarkan nombor telefon akaun anda.";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Nyahaktifkan Pembayaran";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Sebaiknya pindahkan dana anda ke alamat dompet lain sebelum menyahaktifkan pembayaran. Sekiranya anda memilih untuk tidak memindahkan dana anda sekarang, dana anda akan kekal dalam dompet anda yang dipautkan ke Signal jika anda mengaktifkan semula pembayaran.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Sebaiknya pindahkan dana anda ke alamat dompet lain sebelum menyahaktifkan pembayaran. Sekiranya anda memilih untuk tidak memindahkan dana anda sekarang, dana anda akan kekal dalam dompet anda yang dipautkan ke Notelet jika anda mengaktifkan semula pembayaran.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Baki anda akan kekal dalam dompet anda yang dipautkan ke Notelet jika anda memilih untuk mengaktifkan semula pembayaran.";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Untuk menukar tetapan ini, tetapkan \"Siapa yang boleh lihat nombor saya\" kepada \"Tiada sesiapa\".";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Menetapkan \"Siapa boleh cari saya dengan nombor telefon\" kepada \"Tiada sesiapa\" akan menyukarkan orang untuk cari anda di Signal.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Menetapkan \"Siapa boleh cari saya dengan nombor telefon\" kepada \"Tiada sesiapa\" akan menyukarkan orang untuk cari anda di Notelet.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Adakah Anda pasti?";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "Matikan Peringatan";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Pastikan anda mengingati atau menyimpan PIN anda dengan selamat kerana ia tidak dapat dipulihkan. Jika anda lupa PIN anda, anda akan kehilangan data apabila mendaftar semula akaun Signal anda.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Pastikan anda mengingati atau menyimpan PIN anda dengan selamat kerana ia tidak dapat dipulihkan. Jika anda lupa PIN anda, anda akan kehilangan data apabila mendaftar semula akaun Notelet anda.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Sahkan PIN Notelet anda";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "Peringatan PIN";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "PIN memastikan maklumat yang disimpan dengan Notelet disulitkan supaya hanya anda boleh mengaksesnya. PIN anda tidak dapat dipulihkan. Profil, tetapan dan kenalan anda dipulihkan apabila anda memasang semula Signal.";
+"SETTINGS_PINS_FOOTER" = "PIN memastikan maklumat yang disimpan dengan Notelet disulitkan supaya hanya anda boleh mengaksesnya. PIN anda tidak dapat dipulihkan. Profil, tetapan dan kenalan anda dipulihkan apabila anda memasang semula Notelet.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "Tukar PIN anda";
@@ -9797,7 +9797,7 @@
 "UNKNOWN_CONTACT_BLOCK_OFFER" = "Pengguna tiada dalam kenalan anda. Adakah anda mahu menyekat pengguna tersebut?";
 
 /* Info message recorded in conversation history when local user receives an unknown message from a linked device and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Salah satu peranti anda menghantar mesej yang tidak dapat diproses atau dipaparkan di sini kerana menggunakan ciri Signal baru.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Salah satu peranti anda menghantar mesej yang tidak dapat diproses atau dipaparkan di sini kerana menggunakan ciri Notelet baru.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. Embeds {{user's name or phone number}}. */
 "UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "%1$@ telah menghantar anda satu mesej yang tidak dapat diproses atau dipaparkan kerana ia menggunakan ciri Notelet yang baru.";

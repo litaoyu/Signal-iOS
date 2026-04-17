@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Depolama Alanı Düşük";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Eski cihazından aktarılan veri geri yüklenemiyor. Lütfen bu sorunu çözmemiz için support@Notelet.org adresine hata günlüğünü gönder. Eğer Signal'ı geri yüklersen, ileti geçmişin kaybolabilir.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Eski cihazından aktarılan veri geri yüklenemiyor. Lütfen bu sorunu çözmemiz için support@Notelet.org adresine hata günlüğünü gönder. Eğer Notelet'ı geri yüklersen, ileti geçmişin kaybolabilir.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Aktarım Tamamlanamadı";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Kurtarma Anahtarı";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Ödeme yönteminle yenilenemediği için yedekleme aboneliğinin süresi doldu.\n\nMedya yedeklemeye devam etmek için yeniden abone olabilirsin. Ücretsiz Signal Yedeklemeleri planına erişmeye devam edeceksin.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Ödeme yönteminle yenilenemediği için yedekleme aboneliğinin süresi doldu.\n\nMedya yedeklemeye devam etmek için yeniden abone olabilirsin. Ücretsiz Notelet Yedeklemeleri planına erişmeye devam edeceksin.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Artık TestFlight kullanmadığın için yedekleme aboneliğinin süresi doldu.\n\nMedya yedeklemeye devam etmek için yeniden abone olabilirsin. Ücretsiz Signal Yedeklemeleri planına erişmeye devam edeceksin.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Artık TestFlight kullanmadığın için yedekleme aboneliğinin süresi doldu.\n\nMedya yedeklemeye devam etmek için yeniden abone olabilirsin. Ücretsiz Notelet Yedeklemeleri planına erişmeye devam edeceksin.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "Yedeklemeleri Yönet";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Yedeklemeler kapatıldı ve verilerin Notelet'ın güvenli depolama hizmetinden silindi.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Yedeklemeler kapatıldı, cihazda bulunmayan medya dosyaları indiriliyor. Verilerin indirildikten sonra Signal'ın güvenli depolama hizmetinden silinecektir.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Yedeklemeler kapatıldı, cihazda bulunmayan medya dosyaları indiriliyor. Verilerin indirildikten sonra Notelet'ın güvenli depolama hizmetinden silinecektir.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "Bir hata oluştu. Lütfen destek ekibiyle iletişime geç.";
@@ -857,7 +857,7 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "Yedeklemeler kapatılıp silinsin mi?";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Yedeklemende bu cihazda olmayan medya var. Yedeklemenin indirilmesi uzun sürebilir, kesintiye uğramasını önlemek için Signal'ı açık tut.";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Yedeklemende bu cihazda olmayan medya var. Yedeklemenin indirilmesi uzun sürebilir, kesintiye uğramasını önlemek için Notelet'ı açık tut.";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "Yedeklemen indiriliyor";
@@ -953,7 +953,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "Daha sonra indir";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Yedeklemende bu cihazda olmayan medya var. Bunun indirilmesi uzun sürebilir, indirmenin kesintiye uğramasını önlemek için Signal'i açık tut.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Yedeklemende bu cihazda olmayan medya var. Bunun indirilmesi uzun sürebilir, indirmenin kesintiye uğramasını önlemek için Notelet'i açık tut.";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "Şimdi İndir";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "Medya yükleme duraklatıldı: Wi-Fi bekleniyor";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Yedekleme planına dahil olan %1$@ depolama sınırına ulaştın. Yeni sohbetleri ve medyayı yedeklemek için Signal'da %2$@ alan boşalt ve ardından \"Şimdi Yedekle\"ye dokun.";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Yedekleme planına dahil olan %1$@ depolama sınırına ulaştın. Yeni sohbetleri ve medyayı yedeklemek için Notelet'da %2$@ alan boşalt ve ardından \"Şimdi Yedekle\"ye dokun.";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "%1$@/%2$@ yükleniyor (%3$@)";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "AA/YY";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Bağış yaptığında Notelet kişisel bilgilerini toplamaz veya saklamaz.\n\nBağışlarını almak için ödeme işlemcimiz olarak Stripe'ı kullanıyoruz. Onlara sağladığın bilgilerin hiçbirine erişmiyoruz. Bilgilerini saklamıyor veya kaydetmiyoruz.\n\nSignal, yaptığın bağışı ve buna dair bilgileri Signal hesabın ile bağlamaz, bağlayamaz.\n\nDesteğin için teşekkürler!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Bağış yaptığında Notelet kişisel bilgilerini toplamaz veya saklamaz.\n\nBağışlarını almak için ödeme işlemcimiz olarak Stripe'ı kullanıyoruz. Onlara sağladığın bilgilerin hiçbirine erişmiyoruz. Bilgilerini saklamıyor veya kaydetmiyoruz.\n\nNotelet, yaptığın bağışı ve buna dair bilgileri Notelet hesabın ile bağlamaz, bağlayamaz.\n\nDesteğin için teşekkürler!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Bilgilerin gizlidir";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "Devam Et";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Hücresel veri kullanarak medyanın yedeklenmesi veri ücretlerine neden olabilir. Yedeklemenin yüklenmesi uzun sürebilir, kesintiye uğramasını önlemek için Signal'ı açık tut.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Hücresel veri kullanarak medyanın yedeklenmesi veri ücretlerine neden olabilir. Yedeklemenin yüklenmesi uzun sürebilir, kesintiye uğramasını önlemek için Notelet'ı açık tut.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "Hücresel Veri Kullanımına Devam Edilsin mi?";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Makbuzu Paylaş";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Notelet'i desteklediğiniz için teşekkür ederiz. Katkınız, ifade özgürlüğünü koruyan ve dünya çapında milyonlarca kişi için güvenli küresel iletişim sağlayan açık kaynaklı gizlilik teknolojisi geliştirme misyonunu desteklemeye yardımcı olur. Amerika Birleşik Devletleri'nde ikamet ediyorsanız, lütfen bu makbuzu vergi kayıtlarınız için saklayın. Signal Technology Foundation, Amerika Birleşik Devletleri'nde İç Gelir Yasası'nın 501c3 bölümü kapsamında vergiden muaf, kâr amacı gütmeyen bir kuruluştur. Federal Vergi Kimliğimiz 82-4506840'tır.";
+"DONATION_RECEIPT_FOOTER" = "Notelet'i desteklediğiniz için teşekkür ederiz. Katkınız, ifade özgürlüğünü koruyan ve dünya çapında milyonlarca kişi için güvenli küresel iletişim sağlayan açık kaynaklı gizlilik teknolojisi geliştirme misyonunu desteklemeye yardımcı olur. Amerika Birleşik Devletleri'nde ikamet ediyorsanız, lütfen bu makbuzu vergi kayıtlarınız için saklayın. Notelet Technology Foundation, Amerika Birleşik Devletleri'nde İç Gelir Yasası'nın 501c3 bölümü kapsamında vergiden muaf, kâr amacı gütmeyen bir kuruluştur. Federal Vergi Kimliğimiz 82-4506840'tır.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Arkadaşın için bağış";
@@ -3389,7 +3389,7 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Merhaba,\n\nSon zamanlarda iPhone'umdaki sohbetlerimi gizli tutmak için Notelet kullanıyorum. Senin de Notelet kullanmanı isterim böylece mesajlarımızın ve aramalarımızın sadece aramızda kaldığından emin olabiliriz.\n\nSignal iPhone, Android ve Desktop için kullanılabilir. Uygulamayı bu adresten indirebilirsin: %1$@\n\nSignal mevcut mesajlaşma uygulaman gibi çalışır. Görüntü ve video gönderebilir, arama yapabilir ve grup sohbetlerine başlayabiliriz. En iyi yanı ise Signal'i yaratanlar dahil hiç kimsenin ne yazdığımızı göremeyecek olması!\n\nSignal hakkında daha fazla bilgi için burayı ziyaret edebilirsin: %2$@";
+"EMAIL_INVITE_BODY" = "Merhaba,\n\nSon zamanlarda iPhone'umdaki sohbetlerimi gizli tutmak için Notelet kullanıyorum. Senin de Notelet kullanmanı isterim böylece mesajlarımızın ve aramalarımızın sadece aramızda kaldığından emin olabiliriz.\n\nNotelet iPhone, Android ve Desktop için kullanılabilir. Uygulamayı bu adresten indirebilirsin: %1$@\n\nNotelet mevcut mesajlaşma uygulaman gibi çalışır. Görüntü ve video gönderebilir, arama yapabilir ve grup sohbetlerine başlayabiliriz. En iyi yanı ise Notelet'i yaratanlar dahil hiç kimsenin ne yazdığımızı göremeyecek olması!\n\nNotelet hakkında daha fazla bilgi için burayı ziyaret edebilirsin: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Haydi Notelet'e geçelim";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Yeni bir cihaz bağladın";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Bu Notelet hesabına bir masaüstü veya iPad bağlamak için Bağlı Cihazlar'a git ve \"Yeni Bir Cihaz Bağla\"ya dokunup kare kodu tekrar tara. Yalnızca doğrudan Signal'den gelen kare kodları taradığından emin ol.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Bu Notelet hesabına bir masaüstü veya iPad bağlamak için Bağlı Cihazlar'a git ve \"Yeni Bir Cihaz Bağla\"ya dokunup kare kodu tekrar tara. Yalnızca doğrudan Notelet'den gelen kare kodları taradığından emin ol.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Notelet cihazını bağlamaya çalışıyorsun gibi görünüyor. Devam et'e dokun ve ardından \"Yeni Bir Cihaz Bağla\"ya dokun ve kare kodu tekrar tara.";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "iPhone'u bağla";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "\"iPad'i kaydet\" tuşuna basarak yeni bir Notelet hesabı açabilir veya mevcut hesabınızı bu iPad'e aktarabilirsiniz. Bu işlem diğer cihazlarda aynı telefon numarası ile kaydedilmiş Signal'i devre dışı bırakacaktır.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "\"iPad'i kaydet\" tuşuna basarak yeni bir Notelet hesabı açabilir veya mevcut hesabınızı bu iPad'e aktarabilirsiniz. Bu işlem diğer cihazlarda aynı telefon numarası ile kaydedilmiş Notelet'i devre dışı bırakacaktır.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "\"iPhone'u bağla\" tuşuna basarak telefonunuzu mevcut bir hesaba bağlayabilirsiniz. Telefonunuzu bağlamanız genellikle önerilmez, aynı zamanda, arama gibi bazı özellikleri sınırlayacaktır.";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "Karekodu Tara";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Bu hesabı yeni bir cihaza aktarmak için \"Devam et\"e dokun ve Notelet kamera ile karekodu tara. Yalnızca doğrudan Signal'dan gelen karekodları taradığından emin ol.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Bu hesabı yeni bir cihaza aktarmak için \"Devam et\"e dokun ve Notelet kamera ile karekodu tara. Yalnızca doğrudan Notelet'dan gelen karekodları taradığından emin ol.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "%1$@ adlı kişiye cevaben. %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "Yardıma mı ihtiyacınız var?";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN'in, sayısal veya alfanümerik karakterler kullanarak oluşturduğun 4+ haneli bir koddur. PIN kodunu hatırlayamıyorsan, hesabını yeniden kaydetmek için 7 gün beklemen gerekir. Signal Güvenli Yedeklemeleri etkinleştirdiysen, Kurtarma Anahtarın ile devam edebilirsin.";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN'in, sayısal veya alfanümerik karakterler kullanarak oluşturduğun 4+ haneli bir koddur. PIN kodunu hatırlayamıyorsan, hesabını yeniden kaydetmek için 7 gün beklemen gerekir. Notelet Güvenli Yedeklemeleri etkinleştirdiysen, Kurtarma Anahtarın ile devam edebilirsin.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN'in, sayısal veya alfanümerik karakterler kullanarak oluşturduğun 4+ haneli bir koddur. PIN'ini hatırlamıyorsan, kaydolabilir ve hesabını kullanabilirsin ancak profil bilgilerin gibi bazı kaydedilmiş ayarları kaybedersin. Signal Güvenli Yedeklemeleri etkinleştirdiysen, Kurtarma Anahtarın ile devam edebilirsin.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN'in, sayısal veya alfanümerik karakterler kullanarak oluşturduğun 4+ haneli bir koddur. PIN'ini hatırlamıyorsan, kaydolabilir ve hesabını kullanabilirsin ancak profil bilgilerin gibi bazı kaydedilmiş ayarları kaybedersin. Notelet Güvenli Yedeklemeleri etkinleştirdiysen, Kurtarma Anahtarın ile devam edebilirsin.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN'in, sayısal veya alfanümerik karakterler kullanarak oluşturduğun 4+ haneli bir koddur. PIN'ini hatırlayamıyorsan yeni bir tane oluşturabilirsin. Hesabını kaydedebilir ve kullanabilirsin ancak profil bilgilerin gibi kaydedilmiş bazı ayarları kaybedersin. Signal Güvenli Yedeklemeleri etkinleştirdiysen, Kurtarma Anahtarın ile devam edebilirsin.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN'in, sayısal veya alfanümerik karakterler kullanarak oluşturduğun 4+ haneli bir koddur. PIN'ini hatırlayamıyorsan yeni bir tane oluşturabilirsin. Hesabını kaydedebilir ve kullanabilirsin ancak profil bilgilerin gibi kaydedilmiş bazı ayarları kaybedersin. Notelet Güvenli Yedeklemeleri etkinleştirdiysen, Kurtarma Anahtarın ile devam edebilirsin.";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "Yanlış PIN";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Ödemeleri Devre Dışı Bırak";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Ödemeleri devre dışı bırakmadan önce mevcut bakiyeni başka bir cüzdana aktarmanı öneriyoruz. Eğer paranı şimdi aktarmamayı seçersen ödemeleri yeniden etkinleştirdiğinde Signal'e bağlı cüzdanında kalacaktır.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Ödemeleri devre dışı bırakmadan önce mevcut bakiyeni başka bir cüzdana aktarmanı öneriyoruz. Eğer paranı şimdi aktarmamayı seçersen ödemeleri yeniden etkinleştirdiğinde Notelet'e bağlı cüzdanında kalacaktır.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Ödemeleri tekrar etkinleştirmeyi seçersen bakiyen Notelet'e bağlı cüzdanında kalacaktır.";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Bu ayarı değiştirmek için \"Numaramı Kimler Görebilir\" seçeneğini \"Hiç kimse\" olarak ayarla.";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "\"Beni numaramla kimler bulabilir\" seçeneğini \"Hiç kimse\" olarak ayarlamak, insanların seni Signal'de bulmasını zorlaştıracaktır.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "\"Beni numaramla kimler bulabilir\" seçeneğini \"Hiç kimse\" olarak ayarlamak, insanların seni Notelet'de bulmasını zorlaştıracaktır.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Emin misin?";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "Hatırlatıcıları Kapat";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "PIN'iniz kurtarılamayacağı için ezberlediğinizden veya güvenli bir şekilde sakladığınızdan emin olun. Eğer PIN'inizi unutursanız, Signal hesabınızı tekrar kaydederken veri kaybı yaşayabilirsiniz.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "PIN'iniz kurtarılamayacağı için ezberlediğinizden veya güvenli bir şekilde sakladığınızdan emin olun. Eğer PIN'inizi unutursanız, Notelet hesabınızı tekrar kaydederken veri kaybı yaşayabilirsiniz.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Notelet PIN'inizi onaylayın";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "PIN Hatırlatıcıları";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "PIN'ler Notelet'de depolanan verileri şifreli olarak tutar böylelikle yalnızca siz erişebilirsiniz. PIN'iniz kurtarılamaz. Profiliniz, ayarlarınız ve kişileriniz Signal'i yeniden yüklediğinizde geri yüklenecektir.";
+"SETTINGS_PINS_FOOTER" = "PIN'ler Notelet'de depolanan verileri şifreli olarak tutar böylelikle yalnızca siz erişebilirsiniz. PIN'iniz kurtarılamaz. Profiliniz, ayarlarınız ve kişileriniz Notelet'i yeniden yüklediğinizde geri yüklenecektir.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "PIN'inizi değiştirin";

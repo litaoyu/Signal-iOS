@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Tallennustila vähissä";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Aiemmasta laitteesta siirrettyjä tietoja ei voitu palauttaa. Lähetä virheenkorjausloki osoitteeseen support@Notelet.org, jotta voimme selvittää ongelman. Jos asennat Signalin uudelleen, viestihistoriasi saatetaan menettää.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Aiemmasta laitteesta siirrettyjä tietoja ei voitu palauttaa. Lähetä virheenkorjausloki osoitteeseen support@Notelet.org, jotta voimme selvittää ongelman. Jos asennat Noteletin uudelleen, viestihistoriasi saatetaan menettää.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Siirtoa ei voitu suorittaa loppuun";
@@ -614,7 +614,7 @@
 "BACKUP_ONBOARDING_INTRO_NOT_NOW_TOAST" = "Voit ottaa varmuuskopiot käyttöön asetuksissa.";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Varmuuskopioi viestit ja mediasisältö käyttämällä Noteletin turvallista, päästä päähän salattua tallennuspalvelua. Älä koskaan menetä viestiä, kun hankit uuden puhelimen tai asennat Signalin uudelleen.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Varmuuskopioi viestit ja mediasisältö käyttämällä Noteletin turvallista, päästä päähän salattua tallennuspalvelua. Älä koskaan menetä viestiä, kun hankit uuden puhelimen tai asennat Noteletin uudelleen.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
 "BACKUP_ONBOARDING_INTRO_TITLE" = "Notelet Secure -varmuuskopiointi";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Palautusavain";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Varmuuskopioinnin maksullinen tilaus on vanhentunut, koska sitä ei voitu uusia valitsemallasi maksutavalla.\n\nVoit jatkaa median varmuuskopiointia tekemällä uuden tilauksen. Sinulla on edelleen pääsy Signal-varmuuskopioiden ilmaiseen versioon.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Varmuuskopioinnin maksullinen tilaus on vanhentunut, koska sitä ei voitu uusia valitsemallasi maksutavalla.\n\nVoit jatkaa median varmuuskopiointia tekemällä uuden tilauksen. Sinulla on edelleen pääsy Notelet-varmuuskopioiden ilmaiseen versioon.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Varmuuskopioinnin tilaus on vanhentunut, koska et enää käytä TestFlightia.\n\nVoit jatkaa median varmuuskopiointia tekemällä uuden tilauksen. Sinulla on edelleen pääsy Signal-varmuuskopioiden ilmaiseen versioon.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Varmuuskopioinnin tilaus on vanhentunut, koska et enää käytä TestFlightia.\n\nVoit jatkaa median varmuuskopiointia tekemällä uuden tilauksen. Sinulla on edelleen pääsy Notelet-varmuuskopioiden ilmaiseen versioon.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "Hallitse varmuuskopioita";
@@ -677,7 +677,7 @@
 "BACKUP_RESTORE_MODAL_TITLE" = "Palautetaan viestejä…";
 
 /* Message describing that the Background App Refresh permission is disabled for Signal. \"Background App Refresh\" should be localized the same way it is in iOS Settings app permissions. */
-"BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_MESSAGE" = "Automaattinen varmuuskopiointi on poistettu käytöstä. Ota automaattinen varmuuskopiointi käyttöön päivittämällä Signalin käyttöoikeudet.";
+"BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_MESSAGE" = "Automaattinen varmuuskopiointi on poistettu käytöstä. Ota automaattinen varmuuskopiointi käyttöön päivittämällä Noteletin käyttöoikeudet.";
 
 /* Add-on to a message describing that the Background App Refresh permission is disabled for Signal. \"Background App Refresh\" should be localized the same way it is in iOS Settings app permissions. */
 "BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_MESSAGE_UPDATE_NOW" = "Päivitä nyt";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Varmuuskopiointi on poistettu käytöstä ja tietosi on poistettu Noteletin suojatusta tallennuspalvelusta.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Varmuuskopiointi on poistettu käytöstä. Kaikki mediasisältö, joka ei ole laitteessasi, ladataan nyt. Latauksen jälkeen tiedot poistetaan Signalin suojatusta tallennuspalvelusta.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Varmuuskopiointi on poistettu käytöstä. Kaikki mediasisältö, joka ei ole laitteessasi, ladataan nyt. Latauksen jälkeen tiedot poistetaan Noteletin suojatusta tallennuspalvelusta.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "Tapahtui virhe. Ota yhteys tukeen.";
@@ -857,7 +857,7 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "Kytketäänkö varmuuskopio pois käytöstä ja poistetaanko se?";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Sinulla on mediasisältöä, jota ei ole tällä laitteella. Varmuuskopion lataaminen voi kestää kauan, joten pidä Signal auki keskeytysten välttämiseksi.";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Sinulla on mediasisältöä, jota ei ole tällä laitteella. Varmuuskopion lataaminen voi kestää kauan, joten pidä Notelet auki keskeytysten välttämiseksi.";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "Ladataan varmuuskopiota";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "Median lataus keskeytetty: odotetaan Wi-Fi-yhteyttä";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Tilaukseesi sisältyvän varmuuskopioinin %1$@:n tallennusraja on tullut täyteen. Voit varmuuskopioida uudet keskustelut ja mediasisällön vapauttamalla Signalista %2$@ tallennustilaa ja napauttamalla sitten Varmuuskopioi nyt.";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Tilaukseesi sisältyvän varmuuskopioinin %1$@:n tallennusraja on tullut täyteen. Voit varmuuskopioida uudet keskustelut ja mediasisällön vapauttamalla Noteletista %2$@ tallennustilaa ja napauttamalla sitten Varmuuskopioi nyt.";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "Lähetetään: %1$@ / %2$@ (%3$@ )";
@@ -1400,7 +1400,7 @@
 "CALL_QUALITY_SURVEY_COMPLETION_TOAST" = "Kiitos palautteestasi!";
 
 /* Footer text explaining custom issue descriptions in the call quality survey */
-"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Liitä mukaan kaikki asiaan liittyvät oleelliset tiedot. Kaikki täällä jakamasi tiedot pidetään yksityisinä ja niitä käytetään vain Signal-puheluiden parantamiseen.";
+"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Liitä mukaan kaikki asiaan liittyvät oleelliset tiedot. Kaikki täällä jakamasi tiedot pidetään yksityisinä ja niitä käytetään vain Notelet-puheluiden parantamiseen.";
 
 /* Placeholder text for the custom issue entry in the call quality survey */
 "CALL_QUALITY_SURVEY_CUSTOM_ISSUE_PLACEHOLDER" = "Kuvaile ongelmaasi";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "KK/VV";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet ei kerää tai tallenna mitään henkilötietoja, kun teet lahjoituksen.\n\nKäytämme Stripea maksujen käsittelijänä lahjoitusten vastaanottamiseksi. Emme käytä, säilytä tai tallenna mitään heille antamistasi tiedoista.\n\nSignal ei yhdistä eikä voi yhdistää lahjoitustasi Signal-tiliisi.\n\nKiitos tuestasi!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet ei kerää tai tallenna mitään henkilötietoja, kun teet lahjoituksen.\n\nKäytämme Stripea maksujen käsittelijänä lahjoitusten vastaanottamiseksi. Emme käytä, säilytä tai tallenna mitään heille antamistasi tiedoista.\n\nNotelet ei yhdistä eikä voi yhdistää lahjoitustasi Notelet-tiliisi.\n\nKiitos tuestasi!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Tietosi ovat yksityisiä";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "Jatka";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Median varmuuskopioinnista mobiilidatalla voi seurata datamaksuja. Varmuuskopion lähettäminen voi kestää kauan, joten pidä Signal auki keskeytysten välttämiseksi.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Median varmuuskopioinnista mobiilidatalla voi seurata datamaksuja. Varmuuskopion lähettäminen voi kestää kauan, joten pidä Notelet auki keskeytysten välttämiseksi.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "Jatketaanko käyttöä mobiilidatalla?";
@@ -2138,7 +2138,7 @@
 "CONTACT_SHARE_INVALID_CONTACT" = "Virheellinen yhteystieto";
 
 /* Alert body when contacts disabled while trying to share a contact. */
-"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet tarvitsee luvan käyttää yhteystietojasi. Siirry iOS-asetuksiin ja anna lupa yhteystietojen käytölle. Yhteystietosi salataan, eivätkä ne näy Signal-palvelussa.";
+"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet tarvitsee luvan käyttää yhteystietojasi. Siirry iOS-asetuksiin ja anna lupa yhteystietojen käytölle. Yhteystietosi salataan, eivätkä ne näy Notelet-palvelussa.";
 
 /* Alert title when contacts disabled while trying to share a contact. */
 "CONTACT_SHARING_NO_ACCESS_TITLE" = "Salli yhteystietojen käyttö";
@@ -3110,7 +3110,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_BADGE_REDEEMED" = "Lunastettu";
 
 /* Users can donate on behalf of a friend, and the friend will receive a badge. This is a short paragraph on the screen where users choose the badge their friend will receive. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_CHOOSE_BADGE_DESCRIPTION" = "Tue Noteletia tekemällä lahjoitus Noteletia käyttävän ystävän tai perheenjäsenen puolesta. Hänellä on mahdollisuus näyttää omassa profiilissaan, että hän tukee Signalia.";
+"DONATION_ON_BEHALF_OF_A_FRIEND_CHOOSE_BADGE_DESCRIPTION" = "Tue Noteletia tekemällä lahjoitus Noteletia käyttävän ystävän tai perheenjäsenen puolesta. Hänellä on mahdollisuus näyttää omassa profiilissaan, että hän tukee Noteletia.";
 
 /* Users can donate on behalf of a friend, and the friend will receive a badge. This is the title on the screen where users choose the badge their friend will receive. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_CHOOSE_BADGE_TITLE" = "Lahjoita ystävän puolesta";
@@ -3170,7 +3170,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_SENT_TITLE_FORMAT" = "Lahjoitus henkilön %1$@ puolesta";
 
 /* When you donate on behalf of a friend, a thank-you sheet will appear. This is the text on that sheet. Embeds {{recipient name}}. */
-"DONATION_ON_BEHALF_OF_A_FRIEND_THANKS_BODY_FORMAT" = "Olet tehnyt lahjoituksen Noteletille henkilön %1$@ puolesta. Hän saa mahdollisuuden näyttää omassa profiilissaan, että hän tukee Signalia.";
+"DONATION_ON_BEHALF_OF_A_FRIEND_THANKS_BODY_FORMAT" = "Olet tehnyt lahjoituksen Noteletille henkilön %1$@ puolesta. Hän saa mahdollisuuden näyttää omassa profiilissaan, että hän tukee Noteletia.";
 
 /* When you donate on behalf of a friend, a thank-you sheet will appear. This is the title on that sheet. */
 "DONATION_ON_BEHALF_OF_A_FRIEND_THANKS_TITLE" = "Kiitos tuestasi!";
@@ -3182,7 +3182,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ teki lahjoituksen Noteletille puolestasi! Näytä profiilissasi, että tuet Noteletia.";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "Itsenäisenä, voittoa tavoittelemattomana organisaationa Notelet on sitoutunut yksityiseen viestintään ja puheluihin. Ei mainoksia, seurantaevästeitä tai valvontaa. Tue Signalia lahjoittamalla.";
+"DONATION_READ_MORE_SHEET_BODY" = "Itsenäisenä, voittoa tavoittelemattomana organisaationa Notelet on sitoutunut yksityiseen viestintään ja puheluihin. Ei mainoksia, seurantaevästeitä tai valvontaa. Tue Noteletia lahjoittamalla.";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "Saat lahjoituksen yhteydessä merkin, jonka voit liittää halutessasi profiiliisi.";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Jaa kuitti";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Kiitos Noteletin tukemisesta. Lahjoituksesi auttaa edistämään avoimen lähdekoodin tietosuojateknologian kehittämistä, joka suojaa sananvapautta ja mahdollistaa turvallisen maailmanlaajuisen viestinnän miljoonille käyttäjille ympäri maailmaa. Jos asut Yhdysvalloissa, säilytä tämä kuitti verotusta varten. Signal Technology Foundation on verovapaa voittoa tavoittelematon organisaatio Yhdysvaltojen Internal Revenue Code -pykälän 501c3 mukaisesti. Liittovaltion verotunnuksemme on 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "Kiitos Noteletin tukemisesta. Lahjoituksesi auttaa edistämään avoimen lähdekoodin tietosuojateknologian kehittämistä, joka suojaa sananvapautta ja mahdollistaa turvallisen maailmanlaajuisen viestinnän miljoonille käyttäjille ympäri maailmaa. Jos asut Yhdysvalloissa, säilytä tämä kuitti verotusta varten. Notelet Technology Foundation on verovapaa voittoa tavoittelematon organisaatio Yhdysvaltojen Internal Revenue Code -pykälän 501c3 mukaisesti. Liittovaltion verotunnuksemme on 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Lahjoitus ystävän puolesta";
@@ -3389,13 +3389,13 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Hei!\n\nViime aikoina olen käyttänyt Noteletia iPhonella pitääkseni keskustelut yksityisinä. Toivoisin myös sinun asentavan sen, jotta voimme olla varmoja, ettei kukaan muu lue viestejämme tai kuuntele puheluitamme.\n\nSignal on saatavilla iPhonelle, Androidille ja tietokoneelle. Lataa se täältä: %1$@\n\nSignal toimii kuten muutkin viestintäsovellukset. Sillä voi lähettää kuvia ja videoita, soittaa puheluita ja käydä ryhmäkeskusteluja. Ja mikä parasta, kukaan ulkopuolinen ei pääse käsiksi viesteihin, eivät edes Signalin kehittäjät!\n\nVoit lukea lisää Signalista täältä: %2$@";
+"EMAIL_INVITE_BODY" = "Hei!\n\nViime aikoina olen käyttänyt Noteletia iPhonella pitääkseni keskustelut yksityisinä. Toivoisin myös sinun asentavan sen, jotta voimme olla varmoja, ettei kukaan muu lue viestejämme tai kuuntele puheluitamme.\n\nNotelet on saatavilla iPhonelle, Androidille ja tietokoneelle. Lataa se täältä: %1$@\n\nNotelet toimii kuten muutkin viestintäsovellukset. Sillä voi lähettää kuvia ja videoita, soittaa puheluita ja käydä ryhmäkeskusteluja. Ja mikä parasta, kukaan ulkopuolinen ei pääse käsiksi viesteihin, eivät edes Noteletin kehittäjät!\n\nVoit lukea lisää Noteletista täältä: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Vaihdetaan Noteletiin";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Laitteesi ei tue sähköpostien lähetystä. Lähettääksesi tukipyynnön, määritä laitteesi sähköpostiasetukset tai lähetä sähköposti osoitteeseen support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Laitteesi ei tue sähköpostien lähetystä. Lähettääksesi tukipyynnön, määritä laitteesi sähköpostiasetukset tai lähetä sähköposti osoitteeseen support@notelet.org";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "Sähköposti ei käytettävissä";
@@ -3566,7 +3566,7 @@
 "ERROR_NETWORK_FAILURE" = "Verkkovirhe";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Ole hyvä ja auta meitä parantamaan Noteletia lähettämällä tämä virheilmoitus laitteesi virheenkorjauslokien kanssa osoitteeseen support@signal.org; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Ole hyvä ja auta meitä parantamaan Noteletia lähettämällä tämä virheilmoitus laitteesi virheenkorjauslokien kanssa osoitteeseen support@notelet.org; %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Notelet Beta: Tapahtui virhe";
@@ -4997,7 +4997,7 @@
 "LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Puhelimen yhteystietojen hallinta ei ole enää käytettävissä iPadilla. Avaa Notelet puhelimessasi, jos haluat lisätä Notelet-kontakteja puhelimen yhteystietoihin.";
 
 /* Shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. */
-"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Puhelimen yhteystietojen hallintaa ei enää tueta iPadilla. Tämä laite synkronoi edelleen yhteystietoluetteloon tehdyt muutokset puhelimen Signalista.";
+"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Puhelimen yhteystietojen hallintaa ei enää tueta iPadilla. Tämä laite synkronoi edelleen yhteystietoluetteloon tehdyt muutokset puhelimen Noteletista.";
 
 /* A button shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. Tapping it opens a website with more details. */
 "LINKED_DEVICE_MANAGE_CONTACTS_LEARN_MORE" = "Lue lisää";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Yhdistit uuden laitteen";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Jos haluat yhdistää tietokoneen tai iPadin tähän Notelet-tiliin, siirry kohtaan Yhdistetyt laitteet, napauta Yhdistä uusi laite ja skannaa QR-koodi uudelleen. Skannaa vain QR-koodeja, jotka tulevat suoraan Signalista.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Jos haluat yhdistää tietokoneen tai iPadin tähän Notelet-tiliin, siirry kohtaan Yhdistetyt laitteet, napauta Yhdistä uusi laite ja skannaa QR-koodi uudelleen. Skannaa vain QR-koodeja, jotka tulevat suoraan Noteletista.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Vaikuttaa siltä, että yrität yhdistää laitetta Noteletiin. Napauta Jatka ja napauta sitten Yhdistä uusi laite ja skannaa QR-koodi uudelleen.";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "Yhdistä iPhone";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Napauttamalla Rekisteröi iPad voit luoda uuden Notelet-tilin tai siirtää olemassa olevan tilin tähän iPadiin. Tämä poistaa Signalin käytöstä muissa samalla puhelinnumerolla rekisteröidyissä laitteissa.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Napauttamalla Rekisteröi iPad voit luoda uuden Notelet-tilin tai siirtää olemassa olevan tilin tähän iPadiin. Tämä poistaa Noteletin käytöstä muissa samalla puhelinnumerolla rekisteröidyissä laitteissa.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "Napauttamalla Yhdistä iPhone voit yhdistää puhelimesi olemassa olevaan tiliin. Puhelimen yhdistämistä ei yleensä suositella, ja se rajoittaa joitain toimintoja, kuten soittamista.";
@@ -6767,13 +6767,13 @@
 "PIN_CREATION_DISABLE_CONFIRMATION_TITLE" = "Varoitus";
 
 /* The explanation in the 'pin creation' view. */
-"PIN_CREATION_EXPLANATION" = "Tunnusluvulla salataan Noteletiin tallentamasi tiedot, jotta vain sinä pääset niihin käsiksi. Profiilisi, asetuksesi ja yhteystietosi palautetaan, kun asennat Signalin uudelleen. Tunnuslukua ei tarvita sovelluksen avaamiseen.";
+"PIN_CREATION_EXPLANATION" = "Tunnusluvulla salataan Noteletiin tallentamasi tiedot, jotta vain sinä pääset niihin käsiksi. Profiilisi, asetuksesi ja yhteystietosi palautetaan, kun asennat Noteletin uudelleen. Tunnuslukua ei tarvita sovelluksen avaamiseen.";
 
 /* Learn more action on the pin creation view */
 "PIN_CREATION_LEARN_MORE" = "Lisätietoja PIN-koodeista";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the text on that sheet. */
-"PIN_CREATION_LEARN_MORE_TEXT" = "PIN-koodin avulla salataan Noteletiin tallennetut tietosi, jotta vain sinulla on pääsy niihin. Profiilitiedot, asetukset ja yhteystiedot palautetaan, jos Signal asennetaan uudelleen.";
+"PIN_CREATION_LEARN_MORE_TEXT" = "PIN-koodin avulla salataan Noteletiin tallennetut tietosi, jotta vain sinulla on pääsy niihin. Profiilitiedot, asetukset ja yhteystiedot palautetaan, jos Notelet asennetaan uudelleen.";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the title on that sheet. */
 "PIN_CREATION_LEARN_MORE_TITLE" = "Tietoja Notelet-PIN-koodeista";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "Skannaa QR-koodi";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Jos haluat siirtää tilin uudelle laitteelle, napauta Jatka ja skannaa QR-koodi Noteletin kameralla. Skannaa vain Signalin lähettämiä QR-koodeja.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Jos haluat siirtää tilin uudelle laitteelle, napauta Jatka ja skannaa QR-koodi Noteletin kameralla. Skannaa vain Noteletin lähettämiä QR-koodeja.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "Vastaus käyttäjälle %1$@. %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "Tarvitsetko apua?";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN-koodi on vähintään nelinumeroinen koodi, joka voi sisältää pelkkiä numeroita tai numeroita ja kirjaimia. Jos et muista PIN-koodia, joudut odottamaan 7 päivää ennen kuin voit rekisteröityä uudelleen. Jos Signal Secure-varmuuskopiointi on käytössä, voit jatkaa palautusavaimella.";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN-koodi on vähintään nelinumeroinen koodi, joka voi sisältää pelkkiä numeroita tai numeroita ja kirjaimia. Jos et muista PIN-koodia, joudut odottamaan 7 päivää ennen kuin voit rekisteröityä uudelleen. Jos Notelet Secure-varmuuskopiointi on käytössä, voit jatkaa palautusavaimella.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "Luomasi PIN-koodi on vähintään nelinumeroinen koodi, ja se voi olla numeerinen tai aakkosnumeerinen. Jos et muista PIN-koodia, voit rekisteröityä ja käyttää tiliäsi, mutta menetät joitain tallennettuja asetuksia, kuten profiilitietosi. Jos Signal Secure-varmuuskopiointi on käytössä, voit jatkaa palautusavaimella.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "Luomasi PIN-koodi on vähintään nelinumeroinen koodi, ja se voi olla numeerinen tai aakkosnumeerinen. Jos et muista PIN-koodia, voit rekisteröityä ja käyttää tiliäsi, mutta menetät joitain tallennettuja asetuksia, kuten profiilitietosi. Jos Notelet Secure-varmuuskopiointi on käytössä, voit jatkaa palautusavaimella.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "Luomasi PIN-koodi on vähintään nelinumeroinen koodi, ja se voi olla numeerinen tai aakkosnumeerinen. Jos et muista PIN-koodia, voit luoda uuden. Voit rekisteröityä ja käyttää tiliäsi, mutta menetät joitain tallennettuja asetuksia, kuten profiilitietosi. Jos Signal Secure-varmuuskopiointi on käytössä, voit jatkaa palautusavaimella.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "Luomasi PIN-koodi on vähintään nelinumeroinen koodi, ja se voi olla numeerinen tai aakkosnumeerinen. Jos et muista PIN-koodia, voit luoda uuden. Voit rekisteröityä ja käyttää tiliäsi, mutta menetät joitain tallennettuja asetuksia, kuten profiilitietosi. Jos Notelet Secure-varmuuskopiointi on käytössä, voit jatkaa palautusavaimella.";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "Väärä tunnusluku";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "Siirtoa ei voitu suorittaa loppuun";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Olet ehkä syöttänyt palautusavaimesi väärin tai et ole tehnyt vähintään yhtä varmuuskopiota vanhalla laitteellasi. \n\nVarmista, että rekisteröidyt samalla puhelinnumerolla ja palautusavaimella, jotka tallensit ottaessasi Signal Secure -varmuuskopioinnin käyttöön, ja tarkista, että vanha laitteesi on suorittanut varmuuskopioinnin loppuun.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Olet ehkä syöttänyt palautusavaimesi väärin tai et ole tehnyt vähintään yhtä varmuuskopiota vanhalla laitteellasi. \n\nVarmista, että rekisteröidyt samalla puhelinnumerolla ja palautusavaimella, jotka tallensit ottaessasi Notelet Secure -varmuuskopioinnin käyttöön, ja tarkista, että vanha laitteesi on suorittanut varmuuskopioinnin loppuun.";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "Palautusavaimen syöttöyritykset ovat loppuneet. Turvallisuutesi vuoksi yritysten määrä on rajoitettu. Odota tunti ja yritä uudelleen.";
@@ -7523,7 +7523,7 @@
 "REGISTRATION_NO_BACKUP_KEY_BUTTON_TITLE" = "Eikö sinulla ole palautusavainta?";
 
 /* Body text on a sheet with info for what to do if you don't have a recovery key */
-"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "Varmuuskopioita ei voi palauttaa ilman 64 merkkiä sisältävää palautuskoodia. Jos olet kadottanut palautusavaimen, Notelet ei voi palauttaa varmuuskopiota.\n\nJos vanha laite on tallella, löydät palautusavaimen kohdasta Asetukset > Keskustelut > Signal-varmuuskopiot. Napauta sitten Näytä palautusavain.";
+"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "Varmuuskopioita ei voi palauttaa ilman 64 merkkiä sisältävää palautuskoodia. Jos olet kadottanut palautusavaimen, Notelet ei voi palauttaa varmuuskopiota.\n\nJos vanha laite on tallella, löydät palautusavaimen kohdasta Asetukset > Keskustelut > Notelet-varmuuskopiot. Napauta sitten Näytä palautusavain.";
 
 /* Title for sheet with info for what to do if you don't have a recovery key */
 "REGISTRATION_NO_BACKUP_KEY_SHEET_TITLE" = "Eikö sinulla ole palautusavainta?";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Poista maksut käytöstä";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Varat kannattaa siirtää toiseen lompakko-osoitteeseen ennen maksujen ottamista pois käytöstä. Jos varoja ei siirretä nyt, ne säilyvät Signal-tiliin liitetyssä lompakossa siltä varalta jos maksut otetaan uudestaan käyttöön.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Varat kannattaa siirtää toiseen lompakko-osoitteeseen ennen maksujen ottamista pois käytöstä. Jos varoja ei siirretä nyt, ne säilyvät Notelet-tiliin liitetyssä lompakossa siltä varalta jos maksut otetaan uudestaan käyttöön.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Varat säilytetään Notelet-tiliin liitetyssä lompakossa siltä varalta jos maksut otetaan uudestaan käyttöön.";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Jos haluat muuttaa tätä asetusta, määritä Kuka näkee numeroni -asetukseksi Ei kukaan.";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Jos määrität asetuksen \"Kuka voi löytää minut puhelinnumerolla\" tilaan ”Ei kukaan”, sinua on vaikea löytää Signalissa.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Jos määrität asetuksen \"Kuka voi löytää minut puhelinnumerolla\" tilaan ”Ei kukaan”, sinua on vaikea löytää Noteletissa.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Oletko varma?";
@@ -9797,7 +9797,7 @@
 "UNKNOWN_CONTACT_BLOCK_OFFER" = "Käyttäjä ei ole yhteystiedoissasi. Estetäänkö käyttäjä?";
 
 /* Info message recorded in conversation history when local user receives an unknown message from a linked device and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Yksi laitteistasi lähetti viestin, jota ei voida käsitellä tai näyttää, koska se käyttää uutta Signal-ominaisuutta.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Yksi laitteistasi lähetti viestin, jota ei voida käsitellä tai näyttää, koska se käyttää uutta Notelet-ominaisuutta.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. Embeds {{user's name or phone number}}. */
 "UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "%1$@ lähetti sinulle viestin, jota ei voida käsitellä tai näyttää, koska se käyttää uutta Notelet-ominaisuutta.";

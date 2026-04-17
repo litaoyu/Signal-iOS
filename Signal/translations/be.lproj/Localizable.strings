@@ -782,7 +782,7 @@
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_ACTION_BUTTON_TITLE" = "Аднавіць";
 
 /* Text describing that the user's paid backup plan did not correspond to a App Store subscription on this device. */
-"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_DESCRIPTION" = "На гэтай прыладзе ваша падпіска не знойдзена. Аднавіце яе, каб па-ранейшаму выкарыстоўваць рэзервовыя копіі Signal.";
+"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_DESCRIPTION" = "На гэтай прыладзе ваша падпіска не знойдзена. Аднавіце яе, каб па-ранейшаму выкарыстоўваць рэзервовыя копіі Notelet.";
 
 /* Header describing what the paid backup plan includes. */
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_HEADER" = "Рэзервовае капіраванне SMS і ўсіх медыяфайлаў";
@@ -1004,7 +1004,7 @@
 "BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_NOTICE_TITLE" = "Не атрымалася актываваць вашу падпіску на рэзервовае капіраванне";
 
 /* Body for a sheet explaining that the user's Backups subscription was already redeemed. */
-"BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_BODY" = "У гэтым месяцы вашу падпіску спрабавалі актываваць занадта шмат прылад.\n\nМагчыма, вы занадта шмат разоў нанова рэгістравалі свой уліковы запіс Signal або адна і тая ж падпіска выкарыстоўвалася на занадта шмат прыладах.";
+"BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_BODY" = "У гэтым месяцы вашу падпіску спрабавалі актываваць занадта шмат прылад.\n\nМагчыма, вы занадта шмат разоў нанова рэгістравалі свой уліковы запіс Notelet або адна і тая ж падпіска выкарыстоўвалася на занадта шмат прыладах.";
 
 /* Button for a sheet explaining that the user's Backups subscription was already redeemed. */
 "BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_GOT_IT_BUTTON" = "Зразумела";
@@ -1400,7 +1400,7 @@
 "CALL_QUALITY_SURVEY_COMPLETION_TOAST" = "Дзякуй за ваш водгук!";
 
 /* Footer text explaining custom issue descriptions in the call quality survey */
-"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Калі ласка, дадайце ўсе падрабязнасці, якія датычацца гэтай праблемы. Уся інфармацыя, што вы даслалі, будзе захавана ў прыватнасці; мы выкарыстоўваем яе толькі для паляпшэння званкоў у Signal.";
+"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Калі ласка, дадайце ўсе падрабязнасці, якія датычацца гэтай праблемы. Уся інфармацыя, што вы даслалі, будзе захавана ў прыватнасці; мы выкарыстоўваем яе толькі для паляпшэння званкоў у Notelet.";
 
 /* Placeholder text for the custom issue entry in the call quality survey */
 "CALL_QUALITY_SURVEY_CUSTOM_ISSUE_PLACEHOLDER" = "Апішыце сваю праблему";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "ММ/ГГ";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet не збірае і не захоўвае вашу асабістую інфармацыю, калі вы робіце ахвяраванне.\n\nДля атрымання вашых ахвяраванняў мы выкарыстоўваем кампанію Stripe у якасці аператара плацяжоў. Мы не маем доступу ні да якой інфармацыі, што вы перадаеце іншым карыстальнікам, не захоўваем і не трымаем яе.\n\nSignal не звязвае і не можа звязаць ваша ахвяраванне з вашым уліковым запісам Signal.\n\nДзякуй за вашу падтрымку!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet не збірае і не захоўвае вашу асабістую інфармацыю, калі вы робіце ахвяраванне.\n\nДля атрымання вашых ахвяраванняў мы выкарыстоўваем кампанію Stripe у якасці аператара плацяжоў. Мы не маем доступу ні да якой інфармацыі, што вы перадаеце іншым карыстальнікам, не захоўваем і не трымаем яе.\n\nNotelet не звязвае і не можа звязаць ваша ахвяраванне з вашым уліковым запісам Notelet.\n\nДзякуй за вашу падтрымку!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Ваша інфармацыя застаецца канфідэнцыйнай";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "Працягнуць";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Рэзервовае капіраванне медыяфайлаў з выкарыстаннем мабільнага інтэрнэту можа прывесці да спагнання платы за перадачу даных. Пампаванне рэзервовай копіі можа заняць шмат часу, таму не выходзьце з Signal, каб пазбегнуць перарывання.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Рэзервовае капіраванне медыяфайлаў з выкарыстаннем мабільнага інтэрнэту можа прывесці да спагнання платы за перадачу даных. Пампаванне рэзервовай копіі можа заняць шмат часу, таму не выходзьце з Notelet, каб пазбегнуць перарывання.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "Працягнуць выкарыстанне мабільнага інтэрнэту?";
@@ -2138,7 +2138,7 @@
 "CONTACT_SHARE_INVALID_CONTACT" = "Несапраўдны кантакт.";
 
 /* Alert body when contacts disabled while trying to share a contact. */
-"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet патрабуе доступу да вашых кантактаў. Перайдзіце ў «Налады iOS» і ўключыце «Кантакты». Вашы кантакты зашыфраваны і не бачныя сэрвісу Signal.";
+"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet патрабуе доступу да вашых кантактаў. Перайдзіце ў «Налады iOS» і ўключыце «Кантакты». Вашы кантакты зашыфраваны і не бачныя сэрвісу Notelet.";
 
 /* Alert title when contacts disabled while trying to share a contact. */
 "CONTACT_SHARING_NO_ACCESS_TITLE" = "Дазволіць доступ да кантакту";
@@ -3182,7 +3182,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ зрабіў(-ла) ахвяраванне для Notelet ад вашага імя! Прадэманструйце сваю падтрымку Notelet у вашым профілі.";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "Як незалежная некамерцыйная арганізацыя, Notelet захоўвае канфідэнцыйнасць паведамленняў і званкоў. Без рэкламы, без трэкераў, без сачэння. Зрабіце ахвяраванне сёння, каб падтрымаць Signal.";
+"DONATION_READ_MORE_SHEET_BODY" = "Як незалежная некамерцыйная арганізацыя, Notelet захоўвае канфідэнцыйнасць паведамленняў і званкоў. Без рэкламы, без трэкераў, без сачэння. Зрабіце ахвяраванне сёння, каб падтрымаць Notelet.";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "Вы атрымаеце дадатковы значок у сваім профілі, калі зробіце ахвяраванне";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Абагуліць квітанцыю";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Дзякуй вам за падтрымку Notelet. Ваш унёсак дапамагае падтрымліваць місію па распрацоўцы тэхналогіі канфідэнцыйнасці з адкрытым зыходным кодам, якая абараняе свабоду слова і робіць магчымым бяспечныя зносіны паміж мільёнамі людзей па ўсім свеце. Калі вы рэзідэнт Злучаных Штатаў, захавайце гэтую квітанцыю для вашых падатковых дакументаў. Signal Technology Foundation з'яўляецца некамерцыйнай грамадскай дабрачыннай арганізацыяй, заснаванай у ЗША, якая вызвалена ад выплаты падаткаў згодна з раздзелам 501c3 Падатковага кодэкса. Наш федэральны падатковы ідэнтыфікацыйны нумар 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "Дзякуй вам за падтрымку Notelet. Ваш унёсак дапамагае падтрымліваць місію па распрацоўцы тэхналогіі канфідэнцыйнасці з адкрытым зыходным кодам, якая абараняе свабоду слова і робіць магчымым бяспечныя зносіны паміж мільёнамі людзей па ўсім свеце. Калі вы рэзідэнт Злучаных Штатаў, захавайце гэтую квітанцыю для вашых падатковых дакументаў. Notelet Technology Foundation з'яўляецца некамерцыйнай грамадскай дабрачыннай арганізацыяй, заснаванай у ЗША, якая вызвалена ад выплаты падаткаў згодна з раздзелам 501c3 Падатковага кодэкса. Наш федэральны падатковы ідэнтыфікацыйны нумар 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Ахвяраванне для сябра";
@@ -3389,13 +3389,13 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Прывітанне!\n\nАпошнім часам я выкарыстоўваю Notelet, каб быць упэўненым у канфідэнцыйнасці чатаў на сваім iPhone. Прапаную ўсталяваць гэту праграму і табе, каб мы маглі дакладна ведаць, што ніхто, акрамя нас з табой, не чытае нашы паведамленні і не чуе нашы размовы.\n\nSignal даступны для iPhone, Android і ПК. Запампуй яго тут: %1$@\n\nSignal працуе так, як і мэсанджар, што ты ўжо выкарыстоўваеш. Мы зможам адпраўляць фота і відэа, рабіць званкі і ствараць групавыя чаты. І самае галоўнае – ніхто, акрамя нас, не можа бачыць нічога з гэтага, нават распрацоўнікі Signal!\n\nБольш падрабязна аб Signal можна даведацца тут: %2$@";
+"EMAIL_INVITE_BODY" = "Прывітанне!\n\nАпошнім часам я выкарыстоўваю Notelet, каб быць упэўненым у канфідэнцыйнасці чатаў на сваім iPhone. Прапаную ўсталяваць гэту праграму і табе, каб мы маглі дакладна ведаць, што ніхто, акрамя нас з табой, не чытае нашы паведамленні і не чуе нашы размовы.\n\nNotelet даступны для iPhone, Android і ПК. Запампуй яго тут: %1$@\n\nNotelet працуе так, як і мэсанджар, што ты ўжо выкарыстоўваеш. Мы зможам адпраўляць фота і відэа, рабіць званкі і ствараць групавыя чаты. І самае галоўнае – ніхто, акрамя нас, не можа бачыць нічога з гэтага, нават распрацоўнікі Notelet!\n\nБольш падрабязна аб Notelet можна даведацца тут: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Давайце пяройдзем на Notelet";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Ваша прылада не наладжана, каб адпраўляць электронны ліст. Каб адправіць запыт у службу падтрымкі, наладзьце электронную пошту на сваёй прыладзе або адпраўце электронны ліст на support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Ваша прылада не наладжана, каб адпраўляць электронны ліст. Каб адправіць запыт у службу падтрымкі, наладзьце электронную пошту на сваёй прыладзе або адпраўце электронны ліст на support@notelet.org";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "Электронная пошта недаступная";
@@ -4997,7 +4997,7 @@
 "LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Кіраванне тэлефоннымі кантактамі больш недаступнае на iPad. Каб дадаць кантакты Notelet да тэлефонных кантактаў, адкрыйце Notelet на сваім тэлефоне.";
 
 /* Shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. */
-"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Кіраванне тэлефоннымі кантактамі больш не падтрымліваецца на iPad. Гэтая прылада працягне сінхранізаваць любыя змянення ў спісе кантактаў з Signal на вашым тэлефоне.";
+"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Кіраванне тэлефоннымі кантактамі больш не падтрымліваецца на iPad. Гэтая прылада працягне сінхранізаваць любыя змянення ў спісе кантактаў з Notelet на вашым тэлефоне.";
 
 /* A button shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. Tapping it opens a website with more details. */
 "LINKED_DEVICE_MANAGE_CONTACTS_LEARN_MORE" = "Даведацца больш";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Вы звязалі новую прыладу";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Каб звязаць ПК або iPad з гэтым уліковым запісам Notelet, перайдзіце ў раздзел «Звязаныя прылады», націсніце «Звязаць новую прыладу» і зноў праскануйце QR-код. Абавязкова правярайце, што вы скануеце менавіта QR-коды, якія вы атрымліваеце непасрэдна ад Signal.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Каб звязаць ПК або iPad з гэтым уліковым запісам Notelet, перайдзіце ў раздзел «Звязаныя прылады», націсніце «Звязаць новую прыладу» і зноў праскануйце QR-код. Абавязкова правярайце, што вы скануеце менавіта QR-коды, якія вы атрымліваеце непасрэдна ад Notelet.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Здаецца, вы спрабуеце звязаць прыладу Notelet. Націсніце «Працягнуць» і потым націсніце «Звязаць новую прыладу», пасля чаго нанова праскануйце QR-код.";
@@ -5969,7 +5969,7 @@
 "ONBOARDING_CHOOSE_RESTORE_METHOD_DESCRIPTION" = "Выберыце спосаб аднаўлення гісторыі паведамленняў і даных уліковага запісу.";
 
 /* Message body displayed to a user during registration if there are no restore options available. */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Паколькі вы пераходзіце з Android на iOS, для пераносу вашых паведамленняў і медыяфайлаў ёсць толькі адзіны спосаб – уключыць рэзервовыя копіі Signal на вашай старой прыладзе.";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Паколькі вы пераходзіце з Android на iOS, для пераносу вашых паведамленняў і медыяфайлаў ёсць толькі адзіны спосаб – уключыць рэзервовыя копіі Notelet на вашай старой прыладзе.";
 
 /* Title displayed to a user during registration if there are no restore options available. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_TITLE" = "Няма рэзервовай копіі, што патрэбуе аднаўлення";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "Звязаць iPhone";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Калі націснуць «Рэгістраваць iPad», можна стварыць цалкам новы ўліковы запіс Notelet або перанесці існуючы ўліковы запіс на гэты iPad. Signal адключыцца на іншых прыладах, што зарэгістраваны на сённяшні час з такім жа нумарам тэлефона.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Калі націснуць «Рэгістраваць iPad», можна стварыць цалкам новы ўліковы запіс Notelet або перанесці існуючы ўліковы запіс на гэты iPad. Notelet адключыцца на іншых прыладах, што зарэгістраваны на сённяшні час з такім жа нумарам тэлефона.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "Калі націснуць «Звязаць iPhone», можна падключыць тэлефон да існуючага ўліковага запісу. Звязаць тэлефон мы звычайна не рэкамендуем, бо гэта абмяжуе некаторыя функцыі, напрыклад, званкі.";
@@ -6089,7 +6089,7 @@
 "ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_TITLE" = "Няправільны PIN-код";
 
 /* Explanation of the 'onboarding pin attempts exhausted' view when it is unknown if reglock is enabled. */
-"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_WITH_UNKNOWN_REGLOCK_EXPLANATION" = "У вас скончыліся спробы ўводу PIN-кода, але вы па-ранейшаму можаце атрымаць доступ да ўліковага запісу Signal, калі пацвердзіце свой нумар тэлефона. Для канфідэнцыйнасці і бяспекі ваш уліковы запіс будзе адноўлены без захавання інфармацыі профілю або наладаў.";
+"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_WITH_UNKNOWN_REGLOCK_EXPLANATION" = "У вас скончыліся спробы ўводу PIN-кода, але вы па-ранейшаму можаце атрымаць доступ да ўліковага запісу Notelet, калі пацвердзіце свой нумар тэлефона. Для канфідэнцыйнасці і бяспекі ваш уліковы запіс будзе адноўлены без захавання інфармацыі профілю або наладаў.";
 
 /* Explanation of 'do not have old device' flow for the 'Restore or Transfer' prompt */
 "ONBOARDING_SPLASH_DO_NOT_HAVE_OLD_DEVICE_BODY" = "Або вы ўсталёўваеце нанова Notelet на гэтай жа прыладзе";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "Сканаваць QR-код";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Каб перанесці гэты ўліковы запіс на новую прыладу, націсніце «Працягнуць» і праскануйце QR-код камерай Notelet. Абавязкова правярайце, што вы скануеце менавіта QR-коды, якія вы атрымліваеце непасрэдна ад Signal.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Каб перанесці гэты ўліковы запіс на новую прыладу, націсніце «Працягнуць» і праскануйце QR-код камерай Notelet. Абавязкова правярайце, што вы скануеце менавіта QR-коды, якія вы атрымліваеце непасрэдна ад Notelet.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "Адказваю %1$@. %2$@";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "Немагчыма завершыць перанос";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Магчыма, вы няправільна ўвялі код для аднаўлення або не зрабілі, як мінімум, адну рэзервовую копію на сваёй старой прыладзе. \n\nПраверце падчас рэгістрацыі, што вы ўжываеце той жа нумар тэлефона і код для аднаўлення, які вы захавалі, калі ўключалі «Бяспечнае рэзервовае капіраванне Signal», і пацвердзіце, што ваша старая прылада завяршыла рэзервовае капіраванне.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Магчыма, вы няправільна ўвялі код для аднаўлення або не зрабілі, як мінімум, адну рэзервовую копію на сваёй старой прыладзе. \n\nПраверце падчас рэгістрацыі, што вы ўжываеце той жа нумар тэлефона і код для аднаўлення, які вы захавалі, калі ўключалі «Бяспечнае рэзервовае капіраванне Notelet», і пацвердзіце, што ваша старая прылада завяршыла рэзервовае капіраванне.";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "Вы дасягнулі ліміту спроб, каб скарыстаць код для аднаўлення. Дзеля вашай бяспекі дазволеная колькасць спроб абмежавана. Пачакайце 1 гадзіну і паспрабуйце яшчэ раз.";
@@ -7985,7 +7985,7 @@
 "SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_TITLE" = "Версія не падтрымліваецца";
 
 /* alert message for outdated linking device */
-"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "На іншай прыладзе ўсталявана старая версія Notelet, якая не падтрымлівае сканаванне QR-кодаў iPad. Калі ласка, усталюйце апошнюю версію Signal і паўтарыце спробу.";
+"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "На іншай прыладзе ўсталявана старая версія Notelet, якая не падтрымлівае сканаванне QR-кодаў iPad. Калі ласка, усталюйце апошнюю версію Notelet і паўтарыце спробу.";
 
 /* alert title for outdated linking device */
 "SECONDARY_LINKING_ERROR_OLD_VERSION_TITLE" = "Абнавіць прыладу для сканавання";
@@ -8162,7 +8162,7 @@
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_COUNTRY" = "Месцазнаходжанне";
 
 /* Table footer for the 'censorship circumvention' section when censorship circumvention can be manually enabled. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Калі ўключыць гэтую опцыю, Notelet будзе спрабаваць абысці цэнзуру (блакіроўку правайдарам). Не ўключайце яе, калі там, дзе вы знаходзіцеся, Signal не блакуецца.";
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Калі ўключыць гэтую опцыю, Notelet будзе спрабаваць абысці цэнзуру (блакіроўку правайдарам). Не ўключайце яе, калі там, дзе вы знаходзіцеся, Notelet не блакуецца.";
 
 /* Table footer for the 'censorship circumvention' section shown when censorship circumvention has been auto-enabled based on local phone number. */
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_AUTO_ENABLED" = "Абыход цэнзуры аўтаматычна актываваны на аснове нумара тэлефона вашага ўліковага запісу.";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Дэактываваць «Плацяжы»";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Мы рэкамендуем вам перанесці свае сродкі на адрас іншага кашалька перад тым, як дэактываваць плацяжы. Калі вы не пераведзяце свае сродкі зараз, яны застануцца ў вашым кашальку, што звязаны з Signal, і вы зможаце іх выкарыстоўваць, калі пазней зноў актывуеце плацяжы.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Мы рэкамендуем вам перанесці свае сродкі на адрас іншага кашалька перад тым, як дэактываваць плацяжы. Калі вы не пераведзяце свае сродкі зараз, яны застануцца ў вашым кашальку, што звязаны з Notelet, і вы зможаце іх выкарыстоўваць, калі пазней зноў актывуеце плацяжы.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Вашы сродкі застануцца ў вашым кашальку, што звязаны з Notelet, і вы зможаце іх выкарыстоўваць, калі пазней зноў актывуеце плацяжы.";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Каб змяніць гэту наладу, выберыце «Ніхто» для параметру «Хто можа бачыць мой нумар».";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Калі вы ўсталюеце для параметра «Хто можа знайсці мяне па нумары» значэнне «Ніхто», знайсці вас у Signal будзе складаней.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Калі вы ўсталюеце для параметра «Хто можа знайсці мяне па нумары» значэнне «Ніхто», знайсці вас у Notelet будзе складаней.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Вы ўпэўнены?";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "Адключыць напаміны";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Пераканайцеся, што вы запомнілі або надзейна захавалі свой PIN-код, бо яго немагчыма аднавіць. Калі вы забудзеце PIN-код, вы можаце страціць даныя пры паўторнай рэгістрацыі свайго ўліковага запісу Signal.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Пераканайцеся, што вы запомнілі або надзейна захавалі свой PIN-код, бо яго немагчыма аднавіць. Калі вы забудзеце PIN-код, вы можаце страціць даныя пры паўторнай рэгістрацыі свайго ўліковага запісу Notelet.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Пацвердзіць свой PIN-код Notelet";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "Напаміны PIN-кода";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "PIN-коды трымаюць інфармацыю, што захоўваецца ў Notelet, зашыфраванай, таму толькі вы можаце атрымаць да яе доступ. Ваш PIN-код немагчыма аднавіць. Ваш профіль, налады і кантакты будуць адноўлены, калі вы зробіце паўторнае ўсталяванне Signal.";
+"SETTINGS_PINS_FOOTER" = "PIN-коды трымаюць інфармацыю, што захоўваецца ў Notelet, зашыфраванай, таму толькі вы можаце атрымаць да яе доступ. Ваш PIN-код немагчыма аднавіць. Ваш профіль, налады і кантакты будуць адноўлены, калі вы зробіце паўторнае ўсталяванне Notelet.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "Змяніць свой PIN-код";
@@ -9797,10 +9797,10 @@
 "UNKNOWN_CONTACT_BLOCK_OFFER" = "Карыстальніка няма ў вашых кантактах. Жадаеце заблакаваць гэтага карыстальніка?";
 
 /* Info message recorded in conversation history when local user receives an unknown message from a linked device and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Адна з вашых прылад адправіла паведамленне, якое не можа быць апрацавана або паказана тут, таму што яно выкарыстоўвае новую функцыю Signal.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Адна з вашых прылад адправіла паведамленне, якое не можа быць апрацавана або паказана тут, таму што яно выкарыстоўвае новую функцыю Notelet.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. Embeds {{user's name or phone number}}. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "Карыстальнік %1$@ адправіў вам паведамленне, якое не можа быць апрацавана або паказана, таму што яно выкарыстоўвае новую функцыю Signal.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "Карыстальнік %1$@ адправіў вам паведамленне, якое не можа быць апрацавана або паказана, таму што яно выкарыстоўвае новую функцыю Notelet.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. */
 "UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITHOUT_NAME" = "Вы атрымалі паведамленне, якое не можа быць апрацавана або паказана, таму што яно выкарыстоўвае новую функцыю Notelet.";

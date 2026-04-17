@@ -251,13 +251,13 @@
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Kan ej öppna Notelet";
 
 /* Error description indicating that the app crashed because there was low storage space available on the device. */
-"APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_MESSAGE" = "Notelet kunde inte öppnas eftersom din enhet har ont om lagringsutrymme. Frigör utrymme genom att hantera ditt lagringsutrymme i Inställningar för att kunna använda Signal.";
+"APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_MESSAGE" = "Notelet kunde inte öppnas eftersom din enhet har ont om lagringsutrymme. Frigör utrymme genom att hantera ditt lagringsutrymme i Inställningar för att kunna använda Notelet.";
 
 /* Error title indicating that the app crashed because there was low storage space available on the device. */
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Lågt lagringsutrymme";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Data som överförts från din gamla enhet kunde inte återställas. Skicka en felsökningslogg till support@Notelet.org så att vi kan felsöka problemet. Om du installerar om Signal kan din meddelandehistorik försvinna.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Data som överförts från din gamla enhet kunde inte återställas. Skicka en felsökningslogg till support@Notelet.org så att vi kan felsöka problemet. Om du installerar om Notelet kan din meddelandehistorik försvinna.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Det gick inte att slutföra överföringen";
@@ -614,7 +614,7 @@
 "BACKUP_ONBOARDING_INTRO_NOT_NOW_TOAST" = "Du kan aktivera säkerhetskopiering i Inställningar.";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Säkerhetskopiera dina meddelanden och media med Notelets säkra, totalsträckskrypterade lagringstjänst. Förlora aldrig ett meddelande när du skaffar en ny telefon eller installerar om Signal.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Säkerhetskopiera dina meddelanden och media med Notelets säkra, totalsträckskrypterade lagringstjänst. Förlora aldrig ett meddelande när du skaffar en ny telefon eller installerar om Notelet.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
 "BACKUP_ONBOARDING_INTRO_TITLE" = "Säkerhetskopiering av Notelet";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Återställningsnyckel";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Ditt abonnemang för säkerhetskopiering har löpt ut eftersom den inte kunde förnyas med din betalningsmetod.\n\nFör att fortsätta säkerhetskopiera media kan du abonnera igen. Du kommer fortfarande att ha tillgång till den kostnadsfria planen av Säkerhetskopiering av Signal.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Ditt abonnemang för säkerhetskopiering har löpt ut eftersom den inte kunde förnyas med din betalningsmetod.\n\nFör att fortsätta säkerhetskopiera media kan du abonnera igen. Du kommer fortfarande att ha tillgång till den kostnadsfria planen av Säkerhetskopiering av Notelet.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Ditt abonnemang för säkerhetskopiering har löpt ut eftersom du inte längre använder TestFlight.\n\nFör att fortsätta säkerhetskopiera media kan du abonnera igen. Du kommer fortfarande att ha tillgång till det kostnadsfria abonnemanget av Säkerhetskopiering av Signal.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Ditt abonnemang för säkerhetskopiering har löpt ut eftersom du inte längre använder TestFlight.\n\nFör att fortsätta säkerhetskopiera media kan du abonnera igen. Du kommer fortfarande att ha tillgång till det kostnadsfria abonnemanget av Säkerhetskopiering av Notelet.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "Hantera säkerhetskopiering";
@@ -782,7 +782,7 @@
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_ACTION_BUTTON_TITLE" = "Förnya";
 
 /* Text describing that the user's paid backup plan did not correspond to a App Store subscription on this device. */
-"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_DESCRIPTION" = "Ditt abonnemang hittades inte på den här enheten. Förnya för att fortsätta använda Säkerhetskopiering av Signal.";
+"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_DESCRIPTION" = "Ditt abonnemang hittades inte på den här enheten. Förnya för att fortsätta använda Säkerhetskopiering av Notelet.";
 
 /* Header describing what the paid backup plan includes. */
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_HEADER" = "Säkerhetskopiering av textmeddelanden + alla mediefiler";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Säkerhetskopieringar har stängts av och dina data har tagits bort från Notelets säkra lagringstjänst.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Säkerhetskopiering har inaktiverats. Alla mediefiler som inte finns på enheten laddas ner nu. När dina data har laddats ner kommer de att raderas från Signals säkra lagringstjänst.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Säkerhetskopiering har inaktiverats. Alla mediefiler som inte finns på enheten laddas ner nu. När dina data har laddats ner kommer de att raderas från Notelets säkra lagringstjänst.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "Ett fel inträffade. Kontakta supporten.";
@@ -857,7 +857,7 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "Stäng av och ta bort säkerhetskopior?";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Du har mediefiler i din säkerhetskopia som inte finns på den här enheten. Din säkerhetskopia kan ta lång tid att ladda ner, håll Signal öppen för att undvika avbrott.";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Du har mediefiler i din säkerhetskopia som inte finns på den här enheten. Din säkerhetskopia kan ta lång tid att ladda ner, håll Notelet öppen för att undvika avbrott.";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "Laddar ner din säkerhetskopia";
@@ -953,7 +953,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "Ladda ner senare";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Du har media i din säkerhetskopia som inte finns på den här enheten. Det här kan ta lång tid att ladda ner. Håll Signal öppet för att undvika avbrott i din nedladdning.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Du har media i din säkerhetskopia som inte finns på den här enheten. Det här kan ta lång tid att ladda ner. Håll Notelet öppet för att undvika avbrott i din nedladdning.";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "Ladda ner nu";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "Medieuppladdning pausad: väntar på wifi";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Du har nått lagringsgränsen på %1$@ som ingår i din säkerhetskopieringsplan. För att säkerhetskopiera nya chattar och media, frigör %2$@ i Signal och tryck sedan på Säkerhetskopiera nu.";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Du har nått lagringsgränsen på %1$@ som ingår i din säkerhetskopieringsplan. För att säkerhetskopiera nya chattar och media, frigör %2$@ i Notelet och tryck sedan på Säkerhetskopiera nu.";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "Laddar upp %1$@ av %2$@ (%3$@)";
@@ -1400,7 +1400,7 @@
 "CALL_QUALITY_SURVEY_COMPLETION_TOAST" = "Tack för din feedback!";
 
 /* Footer text explaining custom issue descriptions in the call quality survey */
-"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Inkludera alla detaljer som är relevanta för problemet. Allt du delar här kommer att hållas privat och kommer endast att användas för att förbättra samtal i Signal.";
+"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Inkludera alla detaljer som är relevanta för problemet. Allt du delar här kommer att hållas privat och kommer endast att användas för att förbättra samtal i Notelet.";
 
 /* Placeholder text for the custom issue entry in the call quality survey */
 "CALL_QUALITY_SURVEY_CUSTOM_ISSUE_PLACEHOLDER" = "Beskriv ditt problem";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM/YY";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet samlar inte in eller lagrar någon av dina personuppgifter när du gör en donation.\n\nVi använder Stripe som vår betalningstjänst för att ta emot dina donationer. Vi kommer inte åt, lagrar eller sparar inte någon av de uppgifter du lämnar till dem.\n\nSignal kopplar inte och kan inte koppla din donation till ditt Signal-konto.\n\nTack för ditt stöd!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet samlar inte in eller lagrar någon av dina personuppgifter när du gör en donation.\n\nVi använder Stripe som vår betalningstjänst för att ta emot dina donationer. Vi kommer inte åt, lagrar eller sparar inte någon av de uppgifter du lämnar till dem.\n\nNotelet kopplar inte och kan inte koppla din donation till ditt Notelet-konto.\n\nTack för ditt stöd!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Dina uppgifter är privata";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "Återuppta";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Säkerhetskopiering av dina media med mobildata kan leda till dataavgifter. Din säkerhetskopia kan ta lång tid att ladda upp, håll Signal öppen för att undvika avbrott.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Säkerhetskopiering av dina media med mobildata kan leda till dataavgifter. Din säkerhetskopia kan ta lång tid att ladda upp, håll Notelet öppen för att undvika avbrott.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "Återuppta med användning av mobildata?";
@@ -2138,7 +2138,7 @@
 "CONTACT_SHARE_INVALID_CONTACT" = "Ogiltig kontakt.";
 
 /* Alert body when contacts disabled while trying to share a contact. */
-"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet behöver åtkomst till dina kontakter. Gå till iOS-inställningar och slå på kontakter. Dina kontakter är krypterade och är inte synliga för Signal-tjänsten.";
+"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet behöver åtkomst till dina kontakter. Gå till iOS-inställningar och slå på kontakter. Dina kontakter är krypterade och är inte synliga för Notelet-tjänsten.";
 
 /* Alert title when contacts disabled while trying to share a contact. */
 "CONTACT_SHARING_NO_ACCESS_TITLE" = "Tillåt åtkomst till kontakter";
@@ -3182,7 +3182,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ har donerat till Notelet å dina vägnar. Visa ditt stöd för Notelet på din profil.";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "Som en oberoende ideell organisation är Notelet engagerad i privata meddelanden och samtal. Inga annonser, inga spårare, ingen övervakning. Donera idag för att stödja Signal.";
+"DONATION_READ_MORE_SHEET_BODY" = "Som en oberoende ideell organisation är Notelet engagerad i privata meddelanden och samtal. Inga annonser, inga spårare, ingen övervakning. Donera idag för att stödja Notelet.";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "Få ett valfritt märke på din profil när du donerar";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Dela kvitto";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Tack för att du stöder Notelet. Ditt bidrag hjälper till att driva på uppdraget att utveckla öppen källkods integritetsteknik som skyddar yttrandefrihet och möjliggör säker global kommunikation för miljoner runt om i världen. Om du är bosatt i USA, spara detta kvitto för dina skatteuppgifter. Signal Technology Foundation är en skattebefriad ideell organisation i USA enligt avsnitt 501c3 i Internal Revenue Code. Vårt federala skatte-ID är 82–4506840.";
+"DONATION_RECEIPT_FOOTER" = "Tack för att du stöder Notelet. Ditt bidrag hjälper till att driva på uppdraget att utveckla öppen källkods integritetsteknik som skyddar yttrandefrihet och möjliggör säker global kommunikation för miljoner runt om i världen. Om du är bosatt i USA, spara detta kvitto för dina skatteuppgifter. Notelet Technology Foundation är en skattebefriad ideell organisation i USA enligt avsnitt 501c3 i Internal Revenue Code. Vårt federala skatte-ID är 82–4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Donation åt en vän";
@@ -3389,7 +3389,7 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Hej,\n\nDen senaste tiden har jag använt Notelet för att hålla chattarna på min iPhone privata. Jag vill att du också installerar Notelet, så att vi kan vara säkra på att endast du och jag kan läsa våra meddelanden eller höra våra samtal.\n\nSignal finns för iPhone, Android och som skrivbordsversion. Hämta den här: %1$@\n\nSignal fungerar som din befintliga meddelandeapp. Vi kan skicka bilder och video, ringa samtal och starta gruppchattar. Det bästa är att ingen annan kan se något av det, inte ens människorna som gör Signal!\n\nDu kan läsa mer om Signal här: %2$@";
+"EMAIL_INVITE_BODY" = "Hej,\n\nDen senaste tiden har jag använt Notelet för att hålla chattarna på min iPhone privata. Jag vill att du också installerar Notelet, så att vi kan vara säkra på att endast du och jag kan läsa våra meddelanden eller höra våra samtal.\n\nNotelet finns för iPhone, Android och som skrivbordsversion. Hämta den här: %1$@\n\nNotelet fungerar som din befintliga meddelandeapp. Vi kan skicka bilder och video, ringa samtal och starta gruppchattar. Det bästa är att ingen annan kan se något av det, inte ens människorna som gör Notelet!\n\nDu kan läsa mer om Notelet här: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Låt oss använda Notelet";
@@ -4994,10 +4994,10 @@
 "LINK_PREVIEW_UNKNOWN_DOMAIN" = "Länkförhandsvisning";
 
 /* Shown in an alert when trying to edit a contact. */
-"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Hantering av telefonkontakter är inte längre tillgängligt på iPad. För att lägga till Notelet-förbindelser till dina telefonkontakter öppnar du Signal på din telefon.";
+"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Hantering av telefonkontakter är inte längre tillgängligt på iPad. För att lägga till Notelet-förbindelser till dina telefonkontakter öppnar du Notelet på din telefon.";
 
 /* Shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. */
-"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Hantering av telefonkontakter stöds inte längre på iPad. Den här enheten fortsätter att synkronisera alla ändringar i din kontaktlista från Signal på din telefon.";
+"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Hantering av telefonkontakter stöds inte längre på iPad. Den här enheten fortsätter att synkronisera alla ändringar i din kontaktlista från Notelet på din telefon.";
 
 /* A button shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. Tapping it opens a website with more details. */
 "LINKED_DEVICE_MANAGE_CONTACTS_LEARN_MORE" = "Läs mer";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Du har länkat en ny enhet";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "För att länka ett skrivbord eller en iPad till detta Notelet-konto, gå till Länkade enheter och tryck på Länka en ny enhet. Skanna sedan QR-koden igen. Se till att du bara skannar QR-koder som kommer direkt från Signal.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "För att länka ett skrivbord eller en iPad till detta Notelet-konto, gå till Länkade enheter och tryck på Länka en ny enhet. Skanna sedan QR-koden igen. Se till att du bara skannar QR-koder som kommer direkt från Notelet.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Det verkar som om du försöker länka en Notelet-enhet. Tryck på fortsätt och tryck sedan på Länka en ny enhet. Skanna sedan QR-koden igen.";
@@ -5969,7 +5969,7 @@
 "ONBOARDING_CHOOSE_RESTORE_METHOD_DESCRIPTION" = "Välj hur du vill återställa din meddelandehistorik och dina kontodata.";
 
 /* Message body displayed to a user during registration if there are no restore options available. */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Eftersom du byter från Android till iOS är det enda sättet att överföra dina meddelanden och media att aktivera Säkerhetskopiering av Signal på din gamla enhet.";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Eftersom du byter från Android till iOS är det enda sättet att överföra dina meddelanden och media att aktivera Säkerhetskopiering av Notelet på din gamla enhet.";
 
 /* Title displayed to a user during registration if there are no restore options available. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_TITLE" = "Ingen säkerhetskopiering att återställa";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "Länka iPhone";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Genom att trycka på \"Registrera iPad\" kan du skapa ett helt nytt Notelet-konto eller flytta ett befintligt konto till denna iPad. Detta kommer att inaktivera Signal på alla andra enheter som för närvarande är registrerade med samma telefonnummer.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Genom att trycka på \"Registrera iPad\" kan du skapa ett helt nytt Notelet-konto eller flytta ett befintligt konto till denna iPad. Detta kommer att inaktivera Notelet på alla andra enheter som för närvarande är registrerade med samma telefonnummer.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "Genom att trycka på \"Länka iPhone\" kan du ansluta din telefon till ett befintligt konto. Att länka din telefon rekommenderas i allmänhet inte och kommer att begränsa vissa funktioner, såsom att ringa.";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "Skanna QR-kod";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "För att överföra det här kontot till en ny enhet trycker du på Fortsätt och skannar QR-koden med Notelet-kameran. Se till att du bara skannar QR-koder som kommer direkt från Signal.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "För att överföra det här kontot till en ny enhet trycker du på Fortsätt och skannar QR-koden med Notelet-kameran. Se till att du bara skannar QR-koder som kommer direkt från Notelet.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "Svarar till %1$@. %2$@";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Inaktivera betalningar";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Det rekommenderas att du överför dina pengar till en annan plånboksadress innan du inaktiverar betalningar. Om du väljer att inte överföra dina pengar nu förblir de kvar i din plånbok kopplad till Signal om du återaktiverar betalningar.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Det rekommenderas att du överför dina pengar till en annan plånboksadress innan du inaktiverar betalningar. Om du väljer att inte överföra dina pengar nu förblir de kvar i din plånbok kopplad till Notelet om du återaktiverar betalningar.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Ditt saldo kommer att finnas kvar i din plånbok kopplad till Notelet om du väljer att återaktivera betalningar.";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Om du vill ändra den här inställningen ställer du in Vem kan se mitt nummer till Ingen.";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Om du ställer in \"Vem kan hitta mig med nummer\" till \"Ingen\" blir det svårare för andra att hitta dig på Signal.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Om du ställer in \"Vem kan hitta mig med nummer\" till \"Ingen\" blir det svårare för andra att hitta dig på Notelet.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Är du säker?";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "Stäng av påminnelser";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Se till att du lagrar din PIN-kod på ett säkert sätt, eftersom den inte kan återställas. Om du glömmer din PIN-kod kan du förlora data när du registrerar ditt Signal-konto igen.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Se till att du lagrar din PIN-kod på ett säkert sätt, eftersom den inte kan återställas. Om du glömmer din PIN-kod kan du förlora data när du registrerar ditt Notelet-konto igen.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Bekräfta din Notelet PIN-kod";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "PIN-kodspåminnelser";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "PIN-koder håller information som lagras hos Notelet krypterad så bara du kan komma åt den. Din PIN-kod kan inte återställas. Din profil, inställningar och kontakter återställs när du installerar om Signal.";
+"SETTINGS_PINS_FOOTER" = "PIN-koder håller information som lagras hos Notelet krypterad så bara du kan komma åt den. Din PIN-kod kan inte återställas. Din profil, inställningar och kontakter återställs när du installerar om Notelet.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "Ändra din PIN-kod";
@@ -9797,7 +9797,7 @@
 "UNKNOWN_CONTACT_BLOCK_OFFER" = "Användaren finns inte i dina kontakter. Vill du blockera användaren?";
 
 /* Info message recorded in conversation history when local user receives an unknown message from a linked device and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "En av dina enheter skickade ett meddelande som inte kan bearbetas eller visas här eftersom den använder en ny Signal-funktion.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "En av dina enheter skickade ett meddelande som inte kan bearbetas eller visas här eftersom den använder en ny Notelet-funktion.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. Embeds {{user's name or phone number}}. */
 "UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "%1$@ skickade dig ett meddelande som inte kan bearbetas eller visas eftersom det använder en ny Notelet-funktion.";

@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "Nieznana wersja bazy danych.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Wystąpił problem z uruchomieniem aplikacji Notelet. Abyśmy mogli rozwiązać ten problem, wyślij dziennik debugowania na adres support@signal.org.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Wystąpił problem z uruchomieniem aplikacji Notelet. Abyśmy mogli rozwiązać ten problem, wyślij dziennik debugowania na adres support@notelet.org.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Nie udało się otworzyć aplikacji Notelet";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Za mało miejsca na urządzeniu";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Nie udało się przywrócić danych przeniesionych z Twojego poprzedniego urządzenia. Wyślij dzienniki debugowania na adres support@signal.org, abyśmy mogli rozwiązać ten problem. Jeśli ponownie zainstalujesz Signal, możesz stracić historię wiadomości.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Nie udało się przywrócić danych przeniesionych z Twojego poprzedniego urządzenia. Wyślij dzienniki debugowania na adres support@notelet.org, abyśmy mogli rozwiązać ten problem. Jeśli ponownie zainstalujesz Notelet, możesz stracić historię wiadomości.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Nie udało się przenieść danych";
@@ -614,7 +614,7 @@
 "BACKUP_ONBOARDING_INTRO_NOT_NOW_TOAST" = "Możesz włączyć kopie zapasowe w sekcji „Ustawienia”.";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Twórz kopie zapasowe wiadomości i multimediów w usłudze bezpiecznego przechowywania Notelet z szyfrowaniem end-to-end. Dzięki temu nie stracisz historii wiadomości, nawet gdy zmienisz telefon lub ponownie zainstalujesz aplikację Signal.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Twórz kopie zapasowe wiadomości i multimediów w usłudze bezpiecznego przechowywania Notelet z szyfrowaniem end-to-end. Dzięki temu nie stracisz historii wiadomości, nawet gdy zmienisz telefon lub ponownie zainstalujesz aplikację Notelet.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
 "BACKUP_ONBOARDING_INTRO_TITLE" = "Bezpieczne kopie zapasowe Notelet";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Kod odzyskiwania";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Subskrypcja kopii zapasowych wygasła, ponieważ nie można było jej odnowić przy użyciu wybranej metody płatności.\n\nAby dalej tworzyć kopie zapasowe multimediów, możesz ponownie wykupić subskrypcję. Tymczasem korzystasz z bezpłatnej usługi tworzenia kopii zapasowych Signal.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Subskrypcja kopii zapasowych wygasła, ponieważ nie można było jej odnowić przy użyciu wybranej metody płatności.\n\nAby dalej tworzyć kopie zapasowe multimediów, możesz ponownie wykupić subskrypcję. Tymczasem korzystasz z bezpłatnej usługi tworzenia kopii zapasowych Notelet.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Subskrypcja kopii zapasowych wygasła, ponieważ nie używasz już TestFlight.\n\nAby dalej tworzyć kopie zapasowe multimediów, możesz wykupić subskrypcję. Tymczasem korzystasz z bezpłatnej usługi tworzenia kopii zapasowych Signal.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Subskrypcja kopii zapasowych wygasła, ponieważ nie używasz już TestFlight.\n\nAby dalej tworzyć kopie zapasowe multimediów, możesz wykupić subskrypcję. Tymczasem korzystasz z bezpłatnej usługi tworzenia kopii zapasowych Notelet.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "Zarządzaj usługą";
@@ -677,7 +677,7 @@
 "BACKUP_RESTORE_MODAL_TITLE" = "Przywracanie wiadomości…";
 
 /* Message describing that the Background App Refresh permission is disabled for Signal. \"Background App Refresh\" should be localized the same way it is in iOS Settings app permissions. */
-"BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_MESSAGE" = "Automatyczne tworzenie kopii zapasowych jest wyłączone. Aby włączyć automatyczne tworzenie kopii zapasowych, zmień uprawnienia aplikacji Signal na swoim urządzeniu.";
+"BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_MESSAGE" = "Automatyczne tworzenie kopii zapasowych jest wyłączone. Aby włączyć automatyczne tworzenie kopii zapasowych, zmień uprawnienia aplikacji Notelet na swoim urządzeniu.";
 
 /* Add-on to a message describing that the Background App Refresh permission is disabled for Signal. \"Background App Refresh\" should be localized the same way it is in iOS Settings app permissions. */
 "BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_MESSAGE_UPDATE_NOW" = "Zmień teraz";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Tworzenie kopii zapasowych zostało wyłączone, a Twoje dane zostały usunięte z usługi bezpiecznego przechowywania Notelet.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Tworzenie kopii zapasowych zostało wyłączone. Wszystkie multimedia, które nie znajdują się na urządzeniu, są właśnie pobierane. Następnie zostaną one usunięte z usługi bezpiecznego przechowywania Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Tworzenie kopii zapasowych zostało wyłączone. Wszystkie multimedia, które nie znajdują się na urządzeniu, są właśnie pobierane. Następnie zostaną one usunięte z usługi bezpiecznego przechowywania Notelet.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "Wystąpił błąd. Skontaktuj się z naszą pomocą techniczną.";
@@ -857,7 +857,7 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "Wyłączyć i usunąć kopie zapasowe?";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "W kopii zapasowej masz multimedia, które nie zostały jeszcze pobrane na to urządzenie. Pobieranie ich z kopii zapasowej może potrwać dłuższą chwilę – aby nie przerywać tego procesu, nie zamykaj aplikacji Signal.";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "W kopii zapasowej masz multimedia, które nie zostały jeszcze pobrane na to urządzenie. Pobieranie ich z kopii zapasowej może potrwać dłuższą chwilę – aby nie przerywać tego procesu, nie zamykaj aplikacji Notelet.";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "Trwa pobieranie kopii zapasowej";
@@ -953,7 +953,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "Pobierz później";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "W kopii zapasowej masz multimedia, które nie zostały jeszcze pobrane na to urządzenie. Pobieranie może potrwać dłuższą chwilę – aby nie przerywać tego procesu, nie zamykaj aplikacji Signal.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "W kopii zapasowej masz multimedia, które nie zostały jeszcze pobrane na to urządzenie. Pobieranie może potrwać dłuższą chwilę – aby nie przerywać tego procesu, nie zamykaj aplikacji Notelet.";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "Pobierz teraz";
@@ -980,7 +980,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_TITLE" = "Zoptymalizuj pamięć na urządzeniu";
 
 /* Subtitle for a notification telling the user they are out of remote storage space. */
-"BACKUP_SETTINGS_OUT_OF_STORAGE_SPACE_NOTIFICATION_SUBTITLE" = "Wykorzystano limit miejsca na kopie zapasowe. Aby dalej tworzyć kopie zapasowe czatów i multimediów, zwolnij najpierw trochę miejsca w aplikacji Signal.";
+"BACKUP_SETTINGS_OUT_OF_STORAGE_SPACE_NOTIFICATION_SUBTITLE" = "Wykorzystano limit miejsca na kopie zapasowe. Aby dalej tworzyć kopie zapasowe czatów i multimediów, zwolnij najpierw trochę miejsca w aplikacji Notelet.";
 
 /* Title for a notification telling the user they are out of remote storage space. */
 "BACKUP_SETTINGS_OUT_OF_STORAGE_SPACE_NOTIFICATION_TITLE" = "Brak miejsca na kopie zapasowe";
@@ -1004,7 +1004,7 @@
 "BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_NOTICE_TITLE" = "Nie udało się skorzystać z usługi tworzenia kopii zapasowych";
 
 /* Body for a sheet explaining that the user's Backups subscription was already redeemed. */
-"BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_BODY" = "W tym miesiącu próbowano skorzystać z usługi tworzenia kopii zapasowych na zbyt wielu urządzeniach.\n\nByć może zostało przez Ciebie podjętych zbyt wiele prób ponownej rejestracji konta Signal lub korzystasz z tej samej subskrypcji na zbyt wielu urządzeniach.";
+"BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_BODY" = "W tym miesiącu próbowano skorzystać z usługi tworzenia kopii zapasowych na zbyt wielu urządzeniach.\n\nByć może zostało przez Ciebie podjętych zbyt wiele prób ponownej rejestracji konta Notelet lub korzystasz z tej samej subskrypcji na zbyt wielu urządzeniach.";
 
 /* Button for a sheet explaining that the user's Backups subscription was already redeemed. */
 "BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_GOT_IT_BUTTON" = "Rozumiem";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "Przesyłanie multimediów wstrzymane: oczekiwanie na Wi-Fi";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Wykorzystano limit miejsca (%1$@) dostępnego w tym trybie tworzenia kopii zapasowych. Aby utworzyć kopię zapasową nowych czatów i multimediów, zwolnij %2$@ w aplikacji Signal, a następnie wybierz opcję „Utwórz kopię teraz”.";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Wykorzystano limit miejsca (%1$@) dostępnego w tym trybie tworzenia kopii zapasowych. Aby utworzyć kopię zapasową nowych czatów i multimediów, zwolnij %2$@ w aplikacji Notelet, a następnie wybierz opcję „Utwórz kopię teraz”.";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "Przesyłanie %1$@ z %2$@ (%3$@)";
@@ -1034,7 +1034,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING_GENERIC" = "Przesyłanie…";
 
 /* Message for a sheet shown after the user enables backups. */
-"BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_MESSAGE" = "W przypadku dużej ilości danych tworzenie kopii zapasowej może zająć sporo czasu. Podczas gdy to się dzieje, możesz normalnie korzystać z aplikacji Signal.";
+"BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_MESSAGE" = "W przypadku dużej ilości danych tworzenie kopii zapasowej może zająć sporo czasu. Podczas gdy to się dzieje, możesz normalnie korzystać z aplikacji Notelet.";
 
 /* Title for a sheet shown after the user enables backups. */
 "BACKUP_SETTINGS_WELCOME_TO_BACKUPS_SHEET_TITLE" = "Wszystko gotowe. Możesz już utworzyć bezpieczną kopię zapasową";
@@ -1400,7 +1400,7 @@
 "CALL_QUALITY_SURVEY_COMPLETION_TOAST" = "Dziękujemy za opinię!";
 
 /* Footer text explaining custom issue descriptions in the call quality survey */
-"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Prosimy o podanie wszystkich istotnych szczegółów dotyczących problemu. Informacje te będą traktowane poufnie i zostaną wykorzystane wyłącznie do ulepszenia połączeń w aplikacji Signal.";
+"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Prosimy o podanie wszystkich istotnych szczegółów dotyczących problemu. Informacje te będą traktowane poufnie i zostaną wykorzystane wyłącznie do ulepszenia połączeń w aplikacji Notelet.";
 
 /* Placeholder text for the custom issue entry in the call quality survey */
 "CALL_QUALITY_SURVEY_CUSTOM_ISSUE_PLACEHOLDER" = "Opisz swój problem";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM/RR";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet nie gromadzi ani nie przechowuje Twoich danych osobowych potrzebnych do wpłacenia darowizny.\n\nDo przetwarzania darowizn używamy systemu płatności Stripe. Nie zapisujemy, nie przechowujemy ani nie mamy dostępu do żadnych danych, które przekazujesz.\n\nSignal nie wiąże ani nie może powiązać darowizny z Twoim kontem Signal.\n\nDziękujemy za Twoje wsparcie!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet nie gromadzi ani nie przechowuje Twoich danych osobowych potrzebnych do wpłacenia darowizny.\n\nDo przetwarzania darowizn używamy systemu płatności Stripe. Nie zapisujemy, nie przechowujemy ani nie mamy dostępu do żadnych danych, które przekazujesz.\n\nNotelet nie wiąże ani nie może powiązać darowizny z Twoim kontem Notelet.\n\nDziękujemy za Twoje wsparcie!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Twoje dane są poufne";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "Wznów";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Tworzenie kopii zapasowej multimediów przy użyciu sieci komórkowej może spowodować naliczenie opłat za transmisję danych. Przesyłanie kopii zapasowej może trochę potrwać – aby nie przerywać tego procesu, nie zamykaj aplikacji Signal.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Tworzenie kopii zapasowej multimediów przy użyciu sieci komórkowej może spowodować naliczenie opłat za transmisję danych. Przesyłanie kopii zapasowej może trochę potrwać – aby nie przerywać tego procesu, nie zamykaj aplikacji Notelet.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "Wznowić przy użyciu sieci komórkowej?";
@@ -2138,7 +2138,7 @@
 "CONTACT_SHARE_INVALID_CONTACT" = "Nieprawidłowy kontakt.";
 
 /* Alert body when contacts disabled while trying to share a contact. */
-"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet potrzebuje dostępu do Twoich kontaktów. Przejdź do ustawień urządzenia z iOS i włącz dostęp do kontaktów. Twoje kontakty są szyfrowane i nieczytelne dla usługi Signal.";
+"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet potrzebuje dostępu do Twoich kontaktów. Przejdź do ustawień urządzenia z iOS i włącz dostęp do kontaktów. Twoje kontakty są szyfrowane i nieczytelne dla usługi Notelet.";
 
 /* Alert title when contacts disabled while trying to share a contact. */
 "CONTACT_SHARING_NO_ACCESS_TITLE" = "Zezwól na dostęp do kontaktów";
@@ -3182,7 +3182,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ wpłaca w Twoim imieniu darowiznę na rzecz aplikacji Notelet. Pochwal się okazanym wsparciem w swoim profilu.";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "Jako niezależna organizacja non profit stawiamy na poufność wiadomości i połączeń. Bez reklam, bez śledzenia, bez inwigilacji. Wpłać darowiznę i wesprzyj Signal.";
+"DONATION_READ_MORE_SHEET_BODY" = "Jako niezależna organizacja non profit stawiamy na poufność wiadomości i połączeń. Bez reklam, bez śledzenia, bez inwigilacji. Wpłać darowiznę i wesprzyj Notelet.";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "W zamian za darowiznę otrzymasz specjalną odznakę w swoim profilu";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Udostępnij potwierdzenie";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Dziękujemy za wsparcie aplikacji Notelet. Twoja darowizna wspomaga rozwój otwartoźródłowej technologii, która zapewnia prywatność, chroni wolność słowa i umożliwia bezpieczną komunikację milionom osób na całym świecie. Jeśli mieszkasz w Stanach Zjednoczonych, zachowaj to potwierdzenie, aby uwzględnić wpłatę w zeznaniu podatkowym. Signal Technology Foundation jest organizacją non profit zwolnioną z podatku w USA na podstawie zapisu 501c3 Internal Revenue Code (Kodeksu Podatkowego). Nasz federalny numer identyfikacji podatkowej to 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "Dziękujemy za wsparcie aplikacji Notelet. Twoja darowizna wspomaga rozwój otwartoźródłowej technologii, która zapewnia prywatność, chroni wolność słowa i umożliwia bezpieczną komunikację milionom osób na całym świecie. Jeśli mieszkasz w Stanach Zjednoczonych, zachowaj to potwierdzenie, aby uwzględnić wpłatę w zeznaniu podatkowym. Notelet Technology Foundation jest organizacją non profit zwolnioną z podatku w USA na podstawie zapisu 501c3 Internal Revenue Code (Kodeksu Podatkowego). Nasz federalny numer identyfikacji podatkowej to 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Darowizna w imieniu znajomego";
@@ -3389,13 +3389,13 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Cześć,\n\nzależy mi na prywatności, więc do komunikacji na iPhonie używam aplikacji Notelet. Fajnie będzie, jeśli też ją zainstalujesz – wtedy możemy mieć pewność, że nikt postronny nie czyta ani nie słucha naszych rozmów.\n\nSignal jest dostępny na iPhone'a, Androida oraz komputery. Aplikację możesz pobrać tutaj: %1$@\n\nSignal działa tak, jak każdy inny komunikator. Umożliwia wysyłanie zdjęć i filmów, dzwonienie, a także tworzenie czatów grupowych. Najlepsze jest jednak to, że nikt inny nie będzie mieć dostępu do naszych wiadomości, nawet osoby, które zbudowały tę aplikację!\n\nWięcej o komunikatorze Signal przeczytasz tutaj: %2$@";
+"EMAIL_INVITE_BODY" = "Cześć,\n\nzależy mi na prywatności, więc do komunikacji na iPhonie używam aplikacji Notelet. Fajnie będzie, jeśli też ją zainstalujesz – wtedy możemy mieć pewność, że nikt postronny nie czyta ani nie słucha naszych rozmów.\n\nNotelet jest dostępny na iPhone'a, Androida oraz komputery. Aplikację możesz pobrać tutaj: %1$@\n\nNotelet działa tak, jak każdy inny komunikator. Umożliwia wysyłanie zdjęć i filmów, dzwonienie, a także tworzenie czatów grupowych. Najlepsze jest jednak to, że nikt inny nie będzie mieć dostępu do naszych wiadomości, nawet osoby, które zbudowały tę aplikację!\n\nWięcej o komunikatorze Notelet przeczytasz tutaj: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Zacznij korzystać z aplikacji Notelet";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Na urządzeniu nie zostało skonfigurowane wysyłanie wiadomości e-mail. Aby przekazać zgłoszenie zespołowi pomocy technicznej, skonfiguruj e-mail na swoim urządzeniu lub wyślij wiadomość na adres support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Na urządzeniu nie zostało skonfigurowane wysyłanie wiadomości e-mail. Aby przekazać zgłoszenie zespołowi pomocy technicznej, skonfiguruj e-mail na swoim urządzeniu lub wyślij wiadomość na adres support@notelet.org";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "E-mail niedostępny";
@@ -4994,10 +4994,10 @@
 "LINK_PREVIEW_UNKNOWN_DOMAIN" = "Podgląd linku";
 
 /* Shown in an alert when trying to edit a contact. */
-"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Zarządzanie kontaktami zapisanymi na telefonie nie jest już obsługiwane na iPadzie. Aby dodać kontakty Notelet do listy kontaktów telefonu, otwórz aplikację Signal na swoim telefonie.";
+"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Zarządzanie kontaktami zapisanymi na telefonie nie jest już obsługiwane na iPadzie. Aby dodać kontakty Notelet do listy kontaktów telefonu, otwórz aplikację Notelet na swoim telefonie.";
 
 /* Shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. */
-"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Zarządzanie kontaktami zapisanymi na telefonie nie jest już obsługiwane na iPadzie. Na tym urządzeniu dalej będą synchronizowane wszelkie zmiany wprowadzane do listy kontaktów w aplikacji Signal na telefonie.";
+"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Zarządzanie kontaktami zapisanymi na telefonie nie jest już obsługiwane na iPadzie. Na tym urządzeniu dalej będą synchronizowane wszelkie zmiany wprowadzane do listy kontaktów w aplikacji Notelet na telefonie.";
 
 /* A button shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. Tapping it opens a website with more details. */
 "LINKED_DEVICE_MANAGE_CONTACTS_LEARN_MORE" = "Dowiedz się więcej";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Połączono nowe urządzenie";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Aby połączyć konto Notelet z komputerem lub iPadem, przejdź do sekcji „Połączone urządzenia”, dotknij opcji „Połącz nowe urządzenie” i zeskanuj kod QR ponownie. Pamiętaj, aby skanować wyłącznie kody QR pochodzące bezpośrednio z aplikacji Signal.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Aby połączyć konto Notelet z komputerem lub iPadem, przejdź do sekcji „Połączone urządzenia”, dotknij opcji „Połącz nowe urządzenie” i zeskanuj kod QR ponownie. Pamiętaj, aby skanować wyłącznie kody QR pochodzące bezpośrednio z aplikacji Notelet.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Wygląda na to, że próbujesz połączyć swoje konto Notelet z nowym urządzeniem. Aby to zrobić, dotknij opcji „Kontynuuj”, a potem „Połącz nowe urządzenie” i zeskanuj kod QR ponownie.";
@@ -5969,7 +5969,7 @@
 "ONBOARDING_CHOOSE_RESTORE_METHOD_DESCRIPTION" = "Zdecyduj, w jaki sposób chcesz przywrócić historię wiadomości i dane konta.";
 
 /* Message body displayed to a user during registration if there are no restore options available. */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Ponieważ przechodzisz z Androida na urządzenie z systemem iOS, jedynym sposobem na przeniesienie wiadomości i multimediów jest włączenie usługi kopii zapasowych Signal na poprzednim urządzeniu.";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Ponieważ przechodzisz z Androida na urządzenie z systemem iOS, jedynym sposobem na przeniesienie wiadomości i multimediów jest włączenie usługi kopii zapasowych Notelet na poprzednim urządzeniu.";
 
 /* Title displayed to a user during registration if there are no restore options available. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_TITLE" = "Brak kopii zapasowej do przywrócenia";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "Połącz iPhone'a";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Gdy dotkniesz opcji „Zarejestruj iPada”, będziesz mieć możliwość utworzenia nowego konta Notelet lub przeniesienia dotychczasowego konta na tego iPada. Spowoduje to dezaktywację aplikacji Signal na wszystkich innych urządzeniach zarejestrowanych przy użyciu tego samego numeru telefonu.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Gdy dotkniesz opcji „Zarejestruj iPada”, będziesz mieć możliwość utworzenia nowego konta Notelet lub przeniesienia dotychczasowego konta na tego iPada. Spowoduje to dezaktywację aplikacji Notelet na wszystkich innych urządzeniach zarejestrowanych przy użyciu tego samego numeru telefonu.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "Gdy dotkniesz opcji „Połącz iPhone'a”, będziesz mieć możliwość połączenia telefonu z dotychczasowym kontem. Łączenie telefonu nie jest zalecane i ogranicza działanie niektórych funkcjonalności, takich jak wykonywanie połączeń.";
@@ -6767,7 +6767,7 @@
 "PIN_CREATION_DISABLE_CONFIRMATION_TITLE" = "Uwaga";
 
 /* The explanation in the 'pin creation' view. */
-"PIN_CREATION_EXPLANATION" = "Dzięki PIN-owi dane przechowywane w aplikacji Notelet są szyfrowane i tylko Ty masz do nich dostęp. PIN pozwoli Ci przywrócić profil, ustawienia i kontakty, gdy ponownie zainstalujesz Signal. Nie potrzebujesz PIN-u, aby otwierać aplikację.";
+"PIN_CREATION_EXPLANATION" = "Dzięki PIN-owi dane przechowywane w aplikacji Notelet są szyfrowane i tylko Ty masz do nich dostęp. PIN pozwoli Ci przywrócić profil, ustawienia i kontakty, gdy ponownie zainstalujesz Notelet. Nie potrzebujesz PIN-u, aby otwierać aplikację.";
 
 /* Learn more action on the pin creation view */
 "PIN_CREATION_LEARN_MORE" = "Więcej informacji o kodzie PIN";
@@ -7076,7 +7076,7 @@
 "PRIVACY_VERIFICATION_FAILED_WITH_OLD_LOCAL_VERSION" = "Korzystasz z nieaktualnej wersji aplikacji. Aby można było dokończyć weryfikację, zaktualizuj Notelet.";
 
 /* alert body */
-"PRIVACY_VERIFICATION_FAILED_WITH_OLD_REMOTE_VERSION" = "Twój kontakt korzysta z nieaktualnej wersji aplikacji. Aby można było dokończyć weryfikację, ta osoba musi zaktualizować Signal.";
+"PRIVACY_VERIFICATION_FAILED_WITH_OLD_REMOTE_VERSION" = "Twój kontakt korzysta z nieaktualnej wersji aplikacji. Aby można było dokończyć weryfikację, ta osoba musi zaktualizować Notelet.";
 
 /* alert body */
 "PRIVACY_VERIFICATION_FAILURE_INVALID_QRCODE" = "Zeskanowany kod nie wygląda na numer bezpieczeństwa. Upewnij się, że Ty i Twój kontakt używacie aktualnej wersji aplikacji Notelet.";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "Zeskanuj kod QR";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Aby przenieść to konto na nowe urządzenie, dotknij opcji „Kontynuuj” i zeskanuj kod QR za pomocą aparatu w aplikacji Signal. Upewnij się, że skanujesz kod QR pochodzący bezpośrednio z aplikacji Signal.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Aby przenieść to konto na nowe urządzenie, dotknij opcji „Kontynuuj” i zeskanuj kod QR za pomocą aparatu w aplikacji Notelet. Upewnij się, że skanujesz kod QR pochodzący bezpośrednio z aplikacji Notelet.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "Odpowiedź na wiadomość, której nadawcą jest %1$@. %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "Potrzebujesz pomocy?";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN to kod utworzony przez Ciebie z co najmniej 4 znaków. Może składać się z cyfr lub z cyfr i liter. Jeśli nie pamiętasz PIN-u, musisz odczekać 7 dni, aby ponownie zarejestrować konto. Jeśli masz włączone bezpieczne kopie zapasowe Signal, możesz użyć kodu odzyskiwania.";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN to kod utworzony przez Ciebie z co najmniej 4 znaków. Może składać się z cyfr lub z cyfr i liter. Jeśli nie pamiętasz PIN-u, musisz odczekać 7 dni, aby ponownie zarejestrować konto. Jeśli masz włączone bezpieczne kopie zapasowe Notelet, możesz użyć kodu odzyskiwania.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN to kod utworzony przez Ciebie z co najmniej 4 znaków. Może składać się z cyfr lub z cyfr i liter. Jeśli nie pamiętasz PIN-u, możesz się zarejestrować i korzystać ze swojego konta, ale stracisz niektóre zapisane ustawienia, takie jak informacje w profilu. Jeśli masz włączone bezpieczne kopie zapasowe Signal, możesz użyć kodu odzyskiwania.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN to kod utworzony przez Ciebie z co najmniej 4 znaków. Może składać się z cyfr lub z cyfr i liter. Jeśli nie pamiętasz PIN-u, możesz się zarejestrować i korzystać ze swojego konta, ale stracisz niektóre zapisane ustawienia, takie jak informacje w profilu. Jeśli masz włączone bezpieczne kopie zapasowe Notelet, możesz użyć kodu odzyskiwania.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN to kod utworzony przez Ciebie z co najmniej 4 znaków. Może składać się z cyfr lub z cyfr i liter. Jeśli nie pamiętasz PIN-u, możesz utworzyć nowy. Możesz się zarejestrować i korzystać ze swojego konta, ale stracisz niektóre zapisane ustawienia, takie jak informacje w profilu. Jeśli masz włączone bezpieczne kopie zapasowe Signal, możesz użyć kodu odzyskiwania.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN to kod utworzony przez Ciebie z co najmniej 4 znaków. Może składać się z cyfr lub z cyfr i liter. Jeśli nie pamiętasz PIN-u, możesz utworzyć nowy. Możesz się zarejestrować i korzystać ze swojego konta, ale stracisz niektóre zapisane ustawienia, takie jak informacje w profilu. Jeśli masz włączone bezpieczne kopie zapasowe Notelet, możesz użyć kodu odzyskiwania.";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "Nieprawidłowy PIN";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "Nie udało się przenieść danych";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Podano niepoprawny kod odzyskiwania albo na starym urządzeniu nie została utworzona żadna kopia zapasowa. \n\nUpewnij się, że rejestrujesz się za pomocą tego samego numeru telefonu co wcześniej oraz kodu odzyskiwania otrzymanego podczas włączania usługi bezpiecznych kopii zapasowych Signal. Sprawdź też, czy na starym urządzeniu została utworzona kopia zapasowa.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Podano niepoprawny kod odzyskiwania albo na starym urządzeniu nie została utworzona żadna kopia zapasowa. \n\nUpewnij się, że rejestrujesz się za pomocą tego samego numeru telefonu co wcześniej oraz kodu odzyskiwania otrzymanego podczas włączania usługi bezpiecznych kopii zapasowych Notelet. Sprawdź też, czy na starym urządzeniu została utworzona kopia zapasowa.";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "Nie możesz więcej razy próbować wpisać kodu odzyskiwania. Ze względów bezpieczeństwa liczba prób jest ograniczona. Odczekaj godzinę i spróbuj ponownie.";
@@ -7523,7 +7523,7 @@
 "REGISTRATION_NO_BACKUP_KEY_BUTTON_TITLE" = "Nie masz kodu odzyskiwania?";
 
 /* Body text on a sheet with info for what to do if you don't have a recovery key */
-"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "Bez kodu odzyskiwania składającego się z 64 znaków nie odzyskasz kopii zapasowej. Jeśli nie masz swojego kodu, nie będziemy w stanie przywrócić kopii zapasowej Twojego konta Signal.\n\nJeśli masz dostęp do swojego starego urządzenia, kod odzyskiwania znajdziesz w sekcji Ustawienia > Czaty > Kopie zapasowe. Następnie wybierz opcję „Wyświetl kod odzyskiwania”.";
+"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "Bez kodu odzyskiwania składającego się z 64 znaków nie odzyskasz kopii zapasowej. Jeśli nie masz swojego kodu, nie będziemy w stanie przywrócić kopii zapasowej Twojego konta Notelet.\n\nJeśli masz dostęp do swojego starego urządzenia, kod odzyskiwania znajdziesz w sekcji Ustawienia > Czaty > Kopie zapasowe. Następnie wybierz opcję „Wyświetl kod odzyskiwania”.";
 
 /* Title for sheet with info for what to do if you don't have a recovery key */
 "REGISTRATION_NO_BACKUP_KEY_SHEET_TITLE" = "Nie masz kodu odzyskiwania?";
@@ -7880,7 +7880,7 @@
 "SAFETY_TIPS_FAKE_BUSINESS_TITLE" = "Fałszywe konta firm i instytucji";
 
 /* Message contents for the fake names safety tip. */
-"SAFETY_TIPS_FAKE_NAMES_BODY" = "Notelet nigdy nie zwróci się do Ciebie z prośbą o podanie kodu rejestracyjnego ani PIN-u. Uważaj na tego typu wiadomości – mogą pochodzić od osób podszywających się pod kogoś innego. Imię i nazwisko w profilu podaje osoba posługująca się kontem, a Signal tego nie weryfikuje.";
+"SAFETY_TIPS_FAKE_NAMES_BODY" = "Notelet nigdy nie zwróci się do Ciebie z prośbą o podanie kodu rejestracyjnego ani PIN-u. Uważaj na tego typu wiadomości – mogą pochodzić od osób podszywających się pod kogoś innego. Imię i nazwisko w profilu podaje osoba posługująca się kontem, a Notelet tego nie weryfikuje.";
 
 /* Message title describing the fake names safety tip. */
 "SAFETY_TIPS_FAKE_NAMES_TITLE" = "Uwaga na oszustów";
@@ -8162,7 +8162,7 @@
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_COUNTRY" = "Lokalizacja";
 
 /* Table footer for the 'censorship circumvention' section when censorship circumvention can be manually enabled. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Gdy ta opcja jest włączona, Notelet w miarę możliwości korzysta z mechanizmów obchodzenia cenzury. Nie włączaj tej opcji, jeśli znajdujesz się w miejscu, w którym aplikacja Signal nie jest blokowana.";
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Gdy ta opcja jest włączona, Notelet w miarę możliwości korzysta z mechanizmów obchodzenia cenzury. Nie włączaj tej opcji, jeśli znajdujesz się w miejscu, w którym aplikacja Notelet nie jest blokowana.";
 
 /* Table footer for the 'censorship circumvention' section shown when censorship circumvention has been auto-enabled based on local phone number. */
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_AUTO_ENABLED" = "Obchodzenie cenzury zostało włączone na podstawie numeru telefonu na Twoim koncie.";
@@ -8504,7 +8504,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS" = "Zdezaktywuj płatności";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "Jeśli zdezaktywujesz płatności, nie będziesz już mieć możliwości wysyłania ani otrzymywania waluty MobileCoin w aplikacji Signal.";
+"SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS_CONFIRM_DESCRIPTION" = "Jeśli zdezaktywujesz płatności, nie będziesz już mieć możliwości wysyłania ani otrzymywania waluty MobileCoin w aplikacji Notelet.";
 
 /* Title for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_PAYMENTS_CONFIRM_TITLE" = "Zdezaktywować płatności?";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Zdezaktywuj płatności";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Przed dezaktywacją płatności zalecamy przeniesienie środków do innego portfela. Jeśli ich teraz nie przeniesiesz, pozostaną w Twoim portfelu powiązanym z aplikacją Signal. Możesz ich użyć, jeśli za jakiś czas reaktywujesz znów płatności.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Przed dezaktywacją płatności zalecamy przeniesienie środków do innego portfela. Jeśli ich teraz nie przeniesiesz, pozostaną w Twoim portfelu powiązanym z aplikacją Notelet. Możesz ich użyć, jeśli za jakiś czas reaktywujesz znów płatności.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Środki pozostaną w Twoim portfelu powiązanym z aplikacją Notelet. Możesz ich użyć, jeśli za jakiś czas reaktywujesz znów płatności.";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Aby zmienić to ustawienie, w sekcji „Kto może wyświetlić mój numer telefonu” wybierz opcję „Nikt”.";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Wybór opcji „Nikt” w ustawieniu „Kto może mnie wyszukać po numerze telefonu” utrudni innym znalezienie Cię w aplikacji Signal.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Wybór opcji „Nikt” w ustawieniu „Kto może mnie wyszukać po numerze telefonu” utrudni innym znalezienie Cię w aplikacji Notelet.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Chcesz kontynuować?";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "Wyłącz przypomnienia";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "PIN-u nie można odzyskać, dlatego upewnij się, że go pamiętasz lub przechowujesz w bezpiecznym miejscu. Jeśli zapomnisz swój PIN, przy ponownej rejestracji konta Signal możesz stracić dane.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "PIN-u nie można odzyskać, dlatego upewnij się, że go pamiętasz lub przechowujesz w bezpiecznym miejscu. Jeśli zapomnisz swój PIN, przy ponownej rejestracji konta Notelet możesz stracić dane.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Potwierdź swój PIN Notelet";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "Przypomnienia PIN-u";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "Dzięki PIN-owi dane przechowywane w aplikacji Notelet są szyfrowane i tylko Ty masz do nich dostęp. PIN-u nie można odzyskać. Pozwoli Ci on przywrócić profil, ustawienia i kontakty, gdy ponownie zainstalujesz Signal.";
+"SETTINGS_PINS_FOOTER" = "Dzięki PIN-owi dane przechowywane w aplikacji Notelet są szyfrowane i tylko Ty masz do nich dostęp. PIN-u nie można odzyskać. Pozwoli Ci on przywrócić profil, ustawienia i kontakty, gdy ponownie zainstalujesz Notelet.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "Zmień PIN";
@@ -9797,7 +9797,7 @@
 "UNKNOWN_CONTACT_BLOCK_OFFER" = "Nie masz tej osoby w kontaktach. Czy chcesz ją zablokować?";
 
 /* Info message recorded in conversation history when local user receives an unknown message from a linked device and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Z jednego z Twoich urządzeń wysłano wiadomość, która nie może zostać przetworzona lub wyświetlona, ponieważ wykorzystuje nową funkcję Signal.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Z jednego z Twoich urządzeń wysłano wiadomość, która nie może zostać przetworzona lub wyświetlona, ponieważ wykorzystuje nową funkcję Notelet.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. Embeds {{user's name or phone number}}. */
 "UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "Nie można przetworzyć lub wyświetlić wiadomości, którą przesyła %1$@, ponieważ wykorzystuje ona nową funkcję Notelet.";

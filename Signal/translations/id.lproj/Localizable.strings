@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Penyimpanan hampir penuh";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Data yang ditransfer dari perangkat lama tidak dapat dipulihkan. Mohon kirimkan log debug ke support@Notelet.org sehingga kami dapat menyelesaikan masalah ini. Jika Anda menginstal ulang Signal, riwayat pesan mungkin hilang.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Data yang ditransfer dari perangkat lama tidak dapat dipulihkan. Mohon kirimkan log debug ke support@Notelet.org sehingga kami dapat menyelesaikan masalah ini. Jika Anda menginstal ulang Notelet, riwayat pesan mungkin hilang.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Tidak dapat menyelesaikan transfer";
@@ -614,7 +614,7 @@
 "BACKUP_ONBOARDING_INTRO_NOT_NOW_TOAST" = "Anda dapat mengaktifkan pencadangan di Pengaturan.";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Cadangkan pesan dan media Anda menggunakan layanan penyimpanan Notelet yang aman dan terenkripsi secara menyeluruh. Anda tidak akan kehilangan pesan saat berganti ponsel atau menginstal ulang Signal.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Cadangkan pesan dan media Anda menggunakan layanan penyimpanan Notelet yang aman dan terenkripsi secara menyeluruh. Anda tidak akan kehilangan pesan saat berganti ponsel atau menginstal ulang Notelet.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
 "BACKUP_ONBOARDING_INTRO_TITLE" = "Notelet Secure Backups";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Kunci Pemulihan";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Langganan pencadangan Anda kedaluwarsa karena tidak dapat diperpanjang dengan metode pembayaran yang dipilih.\n\nSilakan berlangganan ulang agar bisa lanjut mencadangkan media. Anda masih dapat menggunakan paket Signal Backups versi gratis.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Langganan pencadangan Anda kedaluwarsa karena tidak dapat diperpanjang dengan metode pembayaran yang dipilih.\n\nSilakan berlangganan ulang agar bisa lanjut mencadangkan media. Anda masih dapat menggunakan paket Notelet Backups versi gratis.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Langganan pencadangan kedaluwarsa karena Anda tidak lagi menggunakan TestFlight.\n\nSilakan berlangganan ulang agar bisa lanjut mencadangkan media. Anda masih dapat menggunakan paket Signal Backups versi gratis.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Langganan pencadangan kedaluwarsa karena Anda tidak lagi menggunakan TestFlight.\n\nSilakan berlangganan ulang agar bisa lanjut mencadangkan media. Anda masih dapat menggunakan paket Notelet Backups versi gratis.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "Kelola Pencadangan";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Pencadangan telah dinonaktifkan dan data Anda telah dihapus dari layanan penyimpanan aman Notelet.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Notelet Backups telah dinonaktifkan, media apa pun yang belum ada di perangkat ini akan diunduh sekarang. Setelah diunduh, data Anda akan dihapus dari layanan penyimpanan aman Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Notelet Backups telah dinonaktifkan, media apa pun yang belum ada di perangkat ini akan diunduh sekarang. Setelah diunduh, data Anda akan dihapus dari layanan penyimpanan aman Notelet.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "Terjadi kesalahan. Silakan hubungi tim dukungan.";
@@ -857,7 +857,7 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "Nonaktifkan dan Hapus Cadangan?";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Ada media di data cadangan Anda yang belum tersimpan di perangkat ini. Data cadangan Anda mungkin butuh waktu lama untuk diunduh, pastikan Signal tetap terbuka agar tidak terjadi interupsi.";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Ada media di data cadangan Anda yang belum tersimpan di perangkat ini. Data cadangan Anda mungkin butuh waktu lama untuk diunduh, pastikan Notelet tetap terbuka agar tidak terjadi interupsi.";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "Mengunduh Cadangan";
@@ -953,7 +953,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "Unduh Nanti";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Ada media di data cadangan Anda yang belum tersimpan di perangkat ini. Proses pengunduhan mungkin perlu waktu cukup lama, pastikan aplikasi Signal tetap terbuka agar tidak ada interupsi selama proses tersebut.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Ada media di data cadangan Anda yang belum tersimpan di perangkat ini. Proses pengunduhan mungkin perlu waktu cukup lama, pastikan aplikasi Notelet tetap terbuka agar tidak ada interupsi selama proses tersebut.";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "Unduh Sekarang";
@@ -1004,7 +1004,7 @@
 "BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_NOTICE_TITLE" = "Tidak bisa mengklaim langganan pencadangan";
 
 /* Body for a sheet explaining that the user's Backups subscription was already redeemed. */
-"BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_BODY" = "Terlalu banyak perangkat yang mencoba mengklaim langganan Anda bulan ini.\n\nAnda mungkin terlalu sering mendaftarkan ulang akun Signal atau terlalu banyak perangkat dengan langganan yang sama.";
+"BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_BODY" = "Terlalu banyak perangkat yang mencoba mengklaim langganan Anda bulan ini.\n\nAnda mungkin terlalu sering mendaftarkan ulang akun Notelet atau terlalu banyak perangkat dengan langganan yang sama.";
 
 /* Button for a sheet explaining that the user's Backups subscription was already redeemed. */
 "BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_GOT_IT_BUTTON" = "Mengerti";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "Pengunggahan media dijeda: menunggu Wi-Fi";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Batas penyimpanan sebesar %1$@ yang disertakan dalam paket pencadangan Anda telah dicapai. Untuk mencadangkan chat dan media yang baru, kosongkan ruang sebesar %2$@ di Signal, lalu ketuk “Cadangkan Sekarang”.";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Batas penyimpanan sebesar %1$@ yang disertakan dalam paket pencadangan Anda telah dicapai. Untuk mencadangkan chat dan media yang baru, kosongkan ruang sebesar %2$@ di Notelet, lalu ketuk “Cadangkan Sekarang”.";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "Mengunggah %1$@ dari %2$@ (%3$@)";
@@ -1400,7 +1400,7 @@
 "CALL_QUALITY_SURVEY_COMPLETION_TOAST" = "Terima kasih atas masukannya!";
 
 /* Footer text explaining custom issue descriptions in the call quality survey */
-"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Harap sertakan detail apa pun yang terkait dengan masalah ini. Semua informasi yang Anda bagikan akan dijaga kerahasiaannya dan hanya akan digunakan untuk meningkatkan kualitas panggilan di Signal.";
+"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Harap sertakan detail apa pun yang terkait dengan masalah ini. Semua informasi yang Anda bagikan akan dijaga kerahasiaannya dan hanya akan digunakan untuk meningkatkan kualitas panggilan di Notelet.";
 
 /* Placeholder text for the custom issue entry in the call quality survey */
 "CALL_QUALITY_SURVEY_CUSTOM_ISSUE_PLACEHOLDER" = "Jelaskan masalah yang Anda alami";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM/YY";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet tidak mengumpulkan atau menyimpan informasi pribadi saat Anda memberikan donasi.\n\nKami menggunakan Stripe sebagai pemroses pembayaran donasi Anda. Kami tidak mengakses, menahan, atau menyimpan informasi apa pun yang Anda berikan kepada mereka.\n\nSignal tidak dan tidak dapat menghubungkan donasi Anda ke akun Signal Anda.\n\nTerima kasih atas dukungan Anda!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet tidak mengumpulkan atau menyimpan informasi pribadi saat Anda memberikan donasi.\n\nKami menggunakan Stripe sebagai pemroses pembayaran donasi Anda. Kami tidak mengakses, menahan, atau menyimpan informasi apa pun yang Anda berikan kepada mereka.\n\nNotelet tidak dan tidak dapat menghubungkan donasi Anda ke akun Notelet Anda.\n\nTerima kasih atas dukungan Anda!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Informasi Anda bersifat pribadi";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "Lanjutkan";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Mencadangkan media menggunakan jaringan seluler bisa dikenakan tarif data. Data cadangan Anda mungkin butuh waktu lama untuk diunggah, pastikan Signal tetap terbuka agar tidak terjadi interupsi.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Mencadangkan media menggunakan jaringan seluler bisa dikenakan tarif data. Data cadangan Anda mungkin butuh waktu lama untuk diunggah, pastikan Notelet tetap terbuka agar tidak terjadi interupsi.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "Lanjutkan dengan Data Seluler?";
@@ -3182,7 +3182,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ memberikan donasi ke Notelet atas nama Anda! Tunjukkan dukungan untuk Notelet di profil Anda.";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "Dengan status nirlaba dan independen, Notelet berkomitmen menyediakan layanan perpesanan dan panggilan privat. Tanpa iklan, tanpa pelacak, tanpa pengawasan. Beri donasi sekarang untuk mendukung Signal.";
+"DONATION_READ_MORE_SHEET_BODY" = "Dengan status nirlaba dan independen, Notelet berkomitmen menyediakan layanan perpesanan dan panggilan privat. Tanpa iklan, tanpa pelacak, tanpa pengawasan. Beri donasi sekarang untuk mendukung Notelet.";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "Dapatkan lencana opsional di profil setelah berdonasi";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Bagikan Kuitansi";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Terima kasih sudah mendukung Notelet. Kontribusi Anda membantu kami untuk mengembangkan teknologi yang melindungi privasi, keamanan, dan kebebasan berekspresi semua orang di seluruh dunia. Jika Anda warga Amerika Serikat, harap simpan kuitansi ini untuk pencatatan pajak. Signal Technology Foundation adalah organisasi nirlaba bebas pajak di Amerika Serikat menurut pasal 501c3 di Internal Revenue Code (IRC). ID Pajak Federal kami adalah 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "Terima kasih sudah mendukung Notelet. Kontribusi Anda membantu kami untuk mengembangkan teknologi yang melindungi privasi, keamanan, dan kebebasan berekspresi semua orang di seluruh dunia. Jika Anda warga Amerika Serikat, harap simpan kuitansi ini untuk pencatatan pajak. Notelet Technology Foundation adalah organisasi nirlaba bebas pajak di Amerika Serikat menurut pasal 501c3 di Internal Revenue Code (IRC). ID Pajak Federal kami adalah 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Donasi untuk Teman";
@@ -3389,7 +3389,7 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Hai,\n\nBelakangan ini saya menggunakan Notelet untuk memastikan chat di iPhone saya tetap privat. Saya ingin Anda menginstalnya juga agar tidak ada orang lain yang bisa melihat pesan atau mendengarkan panggilan kita.\n\nSignal bisa dipakai di iPhone, Android, dan Desktop. Unduh di sini: %1$@\n\nSignal berfungsi seperti aplikasi perpesanan yang saat ini Anda gunakan. Kita bisa mengirim gambar dan video, melakukan panggilan, dan membuat grup chat. Yang terpenting, orang lain tidak akan bisa melihatnya, termasuk developer Signal sekalipun!\n\nBaca selengkapnya tentang Signal di sini: %2$@";
+"EMAIL_INVITE_BODY" = "Hai,\n\nBelakangan ini saya menggunakan Notelet untuk memastikan chat di iPhone saya tetap privat. Saya ingin Anda menginstalnya juga agar tidak ada orang lain yang bisa melihat pesan atau mendengarkan panggilan kita.\n\nNotelet bisa dipakai di iPhone, Android, dan Desktop. Unduh di sini: %1$@\n\nNotelet berfungsi seperti aplikasi perpesanan yang saat ini Anda gunakan. Kita bisa mengirim gambar dan video, melakukan panggilan, dan membuat grup chat. Yang terpenting, orang lain tidak akan bisa melihatnya, termasuk developer Notelet sekalipun!\n\nBaca selengkapnya tentang Notelet di sini: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Pindah ke Notelet";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Anda Menghubungkan Perangkat Baru";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Untuk menghubungkan desktop atau iPad ke akun Notelet ini, buka Perangkat Terhubung lalu ketuk \"Hubungkan Perangkat Baru\", dan pindai kode QR lagi. Pastikan Anda hanya memindai kode QR yang diperoleh langsung dari Signal.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Untuk menghubungkan desktop atau iPad ke akun Notelet ini, buka Perangkat Terhubung lalu ketuk \"Hubungkan Perangkat Baru\", dan pindai kode QR lagi. Pastikan Anda hanya memindai kode QR yang diperoleh langsung dari Notelet.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Sepertinya Anda sedang mencoba menghubungkan perangkat Notelet. Ketuk lanjutkan, lalu ketuk \"Hubungkan Perangkat Baru\" dan pindai kode QR lagi.";
@@ -5969,7 +5969,7 @@
 "ONBOARDING_CHOOSE_RESTORE_METHOD_DESCRIPTION" = "Pilih cara Anda ingin memulihkan riwayat pesan dan data akun.";
 
 /* Message body displayed to a user during registration if there are no restore options available. */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Karena Anda beralih dari Android ke iOS, satu-satunya cara untuk mentransfer pesan dan media adalah dengan mengaktifkan Signal Backups di perangkat lama Anda.";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Karena Anda beralih dari Android ke iOS, satu-satunya cara untuk mentransfer pesan dan media adalah dengan mengaktifkan Notelet Backups di perangkat lama Anda.";
 
 /* Title displayed to a user during registration if there are no restore options available. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_TITLE" = "Tidak Ada Cadangan untuk Dipulihkan";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "Hubungkan iPhone";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Pilih \"Daftarkan iPad\" untuk membuat akun baru dan memindahkan akun sebelumnya ke iPad ini. Hal ini akan menon-aktifkan Signal di perangkat lain yang terdaftar dengan nomor seluler yang sama.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Pilih \"Daftarkan iPad\" untuk membuat akun baru dan memindahkan akun sebelumnya ke iPad ini. Hal ini akan menon-aktifkan Notelet di perangkat lain yang terdaftar dengan nomor seluler yang sama.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "Pilih \"Tautkan iPhone\" untuk menghubungkan iPhone Anda dengan akun Notelet. Menautkan iPhone Anda tidak dianjurkan dan akan membatasi beberapa fungsi, contohnya membuat panggilan.";
@@ -6773,7 +6773,7 @@
 "PIN_CREATION_LEARN_MORE" = "Selengkapnya Tentang PIN";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the text on that sheet. */
-"PIN_CREATION_LEARN_MORE_TEXT" = "PIN memastikan informasi Anda yang simpan di Notelet terenkripsi sehingga hanya Anda yang dapat mengaksesnya. Profil, pengaturan, dan kontak akan dipulihkan saat Anda menginstal ulang Signal.";
+"PIN_CREATION_LEARN_MORE_TEXT" = "PIN memastikan informasi Anda yang simpan di Notelet terenkripsi sehingga hanya Anda yang dapat mengaksesnya. Profil, pengaturan, dan kontak akan dipulihkan saat Anda menginstal ulang Notelet.";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the title on that sheet. */
 "PIN_CREATION_LEARN_MORE_TITLE" = "Tentang PIN Notelet";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "Pindai kode QR";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Untuk mentransfer akun ini ke perangkat baru, ketuk \"Lanjutkan\" dan pindai kode QR dengan kamera Notelet. Pastikan Anda hanya memindai kode QR yang diperoleh langsung dari Signal.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Untuk mentransfer akun ini ke perangkat baru, ketuk \"Lanjutkan\" dan pindai kode QR dengan kamera Notelet. Pastikan Anda hanya memindai kode QR yang diperoleh langsung dari Notelet.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "Balasan untuk %1$@. %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "Butuh Bantuan?";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN Anda adalah kode 4+ digit yang telah dibuat, bisa berupa numerik atau alfanumerik. Jika Anda lupa PIN, mohon tunggu 7 hari sebelum mendaftarkan ulang akun Anda. Jika Anda telah mengaktifkan Signal Secure Backups, silakan pakai Kunci Pemulihan.";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN Anda adalah kode 4+ digit yang telah dibuat, bisa berupa numerik atau alfanumerik. Jika Anda lupa PIN, mohon tunggu 7 hari sebelum mendaftarkan ulang akun Anda. Jika Anda telah mengaktifkan Notelet Secure Backups, silakan pakai Kunci Pemulihan.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN Anda adalah kode 4+ digit yang telah dibuat, bisa berupa numerik atau alfanumerik. Jika Anda lupa PIN, Anda dapat mendaftar dan menggunakan akun, akan tetapi beberapa pengaturan tersimpan, seperti informasi profil, akan hilang. Jika Anda telah mengaktifkan Signal Secure Backups, silakan pakai Kunci Pemulihan.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN Anda adalah kode 4+ digit yang telah dibuat, bisa berupa numerik atau alfanumerik. Jika Anda lupa PIN, Anda dapat mendaftar dan menggunakan akun, akan tetapi beberapa pengaturan tersimpan, seperti informasi profil, akan hilang. Jika Anda telah mengaktifkan Notelet Secure Backups, silakan pakai Kunci Pemulihan.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN Anda adalah kode 4+ digit yang telah dibuat, bisa berupa numerik atau alfanumerik. Jika Anda tidak ingat PIN, silakan buat baru. Anda bisa mendaftar dan menggunakan akun, akan tetapi beberapa pengaturan tersimpan seperti informasi profil akan hilang. Jika telah mengaktifkan Signal Secure Backups, silakan pakai Kunci Pemulihan.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN Anda adalah kode 4+ digit yang telah dibuat, bisa berupa numerik atau alfanumerik. Jika Anda tidak ingat PIN, silakan buat baru. Anda bisa mendaftar dan menggunakan akun, akan tetapi beberapa pengaturan tersimpan seperti informasi profil akan hilang. Jika telah mengaktifkan Notelet Secure Backups, silakan pakai Kunci Pemulihan.";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "PIN Salah";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "Tidak Dapat Menyelesaikan Transfer";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Anda mungkin memasukkan kunci pemulihan yang salah atau Anda belum menyelesaikan setidaknya satu proses pencadangan di perangkat lama. \n\nPastikan Anda mendaftar dengan nomor telepon yang sama dan kunci pemulihan yang Anda simpan saat mengaktifkan Signal Secure Backups, dan pastikan Anda telah menyelesaikan pencadangan di perangkat lama.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Anda mungkin memasukkan kunci pemulihan yang salah atau Anda belum menyelesaikan setidaknya satu proses pencadangan di perangkat lama. \n\nPastikan Anda mendaftar dengan nomor telepon yang sama dan kunci pemulihan yang Anda simpan saat mengaktifkan Notelet Secure Backups, dan pastikan Anda telah menyelesaikan pencadangan di perangkat lama.";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "Kesempatan untuk mencoba kunci pemulihan telah habis. Kami membatasi jumlah percobaan demi keamanan. Mohon tunggu satu jam dan coba lagi.";
@@ -8162,7 +8162,7 @@
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_COUNTRY" = "Lokasi";
 
 /* Table footer for the 'censorship circumvention' section when censorship circumvention can be manually enabled. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Jika diaktifkan, Notelet akan menggagalkan penyensoran. Jangan nonaktifkan fitur ini kecuali Anda berada di lokasi di mana Signal disensor.";
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Jika diaktifkan, Notelet akan menggagalkan penyensoran. Jangan nonaktifkan fitur ini kecuali Anda berada di lokasi di mana Notelet disensor.";
 
 /* Table footer for the 'censorship circumvention' section shown when censorship circumvention has been auto-enabled based on local phone number. */
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_AUTO_ENABLED" = "Pengelabuan Penyensoran telah diaktifkan berdasarkan nomor telepon Anda.";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Nonaktifkan Pembayaran";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Disarankan untuk mentransfer dana Anda ke alamat dompet digital lain sebelum menonaktifkan pembayaran. Jika Anda memilih untuk tidak mentransfernya sekarang, dana Anda akan tetap ada di dompet digital yang terhubung dengan Signal jika Anda mengaktifkan kembali pembayaran.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Disarankan untuk mentransfer dana Anda ke alamat dompet digital lain sebelum menonaktifkan pembayaran. Jika Anda memilih untuk tidak mentransfernya sekarang, dana Anda akan tetap ada di dompet digital yang terhubung dengan Notelet jika Anda mengaktifkan kembali pembayaran.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Saldo Anda akan tetap ada di dompet digital yang terhubung dengan Notelet jika Anda memilih untuk mengaktifkan kembali pembayaran.";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Untuk mengubahnya, tetapkan pengaturan \"Siapa Bisa Melihat Nomor Saya\" ke opsi \"Tidak Ada\".";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Jika opsi “Siapa bisa menemukan saya dengan nomor telepon” diatur jadi “Tidak ada”, orang akan lebih sulit menemukan Anda di Signal.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Jika opsi “Siapa bisa menemukan saya dengan nomor telepon” diatur jadi “Tidak ada”, orang akan lebih sulit menemukan Anda di Notelet.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Anda yakin?";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "Matikan Pengingat";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Pastikan Anda mengingat atau menyimpan secara aman PIN Anda karena PIN tidak dapat dipulihkan. Jika Anda lupa PIN, Anda mungkin kehilangan data saat mendaftarkan ulang akun Signal Anda.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Pastikan Anda mengingat atau menyimpan secara aman PIN Anda karena PIN tidak dapat dipulihkan. Jika Anda lupa PIN, Anda mungkin kehilangan data saat mendaftarkan ulang akun Notelet Anda.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Konfirmasi PIN Notelet Anda";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "Pengingat PIN";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "PIN menjaga informasi yang disimpan di Notelet terenkripsi sehingga hanya Anda yang dapat mengaksesnya. Profil, pengaturan, dan kontak akan dipulihkan saat Anda memasang ulang Signal.";
+"SETTINGS_PINS_FOOTER" = "PIN menjaga informasi yang disimpan di Notelet terenkripsi sehingga hanya Anda yang dapat mengaksesnya. Profil, pengaturan, dan kontak akan dipulihkan saat Anda memasang ulang Notelet.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "Ganti PIN Anda";
@@ -9797,7 +9797,7 @@
 "UNKNOWN_CONTACT_BLOCK_OFFER" = "Pengguna tidak terdapat di dalam kontak. Apakah Anda ingin memblokir pengguna ini?";
 
 /* Info message recorded in conversation history when local user receives an unknown message from a linked device and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Salah satu dari perangkat Anda mengirimkan sebuah pesan yang tidak dapat diproses atau ditampilkan di sini karena menggunakan fitur baru Signal.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Salah satu dari perangkat Anda mengirimkan sebuah pesan yang tidak dapat diproses atau ditampilkan di sini karena menggunakan fitur baru Notelet.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. Embeds {{user's name or phone number}}. */
 "UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "%1$@ mengirimkan Anda pesan yang tidak dapat diproses atau ditampilkan karena menggunakan fitur baru Notelet.";

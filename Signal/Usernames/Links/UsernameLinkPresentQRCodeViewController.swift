@@ -208,36 +208,38 @@ class UsernameLinkPresentQRCodeViewController: OWSTableViewController2 {
     }
 
     private func buildActionButtonsView() -> UIView {
-        let usernameLinkButton = buildActionButton(
-            title: OWSLocalizedString(
-                "USERNAME_LINK_SHEET_BUTTON",
-                comment: "Title for a button to open a sheet for copying and sharing your username link.",
-            ),
-            icon: .buttonLink,
-            block: { [weak self] _ in
-                guard let self else { return }
+        // TODO: - 分享链接待实现 
 
-                switch self.usernameLinkState {
-                case let .available(usernameLink, _):
-                    let shareSheet = UsernameLinkShareSheetViewController(
-                        usernameLink: usernameLink,
-                        didCopyUsername: { [weak self] in
-                            guard let self else { return }
-                            self.dismiss(animated: true) {
-                                self.showUsernameLinkCopiedToast()
-                            }
-                        },
-                    )
-                    shareSheet.dismissalDelegate = self
-                    self.present(
-                        shareSheet,
-                        animated: true,
-                    )
-                case .resetting, .corrupted:
-                    break
-                }
-            },
-        )
+//        let usernameLinkButton = buildActionButton(
+//            title: OWSLocalizedString(
+//                "USERNAME_LINK_SHEET_BUTTON",
+//                comment: "Title for a button to open a sheet for copying and sharing your username link.",
+//            ),
+//            icon: .buttonLink,
+//            block: { [weak self] _ in
+//                guard let self else { return }
+//
+//                switch self.usernameLinkState {
+//                case let .available(usernameLink, _):
+//                    let shareSheet = UsernameLinkShareSheetViewController(
+//                        usernameLink: usernameLink,
+//                        didCopyUsername: { [weak self] in
+//                            guard let self else { return }
+//                            self.dismiss(animated: true) {
+//                                self.showUsernameLinkCopiedToast()
+//                            }
+//                        },
+//                    )
+//                    shareSheet.dismissalDelegate = self
+//                    self.present(
+//                        shareSheet,
+//                        animated: true,
+//                    )
+//                case .resetting, .corrupted:
+//                    break
+//                }
+//            },
+//        )
 
         let shareQRCodeButton = buildActionButton(
             title: OWSLocalizedString(
@@ -277,13 +279,13 @@ class UsernameLinkPresentQRCodeViewController: OWSTableViewController2 {
         )
 
         let stackView = CenteringStackView(centeredSubviews: [
-            usernameLinkButton,
+//            usernameLinkButton,
             shareQRCodeButton,
             colorQRCodeButton,
         ])
 
         shareQRCodeButton.autoPinWidth(toWidthOf: colorQRCodeButton)
-        usernameLinkButton.autoPinWidth(toWidthOf: colorQRCodeButton)
+//        usernameLinkButton.autoPinWidth(toWidthOf: colorQRCodeButton)
 
         return stackView
     }

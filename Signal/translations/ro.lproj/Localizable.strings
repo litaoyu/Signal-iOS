@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Spațiu de stocare redus";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Datele transferate de pe dispozitivul tău vechi nu au putut fi restabilite. Te rugăm să trimiți un jurnal de depanare la support@signal.org pentru a putea rezolva această problemă. Dacă reinstalezi Signal, istoricul mesajelor tale poate fi pierdut.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Datele transferate de pe dispozitivul tău vechi nu au putut fi restabilite. Te rugăm să trimiți un jurnal de depanare la support@notelet.org pentru a putea rezolva această problemă. Dacă reinstalezi Notelet, istoricul mesajelor tale poate fi pierdut.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Transferul nu s-a putut finaliza";
@@ -614,7 +614,7 @@
 "BACKUP_ONBOARDING_INTRO_NOT_NOW_TOAST" = "Poți activa backup-urile din Setări.";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Realizează copii de rezervă pentru mesajele și fișierele media și folosește serviciul de stocare securizat, criptat end-to-end al Notelet. Nu pierde niciodată un mesaj atunci când îți iei un telefon nou sau reinstalezi Signal.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Realizează copii de rezervă pentru mesajele și fișierele media și folosește serviciul de stocare securizat, criptat end-to-end al Notelet. Nu pierde niciodată un mesaj atunci când îți iei un telefon nou sau reinstalezi Notelet.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
 "BACKUP_ONBOARDING_INTRO_TITLE" = "Backup-uri securizate Notelet";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Cod de recuperare";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Abonamentul de backup-uri a expirat pentru că nu a putut fi reînnoit cu metoda de plată.\n\nCa să continui să faci backup la fișiere, abonează-te din nou. Vei continua să ai acces la planul gratuit Backup-uri Signal.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Abonamentul de backup-uri a expirat pentru că nu a putut fi reînnoit cu metoda de plată.\n\nCa să continui să faci backup la fișiere, abonează-te din nou. Vei continua să ai acces la planul gratuit Backup-uri Notelet.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Abonamentul de backup-uri a expirat pentru că nu mai folosești TestFlight.\n\nCa să continui să faci backup la fișiere, abonează-te din nou. Vei continua să ai acces la planul gratuit Backup-uri Signal.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Abonamentul de backup-uri a expirat pentru că nu mai folosești TestFlight.\n\nCa să continui să faci backup la fișiere, abonează-te din nou. Vei continua să ai acces la planul gratuit Backup-uri Notelet.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "Gestionează copiile de rezervă";
@@ -782,7 +782,7 @@
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_ACTION_BUTTON_TITLE" = "Reînnoiește";
 
 /* Text describing that the user's paid backup plan did not correspond to a App Store subscription on this device. */
-"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_DESCRIPTION" = "Abonamentul tău nu a fost găsit pe acest dispozitiv. Reînnoiește, pentru a continua să folosești Backup-uri Signal.";
+"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_DESCRIPTION" = "Abonamentul tău nu a fost găsit pe acest dispozitiv. Reînnoiește, pentru a continua să folosești Backup-uri Notelet.";
 
 /* Header describing what the paid backup plan includes. */
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_HEADER" = "Text și backup la toate fișierele media";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Backup-urile au fost dezactivate și datele tale au fost eliminate din serviciul de stocare securizată de la Notelet.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Copiile de rezervă au fost dezactivate, orice fișier media care nu se află pe dispozitiv se descarcă acum. După descărcare, datele tale vor fi șterse din serviciul de stocare securizată al Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Copiile de rezervă au fost dezactivate, orice fișier media care nu se află pe dispozitiv se descarcă acum. După descărcare, datele tale vor fi șterse din serviciul de stocare securizată al Notelet.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "A apărut o eroare. Contactează serviciul de asistență.";
@@ -857,7 +857,7 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "Dezactivezi și elimini backup-urile?";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Ai fișiere media în backup care nu se află pe acest dispozitiv. Descărcarea copiei de rezervă poate dura mult timp, așa că menține Signal deschis pentru a evita întreruperile.";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Ai fișiere media în backup care nu se află pe acest dispozitiv. Descărcarea copiei de rezervă poate dura mult timp, așa că menține Notelet deschis pentru a evita întreruperile.";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "Se descarcă copia de rezervă";
@@ -953,7 +953,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "Descarcă mai târziu";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Ai fișiere media în backup care nu se află pe acest dispozitiv. Descărcarea poate dura mult timp, așa că menține Signal deschis pentru a evita întreruperi în timpul descărcării.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Ai fișiere media în backup care nu se află pe acest dispozitiv. Descărcarea poate dura mult timp, așa că menține Notelet deschis pentru a evita întreruperi în timpul descărcării.";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "Descarcă acum";
@@ -1004,7 +1004,7 @@
 "BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_NOTICE_TITLE" = "Nu s-a putut recupera abonamentul pentru copiile de rezervă";
 
 /* Body for a sheet explaining that the user's Backups subscription was already redeemed. */
-"BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_BODY" = "Prea multe dispozitive au încercat să recupereze abonamentul, luna aceasta.\n\nEste posibil să-ți fi reînregistrat contul Signal de prea multe ori sau să ai prea multe dispozitive care folosesc același abonament.";
+"BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_BODY" = "Prea multe dispozitive au încercat să recupereze abonamentul, luna aceasta.\n\nEste posibil să-ți fi reînregistrat contul Notelet de prea multe ori sau să ai prea multe dispozitive care folosesc același abonament.";
 
 /* Button for a sheet explaining that the user's Backups subscription was already redeemed. */
 "BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_GOT_IT_BUTTON" = "Am înțeles";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "Încărcarea fișierelor media a fost întreruptă: se așteaptă conexiunea Wi-Fi";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Ai atins limita de stocare de %1$@ inclusă în planul tău de backup. Ca să faci backup la noile conversații și fișiere media, eliberează %2$@ în Signal, apoi atinge „Backup acum”.";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Ai atins limita de stocare de %1$@ inclusă în planul tău de backup. Ca să faci backup la noile conversații și fișiere media, eliberează %2$@ în Notelet, apoi atinge „Backup acum”.";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "Se încarcă: %1$@ din %2$@ (%3$@)";
@@ -1400,7 +1400,7 @@
 "CALL_QUALITY_SURVEY_COMPLETION_TOAST" = "Mulțumesc pentru feedback!";
 
 /* Footer text explaining custom issue descriptions in the call quality survey */
-"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Include orice detalii relevante pentru problemă. Orice informații trimiți aici vor rămâne private și vor fi folosite doar pentru a îmbunătăți apelurile în Signal.";
+"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Include orice detalii relevante pentru problemă. Orice informații trimiți aici vor rămâne private și vor fi folosite doar pentru a îmbunătăți apelurile în Notelet.";
 
 /* Placeholder text for the custom issue entry in the call quality survey */
 "CALL_QUALITY_SURVEY_CUSTOM_ISSUE_PLACEHOLDER" = "Descrie problema ta";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "LL/AA";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet nu colectează sau stochează informațiile personale când faci o donație.\n\nFolosim Stripe ca procesator de plăți ca să primim donațiile tale. Nu accesăm, stocăm sau salvăm niciuna dintre informațiile pe care le oferi către ei.\n\nSignal nu conectează donația ta cu contul Signal și nici nu poate să o facă.\n\nÎți mulțumim pentru sprijinul tău!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet nu colectează sau stochează informațiile personale când faci o donație.\n\nFolosim Stripe ca procesator de plăți ca să primim donațiile tale. Nu accesăm, stocăm sau salvăm niciuna dintre informațiile pe care le oferi către ei.\n\nNotelet nu conectează donația ta cu contul Notelet și nici nu poate să o facă.\n\nÎți mulțumim pentru sprijinul tău!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Informațiile sunt private";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "Reia";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Dacă faci backup fișierelor media folosind datele mobile poate duce la costuri legate de date. Descărcarea backup-ului poate dura mult timp, așa că menține Signal deschis pentru a evita întreruperile.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Dacă faci backup fișierelor media folosind datele mobile poate duce la costuri legate de date. Descărcarea backup-ului poate dura mult timp, așa că menține Notelet deschis pentru a evita întreruperile.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "Reiei utilizarea datelor mobile?";
@@ -2138,7 +2138,7 @@
 "CONTACT_SHARE_INVALID_CONTACT" = "Contact invalid.";
 
 /* Alert body when contacts disabled while trying to share a contact. */
-"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet are nevoie de acces la contactele tale. Accesează Setările iOS și activează Contacte. Contactele tale sunt criptate și nu sunt vizibile pentru serviciul Signal.";
+"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet are nevoie de acces la contactele tale. Accesează Setările iOS și activează Contacte. Contactele tale sunt criptate și nu sunt vizibile pentru serviciul Notelet.";
 
 /* Alert title when contacts disabled while trying to share a contact. */
 "CONTACT_SHARING_NO_ACCESS_TITLE" = "Permite accesul la contacte";
@@ -3182,7 +3182,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ a făcut o donație către Notelet în numele tău! Arată-ți sprijinul pentru Notelet la profil.";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "Ca organizație non-profit independentă, Notelet se angajează să ofere mesaje și apeluri private. Fără reclame, fără sisteme de urmărire. Donează astăzi și susține Signal.";
+"DONATION_READ_MORE_SHEET_BODY" = "Ca organizație non-profit independentă, Notelet se angajează să ofere mesaje și apeluri private. Fără reclame, fără sisteme de urmărire. Donează astăzi și susține Notelet.";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "Obține o insignă opțională pe profilul tău atunci când donezi";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Partajează chitanța";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Mulțumim pentru că susții Notelet. Contribuția ta ajută la dezvoltarea tehnologiilor open source pentru confidențialitate care protejează libertatea de exprimare și facilitează o comunicare globală sigură pentru milioane de oameni din întreaga lume. Dacă ești rezident al Statelor Unite, te rugăm să păstrezi acest bon pentru dosarul tău fiscal. Signal Technology Foundation este o organizație non-profit scutită de impozit în Statele Unite, conform secțiunii 501c3 din Codul fiscal intern. Numărul nostru de identificare fiscală este 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "Mulțumim pentru că susții Notelet. Contribuția ta ajută la dezvoltarea tehnologiilor open source pentru confidențialitate care protejează libertatea de exprimare și facilitează o comunicare globală sigură pentru milioane de oameni din întreaga lume. Dacă ești rezident al Statelor Unite, te rugăm să păstrezi acest bon pentru dosarul tău fiscal. Notelet Technology Foundation este o organizație non-profit scutită de impozit în Statele Unite, conform secțiunii 501c3 din Codul fiscal intern. Numărul nostru de identificare fiscală este 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Donație pentru un Prieten";
@@ -3389,13 +3389,13 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Salut,\n\nRecent am început să folosesc Notelet pentru a-mi păstra conversațiile private pe iPhone. Aș vrea să-ți instalezi și tu aplicația, ca să fim siguri că numai noi doi ne putem citi mesajele sau asculta apelurile.\n\nSignal este disponibil pentru iPhone, Android și desktop. Obține-l de aici: %1$@\n\nSignal funcționează ca și aplicația ta curentă de mesagerie. Putem trimite poze și video-uri, putem suna, și putem începe conversații de grup. Cea mai bună parte este că nimeni altcineva nu poate vedea toate acestea, nici măcar oamenii care dezvoltă Signal!\n\nPoți afla mai multe despre Signal, aici: %2$@";
+"EMAIL_INVITE_BODY" = "Salut,\n\nRecent am început să folosesc Notelet pentru a-mi păstra conversațiile private pe iPhone. Aș vrea să-ți instalezi și tu aplicația, ca să fim siguri că numai noi doi ne putem citi mesajele sau asculta apelurile.\n\nNotelet este disponibil pentru iPhone, Android și desktop. Obține-l de aici: %1$@\n\nNotelet funcționează ca și aplicația ta curentă de mesagerie. Putem trimite poze și video-uri, putem suna, și putem începe conversații de grup. Cea mai bună parte este că nimeni altcineva nu poate vedea toate acestea, nici măcar oamenii care dezvoltă Notelet!\n\nPoți afla mai multe despre Notelet, aici: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Hai să folosim Notelet";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Dispozitivul tău nu este configurat pentru a trimite email. Pentru a trimite o solicitare de asistență, configurează un email pe dispozitivul tău sau trimite email la support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Dispozitivul tău nu este configurat pentru a trimite email. Pentru a trimite o solicitare de asistență, configurează un email pe dispozitivul tău sau trimite email la support@notelet.org";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "Email indisponibil";
@@ -3566,7 +3566,7 @@
 "ERROR_NETWORK_FAILURE" = "Eroare de rețea";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Te rugăm să ne ajuți să îmbunătățim Notelet raportând această eroare împreună cu jurnalele de depanare de pe dispozitivul tău la adresa support@signal.org; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Te rugăm să ne ajuți să îmbunătățim Notelet raportând această eroare împreună cu jurnalele de depanare de pe dispozitivul tău la adresa support@notelet.org; %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Notelet Beta: S-a produs o eroare";
@@ -4997,7 +4997,7 @@
 "LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Gestionarea contactelor din sistem nu mai este disponibilă pe iPad. Ca să adaugi conexiuni Notelet la contactele din sistem deschide Notelet pe telefon.";
 
 /* Shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. */
-"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Gestionarea contactelor din sistem nu mai este acceptată pe iPad. Acest dispozitiv va continua să sincronizeze orice schimbări la lista de contacte de pe Signal pe telefonul tău.";
+"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Gestionarea contactelor din sistem nu mai este acceptată pe iPad. Acest dispozitiv va continua să sincronizeze orice schimbări la lista de contacte de pe Notelet pe telefonul tău.";
 
 /* A button shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. Tapping it opens a website with more details. */
 "LINKED_DEVICE_MANAGE_CONTACTS_LEARN_MORE" = "Află mai multe";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Ai asociat un dispozitiv nou";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Pentru a asocia un desktop sau un iPad la acest cont Notelet, accesează Dispozitive asociate și atinge „Asociază un dispozitiv nou” și scanează din nou codul QR. Asigură-te că scanezi doar codurile QR care vin direct de la Signal.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Pentru a asocia un desktop sau un iPad la acest cont Notelet, accesează Dispozitive asociate și atinge „Asociază un dispozitiv nou” și scanează din nou codul QR. Asigură-te că scanezi doar codurile QR care vin direct de la Notelet.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Se pare că încerci să asociezi un dispozitiv Notelet. Atinge Continuă, apoi atinge „Asociază un dispozitiv nou” și scanează din nou codul QR.";
@@ -5969,7 +5969,7 @@
 "ONBOARDING_CHOOSE_RESTORE_METHOD_DESCRIPTION" = "Alege cum dorești să restabilești istoricul mesajelor și datele contului.";
 
 /* Message body displayed to a user during registration if there are no restore options available. */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Deoarece te muți de la Android la iOS, singura modalitate de a-ți transfera mesajele și fișierele media este prin activarea Backup-urilor Signal pe vechiul dispozitiv.";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Deoarece te muți de la Android la iOS, singura modalitate de a-ți transfera mesajele și fișierele media este prin activarea Backup-urilor Notelet pe vechiul dispozitiv.";
 
 /* Title displayed to a user during registration if there are no restore options available. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_TITLE" = "Nu există backup de restaurat";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "Asociază iPhone-ul";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Apăsând pe \"Înregistrare iPad\" poți crea un nou cont Notelet sau poți muta un cont existent pe acest iPad. Acest lucru va dezactiva Signal pe orice alt dispozitiv înregistrat în prezent cu același număr de telefon.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Apăsând pe \"Înregistrare iPad\" poți crea un nou cont Notelet sau poți muta un cont existent pe acest iPad. Acest lucru va dezactiva Notelet pe orice alt dispozitiv înregistrat în prezent cu același număr de telefon.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "Apăsând pe \"Asociere iPhone\" vei putea să-ți conectezi telefonul cu un cont existent. În general, asocierea telefonului nu este recomandată și va limita anumite funcționalități, cum ar fi apelarea.";
@@ -6767,13 +6767,13 @@
 "PIN_CREATION_DISABLE_CONFIRMATION_TITLE" = "Avertizare";
 
 /* The explanation in the 'pin creation' view. */
-"PIN_CREATION_EXPLANATION" = "PIN-urile păstrează informațiile stocate în Notelet criptate, astfel încât numai tu să le poți accesa. Profilul, setările și contactele se vor restabili atunci când reinstalezi Signal. Nu ai nevoie de PIN pentru a deschide aplicația.";
+"PIN_CREATION_EXPLANATION" = "PIN-urile păstrează informațiile stocate în Notelet criptate, astfel încât numai tu să le poți accesa. Profilul, setările și contactele se vor restabili atunci când reinstalezi Notelet. Nu ai nevoie de PIN pentru a deschide aplicația.";
 
 /* Learn more action on the pin creation view */
 "PIN_CREATION_LEARN_MORE" = "Mai multe despre PIN-uri";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the text on that sheet. */
-"PIN_CREATION_LEARN_MORE_TEXT" = "PIN-urile îți păstrează informațiile stocate în Notelet criptate ca doar tu să le poți accesa. Profilul, setările și contactele se vor restabili atunci când reinstalezi Signal.";
+"PIN_CREATION_LEARN_MORE_TEXT" = "PIN-urile îți păstrează informațiile stocate în Notelet criptate ca doar tu să le poți accesa. Profilul, setările și contactele se vor restabili atunci când reinstalezi Notelet.";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the title on that sheet. */
 "PIN_CREATION_LEARN_MORE_TITLE" = "Despre PIN-uri Notelet";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "Scanează Codul QR";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Pentru a transfera acest cont pe un dispozitiv nou, atinge „Continuare” și scanează codul QR cu camera Notelet. Asigură-te că scanezi doar codurile QR care vin direct de la Signal.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Pentru a transfera acest cont pe un dispozitiv nou, atinge „Continuare” și scanează codul QR cu camera Notelet. Asigură-te că scanezi doar codurile QR care vin direct de la Notelet.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "Îi răspunzi lui %1$@. %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "Ai nevoi de ajutor?";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN-ul tău este un cod de 4+ pe care l-ai creat care poate fi numeric sau alfanumeric. Dacă nu îți poți aminti codul PIN, va trebui să aștepți 7 zile pentru a reînregistra contul. Dacă ai activat Backup-uri securizate Signal, poți continua cu codul de recuperare.";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN-ul tău este un cod de 4+ pe care l-ai creat care poate fi numeric sau alfanumeric. Dacă nu îți poți aminti codul PIN, va trebui să aștepți 7 zile pentru a reînregistra contul. Dacă ai activat Backup-uri securizate Notelet, poți continua cu codul de recuperare.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN-ul tău este un cod de 4+ pe care l-ai creat care poate fi numeric sau alfanumeric. Dacă nu îți mai amintești codul PIN, poți crea unul nou. Te poți înregistra și utiliza contul, dar vei pierde unele setări salvate, cum ar fi informațiile despre profil. Dacă ai activat Backup-uri securizate Signal, poți continua cu codul de recuperare.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN-ul tău este un cod de 4+ pe care l-ai creat care poate fi numeric sau alfanumeric. Dacă nu îți mai amintești codul PIN, poți crea unul nou. Te poți înregistra și utiliza contul, dar vei pierde unele setări salvate, cum ar fi informațiile despre profil. Dacă ai activat Backup-uri securizate Notelet, poți continua cu codul de recuperare.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN-ul tău este un cod de 4+ pe care l-ai creat care poate fi numeric sau alfanumeric. Dacă nu poți reține PIN-ul, poți crea unul nou. Poți înregistra și folosi contul tău, dar îți vei pierde niște setări precum informațiile de la profil. Dacă ai activat Backup-uri securizate Signal, poți continua cu codul de recuperare.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN-ul tău este un cod de 4+ pe care l-ai creat care poate fi numeric sau alfanumeric. Dacă nu poți reține PIN-ul, poți crea unul nou. Poți înregistra și folosi contul tău, dar îți vei pierde niște setări precum informațiile de la profil. Dacă ai activat Backup-uri securizate Notelet, poți continua cu codul de recuperare.";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "PIN incorect";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "Nu s-a putut termina transferul";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Este posibil să fi introdus greșit codul de recuperare sau să nu fi efectuat cel puțin un backup pe vechiul dispozitiv. \n\nAsigură-te că te înregistrezi cu același număr de telefon și același cod de recuperare pe care le-ai salvat la activarea funcțiilor Backup-uri securizate Signal și confirmă că vechiul dispozitiv a efectuat o copie de rezervă.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Este posibil să fi introdus greșit codul de recuperare sau să nu fi efectuat cel puțin un backup pe vechiul dispozitiv. \n\nAsigură-te că te înregistrezi cu același număr de telefon și același cod de recuperare pe care le-ai salvat la activarea funcțiilor Backup-uri securizate Notelet și confirmă că vechiul dispozitiv a efectuat o copie de rezervă.";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "Ai epuizat numărul de încercări pentru codul de recuperare. Pentru siguranța ta, numărul de încercări pe care le poți face este limitat. Așteaptă o oră și încearcă din nou.";
@@ -7523,7 +7523,7 @@
 "REGISTRATION_NO_BACKUP_KEY_BUTTON_TITLE" = "Niciun cod de recuperare?";
 
 /* Body text on a sheet with info for what to do if you don't have a recovery key */
-"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "Backup-urile nu pot fi recuperate fără codul lor de recuperare de 64 de caractere. Dacă ți-ai pierdut codul de recuperare, Notelet nu te poate ajuta să-ți restabilești backup-ul.\n\nDacă ai vechiul dispozitiv, poți vizualiza codul de recuperare în Setări > Conversații > Backup-uri Signal. Apoi atinge Vizualizează codul de recuperare.";
+"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "Backup-urile nu pot fi recuperate fără codul lor de recuperare de 64 de caractere. Dacă ți-ai pierdut codul de recuperare, Notelet nu te poate ajuta să-ți restabilești backup-ul.\n\nDacă ai vechiul dispozitiv, poți vizualiza codul de recuperare în Setări > Conversații > Backup-uri Notelet. Apoi atinge Vizualizează codul de recuperare.";
 
 /* Title for sheet with info for what to do if you don't have a recovery key */
 "REGISTRATION_NO_BACKUP_KEY_SHEET_TITLE" = "Niciun cod de recuperare?";
@@ -7985,7 +7985,7 @@
 "SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_TITLE" = "Versiune nesuportată";
 
 /* alert message for outdated linking device */
-"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "Celălalt dispozitiv rulează o versiune veche de Notelet care nu acceptă scanarea codurilor QR iPad. Te rugăm să instalezi cea mai recentă versiune de Signal și să încerci din nou.";
+"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "Celălalt dispozitiv rulează o versiune veche de Notelet care nu acceptă scanarea codurilor QR iPad. Te rugăm să instalezi cea mai recentă versiune de Notelet și să încerci din nou.";
 
 /* alert title for outdated linking device */
 "SECONDARY_LINKING_ERROR_OLD_VERSION_TITLE" = "Actualizează dispozitivul de scanare";
@@ -8162,7 +8162,7 @@
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_COUNTRY" = "Locație";
 
 /* Table footer for the 'censorship circumvention' section when censorship circumvention can be manually enabled. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Dacă este activată, Notelet va încerca să ocolească cenzura. Nu activa această funcționalitate doar dacă ești într-o locație unde Signal este cenzurat.";
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Dacă este activată, Notelet va încerca să ocolească cenzura. Nu activa această funcționalitate doar dacă ești într-o locație unde Notelet este cenzurat.";
 
 /* Table footer for the 'censorship circumvention' section shown when censorship circumvention has been auto-enabled based on local phone number. */
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_AUTO_ENABLED" = "Ocolirea cenzurii a fost activată pe baza numărului tău de telefon.";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Dezactivează plățile";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Este recomandat să îți transferi fondurile către o altă adresă de portofel înainte de a dezactiva plățile. Dacă alegi să nu îți transferi fondurile acum, acestea vor rămâne în portofelul tău asociat cu Signal dacă reactivezi plățile.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Este recomandat să îți transferi fondurile către o altă adresă de portofel înainte de a dezactiva plățile. Dacă alegi să nu îți transferi fondurile acum, acestea vor rămâne în portofelul tău asociat cu Notelet dacă reactivezi plățile.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Soldul tău va rămâne în portofelul asociat cu Notelet, dacă alegi sa reactivezi plățile.";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Pentru a schimba această setare, setează „Cine poate vedea numărul meu” la „Nimeni”.";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Dacă setezi \"Cine mă poate găsi după număr\" la \"Nimeni\", oamenii te vor găsi mai greu pe Signal.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Dacă setezi \"Cine mă poate găsi după număr\" la \"Nimeni\", oamenii te vor găsi mai greu pe Notelet.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Ești sigur?";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "Memento-uri PIN";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "PIN-urile păstrează informațiile stocate în Notelet criptate, astfel încât numai tu să le poți accesa. PIN-ul nu poate fi recuperat. Profilul, setările și contactele se vor restabili atunci când reinstalați Signal.";
+"SETTINGS_PINS_FOOTER" = "PIN-urile păstrează informațiile stocate în Notelet criptate, astfel încât numai tu să le poți accesa. PIN-ul nu poate fi recuperat. Profilul, setările și contactele se vor restabili atunci când reinstalați Notelet.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "Schimbați-vă PIN-ul";
@@ -9797,7 +9797,7 @@
 "UNKNOWN_CONTACT_BLOCK_OFFER" = "Utilizatorul nu este în lista ta de contacte. Vrei să-l blochezi?";
 
 /* Info message recorded in conversation history when local user receives an unknown message from a linked device and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Unul dintre dispozitivele tale a trimis un mesaj ce nu poate fi procesat sau afișat aici deoarece utilizează o nouă funcționalitate Signal.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Unul dintre dispozitivele tale a trimis un mesaj ce nu poate fi procesat sau afișat aici deoarece utilizează o nouă funcționalitate Notelet.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. Embeds {{user's name or phone number}}. */
 "UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "%1$@ ți-a trimis un mesaj care nu poate fi procesat sau afișat pentru că utilizează o nouă funcționalitate Notelet.";

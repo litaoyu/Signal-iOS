@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Mažai vietos saugykloje";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Nepavyko atkurti iš senojo įrenginio perkeltų duomenų. Nusiųskite derinimo žurnalą adresu support@Notelet.org, kad galėtume išspręsti šią problemą. Jei iš naujo įdiegsite „Signal“, galite prarasti žinučių istoriją.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Nepavyko atkurti iš senojo įrenginio perkeltų duomenų. Nusiųskite derinimo žurnalą adresu support@Notelet.org, kad galėtume išspręsti šią problemą. Jei iš naujo įdiegsite „Notelet“, galite prarasti žinučių istoriją.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Nepavyko užbaigti perkėlimo";
@@ -614,7 +614,7 @@
 "BACKUP_ONBOARDING_INTRO_NOT_NOW_TOAST" = "Atsarginių kopijų kūrimą galite įjungti skiltyje „Nustatymai“.";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Kurkite atsargines žinučių ir įrašų kopijas naudodami „Notelet“ saugią, visiškai užšifruotą saugyklos paslaugą. Nepraraskite nė vienos žinutes įsigiję naują telefoną arba iš naujo įdiegę „Signal“.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Kurkite atsargines žinučių ir įrašų kopijas naudodami „Notelet“ saugią, visiškai užšifruotą saugyklos paslaugą. Nepraraskite nė vienos žinutes įsigiję naują telefoną arba iš naujo įdiegę „Notelet“.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
 "BACKUP_ONBOARDING_INTRO_TITLE" = "„Notelet“ saugiosios atsarginės kopijos";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Atkūrimo raktas";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Jūsų atsarginių kopijų prenumerata nebegalioja, nes jos nepavyko atnaujinti naudojant jūsų mokėjimo būdą.\n\nNorėdami toliau kurti atsargines įrašų kopijas turėsite jas užsiprenumeruoti iš naujo. Ir toliau turėsite prieigą prie nemokamo „Signal“ atsarginių kopijų plano.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Jūsų atsarginių kopijų prenumerata nebegalioja, nes jos nepavyko atnaujinti naudojant jūsų mokėjimo būdą.\n\nNorėdami toliau kurti atsargines įrašų kopijas turėsite jas užsiprenumeruoti iš naujo. Ir toliau turėsite prieigą prie nemokamo „Notelet“ atsarginių kopijų plano.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Jūsų atsarginių kopijų prenumerata nebegalioja, nes nebenaudojate „TestFlight“.\n\nNorėdami toliau kurti atsargines įrašų kopijas turėsite jas užsiprenumeruoti iš naujo. Ir toliau turėsite prieigą prie nemokamo „Signal“ atsarginių kopijų plano.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Jūsų atsarginių kopijų prenumerata nebegalioja, nes nebenaudojate „TestFlight“.\n\nNorėdami toliau kurti atsargines įrašų kopijas turėsite jas užsiprenumeruoti iš naujo. Ir toliau turėsite prieigą prie nemokamo „Notelet“ atsarginių kopijų plano.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "Tvarkyti atsargines kopijas";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Atsarginės kopijos buvo išjungtos ir jūsų duomenys ištrinti iš saugios „Notelet“ saugyklos paslaugos.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Atsarginės kopijos buvo išjungtos, dabar atsisiunčiami visi įrašai, kurių nėra įrenginyje. Atsisiuntus, jūsų duomenys bus ištrinti iš „Signal“ saugyklos.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Atsarginės kopijos buvo išjungtos, dabar atsisiunčiami visi įrašai, kurių nėra įrenginyje. Atsisiuntus, jūsų duomenys bus ištrinti iš „Notelet“ saugyklos.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "Įvyko klaida. Susisiekite su aptarnavimo komanda.";
@@ -857,7 +857,7 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "Išjungti ir ištrinti atsargines kopijas?";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Savo atsarginėje kopijoje turite įrašų, kurių nėra įrenginyje. Gali užtrukti daug laiko, kol jūsų atsarginė kopija bus atsisiųsta. Palikite „Signal“ atvertą, kad išvengtumėte trikdžių.";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Savo atsarginėje kopijoje turite įrašų, kurių nėra įrenginyje. Gali užtrukti daug laiko, kol jūsų atsarginė kopija bus atsisiųsta. Palikite „Notelet“ atvertą, kad išvengtumėte trikdžių.";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "Atsisiunčiama jūsų atsarginė kopija";
@@ -953,7 +953,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "Atsisiųsti vėliau";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Savo atsarginėje kopijoje turite įrašų, kurių nėra įrenginyje. Gali užtrukti daug laiko, kol jie bus atsisiųsti. Palikite „Signal“ atvertą, kad išvengtumėte trikdžių.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Savo atsarginėje kopijoje turite įrašų, kurių nėra įrenginyje. Gali užtrukti daug laiko, kol jie bus atsisiųsti. Palikite „Notelet“ atvertą, kad išvengtumėte trikdžių.";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "Atsisiųsti dabar";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "Įrašų įkėlimas pristabdytas: laukiama „Wi-Fi“.";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Pasiekėte %1$@ saugyklos limitą, įtrauktą į jūsų atsarginės kopijos planą. Norėdami sukurti naujų pokalbių ir įrašų atsargines kopijas, „Signal“ atlaisvinkite %2$@ vietos ir bakstelėkite „Kurti atsargines kopijas dabar“.";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Pasiekėte %1$@ saugyklos limitą, įtrauktą į jūsų atsarginės kopijos planą. Norėdami sukurti naujų pokalbių ir įrašų atsargines kopijas, „Notelet“ atlaisvinkite %2$@ vietos ir bakstelėkite „Kurti atsargines kopijas dabar“.";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "Įkeliama %1$@ iš %2$@ (%3$@)";
@@ -1400,7 +1400,7 @@
 "CALL_QUALITY_SURVEY_COMPLETION_TOAST" = "Ačiū už atsiliepimą!";
 
 /* Footer text explaining custom issue descriptions in the call quality survey */
-"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Pateikite visą su problema susijusią informaciją. Viskas, kuo čia pasidalinsite, bus laikoma privačiai ir naudojama tik skambučiams „Signal“ sistemoje tobulinti.";
+"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Pateikite visą su problema susijusią informaciją. Viskas, kuo čia pasidalinsite, bus laikoma privačiai ir naudojama tik skambučiams „Notelet“ sistemoje tobulinti.";
 
 /* Placeholder text for the custom issue entry in the call quality survey */
 "CALL_QUALITY_SURVEY_CUSTOM_ISSUE_PLACEHOLDER" = "Aprašykite savo problemą";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM/YY";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "„Notelet“ nerenka ir nesaugo jokios jūsų asmeninės informacijos, kai skiriate paramą.\n\nJūsų paramai gauti kaip mokėjimų tvarkytoją naudojame „Stripe“. Mes nepasiekiame, nelaikome ir neišsaugome jokios jūsų jiems pateiktos informacijos.\n\n„Signal“ nesusieja ir negali susieti jūsų paramos su jūsų „Signal“ paskyra.\n\nDėkojame už jūsų paramą!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "„Notelet“ nerenka ir nesaugo jokios jūsų asmeninės informacijos, kai skiriate paramą.\n\nJūsų paramai gauti kaip mokėjimų tvarkytoją naudojame „Stripe“. Mes nepasiekiame, nelaikome ir neišsaugome jokios jūsų jiems pateiktos informacijos.\n\n„Notelet“ nesusieja ir negali susieti jūsų paramos su jūsų „Notelet“ paskyra.\n\nDėkojame už jūsų paramą!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Tavo informacija yra privati";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "Tęsti";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Kuriant įrašų atsarginę kopiją naudojant mobiliojo ryšio duomenis gali būti taikomi duomenų mokesčiai. Gali užtrukti daug laiko, kol jūsų atsarginė kopija bus įkelta. Palikite „Signal“ atvertą, kad išvengtumėte trikdžių.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Kuriant įrašų atsarginę kopiją naudojant mobiliojo ryšio duomenis gali būti taikomi duomenų mokesčiai. Gali užtrukti daug laiko, kol jūsų atsarginė kopija bus įkelta. Palikite „Notelet“ atvertą, kad išvengtumėte trikdžių.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "Tęsti naudojant mobiliojo ryšio duomenis?";
@@ -3182,7 +3182,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ skyrė „Notelet“ paramą tavo vardu! Parodyk, kad palaikai programėlę „Notelet“ savo profilyje.";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "Kaip nepriklausoma ne pelno organizacija „Notelet“ yra įsipareigojusi užtikrinti žinučių ir skambučių privatumą. Nebrukame reklamų, nesekame ir nestebime. Skirkite paramą šiandien ir palaikykite „Signal“.";
+"DONATION_READ_MORE_SHEET_BODY" = "Kaip nepriklausoma ne pelno organizacija „Notelet“ yra įsipareigojusi užtikrinti žinučių ir skambučių privatumą. Nebrukame reklamų, nesekame ir nestebime. Skirkite paramą šiandien ir palaikykite „Notelet“.";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "Parėmę galite pasirinkti, kad jūsų profilyje būtų rodomas ženklelis";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Bendrinti kvitą";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Dėkojame, kad remiate „Notelet“. Jūsų įnašas padės skatinti misiją kurti atvirojo kodo privatumo technologiją, kuri apsaugo žodžio laisvę ir įgalina saugų bendravimą milijonams žmonių visame pasaulyje. Jei gyvenate Jungtinėse Valstijose, išsaugokite šį kvitą, kad turėtumėte jį savo mokestinių duomenų reikmėms. „Signal Technology Foundation“ yra Jungtinėse Valstijose įsteigta pelno nesiekianti organizacija, atleista nuo mokesčių pagal Vidaus mokesčių kodekso skirsnį 501c3. Mūsų federalinis mokesčių mokėtojo kodas: 82–4506840.";
+"DONATION_RECEIPT_FOOTER" = "Dėkojame, kad remiate „Notelet“. Jūsų įnašas padės skatinti misiją kurti atvirojo kodo privatumo technologiją, kuri apsaugo žodžio laisvę ir įgalina saugų bendravimą milijonams žmonių visame pasaulyje. Jei gyvenate Jungtinėse Valstijose, išsaugokite šį kvitą, kad turėtumėte jį savo mokestinių duomenų reikmėms. „Notelet Technology Foundation“ yra Jungtinėse Valstijose įsteigta pelno nesiekianti organizacija, atleista nuo mokesčių pagal Vidaus mokesčių kodekso skirsnį 501c3. Mūsų federalinis mokesčių mokėtojo kodas: 82–4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Parama draugo vardu";
@@ -3389,13 +3389,13 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Labas,\n\npastaruoju metu naudoju „Notelet“, kad mano pokalbiai „iPhone“ liktų privatūs. Norėčiau, kad ir tu įsidiegtum „Notelet“ – taip žinosiu, kad mūsų žinutes matome ir skambučių klausomės tik aš ir tu.\n\n„Signal“ prieinamas „iPhone“, „Android“ ir darbalaukio įrenginiams. Atsisiųsk čia: %1$@\n\n„Signal“ veikia taip pat kaip ir tavo jau turimos pokalbių programėlės. Galėsime siųsti nuotraukas ir vaizdo įrašus, skambinti ir pradėti grupės pokalbius. Geriausia, kad niekas negali viso to matyti – net ir „Signal“ kūrėjai!\n\nDaugiau apie „Signal“ skaityk čia: %2$@.";
+"EMAIL_INVITE_BODY" = "Labas,\n\npastaruoju metu naudoju „Notelet“, kad mano pokalbiai „iPhone“ liktų privatūs. Norėčiau, kad ir tu įsidiegtum „Notelet“ – taip žinosiu, kad mūsų žinutes matome ir skambučių klausomės tik aš ir tu.\n\n„Notelet“ prieinamas „iPhone“, „Android“ ir darbalaukio įrenginiams. Atsisiųsk čia: %1$@\n\n„Notelet“ veikia taip pat kaip ir tavo jau turimos pokalbių programėlės. Galėsime siųsti nuotraukas ir vaizdo įrašus, skambinti ir pradėti grupės pokalbius. Geriausia, kad niekas negali viso to matyti – net ir „Notelet“ kūrėjai!\n\nDaugiau apie „Notelet“ skaityk čia: %2$@.";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Bendraukime per „Notelet“";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Jūsų įrenginys nesukonfigūruotas siųsti el. laiškus. Norėdami išsiųsti palaikymo užklausą, įrenginyje susikurkite el. pašto dėžutę arba nusiųskite el. laišką adresu support@signal.org.";
+"EMAIL_SIGNAL_MESSAGE" = "Jūsų įrenginys nesukonfigūruotas siųsti el. laiškus. Norėdami išsiųsti palaikymo užklausą, įrenginyje susikurkite el. pašto dėžutę arba nusiųskite el. laišką adresu support@notelet.org.";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "El. paštas neprieinamas";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Susiejote naują įrenginį";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Norėdami susieti kompiuterį arba „iPad“ su šia „Notelet“ paskyra, eikite į „Susieti įrenginiai“, bakstelėkite „Susieti naują įrenginį“ ir dar kartą nuskaitykite QR kodą. Įsitikinkite, kad nuskaitote tik tiesiogiai iš „Signal“ gautus QR kodus.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Norėdami susieti kompiuterį arba „iPad“ su šia „Notelet“ paskyra, eikite į „Susieti įrenginiai“, bakstelėkite „Susieti naują įrenginį“ ir dar kartą nuskaitykite QR kodą. Įsitikinkite, kad nuskaitote tik tiesiogiai iš „Notelet“ gautus QR kodus.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Atrodo, kad bandote susieti „Notelet“ įrenginį. Bakstelėkite „Tęsti“, tada bakstelėkite „Susieti naują įrenginį“ ir nuskaitykite QR kodą dar kartą.";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "Susieti „iPhone“";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Bakstelėję „Užregistruoti „iPad“ galėsite susikurti visiškai naują „Notelet“ paskyrą arba perkelti turimą paskyrą į šį „iPad“. Tai išjungs „Signal“ bet kokiame kitame įrenginyje, kuris šiuo metu užregistruotas su tuo pačiu telefono numeriu.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Bakstelėję „Užregistruoti „iPad“ galėsite susikurti visiškai naują „Notelet“ paskyrą arba perkelti turimą paskyrą į šį „iPad“. Tai išjungs „Notelet“ bet kokiame kitame įrenginyje, kuris šiuo metu užregistruotas su tuo pačiu telefono numeriu.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "Bakstelėję „Susieti „iPhone“ galėsite susieti telefoną su turima paskyra. Paprastai telefono susieti nerekomenduojama, nes tai apribos tam tikras funkcijas, pvz., skambučius.";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "Skenuoti QR kodą";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Norėdami perkelti šią paskyrą į naują įrenginį, palieskite „Tęsti“ ir nuskaitykite QR kodą naudodami „Notelet“ kamerą. Įsitikinkite, kad nuskaitote tik tiesiogiai iš „Signal“ gautus QR kodus.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Norėdami perkelti šią paskyrą į naują įrenginį, palieskite „Tęsti“ ir nuskaitykite QR kodą naudodami „Notelet“ kamerą. Įsitikinkite, kad nuskaitote tik tiesiogiai iš „Notelet“ gautus QR kodus.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "Atsako naudotojui %1$@. %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "Reikia pagalbos?";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "Jūsų PIN yra 4+ skaitmenų kodas, kurį susikūrėte iš skaitmenų arba iš skaitmenų ir raidžių. Jei neprisimenate savo PIN kodo, turėsite palaukti 7 dienas, kol galėsite iš naujo registruotis. Jei įjungtos „Signal“ atsarginės kopijos, galite naudoti atkūrimo raktą.";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "Jūsų PIN yra 4+ skaitmenų kodas, kurį susikūrėte iš skaitmenų arba iš skaitmenų ir raidžių. Jei neprisimenate savo PIN kodo, turėsite palaukti 7 dienas, kol galėsite iš naujo registruotis. Jei įjungtos „Notelet“ atsarginės kopijos, galite naudoti atkūrimo raktą.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "Jūsų PIN yra 4+ skaitmenų kodas, kurį susikūrėte iš skaitmenų arba iš skaitmenų ir raidžių. Jei negalite prisiminti savo PIN kodo, galite registruotis ir naudotis savo paskyra, tačiau prarasite kai kuriuos įrašytus nustatymus, kaip pavyzdžiui, savo profilio informaciją. Jei įjungtos „Signal“ atsarginės kopijos, galite naudoti atkūrimo raktą.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "Jūsų PIN yra 4+ skaitmenų kodas, kurį susikūrėte iš skaitmenų arba iš skaitmenų ir raidžių. Jei negalite prisiminti savo PIN kodo, galite registruotis ir naudotis savo paskyra, tačiau prarasite kai kuriuos įrašytus nustatymus, kaip pavyzdžiui, savo profilio informaciją. Jei įjungtos „Notelet“ atsarginės kopijos, galite naudoti atkūrimo raktą.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "Jūsų PIN yra 4+ skaitmenų kodas, kurį susikūrėte iš skaitmenų arba iš skaitmenų ir raidžių. Jei neprisimenate savo PIN kodo, galite susikurti naują. Galėsite registruotis ir naudotis savo paskyra, bet prarasite kai kuriuos įrašytus nustatymus, kaip pavyzdžiui, profilio informaciją. Jei įjungtos „Signal“ atsarginės kopijos, galite naudoti atkūrimo raktą.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "Jūsų PIN yra 4+ skaitmenų kodas, kurį susikūrėte iš skaitmenų arba iš skaitmenų ir raidžių. Jei neprisimenate savo PIN kodo, galite susikurti naują. Galėsite registruotis ir naudotis savo paskyra, bet prarasite kai kuriuos įrašytus nustatymus, kaip pavyzdžiui, profilio informaciją. Jei įjungtos „Notelet“ atsarginės kopijos, galite naudoti atkūrimo raktą.";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "Neteisingas PIN";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "Nepavyko užbaigti perkėlimo";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Galbūt neteisingai įvedėte atkūrimo raktą arba nesukūrėte bent vienos atsarginės kopijos senajame įrenginyje. \n\nĮsitikinkite, kad registruojatės naudodami tą patį telefono numerį ir atkūrimo raktą, kurį išsaugojote įjungdami „Signal“ saugiąsias atsargines kopijas, ir patikrinkite, ar senajame įrenginyje užbaigta atsarginė kopija.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Galbūt neteisingai įvedėte atkūrimo raktą arba nesukūrėte bent vienos atsarginės kopijos senajame įrenginyje. \n\nĮsitikinkite, kad registruojatės naudodami tą patį telefono numerį ir atkūrimo raktą, kurį išsaugojote įjungdami „Notelet“ saugiąsias atsargines kopijas, ir patikrinkite, ar senajame įrenginyje užbaigta atsarginė kopija.";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "Nebeliko bandymų įvesti atkūrimo raktą. Dėl jūsų saugumo bandymų skaičius yra ribotas. Palaukite 1 valandą ir bandykite dar kartą.";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Pasyvinti mokėjimus";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Prieš išjungiant mokėjimus rekomenduojama pervesti savo lėšas į kitos piniginės adresą. Jei dabar pasirinksite nepervesti savo lėšų, jos liks su „Signal“ susietoje jūsų piniginėje, jei iš naujo aktyvinsite mokėjimus.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Prieš išjungiant mokėjimus rekomenduojama pervesti savo lėšas į kitos piniginės adresą. Jei dabar pasirinksite nepervesti savo lėšų, jos liks su „Notelet“ susietoje jūsų piniginėje, jei iš naujo aktyvinsite mokėjimus.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Tavo likutis liks su „Notelet“ susietoje tavo piniginėje, jei pasirinksi iš naujo aktyvinti mokėjimus.";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Jei norite pakeisti šį nustatymą, nustatykite „Kas gali matyti mano numerį“ vertę į „Niekas“.";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "„Kas gali mane rasti pagal numerį“ nustačius į „Niekas“, žmonėms bus sunkiau jus rasti per „Signal“.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "„Kas gali mane rasti pagal numerį“ nustačius į „Niekas“, žmonėms bus sunkiau jus rasti per „Notelet“.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Ar tikrai to nori?";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "Išjungti priminimus";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Įsiminkite arba laikykite savo PIN kodą saugioje vietoje, nes jo neįmanoma atkurti. Jei užmiršite savo PIN kodą, galite prarasti duomenis, kai iš naujo registruosite savo „Signal“ paskyrą.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Įsiminkite arba laikykite savo PIN kodą saugioje vietoje, nes jo neįmanoma atkurti. Jei užmiršite savo PIN kodą, galite prarasti duomenis, kai iš naujo registruosite savo „Notelet“ paskyrą.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Patvirtinkite savo Notelet PIN kodą";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "PIN kodo priminimai";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "PIN kodai šifruotu pavidalu saugo informaciją, kuri yra laikoma „Notelet“, taigi, tik jūs galite gauti prieigą prie jos. Jūsų PIN kodo neįmanoma atkurti. Jums įdiegus „Signal“ iš naujo, jūsų profilis, nustatymai ir adresatai bus atkurti.";
+"SETTINGS_PINS_FOOTER" = "PIN kodai šifruotu pavidalu saugo informaciją, kuri yra laikoma „Notelet“, taigi, tik jūs galite gauti prieigą prie jos. Jūsų PIN kodo neįmanoma atkurti. Jums įdiegus „Notelet“ iš naujo, jūsų profilis, nustatymai ir adresatai bus atkurti.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "Keisti PIN kodą";

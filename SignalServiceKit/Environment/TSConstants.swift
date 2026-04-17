@@ -38,9 +38,9 @@ public class TSConstants {
     // Never instantiate this class.
     private init() {}
 
-    public static let legalTermsUrl = URL(string: "https://signal.org/legal/")!
-    public static let donateUrl = URL(string: "https://signal.org/donate/")!
-    public static let appStoreUrl = URL(string: "https://itunes.apple.com/us/app/signal-private-messenger/id874139669?mt=8")!
+    public static let legalTermsUrl = URL(string: "https://notelet.org/legal/")!
+    public static let donateUrl = URL(string: "https://notelet.org/donate/")!
+    public static let appStoreUrl = URL(string: "https://testflight.apple.com/join/FW9Szw4e")!
 
     public static var mainServiceURL: String { shared.mainServiceURL }
 

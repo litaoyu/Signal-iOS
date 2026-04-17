@@ -42,7 +42,17 @@
 			<string>$(SIGNAL_BUNDLEID_PREFIX).signal</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>sgnl</string>
+				<string>signal</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>$(SIGNAL_BUNDLEID_PREFIX).notelet</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>notelet</string>
 			</array>
 		</dict>
 	</array>
@@ -51,7 +61,7 @@
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LOGS_EMAIL</key>
-	<string>support@signal.org</string>
+	<string>support@notelet.org</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.social-networking</string>
 	<key>LSApplicationQueriesSchemes</key>

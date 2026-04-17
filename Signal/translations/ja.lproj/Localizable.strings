@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "ストレージ容量が不足しています。";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "旧端末から移行したデータを復元できませんでした。原因を調査するため、デバッグログを support@Notelet.org に送ってください。Signalを再インストールすると、メッセージ履歴が消える可能性があります。";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "旧端末から移行したデータを復元できませんでした。原因を調査するため、デバッグログを support@Notelet.org に送ってください。Noteletを再インストールすると、メッセージ履歴が消える可能性があります。";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "移行を完了できませんでした";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "回復キー";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "ご利用のお支払い方法で更新できなかったため、バックアップサブスクリプションの有効期限が切れました。\n\nメディアのバックアップを継続するには、再度サブスクリプションの購入が必要です。無料のSignalバックアッププランには引き続きアクセスできます。";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "ご利用のお支払い方法で更新できなかったため、バックアップサブスクリプションの有効期限が切れました。\n\nメディアのバックアップを継続するには、再度サブスクリプションの購入が必要です。無料のNoteletバックアッププランには引き続きアクセスできます。";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "TestFlightを使用しなくなったため、バックアップサブスクリプションの有効期限が切れました。\n\nメディアのバックアップを継続するには、再度サブスクリプションの購入が必要です。無料のSignalバックアッププランには引き続きアクセスできます。";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "TestFlightを使用しなくなったため、バックアップサブスクリプションの有効期限が切れました。\n\nメディアのバックアップを継続するには、再度サブスクリプションの購入が必要です。無料のNoteletバックアッププランには引き続きアクセスできます。";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "バックアップを管理";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "月／年";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Noteletは、寄付を受ける際に、お客様のいかなる個人情報も収集したり保存したりすることはありません。\n\nNoteletでは寄付を受け取る決済処理にStripeを使用しています。Noteletは、お客様から提供されたいかなる情報にもアクセスすることはありません。また保管・保存したりすることもありません。\n\nSignalは、寄付からお客様のSignalアカウントを特定することはありません。特定はできない仕組みになっています。ご支援ありがとうございます！";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Noteletは、寄付を受ける際に、お客様のいかなる個人情報も収集したり保存したりすることはありません。\n\nNoteletでは寄付を受け取る決済処理にStripeを使用しています。Noteletは、お客様から提供されたいかなる情報にもアクセスすることはありません。また保管・保存したりすることもありません。\n\nNoteletは、寄付からお客様のNoteletアカウントを特定することはありません。特定はできない仕組みになっています。ご支援ありがとうございます！";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "お客様の個人情報は保護されています";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "領収書を共有";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Noteletをサポートいただき、ありがとうございます。皆様のご寄付は、表現の自由を守り、世界中の何百万人もの人々に安全なグローバルコミュニケーションを可能にするオープンソースのプライバシー技術の開発というミッションの推進に役立っています。米国にお住まいの方は、この領収書を税務記録のために保管しておいてください。Signal Technology Foundationは、米国内国歳入法第501c3条に基づく非課税の非営利団体です。連邦税IDは82-4506840です。";
+"DONATION_RECEIPT_FOOTER" = "Noteletをサポートいただき、ありがとうございます。皆様のご寄付は、表現の自由を守り、世界中の何百万人もの人々に安全なグローバルコミュニケーションを可能にするオープンソースのプライバシー技術の開発というミッションの推進に役立っています。米国にお住まいの方は、この領収書を税務記録のために保管しておいてください。Notelet Technology Foundationは、米国内国歳入法第501c3条に基づく非課税の非営利団体です。連邦税IDは82-4506840です。";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "友達に代わって寄付";
@@ -3389,7 +3389,7 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "こんにちは\n\n最近、私はiPhoneでのチャットのプライベートを保つためにNoteletを使っています。よかったら、あなたにもインストールしませんか？そうすれば、他の人が私たちのメッセージを読んだり聞いたりできないので安心です。\n\nSignalは、iPhone、Android、Desktopのどれでも使えます。ここからインストールできます： %1$@\n\nSignalの使い方は、今使っているメッセージアプリと同じです。写真や動画も送れるし、通話やグループチャットもできます。一番すごいところは、Signalの開発者であってもユーザーのやりとりを見られないところです！\n\nSignalの詳細についてはこちらをご覧ください：%2$@";
+"EMAIL_INVITE_BODY" = "こんにちは\n\n最近、私はiPhoneでのチャットのプライベートを保つためにNoteletを使っています。よかったら、あなたにもインストールしませんか？そうすれば、他の人が私たちのメッセージを読んだり聞いたりできないので安心です。\n\nNoteletは、iPhone、Android、Desktopのどれでも使えます。ここからインストールできます： %1$@\n\nNoteletの使い方は、今使っているメッセージアプリと同じです。写真や動画も送れるし、通話やグループチャットもできます。一番すごいところは、Noteletの開発者であってもユーザーのやりとりを見られないところです！\n\nNoteletの詳細についてはこちらをご覧ください：%2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "メッセージアプリをNoteletにしましょう";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "新しい端末をリンクしました";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "デスクトップまたはiPadをこのNoteletアカウントにリンクするには、［リンク済み端末］→［新しい端末をリンクする］をタップし、もう一度QRコードをスキャンしてください。Signalに直接表示されたQRコードのみをスキャンしてください。";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "デスクトップまたはiPadをこのNoteletアカウントにリンクするには、［リンク済み端末］→［新しい端末をリンクする］をタップし、もう一度QRコードをスキャンしてください。Noteletに直接表示されたQRコードのみをスキャンしてください。";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Noteletの端末をリンクするには、［続ける］→［新しい端末をリンクする］をタップし、もう一度QRコードをスキャンしてください。";
@@ -7385,10 +7385,10 @@
 "REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PINは4桁以上のコードで、数字または英数字のいずれかです。もしPINを覚えていない場合、アカウントを再登録するまで7日間の待機期間が発生します。Noteletセキュアバックアップが有効になっている場合は、回復キーを使用して続行できます。";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PINは4桁以上のコードで、数字または英数字のいずれかです。もしPINを覚えていない場合、アカウントを登録して使用することもできますが、プロフィールなどの保存されている設定情報は失われます。Signalセキュアバックアップが有効になっている場合は、回復キーを使用して続行できます。";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PINは4桁以上のコードで、数字または英数字のいずれかです。もしPINを覚えていない場合、アカウントを登録して使用することもできますが、プロフィールなどの保存されている設定情報は失われます。Noteletセキュアバックアップが有効になっている場合は、回復キーを使用して続行できます。";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PINは4桁以上のコードで、数字または英数字のいずれかです。PINを忘れた場合は、新しいPINを作成できます。アカウントの登録と使用は可能ですが、プロフィール情報など保存された設定の一部が失われる可能性があります。Signalセキュアバックアップが有効になっている場合は、回復キーを使用して続行できます。";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PINは4桁以上のコードで、数字または英数字のいずれかです。PINを忘れた場合は、新しいPINを作成できます。アカウントの登録と使用は可能ですが、プロフィール情報など保存された設定の一部が失われる可能性があります。Noteletセキュアバックアップが有効になっている場合は、回復キーを使用して続行できます。";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "PINが違います";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "移行を完了できませんでした";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "回復キーを間違って入力したか、古い端末で少なくとも1つのバックアップを完了していない可能性があります。 \n\nSignalセキュアバックアップを有効にしたときに保存したのと同じ電話番号と回復キーで登録していること、および以前の端末でバックアップが完了していることを確認してください。";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "回復キーを間違って入力したか、古い端末で少なくとも1つのバックアップを完了していない可能性があります。 \n\nNoteletセキュアバックアップを有効にしたときに保存したのと同じ電話番号と回復キーで登録していること、および以前の端末でバックアップが完了していることを確認してください。";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "回復キーの試行回数が上限に達しました。セキュリティ対策として、試行回数には上限が設定されています。一時間待ってから再度お試しください。";

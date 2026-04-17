@@ -14,8 +14,8 @@ public extension Usernames {
     struct UsernameLink: Equatable {
         private enum LinkUrlComponents {
             static let httpsScheme = "https"
-            static let sgnlScheme = "sgnl"
-            static let host = "signal.me"
+            static let sgnlScheme = "notelet"
+            static let host = "notelet.me"
             static let path = "/"
             static let fragmentPrefix = "eu/"
         }

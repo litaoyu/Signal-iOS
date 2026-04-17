@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM/YY";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "기부금 처리 과정에서 Notelet은 어떠한 개인정보도 수집하거나 저장하지 않습니다.\n\n기부금 결제는 Stripe를 통해 처리되며, Notelet은 Stripe에 제공된 정보에 접근하지 않고 이를 저장하거나 보관하지도 않습니다.\n\n또한 기부 내역을 Signal 계정과 연결할 수 없으며, 실제로도 연결되지 않습니다.\n\nSignal을 지지해 주셔서 감사합니다!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "기부금 처리 과정에서 Notelet은 어떠한 개인정보도 수집하거나 저장하지 않습니다.\n\n기부금 결제는 Stripe를 통해 처리되며, Notelet은 Stripe에 제공된 정보에 접근하지 않고 이를 저장하거나 보관하지도 않습니다.\n\n또한 기부 내역을 Notelet 계정과 연결할 수 없으며, 실제로도 연결되지 않습니다.\n\nNotelet을 지지해 주셔서 감사합니다!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "개인 정보는 비공개로 유지됩니다.";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "계속하기";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "셀룰러 데이터를 사용하여 미디어를 백업하면 데이터 요금이 부과될 수 있습니다. 백업을 업로드하는 데 다소 긴 시간이 걸릴 수 있으니, 업로드가 중단되는 걸 방지하려면 Signal을 계속 열어두세요.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "셀룰러 데이터를 사용하여 미디어를 백업하면 데이터 요금이 부과될 수 있습니다. 백업을 업로드하는 데 다소 긴 시간이 걸릴 수 있으니, 업로드가 중단되는 걸 방지하려면 Notelet을 계속 열어두세요.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "셀룰러 데이터를 사용하여 계속할까요?";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "영수증 공유";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Notelet을 지지해 주셔서 감사합니다. 회원님의 기여는 표현의 자유를 보호하고, 전 세계 수백만 사용자에게 안전한 글로벌 커뮤니케이션을 제공하는 오픈 소스 프라이버시 기술을 개발하겠다는 Notelet의 사명을 실현하는 데 큰 도움이 됩니다. 미국 거주자의 경우, 세금 신고 시 사용할 수 있도록 이 영수증을 보관해 주시기 바랍니다. Signal Technology Foundation은 미국 내국세법(IRC) 제501(c)(3)조에 따라 세금 공제가 가능한 비영리 기관입니다. Signal의 연방 세금 식별 번호(Federal Tax ID)는 82-4506840입니다.";
+"DONATION_RECEIPT_FOOTER" = "Notelet을 지지해 주셔서 감사합니다. 회원님의 기여는 표현의 자유를 보호하고, 전 세계 수백만 사용자에게 안전한 글로벌 커뮤니케이션을 제공하는 오픈 소스 프라이버시 기술을 개발하겠다는 Notelet의 사명을 실현하는 데 큰 도움이 됩니다. 미국 거주자의 경우, 세금 신고 시 사용할 수 있도록 이 영수증을 보관해 주시기 바랍니다. Notelet Technology Foundation은 미국 내국세법(IRC) 제501(c)(3)조에 따라 세금 공제가 가능한 비영리 기관입니다. Notelet의 연방 세금 식별 번호(Federal Tax ID)는 82-4506840입니다.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "친구를 대신해 후원했어요";
@@ -3389,7 +3389,7 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "안녕하세요.\n\n요즘 iPhone에서 나누는 대화를 안전하게 보호하기 위해 Notelet을 사용하고 있습니다. 저희가 나누는 대화와 통화를 안전하게 보호할 수 있도록 Notelet을 설치해 주실 수 있을까요?\n\nNotelet은 iPhone과 Android, 데스크톱에서 이용할 수 있습니다. %1$@에서 다운로드하실 수 있어요.\n\nSignal은 기존의 메시지 앱과 동일한 방식으로 작동합니다. 사진과 동영상을 보내고, 통화하고, 그룹 대화를 나눌 수도 있죠. 무엇보다 중요한 점은 Signal을 만든 사람조차 우리가 나누는 대화를 볼 수 없다는 거예요.\n\n%2$@에서 Signal에 관해 자세히 알아보세요.";
+"EMAIL_INVITE_BODY" = "안녕하세요.\n\n요즘 iPhone에서 나누는 대화를 안전하게 보호하기 위해 Notelet을 사용하고 있습니다. 저희가 나누는 대화와 통화를 안전하게 보호할 수 있도록 Notelet을 설치해 주실 수 있을까요?\n\nNotelet은 iPhone과 Android, 데스크톱에서 이용할 수 있습니다. %1$@에서 다운로드하실 수 있어요.\n\nNotelet은 기존의 메시지 앱과 동일한 방식으로 작동합니다. 사진과 동영상을 보내고, 통화하고, 그룹 대화를 나눌 수도 있죠. 무엇보다 중요한 점은 Notelet을 만든 사람조차 우리가 나누는 대화를 볼 수 없다는 거예요.\n\n%2$@에서 Notelet에 관해 자세히 알아보세요.";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Notelet로 같이 옮겨요";
@@ -7385,10 +7385,10 @@
 "REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN은 사용자가 만든 4자리 이상의 영숫자 조합 코드입니다. PIN이 기억나지 않는 경우 7일 동안 기다렸다가 계정을 다시 등록해야 합니다. Notelet 안전 백업을 활성화한 경우, 복구 키로 계속할 수 있습니다.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN은 사용자가 만든 4자리 이상의 영숫자 조합 코드입니다. PIN이 기억나지 않는다면 새로 만들어서 계정을 사용할 수 있지만, 프로필 정보 등 일부 저장 설정이 손실됩니다. Signal 안전 백업을 활성화한 경우, 복구 키로 계속할 수 있습니다.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN은 사용자가 만든 4자리 이상의 영숫자 조합 코드입니다. PIN이 기억나지 않는다면 새로 만들어서 계정을 사용할 수 있지만, 프로필 정보 등 일부 저장 설정이 손실됩니다. Notelet 안전 백업을 활성화한 경우, 복구 키로 계속할 수 있습니다.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN은 사용자가 만든 4자리 이상의 영숫자 조합 코드입니다. PIN이 기억나지 않는다면 새로운 PIN을 만드세요. 계정을 등록하여 사용할 수 있지만 프로필 정보 등 일부 저장된 설정이 손실됩니다. Signal 안전 백업을 활성화한 경우, 복구 키로 계속할 수 있습니다.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN은 사용자가 만든 4자리 이상의 영숫자 조합 코드입니다. PIN이 기억나지 않는다면 새로운 PIN을 만드세요. 계정을 등록하여 사용할 수 있지만 프로필 정보 등 일부 저장된 설정이 손실됩니다. Notelet 안전 백업을 활성화한 경우, 복구 키로 계속할 수 있습니다.";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "올바르지 않은 PIN";

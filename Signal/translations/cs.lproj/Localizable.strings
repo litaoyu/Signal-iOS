@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Málo místa v úložišti";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Data přenesená ze starého zařízení nebylo možné obnovit. Zašlete prosím protokol ladění na support@Notelet.org, abychom mohli tento problém vyřešit. Pokud si Signal nainstalujete znova, může dojít ke ztrátě historie vašich zpráv.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Data přenesená ze starého zařízení nebylo možné obnovit. Zašlete prosím protokol ladění na support@Notelet.org, abychom mohli tento problém vyřešit. Pokud si Notelet nainstalujete znova, může dojít ke ztrátě historie vašich zpráv.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Přenos dat se nepodařilo dokončit";
@@ -614,7 +614,7 @@
 "BACKUP_ONBOARDING_INTRO_NOT_NOW_TOAST" = "Zálohování můžete povolit v Nastavení.";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Zálohujte své zprávy a média pomocí zabezpečené, koncově šifrované služby úložiště Notelet. Už nepřijdete o žádnou zprávu, když si pořídíte nový telefon nebo přeinstalujete aplikaci Signal.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Zálohujte své zprávy a média pomocí zabezpečené, koncově šifrované služby úložiště Notelet. Už nepřijdete o žádnou zprávu, když si pořídíte nový telefon nebo přeinstalujete aplikaci Notelet.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
 "BACKUP_ONBOARDING_INTRO_TITLE" = "Zabezpečené zálohování služby Notelet";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Klíč pro obnovení";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Platnost vašeho předplatného zálohování vypršela, protože jej nebylo možné obnovit pomocí vaší platební metody.\n\nPokud chcete dál zálohovat média, musíte předplatné obnovit. I nadále budete mít přístup k bezplatnému plánu zálohování služby Signal.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Platnost vašeho předplatného zálohování vypršela, protože jej nebylo možné obnovit pomocí vaší platební metody.\n\nPokud chcete dál zálohovat média, musíte předplatné obnovit. I nadále budete mít přístup k bezplatnému plánu zálohování služby Notelet.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Vaše předplatné pro zálohování vypršelo, protože již nepoužíváte TestFlight.\n\nPokud chcete dál zálohovat média, musíte předplatné obnovit. I nadále budete mít přístup k bezplatnému plánu zálohování služby Signal.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Vaše předplatné pro zálohování vypršelo, protože již nepoužíváte TestFlight.\n\nPokud chcete dál zálohovat média, musíte předplatné obnovit. I nadále budete mít přístup k bezplatnému plánu zálohování služby Notelet.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "Spravovat zálohy";
@@ -782,7 +782,7 @@
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_ACTION_BUTTON_TITLE" = "Obnovit";
 
 /* Text describing that the user's paid backup plan did not correspond to a App Store subscription on this device. */
-"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_DESCRIPTION" = "Vaše předplatné nebylo na tomto zařízení nalezeno. Obnovte je, abyste mohli pokračovat v zálohování služby Signal.";
+"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_DESCRIPTION" = "Vaše předplatné nebylo na tomto zařízení nalezeno. Obnovte je, abyste mohli pokračovat v zálohování služby Notelet.";
 
 /* Header describing what the paid backup plan includes. */
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_HEADER" = "Zálohování textových zpráv a všech médií";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Zálohování bylo vypnuto a vaše data byla odstraněna ze zabezpečeného úložiště služby Notelet.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Zálohování bylo vypnuto, všechna média, která nejsou v zařízení, se nyní stahují. Po stažení budou vaše data ze zabezpečeného úložiště Signal odstraněna.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Zálohování bylo vypnuto, všechna média, která nejsou v zařízení, se nyní stahují. Po stažení budou vaše data ze zabezpečeného úložiště Notelet odstraněna.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "Vyskytla se chyba. Kontaktujte prosím podporu.";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "Nahrávání médií pozastaveno: Čeká se na signál Wi-Fi";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Dosáhli jste limitu úložiště %1$@, který je součástí vašeho plánu zálohování. Pro zálohování nových chatů a médií uvolněte v aplikaci Signal %2$@ místa a pak klepněte na Zálohovat nyní.";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Dosáhli jste limitu úložiště %1$@, který je součástí vašeho plánu zálohování. Pro zálohování nových chatů a médií uvolněte v aplikaci Notelet %2$@ místa a pak klepněte na Zálohovat nyní.";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "Nahrávání: %1$@ z %2$@ (%3$@)";
@@ -1400,7 +1400,7 @@
 "CALL_QUALITY_SURVEY_COMPLETION_TOAST" = "Děkujeme vám za zpětnou vazbu!";
 
 /* Footer text explaining custom issue descriptions in the call quality survey */
-"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Uveďte prosím všechny podrobnosti, které se k problému vztahují. Vše, co zde sdílíte, zůstane soukromé a bude použito pouze ke zlepšení hovorů v aplikaci Signal.";
+"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Uveďte prosím všechny podrobnosti, které se k problému vztahují. Vše, co zde sdílíte, zůstane soukromé a bude použito pouze ke zlepšení hovorů v aplikaci Notelet.";
 
 /* Placeholder text for the custom issue entry in the call quality survey */
 "CALL_QUALITY_SURVEY_CUSTOM_ISSUE_PLACEHOLDER" = "Popište svůj problém";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM/RR";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet při poskytnutí příspěvku neshromažďuje ani neukládá žádné vaše osobní údaje.\n\nK přijímání vašich příspěvků používáme jako zpracovatele plateb službu Stripe. K žádným informacím, které jim poskytnete, nemáme přístup, neshromažďujeme je ani je neukládáme.\n\nSignal nepropojuje a nemůže propojit váš příspěvek s vaším účtem Signal.\n\nDěkujeme za vaši podporu!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet při poskytnutí příspěvku neshromažďuje ani neukládá žádné vaše osobní údaje.\n\nK přijímání vašich příspěvků používáme jako zpracovatele plateb službu Stripe. K žádným informacím, které jim poskytnete, nemáme přístup, neshromažďujeme je ani je neukládáme.\n\nNotelet nepropojuje a nemůže propojit váš příspěvek s vaším účtem Notelet.\n\nDěkujeme za vaši podporu!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Vaše informace jsou soukromé";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "Obnovit";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Zálohování médií pomocí mobilních dat může být zpoplatněno. Nahrávání zálohy může chvíli trvat, nechte aplikaci Signal otevřenou, aby nedošlo k přerušení.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Zálohování médií pomocí mobilních dat může být zpoplatněno. Nahrávání zálohy může chvíli trvat, nechte aplikaci Notelet otevřenou, aby nedošlo k přerušení.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "Obnovit pomocí mobilních dat?";
@@ -2138,7 +2138,7 @@
 "CONTACT_SHARE_INVALID_CONTACT" = "Neplatný kontakt.";
 
 /* Alert body when contacts disabled while trying to share a contact. */
-"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet potřebuje přístup k vašim kontaktům. Přejděte do nastavení iOS a zapněte kontakty. Vaše kontakty jsou šifrované a a pro službu Signal nejsou viditelné.";
+"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet potřebuje přístup k vašim kontaktům. Přejděte do nastavení iOS a zapněte kontakty. Vaše kontakty jsou šifrované a a pro službu Notelet nejsou viditelné.";
 
 /* Alert title when contacts disabled while trying to share a contact. */
 "CONTACT_SHARING_NO_ACCESS_TITLE" = "Povolit přístup ke kontaktům";
@@ -3182,7 +3182,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ přispěl/a na službu Notelet vaším jménem! Ukažte svou podporu službě Notelet na svém profilu.";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "Jako nezávislá nezisková organizace se společnost  Notelet zavázala k ochraně soukromí zpráv a hovorů. Žádné reklamy, žádné sledování, žádný dohled. Přispějte ještě dnes na podporu služby Signal.";
+"DONATION_READ_MORE_SHEET_BODY" = "Jako nezávislá nezisková organizace se společnost  Notelet zavázala k ochraně soukromí zpráv a hovorů. Žádné reklamy, žádné sledování, žádný dohled. Přispějte ještě dnes na podporu služby Notelet.";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "Získejte za svůj příspěvek volitelný odznak pro svůj profil.";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Sdílet doklad";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Děkujeme vám za podporu společnosti Notelet. Váš příspěvek pomáhá podporovat poslání vývoje open source technologie ochrany soukromí, která chrání svobodu projevu a umožňuje bezpečnou globální komunikaci milionům lidí na celém světě. Pokud jste obyvatelem Spojených států, uschovejte si prosím tuto stvrzenku pro své daňové záznamy. Nadace Signal Technology Foundation je ve Spojených státech amerických neziskovou organizací osvobozenou od daní podle § 501c3 daňového zákoníku. Naše federální daňové identifikační číslo je 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "Děkujeme vám za podporu společnosti Notelet. Váš příspěvek pomáhá podporovat poslání vývoje open source technologie ochrany soukromí, která chrání svobodu projevu a umožňuje bezpečnou globální komunikaci milionům lidí na celém světě. Pokud jste obyvatelem Spojených států, uschovejte si prosím tuto stvrzenku pro své daňové záznamy. Nadace Notelet Technology Foundation je ve Spojených státech amerických neziskovou organizací osvobozenou od daní podle § 501c3 daňového zákoníku. Naše federální daňové identifikační číslo je 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Příspěvek za přítele";
@@ -3389,13 +3389,13 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Ahoj,\n\nnově teď na svém iPhonu používám Notelet, aby byly moje chaty opravdu soukromé. Ocením, když si ho také nainstaluješ, aby naše zprávy a hovory nemohl sledovat nikdo další.\n\nAplikace Signal je dostupná pro iPhone, Android a stolní počítače. Získáš ji zde: %1$@\n\nSignal funguje stejně jako tvá stávající aplikace na posílání zpráv. Můžeme si posílat obrázky, videa, volat a vytvářet skupinové chaty. A nejlepší na tom je, že je nikdo jiný nemůže vidět. Ani lidé, kteří aplikaci Signal vyvíjejí!\n\nO aplikaci Signal si můžeš více přečíst tady: %2$@";
+"EMAIL_INVITE_BODY" = "Ahoj,\n\nnově teď na svém iPhonu používám Notelet, aby byly moje chaty opravdu soukromé. Ocením, když si ho také nainstaluješ, aby naše zprávy a hovory nemohl sledovat nikdo další.\n\nAplikace Notelet je dostupná pro iPhone, Android a stolní počítače. Získáš ji zde: %1$@\n\nNotelet funguje stejně jako tvá stávající aplikace na posílání zpráv. Můžeme si posílat obrázky, videa, volat a vytvářet skupinové chaty. A nejlepší na tom je, že je nikdo jiný nemůže vidět. Ani lidé, kteří aplikaci Notelet vyvíjejí!\n\nO aplikaci Notelet si můžeš více přečíst tady: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Přejděme na Notelet";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Vaše zařízení není nastaveno pro odesílání e-mailů. Pokud chcete kontaktovat podporu, nastavte na svém zařízení e-mail nebo napište na support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Vaše zařízení není nastaveno pro odesílání e-mailů. Pokud chcete kontaktovat podporu, nastavte na svém zařízení e-mail nebo napište na support@notelet.org";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "E-mail není dostupný";
@@ -4994,10 +4994,10 @@
 "LINK_PREVIEW_UNKNOWN_DOMAIN" = "Náhled odkazu";
 
 /* Shown in an alert when trying to edit a contact. */
-"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Správa telefonních kontaktů již není v iPadu k dispozici. Pokud chcete do telefonních kontaktů přidat spojení Notelet, otevřete v telefonu aplikaci Signal.";
+"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Správa telefonních kontaktů již není v iPadu k dispozici. Pokud chcete do telefonních kontaktů přidat spojení Notelet, otevřete v telefonu aplikaci Notelet.";
 
 /* Shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. */
-"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Správa telefonních kontaktů již není v iPadu podporována. Zařízení bude nadále synchronizovat všechny změny v seznamu kontaktů z aplikace Signal v telefonu.";
+"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Správa telefonních kontaktů již není v iPadu podporována. Zařízení bude nadále synchronizovat všechny změny v seznamu kontaktů z aplikace Notelet v telefonu.";
 
 /* A button shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. Tapping it opens a website with more details. */
 "LINKED_DEVICE_MANAGE_CONTACTS_LEARN_MORE" = "Více informací";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Propojili jste nové zařízení";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Pokud chcete s tímto účtem Notelet propojit stolní počítač nebo iPad, přejděte do části Propojená zařízení, klepněte na Propojit nové zařízení a znovu naskenujte QR kód. Ujistěte se, že skenujete pouze QR kódy přímo z aplikace Signal.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Pokud chcete s tímto účtem Notelet propojit stolní počítač nebo iPad, přejděte do části Propojená zařízení, klepněte na Propojit nové zařízení a znovu naskenujte QR kód. Ujistěte se, že skenujete pouze QR kódy přímo z aplikace Notelet.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Zdá se, že se snažíte propojit zařízení Notelet. Klepněte na pokračovat a poté klepněte na Propojit nové zařízení a znovu naskenujte QR kód.";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "Přidružit iPhone";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Klepnutím na \"Registrovat iPad\" můžete vytvořit nový účet na Noteletu nebo přesunout aktuální účet na tento iPad. Tím deaktivujete Signal na jakémkoliv dalším zařízení aktuálně registrovaném na stejném telefonním čísle.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Klepnutím na \"Registrovat iPad\" můžete vytvořit nový účet na Noteletu nebo přesunout aktuální účet na tento iPad. Tím deaktivujete Notelet na jakémkoliv dalším zařízení aktuálně registrovaném na stejném telefonním čísle.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "Klepnutím na \"Propojit iPhone\" můžete připojit váš telefon k existujícímu účtu. Propojení telefonu obecně není doporučené a omezí některé funkce jako třeba telefonovaní.";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "Skenování QR kódu";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Chcete-li tento účet Notelet přenést do nového zařízení, klepněte na Pokračovat a naskenujte QR kód pomocí kamery v aplikaci Signal. Ujistěte se, že skenujete pouze QR kódy, které pocházejí přímo z aplikace Signal.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Chcete-li tento účet Notelet přenést do nového zařízení, klepněte na Pokračovat a naskenujte QR kód pomocí kamery v aplikaci Notelet. Ujistěte se, že skenujete pouze QR kódy, které pocházejí přímo z aplikace Notelet.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "Odpovídáte na zprávu od %1$@ %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "Potřebujete pomoc?";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN je vámi vytvořený nejméně 4místný kód, který může být numerický nebo alfanumerický. Pokud zapomenete svůj PIN, budete muset čekat 7 dnů na opětovnou registraci svého účtu. Pokud máte povolenou Zabezpečenou zálohu Signal, můžete pokračovat s klíčem pro obnovení.";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN je vámi vytvořený nejméně 4místný kód, který může být numerický nebo alfanumerický. Pokud zapomenete svůj PIN, budete muset čekat 7 dnů na opětovnou registraci svého účtu. Pokud máte povolenou Zabezpečenou zálohu Notelet, můžete pokračovat s klíčem pro obnovení.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN je vámi vytvořený nejméně 4místný kód, který může být numerický nebo alfanumerický. Pokud si PIN nepamatujete, můžete se zaregistrovat a používat svůj účet, ale ztratíte některá uložená nastavení, například informace o profilu. Pokud máte povolenou Zabezpečenou zálohu Signal, můžete pokračovat s klíčem pro obnovení.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN je vámi vytvořený nejméně 4místný kód, který může být numerický nebo alfanumerický. Pokud si PIN nepamatujete, můžete se zaregistrovat a používat svůj účet, ale ztratíte některá uložená nastavení, například informace o profilu. Pokud máte povolenou Zabezpečenou zálohu Notelet, můžete pokračovat s klíčem pro obnovení.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN je vámi vytvořený nejméně 4místný kód, který může být numerický nebo alfanumerický. Pokud si svůj PIN nepamatujete, můžete si vytvořit nový. Můžete se zaregistrovat a používat svůj účet, ale přijdete o některá uložená nastavení, například informace o profilu. Pokud máte povolenou Zabezpečenou zálohu Signal, můžete pokračovat s klíčem pro obnovení.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN je vámi vytvořený nejméně 4místný kód, který může být numerický nebo alfanumerický. Pokud si svůj PIN nepamatujete, můžete si vytvořit nový. Můžete se zaregistrovat a používat svůj účet, ale přijdete o některá uložená nastavení, například informace o profilu. Pokud máte povolenou Zabezpečenou zálohu Notelet, můžete pokračovat s klíčem pro obnovení.";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "Nesprávný PIN";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "Přenos se nepodařilo dokončit";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Je možné, že jste špatně zadali klíč pro obnovení, nebo jste na starém zařízení nedokončili alespoň jednu zálohu. \n\nUjistěte se, že se registrujete stejným telefonním číslem a klíčem pro obnovení, které jste si uložili při povolení Zabezpečené zálohy Signal, a potvrďte, že vaše staré zařízení dokončilo zálohování.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Je možné, že jste špatně zadali klíč pro obnovení, nebo jste na starém zařízení nedokončili alespoň jednu zálohu. \n\nUjistěte se, že se registrujete stejným telefonním číslem a klíčem pro obnovení, které jste si uložili při povolení Zabezpečené zálohy Notelet, a potvrďte, že vaše staré zařízení dokončilo zálohování.";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "Došel počet pokusů pro obnovení pomocí klíče. V zájmu vaší bezpečnosti je počet pokusů, které můžete provést, omezen. Počkejte hodinu a zkuste to znovu.";
@@ -8513,10 +8513,10 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Deaktivovat platby";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Před deaktivací plateb doporučujeme převést prostředky na jinou adresu peněženky. Pokud se rozhodnete své prostředky nyní nepřevádět, zůstanou ve vaší peněžence propojené se službou Signal, pokud platby znovu aktivujete.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Před deaktivací plateb doporučujeme převést prostředky na jinou adresu peněženky. Pokud se rozhodnete své prostředky nyní nepřevádět, zůstanou ve vaší peněžence propojené se službou Notelet, pokud platby znovu aktivujete.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Pokud se rozhodnete platby znovu aktivovat, zůstanou vaše prostředky v peněžence propojené se službou Signal.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Pokud se rozhodnete platby znovu aktivovat, zůstanou vaše prostředky v peněžence propojené se službou Notelet.";
 
 /* Title for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_TITLE" = "Deaktivovat bez převodu?";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "Vypnout připomínky";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Ujistěte se, že si PIN pamatujete nebo ho máte bezpečně uložený, protože jej nelze obnovit. Pokud váš PIN zapomenete, můžete při opakované registraci Signal účtu přijít o data.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Ujistěte se, že si PIN pamatujete nebo ho máte bezpečně uložený, protože jej nelze obnovit. Pokud váš PIN zapomenete, můžete při opakované registraci Notelet účtu přijít o data.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Potvrdit váš Singal PIN";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "Připomenutí PIN";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "PINy zajišťují, že informace uložené v Noteletu jsou zašifrované a pouze vy k nim můžete mít přístup. PIN nemůže být obnoven. Váš profil, nastavení a kontakty se obnoví, když znovu nainstalujete Signal.";
+"SETTINGS_PINS_FOOTER" = "PINy zajišťují, že informace uložené v Noteletu jsou zašifrované a pouze vy k nim můžete mít přístup. PIN nemůže být obnoven. Váš profil, nastavení a kontakty se obnoví, když znovu nainstalujete Notelet.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "Změnit váš PIN";

@@ -9,7 +9,7 @@ extension URL {
         public static let contactAccessNotAllowed: URL = .supportArticle("360007319011#ipad_contacts")
         public static let debugLogs: URL = .supportArticle("360007318591")
         public static let deliveryIssue: URL = .supportArticle("4404859745690")
-        public static let generic: URL = URL(string: "https://support.signal.org")!
+        public static let generic: URL = URL(string: "https://support.notelet.org")!
         public static let groups: URL = .supportArticle("360007319331")
         public static let inactivePrimaryDevice: URL = .supportArticle("9021007554074")
         public static let linkedDevices: URL = .supportArticle("360007320551")
@@ -42,6 +42,6 @@ extension URL {
     }
 
     private static func supportArticle(_ slug: String) -> URL {
-        self.init(string: "https://support.signal.org/hc/articles/\(slug)")!
+        self.init(string: "https://support.notelet.org/hc/articles/\(slug)")!
     }
 }

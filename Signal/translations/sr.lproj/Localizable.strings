@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Преостало је мало меморијског простора";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Подаци пренесени са вашег старог уређаја нису опорављени. Пошаљите извештај о грешкама на support@Notelet.org како бисмо решили тај проблем. Ако поново инсталирате Signal, ваша историја порука може бити изгубљена.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Подаци пренесени са вашег старог уређаја нису опорављени. Пошаљите извештај о грешкама на support@Notelet.org како бисмо решили тај проблем. Ако поново инсталирате Notelet, ваша историја порука може бити изгубљена.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Пренос података није успео";
@@ -614,7 +614,7 @@
 "BACKUP_ONBOARDING_INTRO_NOT_NOW_TOAST" = "Прављење резервних копија можете дозволити у подешавањима.";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Направите резервне копије ваших порука и медија и користите Notelet-ову безбедну, потпуно шифровану услугу складиштења. Нека вам се сачувају поруке када набављате нови телефон или поново инсталирате Signal.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Направите резервне копије ваших порука и медија и користите Notelet-ову безбедну, потпуно шифровану услугу складиштења. Нека вам се сачувају поруке када набављате нови телефон или поново инсталирате Notelet.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
 "BACKUP_ONBOARDING_INTRO_TITLE" = "Безбедне резервне копије";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Кључ за опоравак";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Ваша претплата на резервне копије је истекла јер није могла бити обновљена помоћу вашег начина плаћања.\n\nДа бисте наставили да правите резервне копије медија, можете поново да се претплатите. И даље ћете имати приступ бесплатном пакету за резервне копије Signal-а.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Ваша претплата на резервне копије је истекла јер није могла бити обновљена помоћу вашег начина плаћања.\n\nДа бисте наставили да правите резервне копије медија, можете поново да се претплатите. И даље ћете имати приступ бесплатном пакету за резервне копије Notelet-а.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Ваша претплата на резервне копије је истекла јер више не користите TestFlight.\n\nДа бисте наставили да правите резервне копије медија, можете поново да се претплатите. И даље ћете имати приступ бесплатном пакету за резервне копије Signal-а.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Ваша претплата на резервне копије је истекла јер више не користите TestFlight.\n\nДа бисте наставили да правите резервне копије медија, можете поново да се претплатите. И даље ћете имати приступ бесплатном пакету за резервне копије Notelet-а.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "Управљајте резервним копијама";
@@ -782,7 +782,7 @@
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_ACTION_BUTTON_TITLE" = "Обновите";
 
 /* Text describing that the user's paid backup plan did not correspond to a App Store subscription on this device. */
-"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_DESCRIPTION" = "Претплата није пронађена на овом уређају. Обновите је да бисте наставили да користите резервне копије Signal-а.";
+"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_DESCRIPTION" = "Претплата није пронађена на овом уређају. Обновите је да бисте наставили да користите резервне копије Notelet-а.";
 
 /* Header describing what the paid backup plan includes. */
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_HEADER" = "Резервне копије порука и свих медија";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Резервне копије су искључене и ваши подаци су избрисани из Notelet-овог сервиса за безбедно складиштење.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Резервне копије су искључене. Сви медији који нису на уређају се сада преузимају. Када буду преузети, ваши подаци ће бити избрисани из Signal-овог сервиса за безбедно складиштење.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Резервне копије су искључене. Сви медији који нису на уређају се сада преузимају. Када буду преузети, ваши подаци ће бити избрисани из Notelet-овог сервиса за безбедно складиштење.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "Дошло је до грешке. Обратите се подршци.";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "Отпремање медија је паузирано: чека се Wi-Fi";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Достигли сте ограничење од %1$@ меморијског простора које је обухваћено вашим пакетом за резервне копије. Да бисте направили резервну копију нових ћаскања и медија, ослободите %2$@ у Signal-у и додирните „Направи резервну копију“.";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Достигли сте ограничење од %1$@ меморијског простора које је обухваћено вашим пакетом за резервне копије. Да бисте направили резервну копију нових ћаскања и медија, ослободите %2$@ у Notelet-у и додирните „Направи резервну копију“.";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "Отпремање %1$@ од %2$@ (%3$@)";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "ММ/ГГ";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet не прикупља, нити чува, ваше податке о личности када донирате.\n\nКористимо Stripe као процесор плаћања за примање ваших донација. Не приступамо ниједној од информација које им пружите, нити их складиштимо или чувамо.\n\nSignal не повезује, нити може да повеже, вашу донацију са вашим налогом на Signal-у.\n\nХвала вам на подршци!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet не прикупља, нити чува, ваше податке о личности када донирате.\n\nКористимо Stripe као процесор плаћања за примање ваших донација. Не приступамо ниједној од информација које им пружите, нити их складиштимо или чувамо.\n\nNotelet не повезује, нити може да повеже, вашу донацију са вашим налогом на Notelet-у.\n\nХвала вам на подршци!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Ваши подаци су приватни";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "Настави";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Ако креирате резервну копију медија преко мобилног интернета, можете имати трошкове мобилног интернета. Преузимање може дуго потрајати. Оставите Signal отворен како бисте избегли прекиде.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Ако креирате резервну копију медија преко мобилног интернета, можете имати трошкове мобилног интернета. Преузимање може дуго потрајати. Оставите Notelet отворен како бисте избегли прекиде.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "Желите ли да наставите са коришћењем мобилног интернета?";
@@ -2138,7 +2138,7 @@
 "CONTACT_SHARE_INVALID_CONTACT" = "Неважећи контакт.";
 
 /* Alert body when contacts disabled while trying to share a contact. */
-"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet-у је потребан приступ вашим контактима. Идите на подешавања iOS-а и активирајте контакте. Ваши контакти су шифровани и нису видљиви услузи Signal.";
+"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet-у је потребан приступ вашим контактима. Идите на подешавања iOS-а и активирајте контакте. Ваши контакти су шифровани и нису видљиви услузи Notelet.";
 
 /* Alert title when contacts disabled while trying to share a contact. */
 "CONTACT_SHARING_NO_ACCESS_TITLE" = "Дозволите приступ контактима";
@@ -3182,7 +3182,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ је дао/ла донацију Notelet-у у ваше име! Покажите подршку Notelet-у на свом профилу.";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "Као независна непрофитна организација, Notelet гарантује приватност порука и позива. Без огласа, без праћења, без надзора. Донирајте данас да подржите Signal.";
+"DONATION_READ_MORE_SHEET_BODY" = "Као независна непрофитна организација, Notelet гарантује приватност порука и позива. Без огласа, без праћења, без надзора. Донирајте данас да подржите Notelet.";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "Донирањем ћете добити значку коју ћете моћи да прикажете на профилу";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Подели признаницу";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Хвала вам што подржавате Notelet. Ваш допринос омогућава подстицање мисије развоја технологије отвореног кода за заштиту приватности која штити слободно изражавање и омогућава безбедну глобалну комуникацију милионима широм света. Ако сте резидент Сједињених Америчких Држава, сачувајте ову признаницу за своју пореску евиденцију. Signal Technology Foundation је непрофитна организација изузета од опорезивања у Сједињеним Америчким Државама према одељку 501c3 Закона о интерним приходима. Наш савезни порески број је 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "Хвала вам што подржавате Notelet. Ваш допринос омогућава подстицање мисије развоја технологије отвореног кода за заштиту приватности која штити слободно изражавање и омогућава безбедну глобалну комуникацију милионима широм света. Ако сте резидент Сједињених Америчких Држава, сачувајте ову признаницу за своју пореску евиденцију. Notelet Technology Foundation је непрофитна организација изузета од опорезивања у Сједињеним Америчким Државама према одељку 501c3 Закона о интерним приходима. Наш савезни порески број је 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Донација за пријатеља";
@@ -3389,7 +3389,7 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Ћао!\n\nУ последње време користим Notelet да би ми ћаскања на iPhone-у била приватна. Било би супер да га и ти инсталираш, па да будемо сигурни да нико осим нас не може да чита наше поруке и слуша наше разговоре.\n\nSignal је доступан за iPhone, Android и десктоп рачунар. Преузми га одавде: %1$@\n\nSignal ради слично као твоја постојећа апликација за дописивање. Можемо да шаљемо слике и видео записе, позивамо људе и ћаскамо у групама. Најбоље је што нико осим нас не може ништа да види, чак ни креатори Signal-а!\n\nВише о Signal-у можеш прочитати овде: %2$@";
+"EMAIL_INVITE_BODY" = "Ћао!\n\nУ последње време користим Notelet да би ми ћаскања на iPhone-у била приватна. Било би супер да га и ти инсталираш, па да будемо сигурни да нико осим нас не може да чита наше поруке и слуша наше разговоре.\n\nNotelet је доступан за iPhone, Android и десктоп рачунар. Преузми га одавде: %1$@\n\nNotelet ради слично као твоја постојећа апликација за дописивање. Можемо да шаљемо слике и видео записе, позивамо људе и ћаскамо у групама. Најбоље је што нико осим нас не може ништа да види, чак ни креатори Notelet-а!\n\nВише о Notelet-у можеш прочитати овде: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Хајде да пређемо на Notelet";
@@ -4997,7 +4997,7 @@
 "LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Управљање контактима на телефону више није доступно на iPad-у. Да бисте додали Notelet везе у своје контакте на телефону, отворите Notelet на телефону.";
 
 /* Shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. */
-"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Управљање контактима на телефону више није подржано на iPad-у. Овај уређај ће наставити да синхронизује све промене на вашој листи контаката из Signal-а на телефону.";
+"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Управљање контактима на телефону више није подржано на iPad-у. Овај уређај ће наставити да синхронизује све промене на вашој листи контаката из Notelet-а на телефону.";
 
 /* A button shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. Tapping it opens a website with more details. */
 "LINKED_DEVICE_MANAGE_CONTACTS_LEARN_MORE" = "Сазнајте више";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Повезали сте нови уређај";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Да повежете рачунар или iPad са Notelet налогом, идите на одељак „Повезани уређаји“, додирните „Повежи нови уређај“ и скенирајте поново QR код. Уверите се да скенирате само QR кодове које вам директно шаље Signal.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Да повежете рачунар или iPad са Notelet налогом, идите на одељак „Повезани уређаји“, додирните „Повежи нови уређај“ и скенирајте поново QR код. Уверите се да скенирате само QR кодове које вам директно шаље Notelet.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Изгледа да покушавате да повежете уређај на ком је инсталиран Notelet. Додирните „Настави“, а потом додирните „Повежи нови уређај“ и скенирајте поново QR код.";
@@ -6767,7 +6767,7 @@
 "PIN_CREATION_DISABLE_CONFIRMATION_TITLE" = "Упозорење";
 
 /* The explanation in the 'pin creation' view. */
-"PIN_CREATION_EXPLANATION" = "Подаци које Notelet складишти се шифрују помоћу PIN-а, тако да им само ви можете приступити. Ваш налог, подешавања и контакти ће бити враћени када поново инсталирате Signal. Неће бити потребан PIN да бисте отворили апликацију.";
+"PIN_CREATION_EXPLANATION" = "Подаци које Notelet складишти се шифрују помоћу PIN-а, тако да им само ви можете приступити. Ваш налог, подешавања и контакти ће бити враћени када поново инсталирате Notelet. Неће бити потребан PIN да бисте отворили апликацију.";
 
 /* Learn more action on the pin creation view */
 "PIN_CREATION_LEARN_MORE" = "Више о PIN-овима";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "Скенирајте QR код";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Да пребаците овај налог на нови уређај, додирните „Настави“ и скенирајте поново QR код преко камере на Notelet-у. Уверите се да скенирате само QR кодове које вам директно шаље Signal.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Да пребаците овај налог на нови уређај, додирните „Настави“ и скенирајте поново QR код преко камере на Notelet-у. Уверите се да скенирате само QR кодове које вам директно шаље Notelet.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "Одговор за: %1$@. %2$@";
@@ -8162,7 +8162,7 @@
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_COUNTRY" = "Локација";
 
 /* Table footer for the 'censorship circumvention' section when censorship circumvention can be manually enabled. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Уколико је ова опција укључена, Notelet ће покушати да заобиђе цензуру. Немојте да укључујете ову функционалност ако се не налазите негде где је Signal цензурисан.";
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Уколико је ова опција укључена, Notelet ће покушати да заобиђе цензуру. Немојте да укључујете ову функционалност ако се не налазите негде где је Notelet цензурисан.";
 
 /* Table footer for the 'censorship circumvention' section shown when censorship circumvention has been auto-enabled based on local phone number. */
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_AUTO_ENABLED" = "Заобилазак цензуре је активиран на основу броја телефона повезаног са вашим налогом.";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Деактивирајте плаћања";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Препоручујемо вам да пренесете средства на другу адресу новчаника пре деактивирања плаћања. Ако не пренесете средства сада, остаће у вашем новчанику повезаном за Signal ако поново активирате плаћања.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Препоручујемо вам да пренесете средства на другу адресу новчаника пре деактивирања плаћања. Ако не пренесете средства сада, остаће у вашем новчанику повезаном за Notelet ако поново активирате плаћања.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Ваша средства ће остати у вашем новчанику повезаном са Notelet-ом ако поново активирате плаћања.";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Да бисте променили ово подешавање, подесите опцију „Ко може да види мој број“ на „Нико“.";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Ако подесите „Ко може да ме пронађе по броју“ на „Нико“, људима ће бити теже да вас пронађу на Signal-у.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Ако подесите „Ко може да ме пронађе по броју“ на „Нико“, људима ће бити теже да вас пронађу на Notelet-у.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Да ли сте сигурни?";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "Искључи подсетнике";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Потрудите се да запамтите PIN или га безбедно сачувајте, јер он не може бити повраћен. Уколико заборавите PIN, можете изгубити податке када поново региструјете налог на Signal-у.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Потрудите се да запамтите PIN или га безбедно сачувајте, јер он не може бити повраћен. Уколико заборавите PIN, можете изгубити податке када поново региструјете налог на Notelet-у.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Потврдите ваш Notelet PIN";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "Подсетници за PIN";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "Подаци које Notelet складишти се шифрују помоћу PIN-а, тако да им само ви можете приступити. Ваш налог, подешавања и контакти ће бити враћени када поново инсталирате Signal.";
+"SETTINGS_PINS_FOOTER" = "Подаци које Notelet складишти се шифрују помоћу PIN-а, тако да им само ви можете приступити. Ваш налог, подешавања и контакти ће бити враћени када поново инсталирате Notelet.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "Промените PIN";
@@ -9797,7 +9797,7 @@
 "UNKNOWN_CONTACT_BLOCK_OFFER" = "Корисник није међу вашим контактима. Желите ли да је блокирате?";
 
 /* Info message recorded in conversation history when local user receives an unknown message from a linked device and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Један од ваших уређаја је послао поруку која не може бити обрађена нити приказана овде јер користи нову функционалност Signal-а.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Један од ваших уређаја је послао поруку која не може бити обрађена нити приказана овде јер користи нову функционалност Notelet-а.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. Embeds {{user's name or phone number}}. */
 "UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "%1$@ вам је послао/ла поруку која не може бити обрађена нити приказана јер користи нову функционалност Notelet-а.";

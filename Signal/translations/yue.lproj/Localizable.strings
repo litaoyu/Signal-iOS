@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM/YY";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet 唔會喺你捐款嗰陣收集或者儲存任何個人資料。\n\n我哋用 Stripe 作為接收捐款嘅付款處理商。我哋唔會存取、保存或者儲存你向佢哋提供嘅任何資料。\n\nNotelet 唔會亦冇辦法將你嘅捐款連結至你嘅 Signal 帳戶。\n\n多謝你嘅支持！";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet 唔會喺你捐款嗰陣收集或者儲存任何個人資料。\n\n我哋用 Stripe 作為接收捐款嘅付款處理商。我哋唔會存取、保存或者儲存你向佢哋提供嘅任何資料。\n\nNotelet 唔會亦冇辦法將你嘅捐款連結至你嘅 Notelet 帳戶。\n\n多謝你嘅支持！";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "你嘅資料已經保密";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "分享收據";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "多謝你支持 Notelet。你嘅捐款係我哋嘅原動力，推動我哋繼續開發採用開放原始碼嘅私隱技術，保護言論自由，俾世界各地數以百萬計嘅 Notelet 用戶可以安全通訊。如果你係美國居民，請保留呢張收據作為你嘅稅務記錄。Signal Technology Foundation 係根據美國《國稅法規》(IRC) 第 501c3 條嘅免稅非牟利機構，聯邦稅識別號碼係 82-4506840。";
+"DONATION_RECEIPT_FOOTER" = "多謝你支持 Notelet。你嘅捐款係我哋嘅原動力，推動我哋繼續開發採用開放原始碼嘅私隱技術，保護言論自由，俾世界各地數以百萬計嘅 Notelet 用戶可以安全通訊。如果你係美國居民，請保留呢張收據作為你嘅稅務記錄。Notelet Technology Foundation 係根據美國《國稅法規》(IRC) 第 501c3 條嘅免稅非牟利機構，聯邦稅識別號碼係 82-4506840。";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "代表朋友捐款";
@@ -3389,7 +3389,7 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Hi！\n\n為咗確保 iPhone 入面嘅聊天內容安全保密，我最近轉咗用 Notelet。我想邀請你一齊用呢個 APP，等我哋以後可以放心傾計：得你同我睇到入面嘅訊息，同埋聽到入面嘅通話內容㗎咋。\n\nNotelet 喺 iPhone、Android 同桌面電腦都用到㗎。下載連結：%1$@\n\nSignal 嘅用法同其他通訊 APP 一樣，可以傳送相片同影片、打電話，同開始群組聊天。最正嘅係：其他人唔會睇到入面嘅內容，就算係 Signal 嘅開發人員都唔得！\n\n想知多啲關於 Signal 嘅資料，可以睇呢度：%2$@";
+"EMAIL_INVITE_BODY" = "Hi！\n\n為咗確保 iPhone 入面嘅聊天內容安全保密，我最近轉咗用 Notelet。我想邀請你一齊用呢個 APP，等我哋以後可以放心傾計：得你同我睇到入面嘅訊息，同埋聽到入面嘅通話內容㗎咋。\n\nNotelet 喺 iPhone、Android 同桌面電腦都用到㗎。下載連結：%1$@\n\nNotelet 嘅用法同其他通訊 APP 一樣，可以傳送相片同影片、打電話，同開始群組聊天。最正嘅係：其他人唔會睇到入面嘅內容，就算係 Notelet 嘅開發人員都唔得！\n\n想知多啲關於 Notelet 嘅資料，可以睇呢度：%2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "不如我哋齊齊轉會 Notelet";
@@ -7385,10 +7385,10 @@
 "REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN 碼係一個由你建立、至少 4 位數字嘅密碼，可以由數字或者數字加英文字母組成。如果你唔記得咗自己個 PIN 碼，就要等 7 日先可以重新登記帳戶。如果你已經啟用「Notelet 安全備份」，咁就可以用「恢復金鑰」繼續操作。";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN 碼係一個由你建立、至少 4 位數字嘅密碼，可以由數字或者數字加英文字母組成。如果你唔記得咗自己個 PIN 碼，可以照註冊同使用你嘅帳戶，但係就會冇咗一啲之前儲存嘅設定，例如你嘅個人檔案資料。如果你已經啟用「Signal 安全備份」，咁就可以用「恢復金鑰」繼續操作。";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN 碼係一個由你建立、至少 4 位數字嘅密碼，可以由數字或者數字加英文字母組成。如果你唔記得咗自己個 PIN 碼，可以照註冊同使用你嘅帳戶，但係就會冇咗一啲之前儲存嘅設定，例如你嘅個人檔案資料。如果你已經啟用「Notelet 安全備份」，咁就可以用「恢復金鑰」繼續操作。";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN 碼係一個由你建立、至少 4 位數字嘅密碼，可以由純數字或者數字加英文字母組成。如果你唔記得咗你嘅 PIN 碼，你可以建立一個新嘅。你可以註冊同使用帳戶，但係就會冇咗之前儲存咗嘅設定，例如你嘅個人檔案資料。如果你已經啟用「Signal 安全備份」，咁就可以用「恢復金鑰」繼續操作。";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN 碼係一個由你建立、至少 4 位數字嘅密碼，可以由純數字或者數字加英文字母組成。如果你唔記得咗你嘅 PIN 碼，你可以建立一個新嘅。你可以註冊同使用帳戶，但係就會冇咗之前儲存咗嘅設定，例如你嘅個人檔案資料。如果你已經啟用「Notelet 安全備份」，咁就可以用「恢復金鑰」繼續操作。";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "PIN 碼唔啱";

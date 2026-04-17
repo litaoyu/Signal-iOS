@@ -245,19 +245,19 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "Άγνωστη έκδοση βάσης δεδομένων";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Το Notelet αντιμετώπισε ένα πρόβλημα καθώς προσπαθούσε να ανοίξει. Παρακαλούμε στείλε ένα αρχείο καταγραφής αποσφαλμάτωσης στο support@signal.org για να βοηθήσεις με την αποσφαλμάτωση του προβλήματος.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Το Notelet αντιμετώπισε ένα πρόβλημα καθώς προσπαθούσε να ανοίξει. Παρακαλούμε στείλε ένα αρχείο καταγραφής αποσφαλμάτωσης στο support@notelet.org για να βοηθήσεις με την αποσφαλμάτωση του προβλήματος.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Αδυναμία ανοίγματος του Notelet";
 
 /* Error description indicating that the app crashed because there was low storage space available on the device. */
-"APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_MESSAGE" = "Δεν ήταν δυνατό να ανοίξει το Notelet, επειδή ο αποθηκευτικός χώρος της συσκευής σας δεν επαρκεί. Για να χρησιμοποιήσετε το Signal, ελευθερώστε αποθηκευτικό χώρο από τις Ρυθμίσεις.";
+"APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_MESSAGE" = "Δεν ήταν δυνατό να ανοίξει το Notelet, επειδή ο αποθηκευτικός χώρος της συσκευής σας δεν επαρκεί. Για να χρησιμοποιήσετε το Notelet, ελευθερώστε αποθηκευτικό χώρο από τις Ρυθμίσεις.";
 
 /* Error title indicating that the app crashed because there was low storage space available on the device. */
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Περιορισμένος αποθηκευτικός χώρος";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Η επαναφορά των δεδομένων που μεταφέρθηκαν από την παλιά σου συσκευή ήταν αδύνατη. Στείλε το αρχείο καταγραφής στο support@signal.org, για να επιλύσουμε το πρόβλημα. Εάν επανεγκαταστήσεις το Signal, πιθανόν να χαθεί το ιστορικό μηνυμάτων σου.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Η επαναφορά των δεδομένων που μεταφέρθηκαν από την παλιά σου συσκευή ήταν αδύνατη. Στείλε το αρχείο καταγραφής στο support@notelet.org, για να επιλύσουμε το πρόβλημα. Εάν επανεγκαταστήσεις το Notelet, πιθανόν να χαθεί το ιστορικό μηνυμάτων σου.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Δεν ήταν δυνατή η ολοκλήρωση της μεταφοράς";
@@ -614,7 +614,7 @@
 "BACKUP_ONBOARDING_INTRO_NOT_NOW_TOAST" = "Μπορείς να ενεργοποιήσεις τα αντίγραφα ασφαλείας στις Ρυθμίσεις.";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Δημιούργησε αντίγραφα ασφαλείας των μηνυμάτων και των πολυμέσων σου χρησιμοποιώντας την ασφαλή, κρυπτογραφημένη από άκρο σε άκρο υπηρεσία αποθήκευσης του Signal. Δε θα χάσεις τα μηνύματά σου αν αγοράσεις νέο τηλέφωνο ή επανεγκαταστήσεις το Signal.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Δημιούργησε αντίγραφα ασφαλείας των μηνυμάτων και των πολυμέσων σου χρησιμοποιώντας την ασφαλή, κρυπτογραφημένη από άκρο σε άκρο υπηρεσία αποθήκευσης του Notelet. Δε θα χάσεις τα μηνύματά σου αν αγοράσεις νέο τηλέφωνο ή επανεγκαταστήσεις το Notelet.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
 "BACKUP_ONBOARDING_INTRO_TITLE" = "Ασφαλή αντίγραφα Notelet";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Κλειδί ανάκτησης";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Η συνδρομή σου για δημιουργία αντιγράφων ασφαλείας έληξε επειδή δεν ήταν δυνατή η ανανέωσή της με τη μέθοδο πληρωμής σου.\n\nΓια να συνεχίσεις να δημιουργείς αντίγραφα ασφαλείας πολυμέσων, μπορείς να εγγραφείς ξανά. Θα συνεχίσεις να έχεις πρόσβαση στο δωρεάν πρόγραμμα Αντίγραφα ασφαλείας Signal.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Η συνδρομή σου για δημιουργία αντιγράφων ασφαλείας έληξε επειδή δεν ήταν δυνατή η ανανέωσή της με τη μέθοδο πληρωμής σου.\n\nΓια να συνεχίσεις να δημιουργείς αντίγραφα ασφαλείας πολυμέσων, μπορείς να εγγραφείς ξανά. Θα συνεχίσεις να έχεις πρόσβαση στο δωρεάν πρόγραμμα Αντίγραφα ασφαλείας Notelet.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Η συνδρομή σου για αντίγραφα ασφαλείας έληξε επειδή δεν χρησιμοποιείς πλέον το TestFlight.\n\nΓια να συνεχίσεις να δημιουργείς αντίγραφα ασφαλείας πολυμέσων, μπορείς να εγγραφείς ξανά. Θα συνεχίσεις να έχεις πρόσβαση στο δωρεάν πρόγραμμα Αντίγραφα ασφαλείας Signal.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Η συνδρομή σου για αντίγραφα ασφαλείας έληξε επειδή δεν χρησιμοποιείς πλέον το TestFlight.\n\nΓια να συνεχίσεις να δημιουργείς αντίγραφα ασφαλείας πολυμέσων, μπορείς να εγγραφείς ξανά. Θα συνεχίσεις να έχεις πρόσβαση στο δωρεάν πρόγραμμα Αντίγραφα ασφαλείας Notelet.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "Διαχείριση αντιγράφων ασφαλείας";
@@ -677,7 +677,7 @@
 "BACKUP_RESTORE_MODAL_TITLE" = "Επαναφορά μηνυμάτων...";
 
 /* Message describing that the Background App Refresh permission is disabled for Signal. \"Background App Refresh\" should be localized the same way it is in iOS Settings app permissions. */
-"BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_MESSAGE" = "Τα αυτόματα αντίγραφα ασφαλείας είναι απενεργοποιημένα. Ενεργοποίησε τα αυτόματα αντίγραφα ασφαλείας ενημερώνοντας τα δικαιώματα του Signal.";
+"BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_MESSAGE" = "Τα αυτόματα αντίγραφα ασφαλείας είναι απενεργοποιημένα. Ενεργοποίησε τα αυτόματα αντίγραφα ασφαλείας ενημερώνοντας τα δικαιώματα του Notelet.";
 
 /* Add-on to a message describing that the Background App Refresh permission is disabled for Signal. \"Background App Refresh\" should be localized the same way it is in iOS Settings app permissions. */
 "BACKUP_SETTINGS_BACKGROUND_APP_REFRESH_DISABLED_MESSAGE_UPDATE_NOW" = "Ενημέρωση τώρα";
@@ -782,7 +782,7 @@
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_ACTION_BUTTON_TITLE" = "Ανανέωση";
 
 /* Text describing that the user's paid backup plan did not correspond to a App Store subscription on this device. */
-"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_DESCRIPTION" = "Η συνδρομή σου σε αυτήν τη συσκευή δεν βρέθηκε. Ανανέωσε για να συνεχίσεις να χρησιμοποιείς τα Αντίγραφα ασφαλείας Signal.";
+"BACKUP_SETTINGS_BACKUP_PLAN_PAID_BUT_IAP_NOT_FOUND_LOCALLY_DESCRIPTION" = "Η συνδρομή σου σε αυτήν τη συσκευή δεν βρέθηκε. Ανανέωσε για να συνεχίσεις να χρησιμοποιείς τα Αντίγραφα ασφαλείας Notelet.";
 
 /* Header describing what the paid backup plan includes. */
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_HEADER" = "Αντίγραφα ασφαλείας κειμένου + όλων των πολυμέσων";
@@ -794,10 +794,10 @@
 "BACKUP_SETTINGS_BACKUP_PLAN_PAID_RENEWAL_FORMAT" = "Ανανέωση: %1$@";
 
 /* Footer for a menu section related to settings for when Backups are disabled. */
-"BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Τα αντίγραφα ασφαλείας έχουν απενεργοποιηθεί και τα δεδομένα σου έχουν διαγραφεί από την υπηρεσία ασφαλούς αποθήκευσης της Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Τα αντίγραφα ασφαλείας έχουν απενεργοποιηθεί και τα δεδομένα σου έχουν διαγραφεί από την υπηρεσία ασφαλούς αποθήκευσης της Notelet.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Τα αντίγραφα ασφαλείας έχουν απενεργοποιηθεί. Γίνεται λήψη όλων των πολυμέσων που δεν βρίσκονται στη συσκευή. Μόλις ολοκληρωθεί η λήψη, τα δεδομένα σου θα διαγραφούν από την ασφαλή υπηρεσία αποθήκευσης του Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Τα αντίγραφα ασφαλείας έχουν απενεργοποιηθεί. Γίνεται λήψη όλων των πολυμέσων που δεν βρίσκονται στη συσκευή. Μόλις ολοκληρωθεί η λήψη, τα δεδομένα σου θα διαγραφούν από την ασφαλή υπηρεσία αποθήκευσης του Notelet.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "Παρουσιάστηκε σφάλμα. Επικοινώνησε με την υποστήριξη.";
@@ -812,7 +812,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLING_PROGRESS_VIEW_DESCRIPTION" = "Διαγραφή αντιγράφων ασφαλείας...";
 
 /* Header for a menu section related to disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_SECTION_HEADER" = "Τα αντίγραφα ασφαλείας έχουν απενεργοποιηθεί και τα δεδομένα σου θα διαγραφούν από την υπηρεσία ασφαλούς αποθήκευσης της Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_SECTION_HEADER" = "Τα αντίγραφα ασφαλείας έχουν απενεργοποιηθεί και τα δεδομένα σου θα διαγραφούν από την υπηρεσία ασφαλούς αποθήκευσης της Notelet.";
 
 /* Header for a menu section related to settings for when Backups are enabled. */
 "BACKUP_SETTINGS_BACKUPS_ENABLED_SECTION_HEADER" = "Λεπτομέρειες αντιγράφου ασφαλείας";
@@ -857,7 +857,7 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "Απενεργοποίηση και διαγραφή αντιγράφων ασφαλείας;";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Έχεις πολυμέσα στα αντίγραφα ασφαλείας σου που δεν βρίσκονται σε αυτήν τη συσκευή. Η λήψη των αντιγράφων ασφαλείας σου ενδέχεται να διαρκέσει πολύ, επομένως κράτα το Signal ανοιχτό για να αποφύγεις διακοπές.";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Έχεις πολυμέσα στα αντίγραφα ασφαλείας σου που δεν βρίσκονται σε αυτήν τη συσκευή. Η λήψη των αντιγράφων ασφαλείας σου ενδέχεται να διαρκέσει πολύ, επομένως κράτα το Notelet ανοιχτό για να αποφύγεις διακοπές.";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "Λήψη των αντιγράφων ασφαλείας σου";
@@ -953,7 +953,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "Λήψη αργότερα";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Έχεις πολυμέσα στα αντίγραφα ασφαλείας σου που δεν βρίσκονται σε αυτήν τη συσκευή. Η λήψη μπορεί να διαρκέσει αρκετή ώρα, κράτησε το Signal ανοιχτό για να αποφύγεις διακοπές στη λήψη.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Έχεις πολυμέσα στα αντίγραφα ασφαλείας σου που δεν βρίσκονται σε αυτήν τη συσκευή. Η λήψη μπορεί να διαρκέσει αρκετή ώρα, κράτησε το Notelet ανοιχτό για να αποφύγεις διακοπές στη λήψη.";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "Λήψη τώρα";
@@ -974,7 +974,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_AVAILABLE_FOR_TESTERS" = "Ο φόρτος των αχρησιμοποίητων πολυμέσων θα μειωθεί, αλλά μπορούν να ληφθούν από το αντίγραφο ασφαλείας σου οποιαδήποτε στιγμή, όσο χρησιμοποιείς το TestFlight.";
 
 /* Footer for a toggle allowing users to change the Optimize Local Storage setting, if the toggle is unavailable. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_UNAVAILABLE" = "Η βελτιστοποίηση αποθηκευτικού χώρου μπορεί να χρησιμοποιηθεί μόνο με την πληρωμένη βαθμίδα των Αντιγράφων Ασφαλείας Signal. Αναβάθμισε το πρόγραμμα δημιουργίας αντιγράφων ασφαλείας σου για να αρχίσεις να χρησιμοποιείς αυτήν τη λειτουργία.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_UNAVAILABLE" = "Η βελτιστοποίηση αποθηκευτικού χώρου μπορεί να χρησιμοποιηθεί μόνο με την πληρωμένη βαθμίδα των Αντιγράφων Ασφαλείας Notelet. Αναβάθμισε το πρόγραμμα δημιουργίας αντιγράφων ασφαλείας σου για να αρχίσεις να χρησιμοποιείς αυτήν τη λειτουργία.";
 
 /* Title for a toggle allowing users to change the Optimize Local Storage setting. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_TITLE" = "Βελτιστοποίηση αποθηκευτικού χώρου συσκευής";
@@ -1004,7 +1004,7 @@
 "BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_NOTICE_TITLE" = "Δεν ήταν δυνατή η εξαργύρωση της συνδρομής σου για δημιουργία αντιγράφων ασφαλείας";
 
 /* Body for a sheet explaining that the user's Backups subscription was already redeemed. */
-"BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_BODY" = "Πάρα πολλές συσκευές προσπάθησαν να εξαργυρώσουν τη συνδρομή σου αυτόν τον μήνα.\n\nΕνδέχεται να έχεις κάνει επανεγγραφή του λογαριασμού σου Signal πάρα πολλές φορές ή να έχεις πάρα πολλές συσκευές που χρησιμοποιούν την ίδια συνδρομή.";
+"BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_BODY" = "Πάρα πολλές συσκευές προσπάθησαν να εξαργυρώσουν τη συνδρομή σου αυτόν τον μήνα.\n\nΕνδέχεται να έχεις κάνει επανεγγραφή του λογαριασμού σου Notelet πάρα πολλές φορές ή να έχεις πάρα πολλές συσκευές που χρησιμοποιούν την ίδια συνδρομή.";
 
 /* Button for a sheet explaining that the user's Backups subscription was already redeemed. */
 "BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_GOT_IT_BUTTON" = "Εντάξει";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "Η μεταφόρτωση πολυμέσων διακόπηκε: αναμονή για Wi-Fi";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Έφτασες το όριο αποθηκευτικού χώρου %1$@ που περιλαμβάνεται στο πρόγραμμα δημιουργίας αντιγράφων ασφαλείας σου. Για να δημιουργήσεις αντίγραφα ασφαλείας νέων συνομιλιών και πολυμέσων, απελευθέρωσε %2$@ χώρου στο Signal και μετά πάτα «Δημιουργία αντίγραφου τώρα».";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Έφτασες το όριο αποθηκευτικού χώρου %1$@ που περιλαμβάνεται στο πρόγραμμα δημιουργίας αντιγράφων ασφαλείας σου. Για να δημιουργήσεις αντίγραφα ασφαλείας νέων συνομιλιών και πολυμέσων, απελευθέρωσε %2$@ χώρου στο Notelet και μετά πάτα «Δημιουργία αντίγραφου τώρα».";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "Μεταφόρτωση: %1$@ από %2$@ (%3$@)";
@@ -1289,7 +1289,7 @@
 "CALL_AUDIO_MISSED_WEEK_NOTIFICATION_BODY_FORMAT" = "📞 Αναπάντητη φωνητική κλήση στις %1$@";
 
 /* Alert message when calling and permissions for microphone are missing */
-"CALL_AUDIO_PERMISSION_MESSAGE" = "Μπορείς να ενεργοποιήσεις την πρόσβαση στο μικρόφωνο στην εφαρμογή Ρυθμίσεις του iOS για να κάνεις κλήσεις και να ηχογραφείς μηνύματα φωνής στο Signal.";
+"CALL_AUDIO_PERMISSION_MESSAGE" = "Μπορείς να ενεργοποιήσεις την πρόσβαση στο μικρόφωνο στην εφαρμογή Ρυθμίσεις του iOS για να κάνεις κλήσεις και να ηχογραφείς μηνύματα φωνής στο Notelet.";
 
 /* Alert title when calling and permissions for microphone are missing */
 "CALL_AUDIO_PERMISSION_TITLE" = "Απαιτείται πρόσβαση στο μικρόφωνο";
@@ -1400,7 +1400,7 @@
 "CALL_QUALITY_SURVEY_COMPLETION_TOAST" = "Ευχαριστούμε για τα σχόλιά σου!";
 
 /* Footer text explaining custom issue descriptions in the call quality survey */
-"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Πρόσθεσε τυχόν λεπτομέρειες σχετικές με το πρόβλημα. Οτιδήποτε κοινοποιείς εδώ θα παραμείνει ιδιωτικό και θα χρησιμοποιηθεί μόνο για τη βελτίωση των κλήσεων στο Signal.";
+"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Πρόσθεσε τυχόν λεπτομέρειες σχετικές με το πρόβλημα. Οτιδήποτε κοινοποιείς εδώ θα παραμείνει ιδιωτικό και θα χρησιμοποιηθεί μόνο για τη βελτίωση των κλήσεων στο Notelet.";
 
 /* Placeholder text for the custom issue entry in the call quality survey */
 "CALL_QUALITY_SURVEY_CUSTOM_ISSUE_PLACEHOLDER" = "Περίγραψε το πρόβλημά σου";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "ΜΜ/ΕΕ";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Το Notelet δεν συλλέγει ούτε αποθηκεύει τα προσωπικά στοιχεία σου όταν κάνεις δωρεά.\n\nΧρησιμοποιούμε τη Stripe για την επεξεργασία πληρωμών, ώστε να λαμβάνουμε τις δωρεές μας. Δεν επεξεργαζόμαστε ούτε αποθηκεύουμε κανένα από τα στοιχεία που της παρέχεις.\n\nΤο Signal δεν μπορεί να συνδέσει τη δωρεά με τον λογαριασμό σου στο Signal.\n\nΕυχαριστούμε για την υποστήριξή σου!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Το Notelet δεν συλλέγει ούτε αποθηκεύει τα προσωπικά στοιχεία σου όταν κάνεις δωρεά.\n\nΧρησιμοποιούμε τη Stripe για την επεξεργασία πληρωμών, ώστε να λαμβάνουμε τις δωρεές μας. Δεν επεξεργαζόμαστε ούτε αποθηκεύουμε κανένα από τα στοιχεία που της παρέχεις.\n\nΤο Notelet δεν μπορεί να συνδέσει τη δωρεά με τον λογαριασμό σου στο Notelet.\n\nΕυχαριστούμε για την υποστήριξή σου!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Τα στοιχεία σου είναι ιδιωτικά";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "Συνέχεια";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Η δημιουργία αντιγράφων ασφαλείας των πολυμέσων σου με χρήση δεδομένων κινητής τηλεφωνίας ενδέχεται να οδηγήσει σε χρεώσεις δεδομένων. Η μεταφόρτωση των αντιγράφων ασφαλείας σου ενδέχεται να διαρκέσει πολύ, επομένως κράτα το Signal ανοιχτό για να αποφύγεις διακοπές.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "Η δημιουργία αντιγράφων ασφαλείας των πολυμέσων σου με χρήση δεδομένων κινητής τηλεφωνίας ενδέχεται να οδηγήσει σε χρεώσεις δεδομένων. Η μεταφόρτωση των αντιγράφων ασφαλείας σου ενδέχεται να διαρκέσει πολύ, επομένως κράτα το Notelet ανοιχτό για να αποφύγεις διακοπές.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "Συνέχιση χρήσης δεδομένων κινητής τηλεφωνίας;";
@@ -1991,7 +1991,7 @@
 "COMPOSE_SCREEN_MISSING_CONTACTS_CTA" = "Άνοιγμα ρυθμίσεων";
 
 /* Multi-line label explaining why compose-screen contact picker is empty. */
-"COMPOSE_SCREEN_MISSING_CONTACTS_PERMISSION" = "Μπορείς να ενεργοποιήσεις την πρόσβαση στις επαφές στην εφαρμογή Ρυθμίσεις του iOS για να δεις ποιές από τις επαφές σου χρησιμοποιούν το Signal.";
+"COMPOSE_SCREEN_MISSING_CONTACTS_PERMISSION" = "Μπορείς να ενεργοποιήσεις την πρόσβαση στις επαφές στην εφαρμογή Ρυθμίσεις του iOS για να δεις ποιές από τις επαφές σου χρησιμοποιούν το Notelet.";
 
 /* Configure reactions title text */
 "CONFIGURE_REACTIONS" = "Προσαρμογή Αντιδράσεων";
@@ -2138,7 +2138,7 @@
 "CONTACT_SHARE_INVALID_CONTACT" = "Μη έγκυρη επαφή.";
 
 /* Alert body when contacts disabled while trying to share a contact. */
-"CONTACT_SHARING_NO_ACCESS_BODY" = "Το Notelet χρειάζεται πρόσβαση στις επαφές σου. Πήγαινε στις Ρυθμίσεις iOS και ενεργοποίησε τις επαφές. Οι επαφές σου είναι κρυπτογραφημένες και δεν είναι ορατές στην υπηρεσία Signal.";
+"CONTACT_SHARING_NO_ACCESS_BODY" = "Το Notelet χρειάζεται πρόσβαση στις επαφές σου. Πήγαινε στις Ρυθμίσεις iOS και ενεργοποίησε τις επαφές. Οι επαφές σου είναι κρυπτογραφημένες και δεν είναι ορατές στην υπηρεσία Notelet.";
 
 /* Alert title when contacts disabled while trying to share a contact. */
 "CONTACT_SHARING_NO_ACCESS_TITLE" = "Δώσε πρόσβαση στις επαφές";
@@ -3182,7 +3182,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "Ο/Η %1$@ έκανε δωρεά στη Notelet εκ μέρους σου! Δείξε την υποστήριξή σου για τη Notelet στο προφίλ σου.";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "Ως ανεξάρτητος μη κερδοσκοπικός οργανισμός, το Notelet έχει δεσμευτεί για ιδιωτικά μηνύματα και κλήσεις. Χωρίς διαφημίσεις, παρακολούθηση, επιτήρηση. Κάνε σήμερα μια δωρεά για να στηρίξεις το Signal.";
+"DONATION_READ_MORE_SHEET_BODY" = "Ως ανεξάρτητος μη κερδοσκοπικός οργανισμός, το Notelet έχει δεσμευτεί για ιδιωτικά μηνύματα και κλήσεις. Χωρίς διαφημίσεις, παρακολούθηση, επιτήρηση. Κάνε σήμερα μια δωρεά για να στηρίξεις το Notelet.";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "Απόκτησε ένα προαιρετικό σήμα στο προφίλ σου όταν κάνεις δωρεά";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Διαμοιρασμός απόδειξης";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Ευχαριστούμε που υποστηρίζεις το Notelet. Η συνεισφορά σου βοηθά στην ανάπτυξη της τεχνολογίας απορρήτου ανοιχτού κώδικα, που προστατεύει την ελευθερία της έκφρασης και δίνει τη δυνατότητα ασφαλών διεθνών επικοινωνιών για εκατομμύρια ανθρώπους σε όλο τον κόσμο. Αν είσαι κάτοικος των Ηνωμένων Πολιτειών, παρακαλούμε κράτα αυτή την απόδειξη για τα φορολογικά σου αρχεία. Το Signal Technology Foundation ένας μη κερδοσκοπικός οργανισμός στις Ηνωμένες Πολιτείες, που έχει φοροαπαλλαγή σύμφωνα με την ενότητα 501c3 του Internal Revenue Code. Το Federal Tax ID μας είναι 82–4506840.";
+"DONATION_RECEIPT_FOOTER" = "Ευχαριστούμε που υποστηρίζεις το Notelet. Η συνεισφορά σου βοηθά στην ανάπτυξη της τεχνολογίας απορρήτου ανοιχτού κώδικα, που προστατεύει την ελευθερία της έκφρασης και δίνει τη δυνατότητα ασφαλών διεθνών επικοινωνιών για εκατομμύρια ανθρώπους σε όλο τον κόσμο. Αν είσαι κάτοικος των Ηνωμένων Πολιτειών, παρακαλούμε κράτα αυτή την απόδειξη για τα φορολογικά σου αρχεία. Το Notelet Technology Foundation ένας μη κερδοσκοπικός οργανισμός στις Ηνωμένες Πολιτείες, που έχει φοροαπαλλαγή σύμφωνα με την ενότητα 501c3 του Internal Revenue Code. Το Federal Tax ID μας είναι 82–4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Δωρεά για φίλους";
@@ -3389,13 +3389,13 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Γεια,\n\nΤον τελευταίο καιρό χρησιμοποιώ το Notelet για να διατηρώ τις συνομιλίες στο iPhone μου ιδιωτικές. Θα ήθελα να το εγκαταστήσεις και εσύ, για να είμαστε σίγουροι ότι μόνο εμείς οι δύο μπορούμε να διαβάζουμε τα μηνύματα μας και να ακούμε τις συνομιλίες μας.\n\nΤο Signal είναι διαθέσιμο για iPhone, Android και Desktop. Απόκτησέ το εδώ: %1$@\n\nΤο Signal λειτουργεί όπως η εφαρμογή μηνυμάτων που ήδη χρησιμοποιείς. Μπορούμε να στέλνουμε φωτογραφίες και βίντεο, να κάνουμε κλήσεις και να ξεκινήσουμε ομαδικές συνομιλίες. Το καλύτερο είναι ότι κανείς δεν θα μπορεί να τα δει, ούτε καν αυτοί που έφτιαξαν το Signal!\n\nΜπορείς να διαβάσεις περισσότερα για το Signal εδώ: %2$@";
+"EMAIL_INVITE_BODY" = "Γεια,\n\nΤον τελευταίο καιρό χρησιμοποιώ το Notelet για να διατηρώ τις συνομιλίες στο iPhone μου ιδιωτικές. Θα ήθελα να το εγκαταστήσεις και εσύ, για να είμαστε σίγουροι ότι μόνο εμείς οι δύο μπορούμε να διαβάζουμε τα μηνύματα μας και να ακούμε τις συνομιλίες μας.\n\nΤο Notelet είναι διαθέσιμο για iPhone, Android και Desktop. Απόκτησέ το εδώ: %1$@\n\nΤο Notelet λειτουργεί όπως η εφαρμογή μηνυμάτων που ήδη χρησιμοποιείς. Μπορούμε να στέλνουμε φωτογραφίες και βίντεο, να κάνουμε κλήσεις και να ξεκινήσουμε ομαδικές συνομιλίες. Το καλύτερο είναι ότι κανείς δεν θα μπορεί να τα δει, ούτε καν αυτοί που έφτιαξαν το Notelet!\n\nΜπορείς να διαβάσεις περισσότερα για το Notelet εδώ: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Έλα να χρησιμοποιήσουμε το Notelet";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Η συσκευή σου δεν είναι παραμετροποιημένη για να στέλνει email. Για να στείλεις ένα αίτημα υποστήριξης, ρύθμισε το email στη συσκευή σου ή στείλε email στο support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Η συσκευή σου δεν είναι παραμετροποιημένη για να στέλνει email. Για να στείλεις ένα αίτημα υποστήριξης, ρύθμισε το email στη συσκευή σου ή στείλε email στο support@notelet.org";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "Το email δεν είναι διαθέσιμο";
@@ -3566,7 +3566,7 @@
 "ERROR_NETWORK_FAILURE" = "Σφάλμα δικτύου";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Παρακαλούμε βοήθησέ μας να βελτιώσουμε το Notelet αναφέροντας αυτό το σφάλμα μαζί με τα αρχεία καταγραφής αποσφαλμάτωσης της συσκευής σου στο support@signal.org; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Παρακαλούμε βοήθησέ μας να βελτιώσουμε το Notelet αναφέροντας αυτό το σφάλμα μαζί με τα αρχεία καταγραφής αποσφαλμάτωσης της συσκευής σου στο support@notelet.org; %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Notelet Beta: Παρουσιάστηκς κάποιο σφάλμα";
@@ -4802,7 +4802,7 @@
 "INVALID_PROXY_HOST_ERROR" = "Η διεύθυνση proxy που έχεις εισαγάγει δεν είναι έγκυρη, έλεγξε τη διεύθυνση και δοκίμασε ξανά.";
 
 /* Alert body when contacts disabled while trying to invite contacts to signal */
-"INVITE_FLOW_REQUIRES_CONTACT_ACCESS_BODY" = "Μπορείς να δώσεις πρόσβαση στις επαφές από την εφαρμογή Ρυθμίσεις του iOS, για να προσκαλέσεις τους φίλους και τις φίλες σου στο Signal.";
+"INVITE_FLOW_REQUIRES_CONTACT_ACCESS_BODY" = "Μπορείς να δώσεις πρόσβαση στις επαφές από την εφαρμογή Ρυθμίσεις του iOS, για να προσκαλέσεις τους φίλους και τις φίλες σου στο Notelet.";
 
 /* Alert title when contacts disabled while trying to invite contacts to signal */
 "INVITE_FLOW_REQUIRES_CONTACT_ACCESS_TITLE" = "Δώσε πρόσβαση στις επαφές";
@@ -4994,10 +4994,10 @@
 "LINK_PREVIEW_UNKNOWN_DOMAIN" = "Προεπισκόπηση συνδέσμου";
 
 /* Shown in an alert when trying to edit a contact. */
-"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Η διαχείριση επαφών τηλεφώνου δεν είναι πλέον διαθέσιμη στο iPad. Για να προσθέσεις επαφές Notelet στις επαφές του τηλεφώνου σου, άνοιξε το Signal στο τηλέφωνό σου.";
+"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "Η διαχείριση επαφών τηλεφώνου δεν είναι πλέον διαθέσιμη στο iPad. Για να προσθέσεις επαφές Notelet στις επαφές του τηλεφώνου σου, άνοιξε το Notelet στο τηλέφωνό σου.";
 
 /* Shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. */
-"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Η διαχείριση επαφών τηλεφώνου δεν υποστηρίζεται πλέον από το iPad. Αυτή η συσκευή θα συνεχίσει να συγχρονίζει τυχόν αλλαγές στη λίστα επαφών σου από το Signal στο τηλέφωνό σου.";
+"LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "Η διαχείριση επαφών τηλεφώνου δεν υποστηρίζεται πλέον από το iPad. Αυτή η συσκευή θα συνεχίσει να συγχρονίζει τυχόν αλλαγές στη λίστα επαφών σου από το Notelet στο τηλέφωνό σου.";
 
 /* A button shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. Tapping it opens a website with more details. */
 "LINKED_DEVICE_MANAGE_CONTACTS_LEARN_MORE" = "Μάθε περισσότερα";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Έχεις συνδέσει μια νέα συσκευή";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Για να συνδέσεις έναν υπολογιστή ή ένα iPad σε αυτόν τον λογαριασμό Notelet, πήγαινε στις Συνδεδεμένες συσκευές, πάτησε «Σύνδεση νέας συσκευής» και σάρωσε ξανά τον κωδικό QR. Βεβαιώσου ότι σαρώνεις μόνο κωδικούς QR που προέρχονται απευθείας από το Signal.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Για να συνδέσεις έναν υπολογιστή ή ένα iPad σε αυτόν τον λογαριασμό Notelet, πήγαινε στις Συνδεδεμένες συσκευές, πάτησε «Σύνδεση νέας συσκευής» και σάρωσε ξανά τον κωδικό QR. Βεβαιώσου ότι σαρώνεις μόνο κωδικούς QR που προέρχονται απευθείας από το Notelet.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Φαίνεται πως προσπαθείς να συνδέσεις μια συσκευή Notelet. Πάτησε «Συνέχεια», μετά «Σύνδεση νέας συσκευής» και σκάναρε ξανά τον κωδικό QR.";
@@ -5969,7 +5969,7 @@
 "ONBOARDING_CHOOSE_RESTORE_METHOD_DESCRIPTION" = "Επίλεξε πώς θέλεις να επαναφέρεις το ιστορικό μηνυμάτων και τα δεδομένα του λογαριασμού σου.";
 
 /* Message body displayed to a user during registration if there are no restore options available. */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Επειδή αλλάζεις από Android σε iOS, ο μόνος τρόπος για να μεταφέρεις τα μηνύματα και τα πολυμέσα σου είναι να ενεργοποιήσεις τα Αντίγραφα ασφαλείας Signal στην παλιά σου συσκευή.";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Επειδή αλλάζεις από Android σε iOS, ο μόνος τρόπος για να μεταφέρεις τα μηνύματα και τα πολυμέσα σου είναι να ενεργοποιήσεις τα Αντίγραφα ασφαλείας Notelet στην παλιά σου συσκευή.";
 
 /* Title displayed to a user during registration if there are no restore options available. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_TITLE" = "Δεν υπάρχουν αντίγραφα ασφαλείας για επαναφορά";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "Σύνδεση iPhone";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Πατώντας \"Εγγραφή iPad\" θα μπορέσεις να δημιουργήσεις ένα καινούριο λογαριασμό Notelet ή να μεταφέρεις ένα προϋπάρχοντα λογαριασμό σε αυτό το iPad. Αυτό θα απενεργοποιήσει το Signal σε οποιαδήποτε άλλη συσκευή εγγεγραμμένη με τον ίδιο αριθμό τηλεφώνου.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Πατώντας \"Εγγραφή iPad\" θα μπορέσεις να δημιουργήσεις ένα καινούριο λογαριασμό Notelet ή να μεταφέρεις ένα προϋπάρχοντα λογαριασμό σε αυτό το iPad. Αυτό θα απενεργοποιήσει το Notelet σε οποιαδήποτε άλλη συσκευή εγγεγραμμένη με τον ίδιο αριθμό τηλεφώνου.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "Πατώντας \"Σύνδεση iPhone\" θα μπορέσεις να συνδέσεις τον κινητό σου σε έναν υπάρχοντα λογαριασμό. Η σύνδεση του κινητού γενικά δεν προτείνεται και θα περιορίσει κάποια λειτουργίες, όπως τις κλήσεις.";
@@ -6767,7 +6767,7 @@
 "PIN_CREATION_DISABLE_CONFIRMATION_TITLE" = "Προσοχή";
 
 /* The explanation in the 'pin creation' view. */
-"PIN_CREATION_EXPLANATION" = "Τα PIN κρατούν τις πληροφορίες που αποθηκεύονται στο Notelet κρυπτογραφημένες, οπότε μόνο εσύ έχεις πρόσβαση σε αυτές. Το προφίλ σου, οι ρυθμίσεις και οι επαφές να επαναφερθούν όταν επανεγκαταστήσεις το Signal. Δεν θα χρειάζεται να γράψεις το PIN για να ανοίξεις την εφαρμογή.";
+"PIN_CREATION_EXPLANATION" = "Τα PIN κρατούν τις πληροφορίες που αποθηκεύονται στο Notelet κρυπτογραφημένες, οπότε μόνο εσύ έχεις πρόσβαση σε αυτές. Το προφίλ σου, οι ρυθμίσεις και οι επαφές να επαναφερθούν όταν επανεγκαταστήσεις το Notelet. Δεν θα χρειάζεται να γράψεις το PIN για να ανοίξεις την εφαρμογή.";
 
 /* Learn more action on the pin creation view */
 "PIN_CREATION_LEARN_MORE" = "Περισσότερα για τα PIN";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "Σκανάρισμα κωδικού QR";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Για να μεταφέρεις αυτόν τον λογαριασμό σε μια νέα συσκευή, πάτα «Συνέχεια» και σάρωσε ξανά τον κωδικό QR με την κάμερα Signal. Βεβαιώσου ότι σαρώνεις μόνο κωδικούς QR που προέρχονται απευθείας από το Signal.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Για να μεταφέρεις αυτόν τον λογαριασμό σε μια νέα συσκευή, πάτα «Συνέχεια» και σάρωσε ξανά τον κωδικό QR με την κάμερα Notelet. Βεβαιώσου ότι σαρώνεις μόνο κωδικούς QR που προέρχονται απευθείας από το Notelet.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "Απάντηση προς %1$@. %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "Χρειάζεσαι βοήθεια;";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "Το PIN σου είναι ένας κωδικός με 4+ ψηφία που δημιούργησες και μπορεί να αποτελείται από αριθμούς ή αλφαριθμητικά. Αν δεν μπορείς να θυμηθείς το PIN σου, θα πρέπει να περιμένεις 7 ημέρες για να εγγράψεις ξανά τον λογαριασμό σου. Αν έχεις ενεργοποιήσει τα Ασφαλή αντίγραφα Signal, μπορείς να προχωρήσεις με το κλειδί ανάκτησής σου.";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "Το PIN σου είναι ένας κωδικός με 4+ ψηφία που δημιούργησες και μπορεί να αποτελείται από αριθμούς ή αλφαριθμητικά. Αν δεν μπορείς να θυμηθείς το PIN σου, θα πρέπει να περιμένεις 7 ημέρες για να εγγράψεις ξανά τον λογαριασμό σου. Αν έχεις ενεργοποιήσει τα Ασφαλή αντίγραφα Notelet, μπορείς να προχωρήσεις με το κλειδί ανάκτησής σου.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "Το PIN σου είναι ένας κωδικός με 4+ ψηφία που δημιούργησες και μπορεί να αποτελείται από αριθμούς ή αλφαριθμητικά. Αν δεν μπορείς να θυμηθείς το PIN σου, μπορείς να εγγράψεις και να χρησιμοποιήσεις τον λογαριασμό σου, αλλά θα χάσεις κάποιες αποθηκευμένες ρυθμίσεις όπως οι πληροφορίες προφίλ σου. Αν έχεις ενεργοποιήσει τα Ασφαλή αντίγραφα Signal, μπορείς να προχωρήσεις με το κλειδί ανάκτησής σου.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "Το PIN σου είναι ένας κωδικός με 4+ ψηφία που δημιούργησες και μπορεί να αποτελείται από αριθμούς ή αλφαριθμητικά. Αν δεν μπορείς να θυμηθείς το PIN σου, μπορείς να εγγράψεις και να χρησιμοποιήσεις τον λογαριασμό σου, αλλά θα χάσεις κάποιες αποθηκευμένες ρυθμίσεις όπως οι πληροφορίες προφίλ σου. Αν έχεις ενεργοποιήσει τα Ασφαλή αντίγραφα Notelet, μπορείς να προχωρήσεις με το κλειδί ανάκτησής σου.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "Το PIN σου είναι ένας κωδικός με 4+ ψηφία που δημιούργησες και μπορεί να αποτελείται από αριθμούς ή αλφαριθμητικά. Αν δεν μπορείς να θυμηθείς το PIN σου, μπορείς να δημιουργήσεις ένα νέο. Μπορείς να δημιουργήσεις και να χρησιμοποιήσεις τον λογαριασμό σου, αλλά θα χάσεις κάποιες αποθηκευμένες ρυθμίσεις όπως τις πληροφορίες προφίλ. Αν έχεις ενεργοποιήσει τα Ασφαλή αντίγραφα Signal, μπορείς να προχωρήσεις με το κλειδί ανάκτησής σου.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "Το PIN σου είναι ένας κωδικός με 4+ ψηφία που δημιούργησες και μπορεί να αποτελείται από αριθμούς ή αλφαριθμητικά. Αν δεν μπορείς να θυμηθείς το PIN σου, μπορείς να δημιουργήσεις ένα νέο. Μπορείς να δημιουργήσεις και να χρησιμοποιήσεις τον λογαριασμό σου, αλλά θα χάσεις κάποιες αποθηκευμένες ρυθμίσεις όπως τις πληροφορίες προφίλ. Αν έχεις ενεργοποιήσει τα Ασφαλή αντίγραφα Notelet, μπορείς να προχωρήσεις με το κλειδί ανάκτησής σου.";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "Λάθος ΡΙΝ";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "Δεν ήταν δυνατή η ολοκλήρωση της μεταφοράς";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Ενδέχεται να έχεις εισαγάγει λανθασμένα το κλειδί ανάκτησης ή να μην έχεις ολοκληρώσει τουλάχιστον ένα αντίγραφο ασφαλείας στην παλιά σου συσκευή. \n\nΒεβαιώσου ότι εγγράφεσαι με τον ίδιο αριθμό τηλεφώνου και κλειδί ανάκτησης που αποθήκευσες κατά την ενεργοποίηση της διαδικασίας \"Ασφαλή αντίγραφα Signal\" και επιβεβαίωσε ότι η παλιά σου συσκευή έχει ολοκληρώσει τη δημιουργία αντιγράφων ασφαλείας.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Ενδέχεται να έχεις εισαγάγει λανθασμένα το κλειδί ανάκτησης ή να μην έχεις ολοκληρώσει τουλάχιστον ένα αντίγραφο ασφαλείας στην παλιά σου συσκευή. \n\nΒεβαιώσου ότι εγγράφεσαι με τον ίδιο αριθμό τηλεφώνου και κλειδί ανάκτησης που αποθήκευσες κατά την ενεργοποίηση της διαδικασίας \"Ασφαλή αντίγραφα Notelet\" και επιβεβαίωσε ότι η παλιά σου συσκευή έχει ολοκληρώσει τη δημιουργία αντιγράφων ασφαλείας.";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "Έχεις εξαντλήσει τις προσπάθειες κλειδιού ανάκτησης. Για την ασφάλειά σου, ο αριθμός των προσπαθειών είναι περιορισμένος. Περίμενε μία ώρα και προσπάθησε ξανά.";
@@ -7523,7 +7523,7 @@
 "REGISTRATION_NO_BACKUP_KEY_BUTTON_TITLE" = "Δεν υπάρχει κλειδί ανάκτησης;";
 
 /* Body text on a sheet with info for what to do if you don't have a recovery key */
-"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "Τα αντίγραφα ασφαλείας δεν μπορούν να ανακτηθούν χωρίς τον κωδικό ανάκτησης 64 χαρακτήρων. Εάν έχεις χάσει το κλειδί ανάκτησής σου, το Signal δεν μπορεί να βοηθήσει στην επαναφορά του αντιγράφου ασφαλείας σου.\n\nΕάν έχεις την παλιά σου συσκευή, μπορείς να δεις το κλειδί ανάκτησης στις Ρυθμίσεις > Συνομιλίες > Αντίγραφα ασφαλείας. Στη συνέχεια, πάτα Προβολή κλειδιού ανάκτησης.";
+"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "Τα αντίγραφα ασφαλείας δεν μπορούν να ανακτηθούν χωρίς τον κωδικό ανάκτησης 64 χαρακτήρων. Εάν έχεις χάσει το κλειδί ανάκτησής σου, το Notelet δεν μπορεί να βοηθήσει στην επαναφορά του αντιγράφου ασφαλείας σου.\n\nΕάν έχεις την παλιά σου συσκευή, μπορείς να δεις το κλειδί ανάκτησης στις Ρυθμίσεις > Συνομιλίες > Αντίγραφα ασφαλείας. Στη συνέχεια, πάτα Προβολή κλειδιού ανάκτησης.";
 
 /* Title for sheet with info for what to do if you don't have a recovery key */
 "REGISTRATION_NO_BACKUP_KEY_SHEET_TITLE" = "Δεν υπάρχει κλειδί ανάκτησης;";
@@ -7559,7 +7559,7 @@
 "REGISTRATION_PIN_CREATE_TITLE" = "Δημιουργία του PIN σου";
 
 /* During re-registration, users may be asked to re-enter their PIN code. This is the subtitle on the screen where this happens. A \"learn more\" link will be added to the end of this string. */
-"REGISTRATION_PIN_ENTER_EXISTING_SUBTITLE" = "Τα PIN μπορούν να σε βοηθήσουν να επαναφέρεις τον λογαριασμό σου και να διατηρήσεις τις πληροφορίες σου κρυπτογραφημένες με το Signal.";
+"REGISTRATION_PIN_ENTER_EXISTING_SUBTITLE" = "Τα PIN μπορούν να σε βοηθήσουν να επαναφέρεις τον λογαριασμό σου και να διατηρήσεις τις πληροφορίες σου κρυπτογραφημένες με το Notelet.";
 
 /* During re-registration, users may be asked to re-enter their PIN code. This is the title on the screen where this happens. */
 "REGISTRATION_PIN_ENTER_EXISTING_TITLE" = "Γράψε το PIN σου";
@@ -8162,7 +8162,7 @@
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_COUNTRY" = "Τοποθεσία";
 
 /* Table footer for the 'censorship circumvention' section when censorship circumvention can be manually enabled. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Αν είναι ενεργοποιημένο, το Notelet θα προσπαθήσει να παρακάμψει την λογοκρισία. Μην ενεργοποιήσεις αυτή την επιλογή εκτός και αν βρίσκεσαι σε περιοχή όπου το Signal έχει λογοκριθεί/μπλοκαριστεί.";
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Αν είναι ενεργοποιημένο, το Notelet θα προσπαθήσει να παρακάμψει την λογοκρισία. Μην ενεργοποιήσεις αυτή την επιλογή εκτός και αν βρίσκεσαι σε περιοχή όπου το Notelet έχει λογοκριθεί/μπλοκαριστεί.";
 
 /* Table footer for the 'censorship circumvention' section shown when censorship circumvention has been auto-enabled based on local phone number. */
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_AUTO_ENABLED" = "Η παράκαμψη λογοκρισίας ενεργοποιήθηκε βάσει του αριθμού τηλεφώνου του λογαριασμού σου.";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Απενεργοποίηση πληρωμών";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Συνιστάται να μεταφέρεις τα χρήματά σου σε άλλη διεύθυνση πορτοφολιού πριν απενεργοποιήσεις τις πληρωμές. Εάν επιλέξεις να μη μεταφέρεις τα χρήματά σου τώρα, θα παραμείνουν στο πορτοφόλι σου που είναι συνδεδεμένο με το Signal εάν ενεργοποιήσεις εκ νέου τις πληρωμές.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Συνιστάται να μεταφέρεις τα χρήματά σου σε άλλη διεύθυνση πορτοφολιού πριν απενεργοποιήσεις τις πληρωμές. Εάν επιλέξεις να μη μεταφέρεις τα χρήματά σου τώρα, θα παραμείνουν στο πορτοφόλι σου που είναι συνδεδεμένο με το Notelet εάν ενεργοποιήσεις εκ νέου τις πληρωμές.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Το υπόλοιπό σου θα παραμείνει στο πορτοφόλι σου που είναι συνδεδεμένο με το Notelet, σε περίπτωση που επιλέξεις να ενεργοποιήσεις ξανά τις πληρωμές.";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Για να αλλάξεις αυτή τη ρύθμιση, όρισε την επιλογή \"Ποιος μπορεί να δει τον αριθμό μου\" σε \"Κανείς\".";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Η ρύθμιση «Ποιοι μπορούν να με βρουν με τον αριθμό μου» σε «Κανείς» θα καταστήσει δυσκολότερο για τους χρήστες να σε βρουν στο Signal.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Η ρύθμιση «Ποιοι μπορούν να με βρουν με τον αριθμό μου» σε «Κανείς» θα καταστήσει δυσκολότερο για τους χρήστες να σε βρουν στο Notelet.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Είσαι σίγουρος/η;";
@@ -8948,7 +8948,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_TITLE" = "Ποιος μπορεί να με βρει με τον αριθμό μου";
 
 /* Description label for Phone Number Privacy */
-"SETTINGS_PHONE_NUMBER_PRIVACY_DESCRIPTION_LABEL" = "Επίλεξε ποιος μπορεί να δει τον αριθμό τηλεφώνου σου και ποιος μπορεί να τον χρησιμοποιήσει για να επικοινωνήσει μαζί σου στο Signal.";
+"SETTINGS_PHONE_NUMBER_PRIVACY_DESCRIPTION_LABEL" = "Επίλεξε ποιος μπορεί να δει τον αριθμό τηλεφώνου σου και ποιος μπορεί να τον χρησιμοποιήσει για να επικοινωνήσει μαζί σου στο Notelet.";
 
 /* The title for phone number privacy settings. */
 "SETTINGS_PHONE_NUMBER_PRIVACY_TITLE" = "Αριθμός τηλεφώνου";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "Απενεργοποίηση υπενθυμίσεων";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Βεβαιώσου πως θυμάσαι ή έχεις αποθηκεύσει με ασφάλεια το PIN σου καθώς δεν γίνεται να ανακληθεί. Αν ξεχάσεις το PIN μπορεί να χάσεις δεδομένα όταν επανεγγραφείς στο Signal.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Βεβαιώσου πως θυμάσαι ή έχεις αποθηκεύσει με ασφάλεια το PIN σου καθώς δεν γίνεται να ανακληθεί. Αν ξεχάσεις το PIN μπορεί να χάσεις δεδομένα όταν επανεγγραφείς στο Notelet.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Επιβεβαίωση PIN Notelet";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "Υπενθυμίσεις PIN";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "Τα PIN κρατούν τις πληροφορίες που αποθηκεύονται στο Notelet κρυπτογραφημένες, οπότε μόνο εσύ έχεις πρόσβαση σε αυτές. Δεν έχεις τη δυνατότητα να επανακτήσεις το PIN σου. Το προφίλ σου, οι ρυθμίσεις και οι επαφές να επαναφερθούν όταν επανεγκαταστήσεις το Signal.";
+"SETTINGS_PINS_FOOTER" = "Τα PIN κρατούν τις πληροφορίες που αποθηκεύονται στο Notelet κρυπτογραφημένες, οπότε μόνο εσύ έχεις πρόσβαση σε αυτές. Δεν έχεις τη δυνατότητα να επανακτήσεις το PIN σου. Το προφίλ σου, οι ρυθμίσεις και οι επαφές να επαναφερθούν όταν επανεγκαταστήσεις το Notelet.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "Αλλαγή του PIN σου";
@@ -9797,10 +9797,10 @@
 "UNKNOWN_CONTACT_BLOCK_OFFER" = "Ο χρήστης δεν είναι στις επαφές σου. Θέλεις να τον αποκλείσεις;";
 
 /* Info message recorded in conversation history when local user receives an unknown message from a linked device and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Μια από τις συσκευές σου έστειλε μήνυμα που δεν μπορεί να επεξεργαστεί ή προβληθεί εδώ επειδή χρησιμοποιεί μια νέα δυνατότητα του Signal.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Μια από τις συσκευές σου έστειλε μήνυμα που δεν μπορεί να επεξεργαστεί ή προβληθεί εδώ επειδή χρησιμοποιεί μια νέα δυνατότητα του Notelet.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. Embeds {{user's name or phone number}}. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "Ο/Η %1$@ σου έστειλε μήνυμα που δεν μπορεί να επεξεργαστεί ή να εμφανιστεί γιατί χρησιμοποιεί μια νέα δυνατότητα του Signal.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "Ο/Η %1$@ σου έστειλε μήνυμα που δεν μπορεί να επεξεργαστεί ή να εμφανιστεί γιατί χρησιμοποιεί μια νέα δυνατότητα του Notelet.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. */
 "UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITHOUT_NAME" = "Έλαβες μήνυμα που δεν μπορεί να επεξεργαστεί ή να προβληθεί γιατί χρησιμοποιεί μια νέα δυνατότητα του Notelet.";
@@ -9812,10 +9812,10 @@
 "UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_FROM_LINKED_DEVICE" = "Αναβάθμισες στη πιο πρόσφατη έκδοση του Notelet. Μπορείς πλέον να λαμβάνεις αυτόν τον τύπο μηνύματος στην συσκευή σου.";
 
 /* Info message recorded in conversation history when local user has received an unknown message and has upgraded. Embeds {{user's name or phone number}}. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITH_NAME_FORMAT" = "Μπορείς να ζητήσεις από τον/την %1$@ να σου ξαναστείλει το μήνυμα τώρα που χρησιμοποιείς την αναβαθμισμένη έκδοση του Signal.";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITH_NAME_FORMAT" = "Μπορείς να ζητήσεις από τον/την %1$@ να σου ξαναστείλει το μήνυμα τώρα που χρησιμοποιείς την αναβαθμισμένη έκδοση του Notelet.";
 
 /* Info message recorded in conversation history when local user has received an unknown message and has upgraded. */
-"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITHOUT_NAME" = "Μπορείς να ζητήσεις από τον/την αποστολέα να σου ξαναστείλει το μήνυμα τώρα που χρησιμοποιείς την αναβαθμισμένη έκδοση του Signal.";
+"UNKNOWN_PROTOCOL_VERSION_UPGRADE_COMPLETE_WITHOUT_NAME" = "Μπορείς να ζητήσεις από τον/την αποστολέα να σου ξαναστείλει το μήνυμα τώρα που χρησιμοποιείς την αναβαθμισμένη έκδοση του Notelet.";
 
 /* Label indicating an unknown user. */
 "UNKNOWN_USER" = "Άγνωστο";

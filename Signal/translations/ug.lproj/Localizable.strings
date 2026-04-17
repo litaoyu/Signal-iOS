@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "ساقلاش بوشلۇقى ئاز";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "كونا ئەسكۈنىڭىزدىن يوللىغان سانلىق مەلۇماتنى ئەسلىگە كەلتۈرگىلى بولمىدى. support@Notelet.org غا سازلاش خاتىرىسى ئەۋەتىپ بۇ كاشىلىنى ھەل قىلىشىمىزغا ياردەم قىلىڭ.  ئەگەر Signal نى قايتا ئورناتسىڭىز ئۇچۇر تارىخىڭىزنى يوقىتىشىڭىز مۇمكىن.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "كونا ئەسكۈنىڭىزدىن يوللىغان سانلىق مەلۇماتنى ئەسلىگە كەلتۈرگىلى بولمىدى. support@Notelet.org غا سازلاش خاتىرىسى ئەۋەتىپ بۇ كاشىلىنى ھەل قىلىشىمىزغا ياردەم قىلىڭ.  ئەگەر Notelet نى قايتا ئورناتسىڭىز ئۇچۇر تارىخىڭىزنى يوقىتىشىڭىز مۇمكىن.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "يۆتكەشنى تاماملىيالمىدى.";
@@ -614,7 +614,7 @@
 "BACKUP_ONBOARDING_INTRO_NOT_NOW_TOAST" = "«تەڭشەك»تىن زاپاسلاشنى قوزغىتالايسىز.";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "ئۇچۇرلىرىڭىزنى ۋە مېدىيانى Noteletنىڭ بىخەتەر ، ئاخىرىغىچە مەخپىيلەشتۈرۈلگەن ساقلاش مۇلازىمىتىنى ئىشلىتىپ زاپاسلاڭ. يېڭى تېلېفون ئالغاندا ياكى Signalنى قايتا قاچىلىغاندا ھەرقانداق ئۇچۇرنى يۈتتۈرۈپ قويمايسىز.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "ئۇچۇرلىرىڭىزنى ۋە مېدىيانى Noteletنىڭ بىخەتەر ، ئاخىرىغىچە مەخپىيلەشتۈرۈلگەن ساقلاش مۇلازىمىتىنى ئىشلىتىپ زاپاسلاڭ. يېڭى تېلېفون ئالغاندا ياكى Noteletنى قايتا قاچىلىغاندا ھەرقانداق ئۇچۇرنى يۈتتۈرۈپ قويمايسىز.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
 "BACKUP_ONBOARDING_INTRO_TITLE" = "Notelet بىخەتەر زاپاسلانمىللىرى";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "ئەسلىگە كەلتۈرۈش ئاچقۇچى";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "زاپاسلاش مۇشتەرىلىكىڭىزنىڭ ۋاقتى ئۆتتى، چۈنكى پۇل تۆلەش ئۇسۇلىڭىز بىلەن يېڭىلىغىلى بولمىدى.\n\nمېدىيانى زاپاسلاشنى داۋاملاشتۇرۇش ئۈچۈن قايتا مۇشتەرى بولۇڭ. ھەقسىز Signal زاپاسلانمىسى پىلانىنى داۋاملىق زىيارەت قىلالايسىز.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "زاپاسلاش مۇشتەرىلىكىڭىزنىڭ ۋاقتى ئۆتتى، چۈنكى پۇل تۆلەش ئۇسۇلىڭىز بىلەن يېڭىلىغىلى بولمىدى.\n\nمېدىيانى زاپاسلاشنى داۋاملاشتۇرۇش ئۈچۈن قايتا مۇشتەرى بولۇڭ. ھەقسىز Notelet زاپاسلانمىسى پىلانىنى داۋاملىق زىيارەت قىلالايسىز.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "TestFlightنى داۋاملىق ئىشلەتمىگەچكە زاپاسلاش مۇشتەرىلىكىڭىزنىڭ ۋاقتى ئۆتكەن.\n\nمېدىيانى زاپاسلاشنى داۋاملاشتۇرۇش ئۈچۈن قايتا مۇشتەرى بولۇڭ. ھەقسىز Signal زاپاسلانمىسى پىلانىنى داۋاملىق زىيارەت قىلالايسىز.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "TestFlightنى داۋاملىق ئىشلەتمىگەچكە زاپاسلاش مۇشتەرىلىكىڭىزنىڭ ۋاقتى ئۆتكەن.\n\nمېدىيانى زاپاسلاشنى داۋاملاشتۇرۇش ئۈچۈن قايتا مۇشتەرى بولۇڭ. ھەقسىز Notelet زاپاسلانمىسى پىلانىنى داۋاملىق زىيارەت قىلالايسىز.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "زاپاسلارنى باشقۇرۇش";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "زاپاسلاش ئېتىۋېتىلدى ۋە Noteletنىڭ بىخەتەر ساقلاش مۇلازىمىتىدىن سانلىق مەلۇماتلىرىڭىز ئۆچۈرۈلدى.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "زاپاسلاش ئېتىۋېتىلدى ، ئۈسكۈنىدە يوق ھەرقانداق مېدىيا ھازىر چۈشۈرۈلىۋاتىدۇ. چۈشۈرۈلگەندىن كېيىن سانلىق مەلۇماتلىرىڭىز Signalنىڭ بىخەتەر ساقلاش مۇلازىمىتىدىن ئۆچۈرۈلىدۇ.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "زاپاسلاش ئېتىۋېتىلدى ، ئۈسكۈنىدە يوق ھەرقانداق مېدىيا ھازىر چۈشۈرۈلىۋاتىدۇ. چۈشۈرۈلگەندىن كېيىن سانلىق مەلۇماتلىرىڭىز Noteletنىڭ بىخەتەر ساقلاش مۇلازىمىتىدىن ئۆچۈرۈلىدۇ.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "بىر خاتالىق كۆرۈلدى. ياردەمچى خادىم بىلەن ئالاقىلىشىڭ.";
@@ -857,7 +857,7 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "ئېتىپ زاپاسلانمىنى ئۆچۈرەمسىز؟";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "زاپاس سانلىق مەلۇماتىڭىزدا بۇ ئۈسكۈنىدە يوق مېدىيا بار. زاپىسىڭىزنى چۈشۈرۈشكە ئۇزۇن ۋاقىت كېتىشى مۇمكىن ، Signalنىڭ ئۈزۈلۈپ قېلىنىشىدىن ساقلىنىش ئۈچۈن داۋاملىق ئوچۇق تۇرۇشىغا كاپالەتلىك قىلىڭ .";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "زاپاس سانلىق مەلۇماتىڭىزدا بۇ ئۈسكۈنىدە يوق مېدىيا بار. زاپىسىڭىزنى چۈشۈرۈشكە ئۇزۇن ۋاقىت كېتىشى مۇمكىن ، Noteletنىڭ ئۈزۈلۈپ قېلىنىشىدىن ساقلىنىش ئۈچۈن داۋاملىق ئوچۇق تۇرۇشىغا كاپالەتلىك قىلىڭ .";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "زاپاس مەلۇماتنى چۈشۈرۈۋاتىدۇ";
@@ -953,7 +953,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "كېيىن چۈشۈرۈڭ";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "زاپاس سانلىق مەلۇماتىڭىزدا بۇ ئۈسكۈنىدە يوق مېدىيا بار. بۇنى چۈشۈرۈشكە ئۇزۇن ۋاقىت كېتىشى مۇمكىن ، چۈشۈرۈشكە دەخلى قىلىنىشتىن ساقلىنىش ئۈچۈن Signal نى ئېچىپ قۇيۇڭ.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "زاپاس سانلىق مەلۇماتىڭىزدا بۇ ئۈسكۈنىدە يوق مېدىيا بار. بۇنى چۈشۈرۈشكە ئۇزۇن ۋاقىت كېتىشى مۇمكىن ، چۈشۈرۈشكە دەخلى قىلىنىشتىن ساقلىنىش ئۈچۈن Notelet نى ئېچىپ قۇيۇڭ.";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "ھازىر چۈشۈرۈڭ";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "مېدىيانى يۈكلەش ۋاقىتلىق توختىتىلدى: Wi-Fi نى ساقلاۋاتىدۇ";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "زاپاسلاش پىلانىڭىزنى ئۆز ئىچىگە ئالغان %1$@لىق ساقلاش چېكىگە يەتتىڭىز. يېڭى پاراڭلار ۋە مېدىيانى زاپاسلاش ئۈچۈن، Signalدا %2$@ بوشلۇق ھازىرلاڭ، ئاندىن كېيىن «ھازىر زاپاسلاش» نى چېكىڭ.";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "زاپاسلاش پىلانىڭىزنى ئۆز ئىچىگە ئالغان %1$@لىق ساقلاش چېكىگە يەتتىڭىز. يېڭى پاراڭلار ۋە مېدىيانى زاپاسلاش ئۈچۈن، Noteletدا %2$@ بوشلۇق ھازىرلاڭ، ئاندىن كېيىن «ھازىر زاپاسلاش» نى چېكىڭ.";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "%2$@ نىڭ %1$@ تى يۈكلىنىۋاتىدۇ(%3$@)";
@@ -1400,7 +1400,7 @@
 "CALL_QUALITY_SURVEY_COMPLETION_TOAST" = "ئىنكاسىڭىزغا رەھمەت!";
 
 /* Footer text explaining custom issue descriptions in the call quality survey */
-"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "مەسىلىگە مۇناسىۋەتلىك قانداق تەپسىلاتلار بولسا قوشۇپ قويۇڭ. بۇ يەردە ھەمبەھىرلىگەن ھەر قانداق مەزمۇن شەخسىي ھالەتتە ساقلىنىدۇ ھەمدە Signalدىكى تېلېفونلىشىش سۈپىتىنى ياردەملىشىپ ياخشىلاشقا ئىشلىتىلىدۇ.";
+"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "مەسىلىگە مۇناسىۋەتلىك قانداق تەپسىلاتلار بولسا قوشۇپ قويۇڭ. بۇ يەردە ھەمبەھىرلىگەن ھەر قانداق مەزمۇن شەخسىي ھالەتتە ساقلىنىدۇ ھەمدە Noteletدىكى تېلېفونلىشىش سۈپىتىنى ياردەملىشىپ ياخشىلاشقا ئىشلىتىلىدۇ.";
 
 /* Placeholder text for the custom issue entry in the call quality survey */
 "CALL_QUALITY_SURVEY_CUSTOM_ISSUE_PLACEHOLDER" = "بايقىغان مەسىلىنى تەسۋىرلەڭ";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM / YY";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "سىز ئىئانە قىلغاندا Notelet شەخسىي ئۇچۇرلىرىڭىزنى توپلىمايدۇ ياكى ساقلىمايدۇ.\n\nئىئانىڭىزنى تاپشۇرۇۋېلىش ئۈچۈن Stripe پۇل تۆلەش بىر تەرەپ قىلغۇچىسى ئورنىدا ئىشلىتىمىز. سىز ئۇلارغا تەمىنلىگەن ئۇچۇرلارنى بىز كۆرەلمەيمىز ياكى ساقلىيالمايمىز.Signal سىزنىڭ ئىئانىڭىزنى سىزنىڭ Signal ھېساباتىڭىزغا باغلىمايدۇ ۋە ئۇنداق قىلىش ھوقۇقىمۇ بولمايدۇ.قوللىغىنىڭىزغا رەھمەت!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "سىز ئىئانە قىلغاندا Notelet شەخسىي ئۇچۇرلىرىڭىزنى توپلىمايدۇ ياكى ساقلىمايدۇ.\n\nئىئانىڭىزنى تاپشۇرۇۋېلىش ئۈچۈن Stripe پۇل تۆلەش بىر تەرەپ قىلغۇچىسى ئورنىدا ئىشلىتىمىز. سىز ئۇلارغا تەمىنلىگەن ئۇچۇرلارنى بىز كۆرەلمەيمىز ياكى ساقلىيالمايمىز.Notelet سىزنىڭ ئىئانىڭىزنى سىزنىڭ Notelet ھېساباتىڭىزغا باغلىمايدۇ ۋە ئۇنداق قىلىش ھوقۇقىمۇ بولمايدۇ.قوللىغىنىڭىزغا رەھمەت!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "ئۇچۇرلىرىڭىز شەخسىي";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "ئەسلىگە كەلتۈرۈش";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "مېدىيانى زاپاسلاش ئۈچۈن يانفۇنىڭىزنىڭ ئېقىمىنى ئشلەتسىڭىزھەق ئېلىنىشى مۇمكىن. زاپىسىڭىزنى يۈكلەشكە ئۇزۇن ۋاقىت كېتىشى مۇمكىن، Signalنىڭ ئۈزۈلۈپ قېلىنىشىدىن ساقلىنىش ئۈچۈن داۋاملىق ئوچۇق تۇرۇشىغا كاپالەتلىك قىلىڭ.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "مېدىيانى زاپاسلاش ئۈچۈن يانفۇنىڭىزنىڭ ئېقىمىنى ئشلەتسىڭىزھەق ئېلىنىشى مۇمكىن. زاپىسىڭىزنى يۈكلەشكە ئۇزۇن ۋاقىت كېتىشى مۇمكىن، Noteletنىڭ ئۈزۈلۈپ قېلىنىشىدىن ساقلىنىش ئۈچۈن داۋاملىق ئوچۇق تۇرۇشىغا كاپالەتلىك قىلىڭ.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "يانفون ئارقىلىق ئەسلىگە كەلتۈرەمسىز؟";
@@ -2138,7 +2138,7 @@
 "CONTACT_SHARE_INVALID_CONTACT" = "ئىناۋەتسىز ئالاقەداش.";
 
 /* Alert body when contacts disabled while trying to share a contact. */
-"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet غا ئالاقىداشلارنى زىيارەت قىلىش ھوقۇقى لازىم. IOS تەڭشەكلىرىگە كىرىپ ئالاقىداشلارنى قوزغىتىڭ. ئالاقىداشلىرىڭىز مەخپىيلەشتۈرۈلگەن بولۇپ، Signal مۇلازىمىتىگە كۆرۈنمەيدۇ.";
+"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet غا ئالاقىداشلارنى زىيارەت قىلىش ھوقۇقى لازىم. IOS تەڭشەكلىرىگە كىرىپ ئالاقىداشلارنى قوزغىتىڭ. ئالاقىداشلىرىڭىز مەخپىيلەشتۈرۈلگەن بولۇپ، Notelet مۇلازىمىتىگە كۆرۈنمەيدۇ.";
 
 /* Alert title when contacts disabled while trying to share a contact. */
 "CONTACT_SHARING_NO_ACCESS_TITLE" = "ئالاقىداشنى زىيارەت قىلىشىغا رۇخسەت قىلىڭ";
@@ -3182,7 +3182,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ سىزنىڭ ئورنىڭىزدا Notelet غا ئىئانە قىلدى! Notelet غا بولغان قوللىشىڭىزنى ئارخىپىڭىزدا نامايەن قىلىڭ.";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "مۇستەقىل پايدا ئالمايدىغان تەشكىلات بولۇش سۈپىتى بىلەن،   Notelet شەخسىي ئۇچۇر ۋە تېلېفونلىشىشقا كاپالەتلىك قىلىدۇ. ئېلان، ئىز قوغلاش، نازارەت قىلىنىشتىن خالىي. Signalنى قوللاش ئۈچۈن بۈگۈنلا ئىئانە قىلىڭ.";
+"DONATION_READ_MORE_SHEET_BODY" = "مۇستەقىل پايدا ئالمايدىغان تەشكىلات بولۇش سۈپىتى بىلەن،   Notelet شەخسىي ئۇچۇر ۋە تېلېفونلىشىشقا كاپالەتلىك قىلىدۇ. ئېلان، ئىز قوغلاش، نازارەت قىلىنىشتىن خالىي. Noteletنى قوللاش ئۈچۈن بۈگۈنلا ئىئانە قىلىڭ.";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "ئىئانە قىلىش ئارقىلىق قوشۇمچە بىر ئىزنەك تاپشۇرۇۋالىسىز";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "تالوننى ئورتاقلىشىش";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Notelet نى قوللىغانلىقىڭىزغا رەھمەت. سىزنىڭ ئىئانىڭىز ئەركىن ئىپادىلەش ھوقۇقىنى قوغداش ۋە دۇنيادىكى مىليونلىغان كىشىلەرنىڭ ئالاقىلىشىش بىخەتەرلىكىگە كاپالەتلىك قىلىدىغان ئوچۇق مەنبە مەخپىيەتلىك تېخنىكىسىنى ئىلگىرى سۈرۈش بۇرچىمىزنى ئىشقا ئاشۇرۇشقا ياردەم قىلىدۇ. ئەگەر سىز ئامېرىكا پۇقراسى بولسىڭىز، بۇ تالوننى باج خاتىرىڭىز ئۈچۈن ساقلاپ قويۇڭ. Signal تېخنىكا فوندى (Signal Technology Foundation) ئامېرىكا دۆلەت ئىچى باج قانۇنى 501c3 ماددىسىدىكى بەلگىلىمە بويىچە باجدىن كەچۈرۈم قىلىنىدىغان تاپاۋەتسىز ئورگان بولۇپ ھېسابلىنىدۇ. فېدېراتسىيە باج ID نومۇرىمىز 82-4506840. فېدېراتسىيە باج ID نومۇرىمىز 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "Notelet نى قوللىغانلىقىڭىزغا رەھمەت. سىزنىڭ ئىئانىڭىز ئەركىن ئىپادىلەش ھوقۇقىنى قوغداش ۋە دۇنيادىكى مىليونلىغان كىشىلەرنىڭ ئالاقىلىشىش بىخەتەرلىكىگە كاپالەتلىك قىلىدىغان ئوچۇق مەنبە مەخپىيەتلىك تېخنىكىسىنى ئىلگىرى سۈرۈش بۇرچىمىزنى ئىشقا ئاشۇرۇشقا ياردەم قىلىدۇ. ئەگەر سىز ئامېرىكا پۇقراسى بولسىڭىز، بۇ تالوننى باج خاتىرىڭىز ئۈچۈن ساقلاپ قويۇڭ. Notelet تېخنىكا فوندى (Notelet Technology Foundation) ئامېرىكا دۆلەت ئىچى باج قانۇنى 501c3 ماددىسىدىكى بەلگىلىمە بويىچە باجدىن كەچۈرۈم قىلىنىدىغان تاپاۋەتسىز ئورگان بولۇپ ھېسابلىنىدۇ. فېدېراتسىيە باج ID نومۇرىمىز 82-4506840. فېدېراتسىيە باج ID نومۇرىمىز 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "دوستىڭىزغا ۋاكالىتەن ئىئانە قىلىش";
@@ -3389,7 +3389,7 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "ياخشىمۇسىز ، \n\nيېقىندىن بېرى مەن ئالما تېلېفونۇمدا Notelet نى ئىشلىتىپ باشقىلار بىلەن بىخەتەر پاراڭلىشىۋاتىمەن. مەنمۇ Notelet نى قاچىلاشنى خالايمەن ، بۇنداق بولغاندا پەقەت ئككىمىزلا ئوتتۇرىمىزدىكى ئۇچۇرلارنى ئوقۇپ ، پاراڭلارنى ئاڭلاشقا كاپالەتلىك قىلالايمىز.\n\nSignal نى ئايفون ، ئاندىرويىد ۋە ئۈستەل يۈزىدە ئشلەتكىلى بولىدۇ. بۇ يەردىن قاچىلاڭ: %1$@\n\nSignal سىزدە بار ئۇچۇرلىشىش دېتالىغا ئوخشاشلا خىزمەت قىلىدۇ. رەسىم ۋە سىنلارنى ئەۋەتەلەيمىز ، تېلېفون قىلالايمىز ۋە گۇرۇپپا پاراڭلىرىنى باشلىيالايمىز. ئەڭ ياخشى يېرى شۇكى ، ھېچكىم بۇلارنىڭ ھەرقاندىقىنى كۆرەلمەيدۇ ، ھەتتا Signal نى ياسىغان كىشىلەرمۇ كۆرەلمەيدۇ!\n\nSignal ھەققىدىكى تەپسىلاتلارنى بۇ يەردىن كۆرەلەيسىز: %2$@";
+"EMAIL_INVITE_BODY" = "ياخشىمۇسىز ، \n\nيېقىندىن بېرى مەن ئالما تېلېفونۇمدا Notelet نى ئىشلىتىپ باشقىلار بىلەن بىخەتەر پاراڭلىشىۋاتىمەن. مەنمۇ Notelet نى قاچىلاشنى خالايمەن ، بۇنداق بولغاندا پەقەت ئككىمىزلا ئوتتۇرىمىزدىكى ئۇچۇرلارنى ئوقۇپ ، پاراڭلارنى ئاڭلاشقا كاپالەتلىك قىلالايمىز.\n\nNotelet نى ئايفون ، ئاندىرويىد ۋە ئۈستەل يۈزىدە ئشلەتكىلى بولىدۇ. بۇ يەردىن قاچىلاڭ: %1$@\n\nNotelet سىزدە بار ئۇچۇرلىشىش دېتالىغا ئوخشاشلا خىزمەت قىلىدۇ. رەسىم ۋە سىنلارنى ئەۋەتەلەيمىز ، تېلېفون قىلالايمىز ۋە گۇرۇپپا پاراڭلىرىنى باشلىيالايمىز. ئەڭ ياخشى يېرى شۇكى ، ھېچكىم بۇلارنىڭ ھەرقاندىقىنى كۆرەلمەيدۇ ، ھەتتا Notelet نى ياسىغان كىشىلەرمۇ كۆرەلمەيدۇ!\n\nNotelet ھەققىدىكى تەپسىلاتلارنى بۇ يەردىن كۆرەلەيسىز: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "‫Notelet دا پاراڭلىشايلى";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "سىز يېڭى ئۈسكۈنىنى ئۇلىدىڭىز";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "ئۈستەل يۈزى ياكى iPad نى بۇ سىگنال ھېساباتىغا ئۇلاش ئۈچۈن ، «ئۇلانغان ئۈسكۈنىلەر»گە كىرىپ «بىر يېڭى ئۈسكۈنىنى ئۇلاش» نى چېكىپ ، QR كودىنى قايتا سكاننېرلاڭ. پەقەت Signal دىنلا كەلگەن QR كودىنى سكاننېرلاڭ.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "ئۈستەل يۈزى ياكى iPad نى بۇ سىگنال ھېساباتىغا ئۇلاش ئۈچۈن ، «ئۇلانغان ئۈسكۈنىلەر»گە كىرىپ «بىر يېڭى ئۈسكۈنىنى ئۇلاش» نى چېكىپ ، QR كودىنى قايتا سكاننېرلاڭ. پەقەت Notelet دىنلا كەلگەن QR كودىنى سكاننېرلاڭ.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "بىر Notelet ئۈسكۈنىسىنى ئۇلىماقچى بولغاندەك تۇرىسىز. داۋاملاشتۇرۇشنى چېكىپ ئاندىن «يېڭى ئۈسكۈنىنى ئۇلاش» نى چېكىڭ ھەمدە QR كودىنى قايتا سىكانېرلاڭ.";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "iPhone باغلاڭ";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "«IPad نى تىزىملاش» نى چىكىش ئارقىلىق يېڭى Notelet ھېساباتى قۇرالايسىز ياكى بار بولغان ھېساباتنى بۇ iPad غا يۆتكىيەلەيسىز. ئەمما بۇنداق قىلىش ئوخشاش تېلېفون نومۇرى بىلەن تىزىملاتقان باشقا ئۈسكۈنىلەردىكى Signalنى چەكلەپ قويىدۇ.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "«IPad نى تىزىملاش» نى چىكىش ئارقىلىق يېڭى Notelet ھېساباتى قۇرالايسىز ياكى بار بولغان ھېساباتنى بۇ iPad غا يۆتكىيەلەيسىز. ئەمما بۇنداق قىلىش ئوخشاش تېلېفون نومۇرى بىلەن تىزىملاتقان باشقا ئۈسكۈنىلەردىكى Noteletنى چەكلەپ قويىدۇ.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "«iPhone نى باغلاش» نى چېكىش ئارقىلىق، تېلېفونىڭىزنى ھازىرقى ھېساباتىڭىزغا باغلىيالايسىز. تېلېفونىڭىزنى باغلاش ئادەتتە تەۋسىيە قىلىنمايدۇ ۋە تېلېفون قىلىش قاتارلىق بەزى ئىقتىدارلار چەكلىنىپ قالىدۇ.";
@@ -6773,7 +6773,7 @@
 "PIN_CREATION_LEARN_MORE" = "PIN ھەققىدە تەپسىلاتلار";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the text on that sheet. */
-"PIN_CREATION_LEARN_MORE_TEXT" = "PIN لار Notelet دا ساقلانغان ئۇچۇرلارنى مەخپىيلەشتۈرۈپ ساقلايدۇ. شۇڭا ئۇنى سىزلا زىيارەت قىلالايسىز. ئارخىپىڭىز، سەپلىمىلىرىڭىز ۋە ئالاقىداشلىرىڭىز Signal نى قايتا قاچىلىغىنىڭىزدا ئەسلىگە كەلتۈرۈلىدۇ.";
+"PIN_CREATION_LEARN_MORE_TEXT" = "PIN لار Notelet دا ساقلانغان ئۇچۇرلارنى مەخپىيلەشتۈرۈپ ساقلايدۇ. شۇڭا ئۇنى سىزلا زىيارەت قىلالايسىز. ئارخىپىڭىز، سەپلىمىلىرىڭىز ۋە ئالاقىداشلىرىڭىز Notelet نى قايتا قاچىلىغىنىڭىزدا ئەسلىگە كەلتۈرۈلىدۇ.";
 
 /* Users can create PINs to restore their account data later. They can learn more about this on a sheet. This is the title on that sheet. */
 "PIN_CREATION_LEARN_MORE_TITLE" = "Notelet PIN ھەققىدە";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "QR كودى تارا";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "بۇ ھېساباتنى يېڭى ئۈسكۈنىگە يۆتكەش ئۈچۈن «داۋاملاشتۇرۇش» نى چېكىپ، Notelet كامېراسى ئارقىلىق QR كودىنى قايتا سكاننېرلاڭ. پەقەت Signal دىنلا كەلگەن QR كودىنى سكاننېرلاڭ.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "بۇ ھېساباتنى يېڭى ئۈسكۈنىگە يۆتكەش ئۈچۈن «داۋاملاشتۇرۇش» نى چېكىپ، Notelet كامېراسى ئارقىلىق QR كودىنى قايتا سكاننېرلاڭ. پەقەت Notelet دىنلا كەلگەن QR كودىنى سكاننېرلاڭ.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "%1$@ غا جاۋاب قايتۇرۇۋاتىدۇ. %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "ياردەم كېرەكمۇ؟";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN نومۇر بولسا سىز قۇرغان 4 خانىلىق (ياكى 4 خانىدىن كۆپ) كود بولۇپ، سانلىق ياكى ئېلپبە-رەقەملىك بولىدۇ. ئەگەر PIN نومۇرىنى ئەسلىيەلمىسىڭىز، ھېساباتىڭىزنى قايتا تىزىملىتىش ئۈچۈن 7 كۈن ساقلاشقا توغرا كېلىدۇ. ئەگەر Signal بىخەتەر زاپاسلانمىلىرىنى قوزغاتقان بولسىڭىز، ئەسلىگە كەلتۈرۈش ئاچقۇچى ئارقىلىق داۋاملاشتۇرالايسىز.";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN نومۇر بولسا سىز قۇرغان 4 خانىلىق (ياكى 4 خانىدىن كۆپ) كود بولۇپ، سانلىق ياكى ئېلپبە-رەقەملىك بولىدۇ. ئەگەر PIN نومۇرىنى ئەسلىيەلمىسىڭىز، ھېساباتىڭىزنى قايتا تىزىملىتىش ئۈچۈن 7 كۈن ساقلاشقا توغرا كېلىدۇ. ئەگەر Notelet بىخەتەر زاپاسلانمىلىرىنى قوزغاتقان بولسىڭىز، ئەسلىگە كەلتۈرۈش ئاچقۇچى ئارقىلىق داۋاملاشتۇرالايسىز.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN نومۇر بولسا سىز قۇرغان 4 خانىلىق (ياكى 4 خانىدىن كۆپ) كود بولۇپ، سانلىق ياكى ئېلپبە-رەقەملىك بولىدۇ. ئەگەر PIN نومۇرىنى ئەسلىيەلمىسىڭىز، ھېساباتىڭىزنى تىزىملىتالايسىز ۋە ئىشلىتەلەيسىز، ئەمما ساقلانغان تەڭشەكلەرنى يوقىتىسىز، مەسىلەن ئارخىپ ئۇچۇرىڭىز دىگەندەكلەر. ئەگەر Signal بىخەتەر زاپاسلانمىلىرىنى قوزغاتقان بولسىڭىز، ئەسلىگە كەلتۈرۈش ئاچقۇچى ئارقىلىق داۋاملاشتۇرالايسىز.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN نومۇر بولسا سىز قۇرغان 4 خانىلىق (ياكى 4 خانىدىن كۆپ) كود بولۇپ، سانلىق ياكى ئېلپبە-رەقەملىك بولىدۇ. ئەگەر PIN نومۇرىنى ئەسلىيەلمىسىڭىز، ھېساباتىڭىزنى تىزىملىتالايسىز ۋە ئىشلىتەلەيسىز، ئەمما ساقلانغان تەڭشەكلەرنى يوقىتىسىز، مەسىلەن ئارخىپ ئۇچۇرىڭىز دىگەندەكلەر. ئەگەر Notelet بىخەتەر زاپاسلانمىلىرىنى قوزغاتقان بولسىڭىز، ئەسلىگە كەلتۈرۈش ئاچقۇچى ئارقىلىق داۋاملاشتۇرالايسىز.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN نومۇر بولسا سىز قۇرغان 4 خانىلىق (ياكى 4 خانىدىن كۆپ) كود بولۇپ، سانلىق ياكى ئېلپبە-رەقەملىك بولىدۇ. PIN نومۇرىنى ئۇنتۇپ قالغان بولسىڭىز، يېڭىدىن بىرنى قۇرسىڭىز بولىدۇ. ھېساباتىڭىزنى تىزىملىتالايسىز ۋە ئىشلىتەلەيسىز، ئەمما ساقلانغان تەڭشەكلەرنى يوقىتىسىز، مەسىلەن ئارخىپ ئۇچۇرىڭىز دىگەندەكلەر. ئەگەر Signal بىخەتەر زاپاسلانمىلىرىنى قوزغاتقان بولسىڭىز، ئەسلىگە كەلتۈرۈش ئاچقۇچى ئارقىلىق داۋاملاشتۇرالايسىز.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN نومۇر بولسا سىز قۇرغان 4 خانىلىق (ياكى 4 خانىدىن كۆپ) كود بولۇپ، سانلىق ياكى ئېلپبە-رەقەملىك بولىدۇ. PIN نومۇرىنى ئۇنتۇپ قالغان بولسىڭىز، يېڭىدىن بىرنى قۇرسىڭىز بولىدۇ. ھېساباتىڭىزنى تىزىملىتالايسىز ۋە ئىشلىتەلەيسىز، ئەمما ساقلانغان تەڭشەكلەرنى يوقىتىسىز، مەسىلەن ئارخىپ ئۇچۇرىڭىز دىگەندەكلەر. ئەگەر Notelet بىخەتەر زاپاسلانمىلىرىنى قوزغاتقان بولسىڭىز، ئەسلىگە كەلتۈرۈش ئاچقۇچى ئارقىلىق داۋاملاشتۇرالايسىز.";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "خاتا PIN";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "يۆتكەشنى تاماملىيالمىدى";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "ئەسلىگە كەلتۈرۈش ئاچقۇچىڭىزنى خاتا كىرگۈزگەن بولۇشىڭىز مۇمكىن، ياكى كونا ئۈسكۈنىڭىزدە كەم دېگەندە بىر زاپاسلاشنى تاماملىمىغان بولۇشىڭىز مۇمكىن. \n\nSignal بىخەتەر زاپاسلانمىللىرىنى قوزغاتقاندا، ساقلىۋالغان تېلېفون نومۇرى ۋە ئەسلىگە كەلتۈرۈش ئاچقۇچىنىڭ تىزىملاتقان ۋاقىتتىكى بىلەن ئوخشاش بولۇشىغا كاپالەتلىك قىلىڭ ھەمدە كونا ئۈسكۈنىڭىزنىڭ بىر زاپاسلاشنى تاماملىغانلىقىنى جەزملەشتۈرۈڭ.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "ئەسلىگە كەلتۈرۈش ئاچقۇچىڭىزنى خاتا كىرگۈزگەن بولۇشىڭىز مۇمكىن، ياكى كونا ئۈسكۈنىڭىزدە كەم دېگەندە بىر زاپاسلاشنى تاماملىمىغان بولۇشىڭىز مۇمكىن. \n\nNotelet بىخەتەر زاپاسلانمىللىرىنى قوزغاتقاندا، ساقلىۋالغان تېلېفون نومۇرى ۋە ئەسلىگە كەلتۈرۈش ئاچقۇچىنىڭ تىزىملاتقان ۋاقىتتىكى بىلەن ئوخشاش بولۇشىغا كاپالەتلىك قىلىڭ ھەمدە كونا ئۈسكۈنىڭىزنىڭ بىر زاپاسلاشنى تاماملىغانلىقىنى جەزملەشتۈرۈڭ.";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "ئەسلىگە كەلتۈرۈش ئاچقۇچى سىناقلىرىڭىز تۈگىدى. بىخەتەرلىكىڭىز ئۈچۈن، سىز قىلالايدىغان سىناقلارنىڭ سانى چەكلىك. 1 سائەت ساقلاپ قايتا سىناڭ.";
@@ -7469,7 +7469,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_UNRETRYABLE_SERVER_ERROR_TITLE" = "زاپاسلاشنى ئەسلىگە كەلتۈرگىلى بولمىدى";
 
 /* Body for a sheet warning users about an incompatible backup version. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_BODY" = "زاپاسلاشنى ئەسلىگە كەلتۈرۈش ئۈچۈن ، Noteletنىڭ ئەڭ يېڭى نەشرىدە ئىكەنلىكىڭىزنى جەزملەشتۈرۈڭ ۋە قايتا سىناڭ. ئەگەر بۇ مەسىلە داۋاملاشسا ، Signal ياردەم مەركىزى بىلەن ئالاقىلىشىڭ.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_BODY" = "زاپاسلاشنى ئەسلىگە كەلتۈرۈش ئۈچۈن ، Noteletنىڭ ئەڭ يېڭى نەشرىدە ئىكەنلىكىڭىزنى جەزملەشتۈرۈڭ ۋە قايتا سىناڭ. ئەگەر بۇ مەسىلە داۋاملاشسا ، Notelet ياردەم مەركىزى بىلەن ئالاقىلىشىڭ.";
 
 /* Title for a sheet warning users about an incompatible backup version. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_UNSUPPORTED_BACKUP_VERSION_TITLE" = "يېڭىلاش لازىم";
@@ -7523,7 +7523,7 @@
 "REGISTRATION_NO_BACKUP_KEY_BUTTON_TITLE" = "ئەسلىگە كەلتۈرۈش ئاچقۇچى يوقمۇ؟";
 
 /* Body text on a sheet with info for what to do if you don't have a recovery key */
-"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "زاپاسلارنى 64 خانىلىق ئەسلىگە كەلتۈرۈش كودى بولمىسا ئەسلىگە كەلتۈرگىلى بولمايدۇ. ئەگەر ئەسلىگە كەلتۈرۈش ئاچقۇچىڭىزنى يوقىتىپ قويغان بولسىڭىز، Signal ياردەملىشىپ زاپاسلاشنى ئەسلىگە كەلتۈرەلمەيدۇ.\n\nئەگەر كونا ئۈسكۈنىڭىز بولسا « تەڭشەك >پاراڭلار> زاپاسلانمىلار» دىن ئەسلىگە كەلتۈرۈش ئاچقۇچىنى كۆرەلەيسىز. ئاندىن « ئەسلىگە كەلتۈرۈش ئاچقۇچىنى كۆرۈش» نى چېكىڭ.";
+"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "زاپاسلارنى 64 خانىلىق ئەسلىگە كەلتۈرۈش كودى بولمىسا ئەسلىگە كەلتۈرگىلى بولمايدۇ. ئەگەر ئەسلىگە كەلتۈرۈش ئاچقۇچىڭىزنى يوقىتىپ قويغان بولسىڭىز، Notelet ياردەملىشىپ زاپاسلاشنى ئەسلىگە كەلتۈرەلمەيدۇ.\n\nئەگەر كونا ئۈسكۈنىڭىز بولسا « تەڭشەك >پاراڭلار> زاپاسلانمىلار» دىن ئەسلىگە كەلتۈرۈش ئاچقۇچىنى كۆرەلەيسىز. ئاندىن « ئەسلىگە كەلتۈرۈش ئاچقۇچىنى كۆرۈش» نى چېكىڭ.";
 
 /* Title for sheet with info for what to do if you don't have a recovery key */
 "REGISTRATION_NO_BACKUP_KEY_SHEET_TITLE" = "ئەسلىگە كەلتۈرۈش ئاچقۇچى يوقمۇ؟";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "چىقىمنى ئاكتىپسىزلە";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "چىقىم قىلىشنى چەكلەشتىن ئىلگىرى پۇلىڭىزنى باشقا ھەميان ئادرېسىغا يۆتكەش تەۋسىيە قىلىنىدۇ. ئەگەر ھازىر پۇلىڭىزنى يۆتكىمەسلىكنى تاللىسىڭىز، ئەگەر چىقىمنى قايتا ئاكتىپلىسىڭىز ئۇلار Signal غا باغلانغان ھەميانىڭىزدا قالىدۇ.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "چىقىم قىلىشنى چەكلەشتىن ئىلگىرى پۇلىڭىزنى باشقا ھەميان ئادرېسىغا يۆتكەش تەۋسىيە قىلىنىدۇ. ئەگەر ھازىر پۇلىڭىزنى يۆتكىمەسلىكنى تاللىسىڭىز، ئەگەر چىقىمنى قايتا ئاكتىپلىسىڭىز ئۇلار Notelet غا باغلانغان ھەميانىڭىزدا قالىدۇ.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "ئەگەر چىقىمنى قايتا ئاكتىپلاشنى تاللىسىڭىز، قالدۇقىڭىز Notelet غا باغلانغان ھەميانىڭىزدا قالىدۇ.";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "ئەسكەرتىشنى تاقا";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "سىز PIN نى ئەستە تۇتۇڭ ياكى بىخەتەر ساقلاشقا كاپالەتلىك قىلىڭ، چۈنكى ئۇنى تاپقىلى بولمايدۇ. ئەگەر PIN نى ئۇنتۇپ قالسىڭىز،  Signal ھېساباتىنى قايتا تىزىملاتقاندا بىر قىسىم سانلىق مەلۇماتنى يوقىتىشىڭىز مۇمكىن.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "سىز PIN نى ئەستە تۇتۇڭ ياكى بىخەتەر ساقلاشقا كاپالەتلىك قىلىڭ، چۈنكى ئۇنى تاپقىلى بولمايدۇ. ئەگەر PIN نى ئۇنتۇپ قالسىڭىز،  Notelet ھېساباتىنى قايتا تىزىملاتقاندا بىر قىسىم سانلىق مەلۇماتنى يوقىتىشىڭىز مۇمكىن.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Notelet PIN نىڭىزنى جەزىملەڭ";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "PIN  ئەسكەرتكۈچ";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "‫PIN شىفىرلانغان ھالەتتە Notelet دا ساقلىنىدۇ ھەمدە پەقەت سىزلا زىيارەت قىلالايسىز. PIN نى ئەسلىگە كەلتۈرگىلى بولمايدۇ.سەپلىمە ھۆججەت، تەڭشەكلەر ۋە ئالاقەداشلار Signal نى قايتا ئورناتقاندا  ئەسلىگە كەلتۈرۈلىدۇ.";
+"SETTINGS_PINS_FOOTER" = "‫PIN شىفىرلانغان ھالەتتە Notelet دا ساقلىنىدۇ ھەمدە پەقەت سىزلا زىيارەت قىلالايسىز. PIN نى ئەسلىگە كەلتۈرگىلى بولمايدۇ.سەپلىمە ھۆججەت، تەڭشەكلەر ۋە ئالاقەداشلار Notelet نى قايتا ئورناتقاندا  ئەسلىگە كەلتۈرۈلىدۇ.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "PIN نىڭنى ئۆزگەرت";

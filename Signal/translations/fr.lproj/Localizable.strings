@@ -245,19 +245,19 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "Version de base de données inconnue.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Notelet a rencontré un problème au démarrage. Pour nous aider à résoudre ce problème, veuillez envoyer un journal de débogage à support@signal.org.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Notelet a rencontré un problème au démarrage. Pour nous aider à résoudre ce problème, veuillez envoyer un journal de débogage à support@notelet.org.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Impossible d'ouvrir Notelet";
 
 /* Error description indicating that the app crashed because there was low storage space available on the device. */
-"APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_MESSAGE" = "Impossible de démarrer Notelet, car l'espace de stockage disponible sur votre appareil est insuffisant. Pour utiliser Signal, accédez aux réglages iOS et libérez de l'espace.";
+"APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_MESSAGE" = "Impossible de démarrer Notelet, car l'espace de stockage disponible sur votre appareil est insuffisant. Pour utiliser Notelet, accédez aux réglages iOS et libérez de l'espace.";
 
 /* Error title indicating that the app crashed because there was low storage space available on the device. */
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Espace de stockage insuffisant";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Impossible de restaurer les données transférées depuis votre ancien appareil. Pour nous aider à résoudre ce problème, merci d'envoyer un journal de débogage à support@signal.org. Si vous réinstallez Signal, vous risquez de perdre vos messages.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Impossible de restaurer les données transférées depuis votre ancien appareil. Pour nous aider à résoudre ce problème, merci d'envoyer un journal de débogage à support@notelet.org. Si vous réinstallez Notelet, vous risquez de perdre vos messages.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Impossible de terminer le transfert";
@@ -266,7 +266,7 @@
 "APP_LAUNCH_FAILURE_WIPE_APP_DATA_ACTION_TITLE" = "Réinitialiser les données de l'appli";
 
 /* Message for an action sheet confirming the user wants to wipe all app data. */
-"APP_LAUNCH_FAILURE_WIPE_APP_DATA_CONFIRMATION_MESSAGE" = "Toutes les données de l'application seront définitivement supprimées. Cela n'est nécessaire que si vous ne parvenez plus à lancer Signal.";
+"APP_LAUNCH_FAILURE_WIPE_APP_DATA_CONFIRMATION_MESSAGE" = "Toutes les données de l'application seront définitivement supprimées. Cela n'est nécessaire que si vous ne parvenez plus à lancer Notelet.";
 
 /* Title for an action sheet confirming the user wants to wipe all app data. */
 "APP_LAUNCH_FAILURE_WIPE_APP_DATA_CONFIRMATION_TITLE" = "Réinitialiser toutes les données de l'appli ?";
@@ -614,7 +614,7 @@
 "BACKUP_ONBOARDING_INTRO_NOT_NOW_TOAST" = "Vous pouvez activer les sauvegardes dans les paramètres.";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Sécurisé et chiffré de bout en bout, le service de stockage Notelet vous permet de sauvegarder vos messages et médias. Besoin de changer de téléphone ou de réinstaller Signal ? Vos contenus restent à portée de main.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "Sécurisé et chiffré de bout en bout, le service de stockage Notelet vous permet de sauvegarder vos messages et médias. Besoin de changer de téléphone ou de réinstaller Notelet ? Vos contenus restent à portée de main.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
 "BACKUP_ONBOARDING_INTRO_TITLE" = "Sauvegardes sécurisées";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "Clé de récupération";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Votre abonnement aux sauvegardes a expiré, car votre mode de paiement actuel ne permet pas le règlement de la dernière échéance.\n\nPour continuer de sauvegarder tous vos médias, nous vous invitons à vous réabonner. Sinon, vous pouvez toujours utiliser la version gratuite des sauvegardes Signal.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "Votre abonnement aux sauvegardes a expiré, car votre mode de paiement actuel ne permet pas le règlement de la dernière échéance.\n\nPour continuer de sauvegarder tous vos médias, nous vous invitons à vous réabonner. Sinon, vous pouvez toujours utiliser la version gratuite des sauvegardes Notelet.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Votre abonnement aux sauvegardes a expiré, car vous n'utilisez plus TestFlight.\n\nPour continuer de sauvegarder tous vos médias, veuillez vous réabonner. Sinon, vous pouvez toujours utiliser la version gratuite des sauvegardes Signal.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "Votre abonnement aux sauvegardes a expiré, car vous n'utilisez plus TestFlight.\n\nPour continuer de sauvegarder tous vos médias, veuillez vous réabonner. Sinon, vous pouvez toujours utiliser la version gratuite des sauvegardes Notelet.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "Gérer les sauvegardes";
@@ -797,13 +797,13 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "Les sauvegardes sont désactivées. Vos données ont été supprimées du service de stockage sécurisé de Notelet.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Les sauvegardes sont désactivées. Nous téléchargeons les médias non enregistrés sur cet appareil. Une fois téléchargées, vos données seront supprimées du service de stockage sécurisé de Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "Les sauvegardes sont désactivées. Nous téléchargeons les médias non enregistrés sur cet appareil. Une fois téléchargées, vos données seront supprimées du service de stockage sécurisé de Notelet.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "Une erreur s'est produite. Merci de contacter l'assistance.";
 
 /* Header for a menu section related to settings for when disabling Backups encountered an unexpected error. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_SECTION_HEADER" = "Une erreur s'est produite. Nous n'avons pas pu supprimer vos données du service de stockage sécurisé de Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_SECTION_HEADER" = "Une erreur s'est produite. Nous n'avons pas pu supprimer vos données du service de stockage sécurisé de Notelet.";
 
 /* Title for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_TITLE" = "Impossible de supprimer votre sauvegarde";
@@ -857,13 +857,13 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "Désactiver et supprimer les sauvegardes ?";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Votre sauvegarde contient des médias non enregistrés sur cet appareil. Le téléchargement peut prendre un certain temps. Pour éviter toute interruption, ne fermez pas Signal.";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "Votre sauvegarde contient des médias non enregistrés sur cet appareil. Le téléchargement peut prendre un certain temps. Pour éviter toute interruption, ne fermez pas Notelet.";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "Téléchargement de votre sauvegarde";
 
 /* Message shown in an action sheet indicating we failed to delete the user's Backup due to an unexpected error. */
-"BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_MESSAGE" = "Une erreur s'est produite. Nous n'avons pas pu supprimer vos données du service de stockage sécurisé de Signal.";
+"BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_MESSAGE" = "Une erreur s'est produite. Nous n'avons pas pu supprimer vos données du service de stockage sécurisé de Notelet.";
 
 /* Title shown in an action sheet indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_DISABLING_ERROR_GENERIC_ERROR_ACTION_SHEET_TITLE" = "Impossible de supprimer votre sauvegarde";
@@ -935,7 +935,7 @@
 "BACKUP_SETTINGS_ENABLED_VIEW_BACKUP_KEY_LABEL" = "Afficher la clé de récupération";
 
 /* Body for a sheet explaining that the user's Backups subscription was not found on this device. */
-"BACKUP_SETTINGS_IAP_NOT_FOUND_LOCALLY_SHEET_BODY" = "Notelet n'a pas pu restaurer votre abonnement sur cet appareil. Cela peut arriver si vous êtes connecté à l'App Store via un autre compte Apple ou si vous avez transféré votre compte Signal depuis un téléphone Android.\n\nSi un abonnement est encore actif sur votre ancien téléphone, pensez à le résilier avant la prochaine échéance.";
+"BACKUP_SETTINGS_IAP_NOT_FOUND_LOCALLY_SHEET_BODY" = "Notelet n'a pas pu restaurer votre abonnement sur cet appareil. Cela peut arriver si vous êtes connecté à l'App Store via un autre compte Apple ou si vous avez transféré votre compte Notelet depuis un téléphone Android.\n\nSi un abonnement est encore actif sur votre ancien téléphone, pensez à le résilier avant la prochaine échéance.";
 
 /* Button for a sheet explaining that the user's Backups subscription was not found on this device. */
 "BACKUP_SETTINGS_IAP_NOT_FOUND_LOCALLY_SHEET_GOT_IT_BUTTON" = "J'ai compris";
@@ -953,7 +953,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "Télécharger plus tard";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Votre sauvegarde contient des médias non enregistrés sur cet appareil. Le téléchargement peut prendre un certain temps. Pour éviter toute interruption, ne fermez pas Signal.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "Votre sauvegarde contient des médias non enregistrés sur cet appareil. Le téléchargement peut prendre un certain temps. Pour éviter toute interruption, ne fermez pas Notelet.";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "Télécharger";
@@ -974,7 +974,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_AVAILABLE_FOR_TESTERS" = "Notelet déplacera les médias inutilisés vers la sauvegarde et les supprimera de votre appareil. Vous pourrez les télécharger depuis votre sauvegarde à tout moment tant que vous utilisez TestFlight.";
 
 /* Footer for a toggle allowing users to change the Optimize Local Storage setting, if the toggle is unavailable. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_UNAVAILABLE" = "L'optimisation de l'espace de stockage n'est disponible qu'avec la version payante du forfait de sauvegarde Signal. Donnez un coup de pouce à Signal et passez à la version payante pour utiliser cette fonctionnalité.";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_FOOTER_UNAVAILABLE" = "L'optimisation de l'espace de stockage n'est disponible qu'avec la version payante du forfait de sauvegarde Notelet. Donnez un coup de pouce à Notelet et passez à la version payante pour utiliser cette fonctionnalité.";
 
 /* Title for a toggle allowing users to change the Optimize Local Storage setting. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_TOGGLE_TITLE" = "Optimiser l'espace de stockage de l'appareil";
@@ -1004,7 +1004,7 @@
 "BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_NOTICE_TITLE" = "Impossible de récupérer votre abonnement aux sauvegardes";
 
 /* Body for a sheet explaining that the user's Backups subscription was already redeemed. */
-"BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_BODY" = "Vous avez tenté de récupérer votre abonnement sur un trop grand nombre d'appareils ce mois-ci.\n\nCela peut se produire si vous avez réenregistré votre compte Signal trop de fois ou que vous utilisez le même abonnement sur un trop grand nombre d'appareils.";
+"BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_BODY" = "Vous avez tenté de récupérer votre abonnement sur un trop grand nombre d'appareils ce mois-ci.\n\nCela peut se produire si vous avez réenregistré votre compte Notelet trop de fois ou que vous utilisez le même abonnement sur un trop grand nombre d'appareils.";
 
 /* Button for a sheet explaining that the user's Backups subscription was already redeemed. */
 "BACKUP_SETTINGS_SUBSCRIPTION_ALREADY_REDEEMED_SHEET_GOT_IT_BUTTON" = "J'ai compris";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "Importation des médias mise en pause : en attente de Wi-Fi";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Vous avez atteint la limite de stockage de %1$@ comprise dans votre forfait de sauvegarde. Pour sauvegarder d'autres médias et conversations, libérez %2$@ d'espace sur Signal, puis appuyez sur \"Sauvegarder maintenant\".";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "Vous avez atteint la limite de stockage de %1$@ comprise dans votre forfait de sauvegarde. Pour sauvegarder d'autres médias et conversations, libérez %2$@ d'espace sur Notelet, puis appuyez sur \"Sauvegarder maintenant\".";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "Importation : %1$@ sur %2$@ (%3$@)";
@@ -1400,7 +1400,7 @@
 "CALL_QUALITY_SURVEY_COMPLETION_TOAST" = "Merci pour vos commentaires !";
 
 /* Footer text explaining custom issue descriptions in the call quality survey */
-"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Veuillez décrire le problème de la façon la plus précise possible. Toutes ces informations resteront confidentielles. Nous ne les utiliserons que pour améliorer les appels passés sur Signal.";
+"CALL_QUALITY_SURVEY_CUSTOM_ISSUE_FOOTER" = "Veuillez décrire le problème de la façon la plus précise possible. Toutes ces informations resteront confidentielles. Nous ne les utiliserons que pour améliorer les appels passés sur Notelet.";
 
 /* Placeholder text for the custom issue entry in the call quality survey */
 "CALL_QUALITY_SURVEY_CUSTOM_ISSUE_PLACEHOLDER" = "Décrivez le problème rencontré";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM/AA";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Lorsque vous faites un don à Notelet, nous ne collectons, ni n'enregistrons aucune de vos informations personnelles.\n\nPour recevoir vos dons, nous utilisons le processeur de paiement Stripe. Nous n'avons pas accès aux informations que vous fournissez à Stripe, ne les stockons pas et ne les enregistrons pas.\n\nDe plus, Signal ne peut établir aucun lien entre votre don et votre compte Signal.\n\nMerci pour votre soutien.";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Lorsque vous faites un don à Notelet, nous ne collectons, ni n'enregistrons aucune de vos informations personnelles.\n\nPour recevoir vos dons, nous utilisons le processeur de paiement Stripe. Nous n'avons pas accès aux informations que vous fournissez à Stripe, ne les stockons pas et ne les enregistrons pas.\n\nDe plus, Notelet ne peut établir aucun lien entre votre don et votre compte Notelet.\n\nMerci pour votre soutien.";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "Vos données sont confidentielles";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "Reprendre";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "La sauvegarde des médias via les données mobiles peut entraîner des frais supplémentaires. L'importation peut prendre un certain temps : pour éviter des interruptions, ne fermez pas Signal.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "La sauvegarde des médias via les données mobiles peut entraîner des frais supplémentaires. L'importation peut prendre un certain temps : pour éviter des interruptions, ne fermez pas Notelet.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "Reprendre via les données mobiles ?";
@@ -2138,7 +2138,7 @@
 "CONTACT_SHARE_INVALID_CONTACT" = "Contact non valide.";
 
 /* Alert body when contacts disabled while trying to share a contact. */
-"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet doit accéder à vos contacts. Ouvrez les réglages iOS et autorisez l'accès aux contacts. Votre liste de contacts est chiffrée : le service Signal n'en a jamais connaissance.";
+"CONTACT_SHARING_NO_ACCESS_BODY" = "Notelet doit accéder à vos contacts. Ouvrez les réglages iOS et autorisez l'accès aux contacts. Votre liste de contacts est chiffrée : le service Notelet n'en a jamais connaissance.";
 
 /* Alert title when contacts disabled while trying to share a contact. */
 "CONTACT_SHARING_NO_ACCESS_TITLE" = "Autoriser l'accès aux contacts";
@@ -3182,7 +3182,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ a fait un don à Notelet pour vous ! Vous pouvez afficher votre soutien à Notelet sur votre profil.";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "Notelet est un organisme indépendant à but non lucratif, qui s'engage à protéger la confidentialité de vos communications. Ici, aucune publicité, aucun cookie de suivi, aucune surveillance. Faites un don pour soutenir Signal.";
+"DONATION_READ_MORE_SHEET_BODY" = "Notelet est un organisme indépendant à but non lucratif, qui s'engage à protéger la confidentialité de vos communications. Ici, aucune publicité, aucun cookie de suivi, aucune surveillance. Faites un don pour soutenir Notelet.";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "Lorsque vous faites un don, vous pouvez afficher un macaron sur votre profil.";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "Partager le reçu";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Merci de soutenir Notelet. Votre contribution nous aide à mener à bien notre mission : développer une technologie open source axée sur la confidentialité, qui favorise la liberté d'expression et offre des communications sécurisées à des millions de personnes du monde entier. Si vous résidez aux États-Unis, conservez ce reçu pour le communiquer aux services fiscaux. La Signal Technology Foundation est un organisme à but non lucratif, régi par le code fédéral des impôts des États-Unis. Notre numéro d'identification fiscale est le suivant : 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "Merci de soutenir Notelet. Votre contribution nous aide à mener à bien notre mission : développer une technologie open source axée sur la confidentialité, qui favorise la liberté d'expression et offre des communications sécurisées à des millions de personnes du monde entier. Si vous résidez aux États-Unis, conservez ce reçu pour le communiquer aux services fiscaux. La Notelet Technology Foundation est un organisme à but non lucratif, régi par le code fédéral des impôts des États-Unis. Notre numéro d'identification fiscale est le suivant : 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "Don pour un ami";
@@ -3389,13 +3389,13 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "Bonjour,\n\nJ'ai installé Notelet sur mon iPhone pour assurer la confidentialité de mes conversations. Et si vous l'installiez aussi ? Nous serions ainsi sûrs que nos messages et nos appels restent privés.\n\nL'application Signal est disponible sur iPhone, sur Android et sur ordinateur. Vous pouvez la télécharger ici : %1$@\n\nComme toutes les applications de messagerie, Signal permet d'envoyer des photos et des vidéos, de passer des appels et de lancer des conversations de groupe. Ce qui la différencie des autres ? C'est qu'absolument personne ne peut accéder aux contenus que vous partagez avec vos amis. Pas même les créateurs de Signal.\n\nPour en savoir plus sur Signal, c'est par ici : %2$@.";
+"EMAIL_INVITE_BODY" = "Bonjour,\n\nJ'ai installé Notelet sur mon iPhone pour assurer la confidentialité de mes conversations. Et si vous l'installiez aussi ? Nous serions ainsi sûrs que nos messages et nos appels restent privés.\n\nL'application Notelet est disponible sur iPhone, sur Android et sur ordinateur. Vous pouvez la télécharger ici : %1$@\n\nComme toutes les applications de messagerie, Notelet permet d'envoyer des photos et des vidéos, de passer des appels et de lancer des conversations de groupe. Ce qui la différencie des autres ? C'est qu'absolument personne ne peut accéder aux contenus que vous partagez avec vos amis. Pas même les créateurs de Notelet.\n\nPour en savoir plus sur Notelet, c'est par ici : %2$@.";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Et si on passait à Notelet ?";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Votre appareil n’est pas configuré pour envoyer des e-mails. Pour envoyer une demande d’assistance, configurez les e-mails sur votre appareil ou envoyez un e-mail à support@signal.org via un autre appareil.";
+"EMAIL_SIGNAL_MESSAGE" = "Votre appareil n’est pas configuré pour envoyer des e-mails. Pour envoyer une demande d’assistance, configurez les e-mails sur votre appareil ou envoyez un e-mail à support@notelet.org via un autre appareil.";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "Impossible d’envoyer des e-mails";
@@ -4943,7 +4943,7 @@
 "LINK_DEVICE_SCANNING_INSTRUCTIONS_SHEET_TITLE" = "Scanner le code QR";
 
 /* Body text for a sheet when a user tries to link a device informing them that they will need to authenticate their device */
-"LINK_NEW_DEVICE_AUTHENTICATION_INFO_SHEET_BODY" = "Appuyez sur \"Continuer\", puis utilisez la méthode de déverrouillage de votre téléphone. Ne saisissez pas votre code PIN Signal.";
+"LINK_NEW_DEVICE_AUTHENTICATION_INFO_SHEET_BODY" = "Appuyez sur \"Continuer\", puis utilisez la méthode de déverrouillage de votre téléphone. Ne saisissez pas votre code PIN Notelet.";
 
 /* Title for a sheet when a user tries to link a device informing them that they will need to authenticate their device */
 "LINK_NEW_DEVICE_AUTHENTICATION_INFO_SHEET_TITLE" = "Avant d'associer votre appareil, merci de confirmer votre identité.";
@@ -4994,7 +4994,7 @@
 "LINK_PREVIEW_UNKNOWN_DOMAIN" = "Aperçu de lien";
 
 /* Shown in an alert when trying to edit a contact. */
-"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "La gestion des contacts du téléphone n’est plus disponible sur iPad. Pour ajouter des contacts Notelet aux contacts de votre téléphone, ouvrez l’application Signal sur votre téléphone.";
+"LINKED_DEVICE_CONTACTS_NOT_ALLOWED" = "La gestion des contacts du téléphone n’est plus disponible sur iPad. Pour ajouter des contacts Notelet aux contacts de votre téléphone, ouvrez l’application Notelet sur votre téléphone.";
 
 /* Shown in a banner when you tap the 'New Chat' icon at the top of the list of chats. */
 "LINKED_DEVICE_MANAGE_CONTACTS_BANNER" = "La gestion des contacts du téléphone n’est plus disponible sur iPad. Les modifiications apportées à vos contacts Notelet depuis votre téléphone continuent cependant d’être synchronisées sur cet appareil.";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "Vous avez associé un nouvel appareil";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Pour associer un ordinateur ou un iPad à ce compte Notelet, accédez à \"Appareils associés\", appuyez sur \"Associer un nouvel appareil\", puis rescannez le code QR. Attention : ne scannez que les codes QR qui proviennent directement de Signal.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Pour associer un ordinateur ou un iPad à ce compte Notelet, accédez à \"Appareils associés\", appuyez sur \"Associer un nouvel appareil\", puis rescannez le code QR. Attention : ne scannez que les codes QR qui proviennent directement de Notelet.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "Vous voulez associer un appareil Notelet ? Appuyez sur \"Continuer\", puis sur \"Associer un nouvel appareil\" et rescannez le code QR.";
@@ -5960,7 +5960,7 @@
 "ONBOARDING_CHOOSE_RESTORE_METHOD_BACKUPS_TITLE" = "Restaurer une sauvegarde sécurisée";
 
 /* Body for a sheet warning users about skipping restore. */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_CONFIRM_SKIP_RESTORE_BODY" = "Si vous ne restaurez pas votre sauvegarde maintenant, vous ne pourrez pas le faire plus tard. Si vous réactivez les sauvegardes sur cet appareil, Signal supprimera votre sauvegarde actuelle et en créera une nouvelle, qui ne contiendra que vos nouveaux messages.";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_CONFIRM_SKIP_RESTORE_BODY" = "Si vous ne restaurez pas votre sauvegarde maintenant, vous ne pourrez pas le faire plus tard. Si vous réactivez les sauvegardes sur cet appareil, Notelet supprimera votre sauvegarde actuelle et en créera une nouvelle, qui ne contiendra que vos nouveaux messages.";
 
 /* Title for a sheet warning users about skipping restore. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_CONFIRM_SKIP_RESTORE_TITLE" = "Ignorer la restauration ?";
@@ -5969,7 +5969,7 @@
 "ONBOARDING_CHOOSE_RESTORE_METHOD_DESCRIPTION" = "Choisissez comment restaurer vos messages et les données de votre compte.";
 
 /* Message body displayed to a user during registration if there are no restore options available. */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Parce que vous passez d'un Android à un appareil iOS, la seule façon de transférer vos messages et vos médias consiste à activer les sauvegardes sécurisées Signal sur votre ancien appareil.";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "Parce que vous passez d'un Android à un appareil iOS, la seule façon de transférer vos messages et vos médias consiste à activer les sauvegardes sécurisées Notelet sur votre ancien appareil.";
 
 /* Title displayed to a user during registration if there are no restore options available. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_TITLE" = "Aucune sauvegarde à restaurer";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "Associer l’iPhone";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Toucher « Inscrire l’iPad », vous permettra de créer un tout nouveau compte Notelet ou de transférer un compte existant vers cet iPad. Cela désactivera Signal sur tout autre appareil actuellement inscrit avec le même numéro de téléphone.";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "Toucher « Inscrire l’iPad », vous permettra de créer un tout nouveau compte Notelet ou de transférer un compte existant vers cet iPad. Cela désactivera Notelet sur tout autre appareil actuellement inscrit avec le même numéro de téléphone.";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "L'option \"Associer l’iPhone\" vous permet d'associer votre téléphone à un compte existant. Il n'est généralement pas recommandé d'associer le téléphone : cela limite certaines fonctionnalités, telles que les appels.";
@@ -6089,7 +6089,7 @@
 "ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_TITLE" = "Code PIN incorrect.";
 
 /* Explanation of the 'onboarding pin attempts exhausted' view when it is unknown if reglock is enabled. */
-"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_WITH_UNKNOWN_REGLOCK_EXPLANATION" = "Vous avez atteint le nombre maximal de tentatives autorisées, mais vous pouvez encore tenter d'accéder à votre compte Signal. Pour ce faire, vous devez confirmer votre numéro de téléphone. Pour des raisons de confidentialité et de sécurité, nous restaurerons votre compte sans les informations de profil ni les paramètres que vous avez enregistrés.";
+"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_WITH_UNKNOWN_REGLOCK_EXPLANATION" = "Vous avez atteint le nombre maximal de tentatives autorisées, mais vous pouvez encore tenter d'accéder à votre compte Notelet. Pour ce faire, vous devez confirmer votre numéro de téléphone. Pour des raisons de confidentialité et de sécurité, nous restaurerons votre compte sans les informations de profil ni les paramètres que vous avez enregistrés.";
 
 /* Explanation of 'do not have old device' flow for the 'Restore or Transfer' prompt */
 "ONBOARDING_SPLASH_DO_NOT_HAVE_OLD_DEVICE_BODY" = "ou vous réinstallez Notelet sur le même appareil";
@@ -6548,7 +6548,7 @@
 "PAYMENTS_RECIPIENT_MISSING_PROFILE_KEY_MESSAGE_W_MESSAGES" = "Pour envoyer un paiement à cet utilisateur, celui-ci doit d’abord accepter une invitation par message de votre part.";
 
 /* Message for error alert indicating that a given user cannot receive payments because of a pending message request for a recipient that they have not sent message to. */
-"PAYMENTS_RECIPIENT_MISSING_PROFILE_KEY_MESSAGE_WO_MESSAGES" = "Pour envoyer un paiement à cet utilisateur, celui-ci doit d’abord accepter une invitation par message de votre part. Envoyez-lui un message pour l’inviter à discuter avec vous sur Signal.";
+"PAYMENTS_RECIPIENT_MISSING_PROFILE_KEY_MESSAGE_WO_MESSAGES" = "Pour envoyer un paiement à cet utilisateur, celui-ci doit d’abord accepter une invitation par message de votre part. Envoyez-lui un message pour l’inviter à discuter avec vous sur Notelet.";
 
 /* Title for error alert indicating that a given user cannot receive payments because of a pending message request. */
 "PAYMENTS_RECIPIENT_MISSING_PROFILE_KEY_TITLE" = "Impossible d'effectuer ce paiement";
@@ -6767,7 +6767,7 @@
 "PIN_CREATION_DISABLE_CONFIRMATION_TITLE" = "Avertissement";
 
 /* The explanation in the 'pin creation' view. */
-"PIN_CREATION_EXPLANATION" = "Avec un code PIN, les informations stockées dans Notelet restent chiffrées, et vous seul y avez accès. Votre profil, vos contacts et vos paramètres sont restaurés si vous réinstallez Signal. Vous n'avez pas besoin du code PIN pour ouvrir l'app.";
+"PIN_CREATION_EXPLANATION" = "Avec un code PIN, les informations stockées dans Notelet restent chiffrées, et vous seul y avez accès. Votre profil, vos contacts et vos paramètres sont restaurés si vous réinstallez Notelet. Vous n'avez pas besoin du code PIN pour ouvrir l'app.";
 
 /* Learn more action on the pin creation view */
 "PIN_CREATION_LEARN_MORE" = "En savoir plus sur les PIN";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "Scanner le code QR";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Pour transférer ce compte vers un nouvel appareil, appuyez sur \"Continuer\", puis scannez le code QR avec l'appareil photo intégré à l'application. Attention : ne scannez que les codes QR qui proviennent directement de Signal.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "Pour transférer ce compte vers un nouvel appareil, appuyez sur \"Continuer\", puis scannez le code QR avec l'appareil photo intégré à l'application. Attention : ne scannez que les codes QR qui proviennent directement de Notelet.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "Vous répondez à %1$@. %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "Besoin d'aide ?";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "Votre PIN est un code numérique ou alphanumérique d'au moins 4 caractères, que vous avez créé. En cas d'oubli, vous devez attendre un délai de sept jours avant de réinscrire votre compte. Si les sauvegardes sécurisées Signal sont activées, vous pouvez utiliser votre clé de récupération.";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "Votre PIN est un code numérique ou alphanumérique d'au moins 4 caractères, que vous avez créé. En cas d'oubli, vous devez attendre un délai de sept jours avant de réinscrire votre compte. Si les sauvegardes sécurisées Notelet sont activées, vous pouvez utiliser votre clé de récupération.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "Votre PIN est un code numérique ou alphanumérique d'au moins 4 caractères, que vous avez créé. Si vous avez oublié votre PIN, vous pouvez vous réinscrire et utiliser votre compte, mais vous perdrez certains paramètres enregistrés, tels que les informations de profil. Si les sauvegardes sécurisées Signal sont activées, vous pouvez utiliser votre clé de récupération.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "Votre PIN est un code numérique ou alphanumérique d'au moins 4 caractères, que vous avez créé. Si vous avez oublié votre PIN, vous pouvez vous réinscrire et utiliser votre compte, mais vous perdrez certains paramètres enregistrés, tels que les informations de profil. Si les sauvegardes sécurisées Notelet sont activées, vous pouvez utiliser votre clé de récupération.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "Votre PIN est un code numérique ou alphanumérique d'au moins 4 caractères, que vous avez créé. Si vous l'avez oublié, vous pouvez en créer un autre. Vous pourrez vous réinscrire et utiliser votre compte, mais vous perdrez certains paramètres enregistrés, tels que les informations de profil. Si les sauvegardes sécurisées Signal sont activées, vous pouvez utiliser votre clé de récupération.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "Votre PIN est un code numérique ou alphanumérique d'au moins 4 caractères, que vous avez créé. Si vous l'avez oublié, vous pouvez en créer un autre. Vous pourrez vous réinscrire et utiliser votre compte, mais vous perdrez certains paramètres enregistrés, tels que les informations de profil. Si les sauvegardes sécurisées Notelet sont activées, vous pouvez utiliser votre clé de récupération.";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "Code PIN incorrect.";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "Impossible de terminer le transfert";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Peut-être avez-vous mal saisi votre clé de récupération ou n'avez-vous effectué aucune sauvegarde sur votre ancien appareil. \n\nVérifiez que vous utilisez bien le même numéro de téléphone, ainsi que la clé de récupération que vous avez enregistrée au moment d'activer les sauvegardes sécurisées Signal. Vérifiez aussi que vous avez bien effectué au moins une sauvegarde avec votre ancien appareil.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "Peut-être avez-vous mal saisi votre clé de récupération ou n'avez-vous effectué aucune sauvegarde sur votre ancien appareil. \n\nVérifiez que vous utilisez bien le même numéro de téléphone, ainsi que la clé de récupération que vous avez enregistrée au moment d'activer les sauvegardes sécurisées Notelet. Vérifiez aussi que vous avez bien effectué au moins une sauvegarde avec votre ancien appareil.";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "Vous avez dépassé le nombre de tentatives autorisées pour saisir votre clé de récupération. Ce nombre est limité pour des raisons de sécurité. Veuillez patienter une heure avant de réessayer.";
@@ -7523,7 +7523,7 @@
 "REGISTRATION_NO_BACKUP_KEY_BUTTON_TITLE" = "Pas de clé de récupération ?";
 
 /* Body text on a sheet with info for what to do if you don't have a recovery key */
-"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "La restauration des sauvegardes nécessite un code de récupération de 64 caractères, aussi appelé \"clé de récupération\". Notelet ne peut pas vous aider à restaurer vos sauvegardes sans cette clé.\n\nSi vous avez toujours accès à votre ancien appareil, vous pouvez retrouver votre clé sous Paramètres > Conversations > Sauvegardes Signal > Afficher la clé de récupération.";
+"REGISTRATION_NO_BACKUP_KEY_SHEET_BODY" = "La restauration des sauvegardes nécessite un code de récupération de 64 caractères, aussi appelé \"clé de récupération\". Notelet ne peut pas vous aider à restaurer vos sauvegardes sans cette clé.\n\nSi vous avez toujours accès à votre ancien appareil, vous pouvez retrouver votre clé sous Paramètres > Conversations > Sauvegardes Notelet > Afficher la clé de récupération.";
 
 /* Title for sheet with info for what to do if you don't have a recovery key */
 "REGISTRATION_NO_BACKUP_KEY_SHEET_TITLE" = "Pas de clé de récupération ?";
@@ -7985,7 +7985,7 @@
 "SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_TITLE" = "Version non prise en charge";
 
 /* alert message for outdated linking device */
-"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "Votre autre appareil exécute une ancienne version de Notelet, qui ne prend pas en charge la lecture de codes QR sur iPad. Veuillez installer la dernière version de Signal et réessayer.";
+"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "Votre autre appareil exécute une ancienne version de Notelet, qui ne prend pas en charge la lecture de codes QR sur iPad. Veuillez installer la dernière version de Notelet et réessayer.";
 
 /* alert title for outdated linking device */
 "SECONDARY_LINKING_ERROR_OLD_VERSION_TITLE" = "Mettre à jour l'appareil pour scanner le code QR";
@@ -8162,7 +8162,7 @@
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_COUNTRY" = "Zone géographique";
 
 /* Table footer for the 'censorship circumvention' section when censorship circumvention can be manually enabled. */
-"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Lorsque cette option est activée, Notelet tente de contourner la censure. Ne l'activez que si vous vous trouvez dans une zone géographique où Signal est censuré.";
+"SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER" = "Lorsque cette option est activée, Notelet tente de contourner la censure. Ne l'activez que si vous vous trouvez dans une zone géographique où Notelet est censuré.";
 
 /* Table footer for the 'censorship circumvention' section shown when censorship circumvention has been auto-enabled based on local phone number. */
 "SETTINGS_ADVANCED_CENSORSHIP_CIRCUMVENTION_FOOTER_AUTO_ENABLED" = "Étant donné l'indicatif téléphonique de votre compte, le contournement de la censure a été activé.";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "Désactiver les paiements";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Il est recommandé de transférer vos fonds vers une autre adresse de portefeuille avant de désactiver les paiements. Si vous choisissez de ne pas transférer vos fonds maintenant, ils seront conservés dans le portefeuille associé à Signal si vous réactivez les paiements.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "Il est recommandé de transférer vos fonds vers une autre adresse de portefeuille avant de désactiver les paiements. Si vous choisissez de ne pas transférer vos fonds maintenant, ils seront conservés dans le portefeuille associé à Notelet si vous réactivez les paiements.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "Votre solde sera conservé dans le portefeuille associé à Notelet si vous réactivez les paiements.";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "Pour modifier ce paramètre, définissez l'option \"Qui peut voir mon numéro\" sur \"Personne\".";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Si vous définissez le paramètre \"Qui peut me trouver grâce à mon numéro\" sur \"Personne\", les autres utilisateurs auront plus de difficulté à vous trouver sur Signal.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "Si vous définissez le paramètre \"Qui peut me trouver grâce à mon numéro\" sur \"Personne\", les autres utilisateurs auront plus de difficulté à vous trouver sur Notelet.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "Voulez-vous vraiment continuer ?";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "Désactiver les rappels";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Mémorisez bien votre code PIN ou gardez-le en lieu sûr, car il est impossible de le récupérer. En cas d’oubli, vous risquez de perdre des données lorsque vous réinscrirez votre compte Signal.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "Mémorisez bien votre code PIN ou gardez-le en lieu sûr, car il est impossible de le récupérer. En cas d’oubli, vous risquez de perdre des données lorsque vous réinscrirez votre compte Notelet.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "Confirmer votre code PIN Notelet";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "Rappels de code PIN";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "Avec un code PIN, les informations stockées dans Notelet restent chiffrées, et vous seul y avez accès. Votre profil, vos contacts et vos paramètres sont restaurés si vous réinstallez Signal. Attention : vous ne pouvez pas récupérer votre code PIN si vous l'oubliez.";
+"SETTINGS_PINS_FOOTER" = "Avec un code PIN, les informations stockées dans Notelet restent chiffrées, et vous seul y avez accès. Votre profil, vos contacts et vos paramètres sont restaurés si vous réinstallez Notelet. Attention : vous ne pouvez pas récupérer votre code PIN si vous l'oubliez.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "Changer de code PIN";
@@ -9797,13 +9797,13 @@
 "UNKNOWN_CONTACT_BLOCK_OFFER" = "Cet utilisateur ne fait pas partie de vos contacts. Voulez-vous le bloquer ?";
 
 /* Info message recorded in conversation history when local user receives an unknown message from a linked device and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Impossible de traiter et d'afficher un message envoyé depuis l'un de vos appareils, car il utilise une nouvelle fonctionnalité de Signal.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_FROM_LINKED_DEVICE" = "Impossible de traiter et d'afficher un message envoyé depuis l'un de vos appareils, car il utilise une nouvelle fonctionnalité de Notelet.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. Embeds {{user's name or phone number}}. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "Impossible de traiter et d'afficher un message que vous a envoyé %1$@, car il utilise une nouvelle fonctionnalité de Signal.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITH_NAME_FORMAT" = "Impossible de traiter et d'afficher un message que vous a envoyé %1$@, car il utilise une nouvelle fonctionnalité de Notelet.";
 
 /* Info message recorded in conversation history when local user receives an unknown message and needs to upgrade. */
-"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITHOUT_NAME" = "Impossible de traiter et d'afficher un message que vous avez reçu, car il utilise une nouvelle fonctionnalité de Signal.";
+"UNKNOWN_PROTOCOL_VERSION_NEED_TO_UPGRADE_WITHOUT_NAME" = "Impossible de traiter et d'afficher un message que vous avez reçu, car il utilise une nouvelle fonctionnalité de Notelet.";
 
 /* Label for button that lets users upgrade the app. */
 "UNKNOWN_PROTOCOL_VERSION_UPGRADE_BUTTON" = "Mettre à jour Notelet";

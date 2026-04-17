@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM/YY";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "當您捐款時，Notelet 不會收集或儲存任何個人資料。\n\n我們使用 Stripe 作為接收捐款的付款處理商。我們不會存取、保存或儲存您向他們提供的任何資料。\n\nNotelet 不會也無法將您的捐款連結到您的 Signal 帳戶。\n\n感謝您的支持！";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "當您捐款時，Notelet 不會收集或儲存任何個人資料。\n\n我們使用 Stripe 作為接收捐款的付款處理商。我們不會存取、保存或儲存您向他們提供的任何資料。\n\nNotelet 不會也無法將您的捐款連結到您的 Notelet 帳戶。\n\n感謝您的支持！";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "你的資料已保密";
@@ -3389,7 +3389,7 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "嘿，\n\n我最近一直在用 Notelet 來確保在 iPhone 上聊天的私密性。我希望你也能下載 Notelet，我們就可以確保只有你我二人才能看到彼此的訊息，或聽到我們的電話内容。\n\nNotelet 可以在 iPhone、Android 和桌面電腦上使用。在此下載：%1$@\n\nSignal 和你現有的通訊應用程式類似。我們可以傳送圖片和影片、撥打電話，以及群組聊天。最棒的是，所有人都看不到我們的內容，連 Signal 的創辦人都看不到！\n\n你可以在此了解更多有關 Signal 的詳情：%2$@";
+"EMAIL_INVITE_BODY" = "嘿，\n\n我最近一直在用 Notelet 來確保在 iPhone 上聊天的私密性。我希望你也能下載 Notelet，我們就可以確保只有你我二人才能看到彼此的訊息，或聽到我們的電話内容。\n\nNotelet 可以在 iPhone、Android 和桌面電腦上使用。在此下載：%1$@\n\nNotelet 和你現有的通訊應用程式類似。我們可以傳送圖片和影片、撥打電話，以及群組聊天。最棒的是，所有人都看不到我們的內容，連 Notelet 的創辦人都看不到！\n\n你可以在此了解更多有關 Notelet 的詳情：%2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "我們一起改用 Notelet";
@@ -7385,10 +7385,10 @@
 "REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN 碼是由你建立的 4 位數以上密碼，可以是數字或字母數字混合。如果忘記了你的 PIN 碼，須等待 7 天才能重新註冊你的帳戶。如果你已啟用「Notelet 安全備份」，則可使用「恢復金鑰」繼續操作。";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN 碼是由你建立的 4 位數以上密碼，可以是數字或字母數字混合。如果忘記了你的 PIN 碼，你可以註冊並使用你的帳戶，但將會遺失部分已儲存的設定，例如你的個人資訊。如果你已啟用「Signal 安全備份」，則可使用「恢復金鑰」繼續操作。";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN 碼是由你建立的 4 位數以上密碼，可以是數字或字母數字混合。如果忘記了你的 PIN 碼，你可以註冊並使用你的帳戶，但將會遺失部分已儲存的設定，例如你的個人資訊。如果你已啟用「Notelet 安全備份」，則可使用「恢復金鑰」繼續操作。";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN 碼是由你建立的 4 位數以上密碼，可以是數字或字母數字混合。如果你忘記 PIN 碼，可以建立一個新的 PIN 碼。你可註冊並使用你的帳戶，但你將會遺失部分已儲存的設定，如你的個人檔案資訊。如果你已啟用「Signal 安全備份」，則可使用「恢復金鑰」繼續操作。";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN 碼是由你建立的 4 位數以上密碼，可以是數字或字母數字混合。如果你忘記 PIN 碼，可以建立一個新的 PIN 碼。你可註冊並使用你的帳戶，但你將會遺失部分已儲存的設定，如你的個人檔案資訊。如果你已啟用「Notelet 安全備份」，則可使用「恢復金鑰」繼續操作。";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "錯誤的 PIN 碼";
@@ -7985,7 +7985,7 @@
 "SECONDARY_LINKING_ERROR_OBSOLETE_LINKED_DEVICE_TITLE" = "不支援的版本";
 
 /* alert message for outdated linking device */
-"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "你的其他裝置執行的是舊版Notelet，該版本不支援掃描iPad QR CODE。 請安裝最新版本的 Notelet，然後重試。你的其他裝置執行的是舊版 Notelet，該版本不支援掃描iPad QR code。 請安裝最新的Signal版本，然後重試。";
+"SECONDARY_LINKING_ERROR_OLD_VERSION_MESSAGE" = "你的其他裝置執行的是舊版Notelet，該版本不支援掃描iPad QR CODE。 請安裝最新版本的 Notelet，然後重試。你的其他裝置執行的是舊版 Notelet，該版本不支援掃描iPad QR code。 請安裝最新的Notelet版本，然後重試。";
 
 /* alert title for outdated linking device */
 "SECONDARY_LINKING_ERROR_OLD_VERSION_TITLE" = "升級掃描裝置";

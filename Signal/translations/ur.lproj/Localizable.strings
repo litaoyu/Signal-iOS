@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "اسٹوریج کی جگہ کم ہے";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "آپ کی پرانی ڈیوائس سے منتقل کردہ ڈیٹا کو بحال نہیں کیا جا سکا۔ براہ کرم support@Notelet.org پر ڈیبگ لاگ ارسال کریں تاکہ ہم اس مسئلے کا ازالہ کر سکیں۔ اگر آپ Signal کو دوبارہ انسٹال کرتے ہیں تو آپ کی مسیج ختم ہو سکتی ہے۔";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "آپ کی پرانی ڈیوائس سے منتقل کردہ ڈیٹا کو بحال نہیں کیا جا سکا۔ براہ کرم support@Notelet.org پر ڈیبگ لاگ ارسال کریں تاکہ ہم اس مسئلے کا ازالہ کر سکیں۔ اگر آپ Notelet کو دوبارہ انسٹال کرتے ہیں تو آپ کی مسیج ختم ہو سکتی ہے۔";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "مکمل منتقلی نہیں ہوسکی";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "ریکوری کیی";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "آپ کی بیک اپ کی سبسکرپشن کی معیاد ختم ہو گئی ہے کیونکہ آپ کے پیمنٹ کے طریقے سے اس کی تجدید نہیں کی جا سکتی۔\n\nاپنے میڈیا کا بیک اپ جاری رکھنے کے لیے آپ دوبارہ سبسکرائب کر سکتے ہیں۔ Signal بیک اپس کے مفت پلان تک آپ کی رسائی جاری رہے گی۔";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "آپ کی بیک اپ کی سبسکرپشن کی معیاد ختم ہو گئی ہے کیونکہ آپ کے پیمنٹ کے طریقے سے اس کی تجدید نہیں کی جا سکتی۔\n\nاپنے میڈیا کا بیک اپ جاری رکھنے کے لیے آپ دوبارہ سبسکرائب کر سکتے ہیں۔ Notelet بیک اپس کے مفت پلان تک آپ کی رسائی جاری رہے گی۔";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "آپ کی بیک اپ کی سبسکرپشن کی معیاد ختم ہو گئی ہے کیونکہ آپ اب مزید TestFlight استعمال نہیں کر رہے۔\n\nاپنے میڈیا کا بیک اپ جاری رکھنے کے لیے آپ دوبارہ سبسکرائب کر سکتے ہیں۔ Signal بیک اپس کے مفت پلان تک آپ کی رسائی جاری رہے گی۔";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "آپ کی بیک اپ کی سبسکرپشن کی معیاد ختم ہو گئی ہے کیونکہ آپ اب مزید TestFlight استعمال نہیں کر رہے۔\n\nاپنے میڈیا کا بیک اپ جاری رکھنے کے لیے آپ دوبارہ سبسکرائب کر سکتے ہیں۔ Notelet بیک اپس کے مفت پلان تک آپ کی رسائی جاری رہے گی۔";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "بیک اپس کو منظم کریں";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "بیک اپس کو آف کر دیا گیا ہے اور آپ کے ڈیٹا کو Notelet کی محفوظ اسٹوریج کی سروس سے حذف کر دیا گیا ہے۔";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "بیک اپس بند کر دیے گئے ہیں، ایسا کوئی بھی میڈیا جو ڈیوائس میں موجود نہیں ہے اب ڈاؤن لوڈ ہو رہا ہے۔ ڈاؤن لوڈ کے بعد آپ کے ڈیٹا کو Signal کی محفوظ شدہ اسٹوریج کی سروس سے حذف کر دیا جائے گا۔";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "بیک اپس بند کر دیے گئے ہیں، ایسا کوئی بھی میڈیا جو ڈیوائس میں موجود نہیں ہے اب ڈاؤن لوڈ ہو رہا ہے۔ ڈاؤن لوڈ کے بعد آپ کے ڈیٹا کو Notelet کی محفوظ شدہ اسٹوریج کی سروس سے حذف کر دیا جائے گا۔";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "ایک نقص پیش آیا۔ براہ کرم سپورٹ سے رابطہ کریں۔";
@@ -857,7 +857,7 @@
 "BACKUP_SETTINGS_DISABLING_CONFIRMATION_ACTION_SHEET_TITLE" = "بند کریں اور بیک اپس حذف کریں؟";
 
 /* Message shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
-"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "آپ کے بیک اپ میں وہ میڈیا موجود ہے جو اس ڈیوائس میں موجود نہیں ہے۔ آپ کے بیک اپ کو ڈاؤن لوڈ میں زیادہ وقت لگ سکتا ہے، اس لیے خلل اندازیوں سے بچنے کے لیے Signal کو کھلا رکھیں۔";
+"BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_MESSAGE" = "آپ کے بیک اپ میں وہ میڈیا موجود ہے جو اس ڈیوائس میں موجود نہیں ہے۔ آپ کے بیک اپ کو ڈاؤن لوڈ میں زیادہ وقت لگ سکتا ہے، اس لیے خلل اندازیوں سے بچنے کے لیے Notelet کو کھلا رکھیں۔";
 
 /* Title shown in an action sheet when the user disables Backups, explaining that their media is downloading first. */
 "BACKUP_SETTINGS_DISABLING_DOWNLOADS_STARTED_ACTION_SHEET_TITLE" = "آپ کا بیک اپ ڈاؤن لوڈ ہو رہا ہے";
@@ -953,7 +953,7 @@
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_LATER_ACTION" = "بعد میں ڈاؤن لوڈ کریں";
 
 /* Message for an action sheet allowing users to download their offloaded media. */
-"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "آپ کے بیک اپ میں وہ میڈیا موجود ہے جو اس ڈیوائس میں موجود نہیں ہے۔ یہ ڈاؤن لوڈ کرنے میں کافی وقت لے سکتا ہے، ڈاؤن لوڈ میں خلل سے بچنے کے لیے Signal کو کھلا رکھیں۔";
+"BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_MESSAGE" = "آپ کے بیک اپ میں وہ میڈیا موجود ہے جو اس ڈیوائس میں موجود نہیں ہے۔ یہ ڈاؤن لوڈ کرنے میں کافی وقت لے سکتا ہے، ڈاؤن لوڈ میں خلل سے بچنے کے لیے Notelet کو کھلا رکھیں۔";
 
 /* Action in an action sheet allowing users to download their offloaded media now. */
 "BACKUP_SETTINGS_OPTIMIZE_LOCAL_STORAGE_DOWNLOAD_SHEET_NOW_ACTION" = "ابھی ڈاؤن لوڈ کریں";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "میڈیا اپ لوڈ موقوف ہو گیا: Wi-Fi کا انتظار ہو رہا ہے";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "آپ اپنے بیک اپ پلان میں شامل %1$@ اسٹوریج کی حد تک پہنچ چکے ہیں۔ نئی چیٹس اور میڈیا کے بیک اپ کے لیے، Signal میں %2$@ جگہ خالی کریں، اور پھر \"اب بیک اپ کریں\" پر ٹیپ کریں۔";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "آپ اپنے بیک اپ پلان میں شامل %1$@ اسٹوریج کی حد تک پہنچ چکے ہیں۔ نئی چیٹس اور میڈیا کے بیک اپ کے لیے، Notelet میں %2$@ جگہ خالی کریں، اور پھر \"اب بیک اپ کریں\" پر ٹیپ کریں۔";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "%2$@ کا %1$@ (%3$@) اپ لوڈ ہو رہا ہے";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "MM/YY";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet آپ کی جانب سے عطیہ کرنے پر آپ کی کوئی ذاتی معلومات جمع یا سٹور نہیں کرتا۔\n\nہم آپ کے عطیات وصول کرنے کے لیے Stripe کو اپنے ادائیگی کے پروسیسر کے طور پر استعمال کرتے ہیں۔ آپ انہیں جو معلومات فراہم کرتے ہیں ہم اس تک رسائی، اسے سٹور، یا محفوظ نہیں کرتے۔\n\nSignal آپ کے عطیے کو آپ کے Signal اکاؤنٹ کے ساتھ مربوط نہیں کرتا اور نہ کر سکتا ہے۔\n\nآپ کی سپورٹ کا شکریہ!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet آپ کی جانب سے عطیہ کرنے پر آپ کی کوئی ذاتی معلومات جمع یا سٹور نہیں کرتا۔\n\nہم آپ کے عطیات وصول کرنے کے لیے Stripe کو اپنے ادائیگی کے پروسیسر کے طور پر استعمال کرتے ہیں۔ آپ انہیں جو معلومات فراہم کرتے ہیں ہم اس تک رسائی، اسے سٹور، یا محفوظ نہیں کرتے۔\n\nNotelet آپ کے عطیے کو آپ کے Notelet اکاؤنٹ کے ساتھ مربوط نہیں کرتا اور نہ کر سکتا ہے۔\n\nآپ کی سپورٹ کا شکریہ!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "آپ کی معلومات پرائیویٹ ہے";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "جاری رکھیں";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "سیلولر ڈیٹا پر میڈیا کو بیک اپ کرنے میں ڈیٹا چارجز لاگو ہو سکتے ہیں۔ ہو سکتا ہے آپ کے بیک اپ کو اپلوڈ ہونے میں زیادہ وقت لگے، اس لیے خلل سے بچنے کے لیے Signal کو کھلا رکھیں۔";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "سیلولر ڈیٹا پر میڈیا کو بیک اپ کرنے میں ڈیٹا چارجز لاگو ہو سکتے ہیں۔ ہو سکتا ہے آپ کے بیک اپ کو اپلوڈ ہونے میں زیادہ وقت لگے، اس لیے خلل سے بچنے کے لیے Notelet کو کھلا رکھیں۔";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "کیا آپ سیلولر ڈیٹا استعمال کرتے ہوئے جاری رکھنا چاہتے ہیں؟";
@@ -3182,7 +3182,7 @@
 "DONATION_ON_BEHALF_OF_A_FRIEND_YOU_RECEIVED_A_BADGE_FORMAT" = "%1$@ نے آپ کی جانب سے Notelet کو عطیہ کیا ہے! اپنی پروفائل پر Notelet کے لیے سپورٹ ظاہر کریں۔";
 
 /* Body text for a sheet discussing donating to Signal. */
-"DONATION_READ_MORE_SHEET_BODY" = "ایک خود مختار غیر منافع بخش ایپ کے طور پر، Notelet نجی میسجنگ اور کالز کی فراہمی کے لیے پُرعزم ہے۔ کوئی اشتہارات، کوئی ٹریکرز، کوئی نگرانی نہیں۔ Signal کو سپورٹ کرنے کے لیے ابھی عطیہ کریں۔";
+"DONATION_READ_MORE_SHEET_BODY" = "ایک خود مختار غیر منافع بخش ایپ کے طور پر، Notelet نجی میسجنگ اور کالز کی فراہمی کے لیے پُرعزم ہے۔ کوئی اشتہارات، کوئی ٹریکرز، کوئی نگرانی نہیں۔ Notelet کو سپورٹ کرنے کے لیے ابھی عطیہ کریں۔";
 
 /* Bullet point for a sheet discussing donating to Signal. */
 "DONATION_READ_MORE_SHEET_BULLET_1" = "عطیہ کرنے پر اپنی پروفائل پر ایک اختیاری بیج حاصل کریں";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "رسید شیئر کریں";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Notelet کی معاونت کرنے کے لیے آپ کا شکریہ۔ آپ کا تعاون اوپن سورس رازداری کی ٹیکنالوجی تیار کرنے کے مشن کو تقویت فراہم کرنے میں مدد کرتا ہے جو آزادی اظہار کے تاثرات کی حفاظت کرتا ہے اور دنیا بھر میں لاکھوں افراد کے لیے محفوظ عالمی مواصلت کو فعال بناتا ہے۔ اگر آپ ریاست ہائے متحدہ امریکہ کے رہائشی ہیں، تو براہ کرم اپنے ٹیکس ریکارڈز کے لیے اس رسید کو برقرار رکھیں۔ Signal ٹیکنالوجی فاؤنڈیشن ریاست ہائے متحدہ امریکہ میں اندرونی ریوینیو کے سیکشن 501c3 کے تحت ٹیکس سے مستثنیٰ ایک غیر منافع بخش تنظیم ہے۔ ہماری وفاقی ٹیکس ID 82-4506840 ہے۔";
+"DONATION_RECEIPT_FOOTER" = "Notelet کی معاونت کرنے کے لیے آپ کا شکریہ۔ آپ کا تعاون اوپن سورس رازداری کی ٹیکنالوجی تیار کرنے کے مشن کو تقویت فراہم کرنے میں مدد کرتا ہے جو آزادی اظہار کے تاثرات کی حفاظت کرتا ہے اور دنیا بھر میں لاکھوں افراد کے لیے محفوظ عالمی مواصلت کو فعال بناتا ہے۔ اگر آپ ریاست ہائے متحدہ امریکہ کے رہائشی ہیں، تو براہ کرم اپنے ٹیکس ریکارڈز کے لیے اس رسید کو برقرار رکھیں۔ Notelet ٹیکنالوجی فاؤنڈیشن ریاست ہائے متحدہ امریکہ میں اندرونی ریوینیو کے سیکشن 501c3 کے تحت ٹیکس سے مستثنیٰ ایک غیر منافع بخش تنظیم ہے۔ ہماری وفاقی ٹیکس ID 82-4506840 ہے۔";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "دوست کے لیے عطیہ";
@@ -3389,7 +3389,7 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "ہائے،\n\nحال ہی میں، میں نے اپنے iPhone پر اپنی چیٹس کو نجی رکھنے کے لیے Notelet کا استعمال شروع کیا ہے۔ میں چاہوں گا کہ آپ بھی اسے انسٹال کریں، تاکہ ہمیں یقین ہو کہ صرف آپ اور میں اپنے میسجز پڑھ سکتے ہیں یا اپنی کالز سن سکتے ہیں۔\n\nAndroid ،iPhone Signal اور Desktop کے لیے دستیاب ہے۔ اسے یہاں سے حاصل کریں: %1$@\n\n Signal آپ کی موجودہ میسجنگ ایپ کی طرح ہی کام کرتا ہے۔ ہم تصویریں اور ویڈیو بھیج سکتے ہیں، کالز کر سکتے ہیں، اور گروپ چیٹس کا آغاز کر سکتے ہیں۔ بہترین بات یہ ہے، کہ کوئی اور ان میں سے کسی چیز کو نہیں دیکھ سکتا، حتیٰ کہ Signal کو بنانے والے لوگ بھی نہیں!\n\nآپ Signal کے بارے میں مزید یہاں پڑھ سکتے ہیں: %2$@";
+"EMAIL_INVITE_BODY" = "ہائے،\n\nحال ہی میں، میں نے اپنے iPhone پر اپنی چیٹس کو نجی رکھنے کے لیے Notelet کا استعمال شروع کیا ہے۔ میں چاہوں گا کہ آپ بھی اسے انسٹال کریں، تاکہ ہمیں یقین ہو کہ صرف آپ اور میں اپنے میسجز پڑھ سکتے ہیں یا اپنی کالز سن سکتے ہیں۔\n\nAndroid ،iPhone Notelet اور Desktop کے لیے دستیاب ہے۔ اسے یہاں سے حاصل کریں: %1$@\n\n Notelet آپ کی موجودہ میسجنگ ایپ کی طرح ہی کام کرتا ہے۔ ہم تصویریں اور ویڈیو بھیج سکتے ہیں، کالز کر سکتے ہیں، اور گروپ چیٹس کا آغاز کر سکتے ہیں۔ بہترین بات یہ ہے، کہ کوئی اور ان میں سے کسی چیز کو نہیں دیکھ سکتا، حتیٰ کہ Notelet کو بنانے والے لوگ بھی نہیں!\n\nآپ Notelet کے بارے میں مزید یہاں پڑھ سکتے ہیں: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "Notelet میں سو ئچ کریں";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "آپ نے ایک نئی ڈیوائس کو منسلک کیا";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "ڈیسک ٹاپ یا iPad کو اس Notelet اکاؤنٹ کے ساتھ لنک کرنے کے لیے، لنک کردہ ڈیوائسز پر جائیں اور \"نئی ڈیوائس لنک کریں\" پر ٹیپ کریں اور QR کوڈ کو دوبارہ اسکین کریں۔ یقینی بنائیں کہ آپ صرف وہ QR کوڈز اسکین کریں جو براہ راست Signal سے آتے ہیں۔";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "ڈیسک ٹاپ یا iPad کو اس Notelet اکاؤنٹ کے ساتھ لنک کرنے کے لیے، لنک کردہ ڈیوائسز پر جائیں اور \"نئی ڈیوائس لنک کریں\" پر ٹیپ کریں اور QR کوڈ کو دوبارہ اسکین کریں۔ یقینی بنائیں کہ آپ صرف وہ QR کوڈز اسکین کریں جو براہ راست Notelet سے آتے ہیں۔";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "ایسا لگتا ہے کہ آپ Notelet ڈیوائس کو لنک کرنے کی کوشش کر رہے ہیں۔ جاری رکھیں پر ٹیپ کریں اور پھر \"نئی ڈیوائس لنک کریں\" پر ٹیپ کریں اور QR کوڈ کو دوبارہ اسکین کریں۔";
@@ -5969,7 +5969,7 @@
 "ONBOARDING_CHOOSE_RESTORE_METHOD_DESCRIPTION" = "منتخب کریں کہ آپ اپنی میسج ہسٹری اور اکاؤنٹ کے ڈیٹا کو کیسے ری اسٹور کرنا چاہیں گے۔";
 
 /* Message body displayed to a user during registration if there are no restore options available. */
-"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "جیسا کہ آپ Android سے iOS میں منتقل ہو رہے ہیں، اس لیے اپنے میسجز اور میڈیا کو منتقل کرنے کا واحد طریقہ یہ ہے کہ اپنی پرانی ڈیوائس میں Signal بیک اپس کو فعال کریں۔";
+"ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_BODY" = "جیسا کہ آپ Android سے iOS میں منتقل ہو رہے ہیں، اس لیے اپنے میسجز اور میڈیا کو منتقل کرنے کا واحد طریقہ یہ ہے کہ اپنی پرانی ڈیوائس میں Notelet بیک اپس کو فعال کریں۔";
 
 /* Title displayed to a user during registration if there are no restore options available. */
 "ONBOARDING_CHOOSE_RESTORE_METHOD_NONE_AVAILABLE_TITLE" = "ری اسٹور کرنے کے لیے کوئی بیک اپ نہیں ہے";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "iPhone کو لنک کریں";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "\"رجسٹرڈ iPad\" کو ٹیپ کرنے سے آپ کو بالکل نیا Notelet اکاؤنٹ بنانے یا ایک موجودہ اکاؤنٹ کو اس iPad میں منتقل کرنے دیا جائے گا۔ اس سے اسی فون نمبر کے ساتھ فی الحال اندراج شدہ کسی بھی دوسرے device پر Signal کو غیر فعال کردے گا۔";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "\"رجسٹرڈ iPad\" کو ٹیپ کرنے سے آپ کو بالکل نیا Notelet اکاؤنٹ بنانے یا ایک موجودہ اکاؤنٹ کو اس iPad میں منتقل کرنے دیا جائے گا۔ اس سے اسی فون نمبر کے ساتھ فی الحال اندراج شدہ کسی بھی دوسرے device پر Notelet کو غیر فعال کردے گا۔";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "\"لنک iPhone\" کو ٹیپ کرنے سے آپ اپنے فون کو کسی موجودہ اکاؤنٹ سے مربوط ہوجائیں گے۔ عام طور پر آپ کے فون کو لنک کرنے کی سفارش نہیں کی جاتی ہے اور کچھ فعالیت کو محدود کردے گی ، جیسے کال کرنا۔";
@@ -6089,7 +6089,7 @@
 "ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_TITLE" = "غلط پن";
 
 /* Explanation of the 'onboarding pin attempts exhausted' view when it is unknown if reglock is enabled. */
-"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_WITH_UNKNOWN_REGLOCK_EXPLANATION" = "آپ کے پاس پِن کے اندازے ختم ہو چکے ہیں، تاہم آپ اب بھی کوشش کر سکتے ہیں اور اپنے فون نمبر کی تصدیق کر کے اپنے Signal اکاؤنٹ تک رسائی حاصل کر سکتے ہیں۔ آپ کی پرائیویسی اور سکیورٹی کے لیے آپ کا اکاؤنٹ کسی بھی محفوظ شدہ پروفائل معلومات یا سیٹنگز کے بغیر بحال کیا جائے گا۔";
+"ONBOARDING_PIN_ATTEMPTS_EXHAUSTED_WITH_UNKNOWN_REGLOCK_EXPLANATION" = "آپ کے پاس پِن کے اندازے ختم ہو چکے ہیں، تاہم آپ اب بھی کوشش کر سکتے ہیں اور اپنے فون نمبر کی تصدیق کر کے اپنے Notelet اکاؤنٹ تک رسائی حاصل کر سکتے ہیں۔ آپ کی پرائیویسی اور سکیورٹی کے لیے آپ کا اکاؤنٹ کسی بھی محفوظ شدہ پروفائل معلومات یا سیٹنگز کے بغیر بحال کیا جائے گا۔";
 
 /* Explanation of 'do not have old device' flow for the 'Restore or Transfer' prompt */
 "ONBOARDING_SPLASH_DO_NOT_HAVE_OLD_DEVICE_BODY" = "یا آپ اسی ڈیوائس پر Notelet کو دوبارہ انسٹال کر رہے ہیں";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "QR کوڈ سکین کریں";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "اس اکاؤنٹ کو ایک نئی ڈیوائس پر ٹرانسفر کرنے کے لیے، \"جاری رکھیں\" پر ٹیپ کریں اور Notelet کے کیمرے کے ساتھ QR کوڈ کو اسکین کریں۔ صرف ان QR کوڈز کو اسکین کرنا یقینی بنائیں جو براہ راست Signal سے آتے ہیں۔";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "اس اکاؤنٹ کو ایک نئی ڈیوائس پر ٹرانسفر کرنے کے لیے، \"جاری رکھیں\" پر ٹیپ کریں اور Notelet کے کیمرے کے ساتھ QR کوڈ کو اسکین کریں۔ صرف ان QR کوڈز کو اسکین کرنا یقینی بنائیں جو براہ راست Notelet سے آتے ہیں۔";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "%1$@ کو جواب دے رہے ہیں۔ %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "مدد چاہیے؟";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "آپ کی پِن آپ کی طرف سے تخلیق کردہ 4+ ہندسوں کا کوڈ ہے جو کہ عددی یا حرفی عددی ہو سکتا ہے۔ اگر آپ اپنی پِن یاد کرنے سے قاصر ہیں، تو آپ کو اپنا اکاؤنٹ دوبارہ رجسٹر کروانے کے لیے 7 دن تک انتظار کرنا ہو گا۔ اگر آپ نے Signal کے محفوظ بیک اپس کو فعال کیا ہوا ہے، تو آپ اپنی بحالی کی کیی کے ساتھ آگے بڑھ سکتے ہیں۔";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "آپ کی پِن آپ کی طرف سے تخلیق کردہ 4+ ہندسوں کا کوڈ ہے جو کہ عددی یا حرفی عددی ہو سکتا ہے۔ اگر آپ اپنی پِن یاد کرنے سے قاصر ہیں، تو آپ کو اپنا اکاؤنٹ دوبارہ رجسٹر کروانے کے لیے 7 دن تک انتظار کرنا ہو گا۔ اگر آپ نے Notelet کے محفوظ بیک اپس کو فعال کیا ہوا ہے، تو آپ اپنی بحالی کی کیی کے ساتھ آگے بڑھ سکتے ہیں۔";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "آپ کی پِن آپ کی طرف سے تخلیق کردہ 4+ ہندسوں کا کوڈ ہے جو کہ عددی یا حرفی عددی ہو سکتا ہے۔ اگر آپ اپنی پِن یاد کرنے سے قاصر ہیں، تو آپ اپنا اکاؤنٹ رجسٹر اور استعمال کر سکتے ہیں تاہم آپ اپنی کچھ محفوظ کردہ سیٹنگز جیسے پروفائل کی معلومات سے محروم ہو جائیں گے۔ اگر آپ نے Signal کے محفوظ بیک اپس کو فعال کیا ہوا ہے، تو آپ اپنی بحالی کی کیی کے ساتھ آگے بڑھ سکتے ہیں۔";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "آپ کی پِن آپ کی طرف سے تخلیق کردہ 4+ ہندسوں کا کوڈ ہے جو کہ عددی یا حرفی عددی ہو سکتا ہے۔ اگر آپ اپنی پِن یاد کرنے سے قاصر ہیں، تو آپ اپنا اکاؤنٹ رجسٹر اور استعمال کر سکتے ہیں تاہم آپ اپنی کچھ محفوظ کردہ سیٹنگز جیسے پروفائل کی معلومات سے محروم ہو جائیں گے۔ اگر آپ نے Notelet کے محفوظ بیک اپس کو فعال کیا ہوا ہے، تو آپ اپنی بحالی کی کیی کے ساتھ آگے بڑھ سکتے ہیں۔";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "آپ کی پِن آپ کی طرف سے تخلیق کردہ 4+ ہندسوں کا کوڈ ہے جو کہ عددی یا حرفی عددی ہو سکتا ہے۔ اگر آپ اپنی پِن یاد کرنے سے قاصر ہیں، تو آپ ایک نیا تخلیق کر سکتے ہیں۔ آپ اپنا اکاؤنٹ رجسٹر اور استعمال کر سکتے ہیں تاہم آپ کچھ محفوظ کردہ سیٹنگز جیسے کہ اپنی پروفائل کی معلومات سے محروم ہو جائیں گے۔ اگر آپ نے Signal کے محفوظ بیک اپس کو فعال کیا ہوا ہے، تو آپ اپنی بحالی کی کیی کے ساتھ آگے بڑھ سکتے ہیں۔";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "آپ کی پِن آپ کی طرف سے تخلیق کردہ 4+ ہندسوں کا کوڈ ہے جو کہ عددی یا حرفی عددی ہو سکتا ہے۔ اگر آپ اپنی پِن یاد کرنے سے قاصر ہیں، تو آپ ایک نیا تخلیق کر سکتے ہیں۔ آپ اپنا اکاؤنٹ رجسٹر اور استعمال کر سکتے ہیں تاہم آپ کچھ محفوظ کردہ سیٹنگز جیسے کہ اپنی پروفائل کی معلومات سے محروم ہو جائیں گے۔ اگر آپ نے Notelet کے محفوظ بیک اپس کو فعال کیا ہوا ہے، تو آپ اپنی بحالی کی کیی کے ساتھ آگے بڑھ سکتے ہیں۔";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "غلط پن";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "ٹرانسفر مکمل نہیں ہو سکا";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "ہو سکتا ہے آپ نے اپنی بحالی کی کیی غلط درج کی ہو، یا آپ نے اپنی پرانی ڈیوائس پر کم از کم ایک بیک اپ مکمل نہ کیا ہو۔ \n\nیقینی بنائیں کہ آپ اسی فون نمبر اور بحالی کی کیی کے ساتھ رجسٹر کر رہے ہیں جو آپ نے Signal محفوظ بیک اپس کو فعال کرتے ہوئے محفوظ کی تھی، اور تصدیق کریں کہ آپ کی پرانی ڈیوائس پر بیک اپ مکمل ہو گیا ہو۔";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "ہو سکتا ہے آپ نے اپنی بحالی کی کیی غلط درج کی ہو، یا آپ نے اپنی پرانی ڈیوائس پر کم از کم ایک بیک اپ مکمل نہ کیا ہو۔ \n\nیقینی بنائیں کہ آپ اسی فون نمبر اور بحالی کی کیی کے ساتھ رجسٹر کر رہے ہیں جو آپ نے Notelet محفوظ بیک اپس کو فعال کرتے ہوئے محفوظ کی تھی، اور تصدیق کریں کہ آپ کی پرانی ڈیوائس پر بیک اپ مکمل ہو گیا ہو۔";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "آپ کی بحالی کی کیی کی کوششوں کی حد ختم ہو گئی ہے۔ آپ کی حفاظت کے لیے، آپ کی انجام دی جانے والی کوششوں کی تعداد محدود ہے۔ 1 گھنٹہ انتظار کریں اور دوبارہ کوشش کریں۔";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "ادائیگیوں کو غیر فعال کریں";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "یہ تجویز پیش کی جاتی ہے کہ پیمنٹس کو غیر فعال کرنے سے قبل آپ اپنے فنڈز کو کسی دوسرے والیٹ ایڈریس پر ٹرانسفر کریں۔ اگر آپ ابھی اپنے فنڈز کو ٹرانسفر کرنے کا انتخاب نہیں کرنا چاہتے، تو آپ کی جانب سے پیمنٹس کو دوبارہ فعال کرنے کی صورت میں یہ Signal سے لنک کردہ آپ کے والیٹ میں موجود رہیں گے۔";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "یہ تجویز پیش کی جاتی ہے کہ پیمنٹس کو غیر فعال کرنے سے قبل آپ اپنے فنڈز کو کسی دوسرے والیٹ ایڈریس پر ٹرانسفر کریں۔ اگر آپ ابھی اپنے فنڈز کو ٹرانسفر کرنے کا انتخاب نہیں کرنا چاہتے، تو آپ کی جانب سے پیمنٹس کو دوبارہ فعال کرنے کی صورت میں یہ Notelet سے لنک کردہ آپ کے والیٹ میں موجود رہیں گے۔";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "اگر آپ پیمنٹس کو دوبارہ فعال کرنے کا انتخاب کرتے ہیں تو آپ کا بیلنس Notelet سے لنک کردہ آپ کے والیٹ میں موجود رہے گا۔";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "یاد دہانی بند کردیں";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "اس بات کو یقینی بنائیں کہ آپ اپنے پن کو حفظ یا محفوظ طریقے سے محفوظ کریں کیونکہ اسے بازیافت نہیں کیا جاسکتا ہے۔ اگر آپ اپنا پن بھول جاتے ہیں تو ، اپنے Signal اکاؤنٹ کی دوبارہ رجسٹریشن کرتے وقت آپ ڈیٹا کھو سکتے ہیں۔";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "اس بات کو یقینی بنائیں کہ آپ اپنے پن کو حفظ یا محفوظ طریقے سے محفوظ کریں کیونکہ اسے بازیافت نہیں کیا جاسکتا ہے۔ اگر آپ اپنا پن بھول جاتے ہیں تو ، اپنے Notelet اکاؤنٹ کی دوبارہ رجسٹریشن کرتے وقت آپ ڈیٹا کھو سکتے ہیں۔";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "اپنے Notelet پن کی تصدیق کریں";

@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "נפח אחסון נמוך";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "לא הצלחנו לשחזר את הנתונים שהועברו מהמכשיר הישן שלכם. אנא שלחו יומן ניפוי באגים ל–support@Notelet.org כדי שנוכל לפתור בעיה זו. אם תתקינו מחדש את Signal, היסטוריית ההודעות שלכם תאבד.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "לא הצלחנו לשחזר את הנתונים שהועברו מהמכשיר הישן שלכם. אנא שלחו יומן ניפוי באגים ל–support@Notelet.org כדי שנוכל לפתור בעיה זו. אם תתקינו מחדש את Notelet, היסטוריית ההודעות שלכם תאבד.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "לא היה ניתן להשלים את ההעברה";
@@ -614,7 +614,7 @@
 "BACKUP_ONBOARDING_INTRO_NOT_NOW_TOAST" = "אפשר להפעיל גיבויים בהגדרות.";
 
 /* Subtitle for a view introducing Backups during an onboarding flow. */
-"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "אפשר לגבות את ההודעות והמדיה ששלך באמצעות שירות האחסון המאובטח המוצפן מקצה לקצה של Notelet. ככה, לא מאבדים אף הודעה כשמחליפים טלפון או מתקינים מחדש את Signal.";
+"BACKUP_ONBOARDING_INTRO_SUBTITLE" = "אפשר לגבות את ההודעות והמדיה ששלך באמצעות שירות האחסון המאובטח המוצפן מקצה לקצה של Notelet. ככה, לא מאבדים אף הודעה כשמחליפים טלפון או מתקינים מחדש את Notelet.";
 
 /* Title for a view introducing Backups during an onboarding flow. */
 "BACKUP_ONBOARDING_INTRO_TITLE" = "גיבויים מאובטחים של Notelet";
@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "מפתח שחזור";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "מנוי הגיבויים שלך פג תוקף כי לא היה ניתן לחדש אותו עם אמצעי התשלום שלך.\n\nכדי להמשיך לגבות מדיה, אפשר לעשות מנוי חדש. תמשיך להיות לך גישה לתכנית גיבויי Signal החינמית.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "מנוי הגיבויים שלך פג תוקף כי לא היה ניתן לחדש אותו עם אמצעי התשלום שלך.\n\nכדי להמשיך לגבות מדיה, אפשר לעשות מנוי חדש. תמשיך להיות לך גישה לתכנית גיבויי Notelet החינמית.";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "מנוי הגיבויים שלך פג תוקף כי אינך משתמש/ת יותר ב–TestFlight.\n\nכדי להמשיך לגבות מדיה, אפשר לעשות מנוי חדש. תמשיך להיות לך גישה לתכנית גיבויי Signal החינמית.";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "מנוי הגיבויים שלך פג תוקף כי אינך משתמש/ת יותר ב–TestFlight.\n\nכדי להמשיך לגבות מדיה, אפשר לעשות מנוי חדש. תמשיך להיות לך גישה לתכנית גיבויי Notelet החינמית.";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "ניהול גיבויים";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "הגיבויים הושבתו והנתונים שלך נמחקו משירות האחסון המאובטח של Notelet.";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "הגיבויים הושבתו, וכל מדיה שאינה נמצאת על המכשיר כעת נמצאת בתהליך הורדה. ברגע שההורדה תסתיים, הנתונים שלך יימחקו משירות האחסון המאובטח של Signal.";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "הגיבויים הושבתו, וכל מדיה שאינה נמצאת על המכשיר כעת נמצאת בתהליך הורדה. ברגע שההורדה תסתיים, הנתונים שלך יימחקו משירות האחסון המאובטח של Notelet.";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "אירעה שגיאה. יש ליצור קשר עם התמיכה.";
@@ -1025,7 +1025,7 @@
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_NEEDS_WIFI" = "העלאת מדיה מושהית: בהמתנה ל–Wi–Fi";
 
 /* Subtitle for a progress bar tracking uploads that are paused because the user is out of remote storage space. Embeds 1:{{ total storage space provided, e.g. 100 GB }}; 2:{{ space the user needs to free up by deleting media, e.g. 1 GB }}. */
-"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "הגעת למגבלת האחסון של %1$@ הכלולה בתכנית הגיבוי שלך. כדי לגבות צ׳אטים ומדיה חדשים, יש לפנות %2$@ ב–Signal, ואז ללחוץ על ״גיבוי כעת״.";
+"BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_PAUSED_OUT_OF_STORAGE_SPACE_FORMAT" = "הגעת למגבלת האחסון של %1$@ הכלולה בתכנית הגיבוי שלך. כדי לגבות צ׳אטים ומדיה חדשים, יש לפנות %2$@ ב–Notelet, ואז ללחוץ על ״גיבוי כעת״.";
 
 /* Subtitle for a progress bar tracking active uploading. Embeds 1:{{ the amount uploaded as a file size, e.g. 100 MB }}; 2:{{ the total amount to upload as a file size, e.g. 1 GB }}; 3:{{ the percentage uploaded as a percent, e.g. 40% }}. */
 "BACKUP_SETTINGS_UPLOAD_PROGRESS_SUBTITLE_RUNNING" = "בהעלאה: %1$@ מתוך %2$@ (%3$@)";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "חודש/שנה";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet לא אוספת או מאחסנת את המידע האישי שלך בעת ביצוע תרומה.\n\nאנחנו משתמשים ב–Stripe בתור מעבד התשלומים שלנו כדי לקבל את התרומות שלך. אנחנו לא ניגשים לשום מידע שהם מקבלים ממך ולא מאחסנים או שומרים אותו.\n\nSignal אינה מקשרת את התרומה שלך לחשבון Signal שלך ואין לה אפשרות לעשות זאת.\n\nתודה על התמיכה שלך!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "Notelet לא אוספת או מאחסנת את המידע האישי שלך בעת ביצוע תרומה.\n\nאנחנו משתמשים ב–Stripe בתור מעבד התשלומים שלנו כדי לקבל את התרומות שלך. אנחנו לא ניגשים לשום מידע שהם מקבלים ממך ולא מאחסנים או שומרים אותו.\n\nNotelet אינה מקשרת את התרומה שלך לחשבון Notelet שלך ואין לה אפשרות לעשות זאת.\n\nתודה על התמיכה שלך!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "המידע שלך פרטי";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "חידוש";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "גיבוי המדיה באמצעות נתונים סלולריים עלול לגרום לחיובים עבור שימוש בנתונים. ייתכן שהורדת הגיבוי שלך תיקח זמן רב, יש להשאיר את Signal פתוחה כדי למנוע הפרעות.";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "גיבוי המדיה באמצעות נתונים סלולריים עלול לגרום לחיובים עבור שימוש בנתונים. ייתכן שהורדת הגיבוי שלך תיקח זמן רב, יש להשאיר את Notelet פתוחה כדי למנוע הפרעות.";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "להמשיך באמצעות נתונים סלולריים?";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "שתף קבלה";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "תודה לך על תמיכה ב־Notelet. התרומה שלך עוזרת לתדלק את המשימה של פיתוח טכנולוגית פרטיות בקוד פתוח שמגינה על חופשי ביטוי ומאפשרת תקשורת עולמית מאובטחת עבור מיליוני אנשים ברחבי העולם. אם אתה תושב ארצות הברית, אנא שמור את הקבלה הזאת עבור רישומי המס שלך. הקרן של טכנולוגית Signal היא ארגון ללא מטרות רווח פטור ממס בארצות הברית תחת קטע 501c3 של קוד ההכנסה הפנימית. מספר זהות המס שלנו הוא 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "תודה לך על תמיכה ב־Notelet. התרומה שלך עוזרת לתדלק את המשימה של פיתוח טכנולוגית פרטיות בקוד פתוח שמגינה על חופשי ביטוי ומאפשרת תקשורת עולמית מאובטחת עבור מיליוני אנשים ברחבי העולם. אם אתה תושב ארצות הברית, אנא שמור את הקבלה הזאת עבור רישומי המס שלך. הקרן של טכנולוגית Notelet היא ארגון ללא מטרות רווח פטור ממס בארצות הברית תחת קטע 501c3 של קוד ההכנסה הפנימית. מספר זהות המס שלנו הוא 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "תרומה בשביל חבר/ה";
@@ -3389,7 +3389,7 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "היי,\n\nלאחרונה עברתי להשתמש ב–Notelet כדי לשמור על הצ׳אטים ב–iPhone שלי פרטיים. זה יהיה מעולה אם גם לך תהיה את האפליקציה, כדי שנוכל לדעת בוודאות שרק לנו יש גישה להודעות ולשיחות הקוליות שלנו.\n\nSignal זמינה עבור iPhone, Android, ושולחן העבודה. אפשר להוריד אותה כאן: %1$@\n\nSignal עובדת כמו אפליקציית ההודעות הקיימת שלך. אפשר לשלוח תמונות וסרטונים, לבצע שיחות ולהתחיל צ׳אטים קבוצתיים. החלק הכי טוב הוא שאף אחד לא יכול לראות שום דבר מזה, אפילו לא האנשים שיוצרים את Signal!\n\nאפשר לקרוא עוד על Signal כאן: %2$@";
+"EMAIL_INVITE_BODY" = "היי,\n\nלאחרונה עברתי להשתמש ב–Notelet כדי לשמור על הצ׳אטים ב–iPhone שלי פרטיים. זה יהיה מעולה אם גם לך תהיה את האפליקציה, כדי שנוכל לדעת בוודאות שרק לנו יש גישה להודעות ולשיחות הקוליות שלנו.\n\nNotelet זמינה עבור iPhone, Android, ושולחן העבודה. אפשר להוריד אותה כאן: %1$@\n\nNotelet עובדת כמו אפליקציית ההודעות הקיימת שלך. אפשר לשלוח תמונות וסרטונים, לבצע שיחות ולהתחיל צ׳אטים קבוצתיים. החלק הכי טוב הוא שאף אחד לא יכול לראות שום דבר מזה, אפילו לא האנשים שיוצרים את Notelet!\n\nאפשר לקרוא עוד על Notelet כאן: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "בוא נחליף אל Notelet";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "קישרת מכשיר חדש";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "כדי לקשר שולחן עבודה או iPad לחשבון Notelet זה, יש לעבור אל ״מכשירים מקושרים״ וללחוץ על \"קישור מכשיר חדש\" ולסרוק שוב את קוד ה–QR. חשוב לוודא שסורקים רק את קודי ה–QR שמגיעים ישירות מ–Signal.";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "כדי לקשר שולחן עבודה או iPad לחשבון Notelet זה, יש לעבור אל ״מכשירים מקושרים״ וללחוץ על \"קישור מכשיר חדש\" ולסרוק שוב את קוד ה–QR. חשוב לוודא שסורקים רק את קודי ה–QR שמגיעים ישירות מ–Notelet.";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "נראה שאת/ה מנסה לקשר מכשיר Notelet. יש ללחוץ על המשך ואז ללחוץ על ״קישור מכשיר חדש״ ולסרוק שנית את קוד ה–QR.";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "סריקת קוד QR";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "כדי להעביר חשבון זה למכשיר חדש, יש ללחוץ על ״המשך״ ולסרוק את קוד ה–QR באמצעות מצלמת Notelet. חשוב לוודא שסורקים רק את קודי ה–QR שמגיעים ישירות מ–Signal.";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "כדי להעביר חשבון זה למכשיר חדש, יש ללחוץ על ״המשך״ ולסרוק את קוד ה–QR באמצעות מצלמת Notelet. חשוב לוודא שסורקים רק את קודי ה–QR שמגיעים ישירות מ–Notelet.";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "תשובה אל %1$@. %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "צריך עזרה?";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "ה–PIN שלך הוא קוד בעל 4 תווים או יותר שיצרת ויכול להיות מספרי או אלפא–נומרי. אם שכחת את ה–PIN שלך, יהיה עליך להמתין 7 ימים כדי להירשם מחדש לחשבון שלך. אם הפעלת גיבויי Signal מאובטחים, יש לך אפשרות להמשיך עם מפתח השחזור שלך.";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "ה–PIN שלך הוא קוד בעל 4 תווים או יותר שיצרת ויכול להיות מספרי או אלפא–נומרי. אם שכחת את ה–PIN שלך, יהיה עליך להמתין 7 ימים כדי להירשם מחדש לחשבון שלך. אם הפעלת גיבויי Notelet מאובטחים, יש לך אפשרות להמשיך עם מפתח השחזור שלך.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "ה–PIN שלך הוא קוד בעל 4 תווים או יותר שיצרת ויכול להיות מספרי או אלפאנומרי. אם שכחת את ה–PIN שלך, אפשר להירשם ולהשתמש בחשבון שלך אבל יאבדו לך הגדרות מסוימות כמו מידע הפרופיל שלך. אם הפעלת גיבויי Signal מאובטחים, יש לך אפשרות להמשיך עם מפתח השחזור שלך.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "ה–PIN שלך הוא קוד בעל 4 תווים או יותר שיצרת ויכול להיות מספרי או אלפאנומרי. אם שכחת את ה–PIN שלך, אפשר להירשם ולהשתמש בחשבון שלך אבל יאבדו לך הגדרות מסוימות כמו מידע הפרופיל שלך. אם הפעלת גיבויי Notelet מאובטחים, יש לך אפשרות להמשיך עם מפתח השחזור שלך.";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "ה–PIN שלך הוא קוד בעל 4 תווים או יותר שיצרת ויכול להיות מספרי או אלפא–נומרי. אם שכחת את ה–PIN שלך, אפשר ליצור אחד חדש. ניתן להירשם ולהשתמש בחשבון שלך אבל אז יאבדו כמה הגדרות שמורות כמו נתוני הפרופיל שלך. אם הפעלת גיבויי Signal מאובטחים, יש לך אפשרות להמשיך עם מפתח השחזור שלך.";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "ה–PIN שלך הוא קוד בעל 4 תווים או יותר שיצרת ויכול להיות מספרי או אלפא–נומרי. אם שכחת את ה–PIN שלך, אפשר ליצור אחד חדש. ניתן להירשם ולהשתמש בחשבון שלך אבל אז יאבדו כמה הגדרות שמורות כמו נתוני הפרופיל שלך. אם הפעלת גיבויי Notelet מאובטחים, יש לך אפשרות להמשיך עם מפתח השחזור שלך.";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "PIN שגוי";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "לא ניתן היה לסיים את ההעברה";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "יתכן שהזנת את מפתח השחזור שלך באופן שגוי, או שלא השלמת לפחות גיבוי אחד במכשיר הישן שלך. \n\nחשוב לוודא שההרשמה מתבצעת עם אותו מספר טלפון ואותו מפתח שחזור ששמרת בעת הפעלת גיבויי Signal מאובטחים, וכן שהושלם גיבוי במכשיר הישן שלך.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "יתכן שהזנת את מפתח השחזור שלך באופן שגוי, או שלא השלמת לפחות גיבוי אחד במכשיר הישן שלך. \n\nחשוב לוודא שההרשמה מתבצעת עם אותו מספר טלפון ואותו מפתח שחזור ששמרת בעת הפעלת גיבויי Notelet מאובטחים, וכן שהושלם גיבוי במכשיר הישן שלך.";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "נגמרו לך ניסיונות מפתח השחזור. למען ביטחונך, מספר הניסיונות שאפשר לבצע מוגבל. יש להמתין שעה ולנסות שוב.";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "בטל הפעלת תשלומים";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "מומלץ להעביר את הכספים שלך לכתובת ארנק אחרת לפני ביטול ההפעלה של תשלומים. במקרה של בחירה לא להעביר את הכספים עכשיו, הם יישארו בארנק שמקושר אל Signal בעת הפעלה מחדש של תשלומים.";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "מומלץ להעביר את הכספים שלך לכתובת ארנק אחרת לפני ביטול ההפעלה של תשלומים. במקרה של בחירה לא להעביר את הכספים עכשיו, הם יישארו בארנק שמקושר אל Notelet בעת הפעלה מחדש של תשלומים.";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "היתרה שלך תישאר בארנק שמקושר אל Notelet במקרה של בחירה להפעיל מחדש את תשלומים.";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "כדי לשנות את ההגדרה הזו, יש להגדיר את \"מי יכול לראות את המספר שלי\" כ\"אף אחד\".";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "להגדיר את ״מי יכול למצוא אותי לפי המספר שלי״ כ״אף אחד״ יקשה על אנשים למצוא אותך ב–Signal.";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "להגדיר את ״מי יכול למצוא אותי לפי המספר שלי״ כ״אף אחד״ יקשה על אנשים למצוא אותך ב–Notelet.";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "להמשיך?";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "כבה תזכורות";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "וודא ששיננת או שאחסנת בבטחה את ה־PIN שלך הואיל והוא בלתי ניתן להשבה. אם תשכח את ה־PIN שלך, ייתכן שתאבד נתונים כשתרשום שוב את חשבון Signal שלך.";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "וודא ששיננת או שאחסנת בבטחה את ה־PIN שלך הואיל והוא בלתי ניתן להשבה. אם תשכח את ה־PIN שלך, ייתכן שתאבד נתונים כשתרשום שוב את חשבון Notelet שלך.";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "אשר את ה־PIN של Notelet שלך";
@@ -8969,7 +8969,7 @@
 "SETTINGS_PIN_REMINDER_SWITCH_LABEL" = "תזכורות PIN";
 
 /* Footer for the 'PINs' section of the privacy settings. */
-"SETTINGS_PINS_FOOTER" = "קודי PIN שומרים על מידע שמאוחסן ב־Notelet מוצפן כך שרק אתה תוכל להשיג גישה אליו. קוד ה־PIN שלך בלתי ניתן להשבה. הפרופיל, ההגדרות ואנשי הקשר שלך ישוחזרו כשתתקין מחדש את Signal.";
+"SETTINGS_PINS_FOOTER" = "קודי PIN שומרים על מידע שמאוחסן ב־Notelet מוצפן כך שרק אתה תוכל להשיג גישה אליו. קוד ה־PIN שלך בלתי ניתן להשבה. הפרופיל, ההגדרות ואנשי הקשר שלך ישוחזרו כשתתקין מחדש את Notelet.";
 
 /* Label for the 'pins' item of the privacy settings when the user does have a pin. */
 "SETTINGS_PINS_ITEM" = "שנה את ה־PIN שלך";

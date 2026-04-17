@@ -425,7 +425,7 @@ private class MyStorySettingsDataSource: NSObject {
 
     private enum Constants {
         // Link doesn't matter, we will override tap behavior.
-        static let learnMoreUrl = "https://support.signal.org/"
+        static let learnMoreUrl = "https://support.notelet.org/"
     }
 }
 

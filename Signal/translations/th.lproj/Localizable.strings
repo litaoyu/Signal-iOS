@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "กุญแจกู้คืน";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "แพ็กเกจสำรองข้อมูลของคุณหมดอายุเนื่องจากไม่สามารถต่ออายุการสมัครด้วยวิธีการชำระเงินของคุณได้\n\nคุณสามารถสมัครแพ็กเกจอีกครั้งหากต้องการสำรองไฟล์สื่อทั้งหมด อย่างไรก็ดี คุณยังคงสามารถใช้งานแพ็กเกจสำรองข้อมูลของ Signal แบบฟรีได้อยู่";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "แพ็กเกจสำรองข้อมูลของคุณหมดอายุเนื่องจากไม่สามารถต่ออายุการสมัครด้วยวิธีการชำระเงินของคุณได้\n\nคุณสามารถสมัครแพ็กเกจอีกครั้งหากต้องการสำรองไฟล์สื่อทั้งหมด อย่างไรก็ดี คุณยังคงสามารถใช้งานแพ็กเกจสำรองข้อมูลของ Notelet แบบฟรีได้อยู่";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "แพ็กเกจสำรองข้อมูลของคุณหมดอายุเนื่องจากคุณไม่ได้ใช้งาน TestFlight แล้ว\n\nคุณสามารถสมัครแพ็กเกจอีกครั้งหากต้องการสำรองไฟล์สื่อทั้งหมด อย่างไรก็ดี คุณยังคงสามารถใช้งานแพ็กเกจสำรองข้อมูลของ Signal แบบฟรีได้อยู่";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "แพ็กเกจสำรองข้อมูลของคุณหมดอายุเนื่องจากคุณไม่ได้ใช้งาน TestFlight แล้ว\n\nคุณสามารถสมัครแพ็กเกจอีกครั้งหากต้องการสำรองไฟล์สื่อทั้งหมด อย่างไรก็ดี คุณยังคงสามารถใช้งานแพ็กเกจสำรองข้อมูลของ Notelet แบบฟรีได้อยู่";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "จัดการการสำรองข้อมูล";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "การสำรองข้อมูลถูกปิดใช้งานและข้อมูลของคุณถูกลบออกจากบริการจัดเก็บที่ปลอดภัยของ Notelet แล้ว";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "ปิดใช้งานการสำรองข้อมูลแล้ว และกำลังดาวน์โหลดไฟล์สื่อที่ยังไม่ได้ถูกบันทึกไว้ในเครื่อง โดยข้อมูลของคุณจะถูกลบออกจากบริการจัดเก็บที่ปลอดภัยของ Signal เมื่อการดาวน์โหลดเสร็จสิ้น";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "ปิดใช้งานการสำรองข้อมูลแล้ว และกำลังดาวน์โหลดไฟล์สื่อที่ยังไม่ได้ถูกบันทึกไว้ในเครื่อง โดยข้อมูลของคุณจะถูกลบออกจากบริการจัดเก็บที่ปลอดภัยของ Notelet เมื่อการดาวน์โหลดเสร็จสิ้น";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "เกิดข้อผิดพลาดบางประการ โปรดติดต่อฝ่ายสนับสนุน";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "ดด/ปป";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "เมื่อคุณบริจาคเงิน Notelet ไม่ได้รวบรวมหรือจัดเก็บข้อมูลส่วนบุคคลใดๆ ของคุณ\n\nเราใช้ Stripe เป็นผู้ให้บริการการชำระเงินในการรับเงินบริจาคของคุณ โดยเราจะไม่เข้าถึง จัดเก็บ หรือบันทึกข้อมูลใดๆ ที่คุณกรอกระหว่างทำธุรกรรม\n\nSignal จะไม่เชื่อมโยงการบริจาคของคุณเข้ากับบัญชี Signal ของคุณ (และนี่เป็นสิ่งที่เราไม่สามารถทำได้อีกด้วย)\n\nขอบคุณสำหรับการสนับสนุนของคุณ!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "เมื่อคุณบริจาคเงิน Notelet ไม่ได้รวบรวมหรือจัดเก็บข้อมูลส่วนบุคคลใดๆ ของคุณ\n\nเราใช้ Stripe เป็นผู้ให้บริการการชำระเงินในการรับเงินบริจาคของคุณ โดยเราจะไม่เข้าถึง จัดเก็บ หรือบันทึกข้อมูลใดๆ ที่คุณกรอกระหว่างทำธุรกรรม\n\nNotelet จะไม่เชื่อมโยงการบริจาคของคุณเข้ากับบัญชี Notelet ของคุณ (และนี่เป็นสิ่งที่เราไม่สามารถทำได้อีกด้วย)\n\nขอบคุณสำหรับการสนับสนุนของคุณ!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "ข้อมูลของคุณเป็นส่วนตัว";
@@ -1853,7 +1853,7 @@
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_BUTTON" = "ดำเนินการต่อ";
 
 /* Message shown in an action sheet when the user tries to resume backup using cellular data. */
-"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "การสำรองข้อมูลไฟล์สื่อขณะใช้อินเทอร์เน็ตมือถืออาจทำให้คุณเสียค่าบริการอินเทอร์เน็ต การอัปโหลดข้อมูลสำรองของคุณอาจใช้เวลาค่อนข้างนาน โปรดเปิด Signal ไว้เพื่อป้องกันไม่ให้การอัปโหลดหยุดชะงัก";
+"CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_MESSAGE" = "การสำรองข้อมูลไฟล์สื่อขณะใช้อินเทอร์เน็ตมือถืออาจทำให้คุณเสียค่าบริการอินเทอร์เน็ต การอัปโหลดข้อมูลสำรองของคุณอาจใช้เวลาค่อนข้างนาน โปรดเปิด Notelet ไว้เพื่อป้องกันไม่ให้การอัปโหลดหยุดชะงัก";
 
 /* Title for the action sheet shown when the user tries to resume backup using cellular data. */
 "CHAT_LIST_BACKUP_PROGRESS_VIEW_RESUME_CELLULAR_DATA_TITLE" = "กู้คืนต่อขณะใช้อินเทอร์เน็ตมือถือใช่หรือไม่";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "แชร์ใบเสร็จ";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "ขอบคุณสำหรับการสนับสนุน Notelet การสนับสนุนของคุณจะช่วยเป็นพลังให้กับภารกิจในการพัฒนาเทคโนโลยีความเป็นส่วนตัวแบบโอเพนซอร์สที่ปกป้องการแสดงออกอย่างเสรีและเปิดใช้งานการสื่อสารทั่วโลกที่ปลอดภัยสำหรับผู้คนหลายล้านคนทั่วโลก ถ้าคุณเป็นผู้อาศัยในสหรัฐอเมริกา ให้เก็บใบเสร็จไว้เพื่อบันทึกภาษี Signal Technology Foundation เป็นองค์กรที่ได้รับการยกเว้นภาษีในสหรัฐอเมริกาภายใต้มาตรา 501c3 ของประมวลรัษฎากรภายใน หมายเลขประจำตัวผู้เสียภาษีของรัฐบาลกลางของเราคือ 82–4506840";
+"DONATION_RECEIPT_FOOTER" = "ขอบคุณสำหรับการสนับสนุน Notelet การสนับสนุนของคุณจะช่วยเป็นพลังให้กับภารกิจในการพัฒนาเทคโนโลยีความเป็นส่วนตัวแบบโอเพนซอร์สที่ปกป้องการแสดงออกอย่างเสรีและเปิดใช้งานการสื่อสารทั่วโลกที่ปลอดภัยสำหรับผู้คนหลายล้านคนทั่วโลก ถ้าคุณเป็นผู้อาศัยในสหรัฐอเมริกา ให้เก็บใบเสร็จไว้เพื่อบันทึกภาษี Notelet Technology Foundation เป็นองค์กรที่ได้รับการยกเว้นภาษีในสหรัฐอเมริกาภายใต้มาตรา 501c3 ของประมวลรัษฎากรภายใน หมายเลขประจำตัวผู้เสียภาษีของรัฐบาลกลางของเราคือ 82–4506840";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "การบริจาคในนามของเพื่อน";
@@ -3389,7 +3389,7 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "สวัสดี!\n\nหลังจากที่ฉันได้เริ่มใช้ Notelet เพื่อรักษาความเป็นส่วนตัวของแชทบน iPhone ฉันอยากแนะนำให้คุณติดตั้งแอปนี้เช่นกัน เพื่อให้มั่นใจได้ว่ามีแค่เราสองคนเท่านั้นที่สามารถอ่านข้อความหรือได้ยินเสียงพูดคุยของเรา\n\nSignal ใช้งานได้ทั้งบน iPhone, Android และเดสก์ท็อป ดาวน์โหลดเลยที่นี่: %1$@\n\nSignal ทำงานเหมือนแอปส่งข้อความที่คุณใช้อยู่ เราสามารถส่งรูปและวิดีโอ โทรออก และเริ่มแชทกลุ่ม แต่ที่มากไปกว่านั้นก็คือจะไม่มีใครเห็นข้อมูลเหล่านี้ แม้แต่ทีมงานที่สร้าง Signal ก็ตาม!\n\nอ่านเพิ่มเติมเกี่ยวกับ Signal ได้ที่นี่: %2$@";
+"EMAIL_INVITE_BODY" = "สวัสดี!\n\nหลังจากที่ฉันได้เริ่มใช้ Notelet เพื่อรักษาความเป็นส่วนตัวของแชทบน iPhone ฉันอยากแนะนำให้คุณติดตั้งแอปนี้เช่นกัน เพื่อให้มั่นใจได้ว่ามีแค่เราสองคนเท่านั้นที่สามารถอ่านข้อความหรือได้ยินเสียงพูดคุยของเรา\n\nNotelet ใช้งานได้ทั้งบน iPhone, Android และเดสก์ท็อป ดาวน์โหลดเลยที่นี่: %1$@\n\nNotelet ทำงานเหมือนแอปส่งข้อความที่คุณใช้อยู่ เราสามารถส่งรูปและวิดีโอ โทรออก และเริ่มแชทกลุ่ม แต่ที่มากไปกว่านั้นก็คือจะไม่มีใครเห็นข้อมูลเหล่านี้ แม้แต่ทีมงานที่สร้าง Notelet ก็ตาม!\n\nอ่านเพิ่มเติมเกี่ยวกับ Notelet ได้ที่นี่: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "เปลี่ยนมาใช้ Notelet กันเถอะ";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "เชื่อมโยงอุปกรณ์เครื่องใหม่แล้ว";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "เชื่อมโยงเดสก์ท็อปหรือ iPad กับบัญชี Notelet นี้ โดยไปที่อุปกรณ์ที่คุณต้องการเชื่อมโยง จากนั้นให้แตะ \"เชื่อมโยงอุปกรณ์เครื่องใหม่\" แล้วสแกนคิวอาร์โค้ดอีกครั้ง โปรดตรวจสอบให้แน่ใจว่าคุณสแกนคิวอาร์โค้ดที่มาจาก Signal โดยตรงเท่านั้น";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "เชื่อมโยงเดสก์ท็อปหรือ iPad กับบัญชี Notelet นี้ โดยไปที่อุปกรณ์ที่คุณต้องการเชื่อมโยง จากนั้นให้แตะ \"เชื่อมโยงอุปกรณ์เครื่องใหม่\" แล้วสแกนคิวอาร์โค้ดอีกครั้ง โปรดตรวจสอบให้แน่ใจว่าคุณสแกนคิวอาร์โค้ดที่มาจาก Notelet โดยตรงเท่านั้น";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "ดูเหมือนว่าคุณพยายามจะเชื่อมโยงอุปกรณ์ Notelet แตะดำเนินการต่อ จากนั้นให้แตะ \"เชื่อมโยงอุปกรณ์เครื่องใหม่\" แล้วสแกนคิวอาร์โค้ดอีกครั้ง";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "สแกนคิวอาร์โค้ด";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "ถ่ายโอนบัญชีนี้ไปยังอุปกรณ์เครื่องใหม่ โดยแตะ “ดำเนินการต่อ” แล้วใช้กล้องใน Notelet สแกนคิวอาร์โค้ด โปรดตรวจสอบให้แน่ใจว่าคุณสแกนคิวอาร์โค้ดที่มาจาก Signal โดยตรงเท่านั้น";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "ถ่ายโอนบัญชีนี้ไปยังอุปกรณ์เครื่องใหม่ โดยแตะ “ดำเนินการต่อ” แล้วใช้กล้องใน Notelet สแกนคิวอาร์โค้ด โปรดตรวจสอบให้แน่ใจว่าคุณสแกนคิวอาร์โค้ดที่มาจาก Notelet โดยตรงเท่านั้น";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "ตอบกลับหา %1$@ %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "ต้องการความช่วยเหลือหรือไม่?";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN ของคุณคือรหัส 4+ หลักที่คุณสร้างไว้โดยอาจจะเป็นตัวเลขหรือตัวอักษรผสมกับตัวเลข หากจำ PIN ของตัวเองไม่ได้ คุณจะต้องรออีก 7 วันเพื่อลงทะเบียนบัญชีของคุณใหม่ คุณสามารถดำเนินการต่อโดยใช้กุญแจกู้คืนในกรณีที่เปิดใช้งานการสำรองข้อมูลที่ปลอดภัยของ Signal เอาไว้";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "PIN ของคุณคือรหัส 4+ หลักที่คุณสร้างไว้โดยอาจจะเป็นตัวเลขหรือตัวอักษรผสมกับตัวเลข หากจำ PIN ของตัวเองไม่ได้ คุณจะต้องรออีก 7 วันเพื่อลงทะเบียนบัญชีของคุณใหม่ คุณสามารถดำเนินการต่อโดยใช้กุญแจกู้คืนในกรณีที่เปิดใช้งานการสำรองข้อมูลที่ปลอดภัยของ Notelet เอาไว้";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN ของคุณคือรหัส 4+ หลักที่คุณสร้างไว้โดยอาจจะเป็นตัวเลขหรือตัวอักษรผสมกับตัวเลข หากจำ PIN ของตัวเองไม่ได้ คุณจะยังสามารถลงทะเบียนและใช้บัญชีได้ แต่จะสูญเสียการตั้งค่าเดิมบางรายการ เช่น ข้อมูลโปรไฟล์ คุณสามารถดำเนินการต่อโดยใช้กุญแจกู้คืนในกรณีที่เปิดใช้งานการสำรองข้อมูลที่ปลอดภัยของ Signal เอาไว้";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "PIN ของคุณคือรหัส 4+ หลักที่คุณสร้างไว้โดยอาจจะเป็นตัวเลขหรือตัวอักษรผสมกับตัวเลข หากจำ PIN ของตัวเองไม่ได้ คุณจะยังสามารถลงทะเบียนและใช้บัญชีได้ แต่จะสูญเสียการตั้งค่าเดิมบางรายการ เช่น ข้อมูลโปรไฟล์ คุณสามารถดำเนินการต่อโดยใช้กุญแจกู้คืนในกรณีที่เปิดใช้งานการสำรองข้อมูลที่ปลอดภัยของ Notelet เอาไว้";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN ของคุณคือรหัส 4+ หลักที่คุณสร้างไว้โดยอาจจะเป็นตัวเลขหรือตัวอักษรผสมกับตัวเลข หากจำ PIN ของตัวเองไม่ได้ คุณสามารถสร้างขึ้นมาใหม่ได้ คุณจะลงทะเบียนและใช้บัญชีได้ แต่จะสูญเสียการตั้งค่าเดิมบางรายการ เช่น ข้อมูลโปรไฟล์ คุณสามารถดำเนินการต่อโดยใช้กุญแจกู้คืนในกรณีที่เปิดใช้งานการสำรองข้อมูลที่ปลอดภัยของ Signal เอาไว้";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "PIN ของคุณคือรหัส 4+ หลักที่คุณสร้างไว้โดยอาจจะเป็นตัวเลขหรือตัวอักษรผสมกับตัวเลข หากจำ PIN ของตัวเองไม่ได้ คุณสามารถสร้างขึ้นมาใหม่ได้ คุณจะลงทะเบียนและใช้บัญชีได้ แต่จะสูญเสียการตั้งค่าเดิมบางรายการ เช่น ข้อมูลโปรไฟล์ คุณสามารถดำเนินการต่อโดยใช้กุญแจกู้คืนในกรณีที่เปิดใช้งานการสำรองข้อมูลที่ปลอดภัยของ Notelet เอาไว้";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "PIN ไม่ถูกต้อง";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "ไม่สามารถดำเนินการถ่ายโอนให้เสร็จสิ้นได้";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "คุณอาจป้อนกุญแจกู้คืนไม่ถูกต้องหรืออุปกรณ์เครื่องเก่าของคุณอาจดำเนินการสำรองข้อมูลไม่เสร็จสมบูรณ์ \n\nโปรดตรวจสอบให้แน่ใจว่าคุณกำลังลงทะเบียนโดยใช้หมายเลขโทรศัพท์และกุญแจกู้คืนเดียวกันกับที่บันทึกไว้ในตอนที่เปิดใช้งานการสำรองข้อมูลที่ปลอดภัยของ Signal และตรวจสอบว่าอุปกรณ์เครื่องเก่าของคุณดำเนินการสำรองข้อมูลเสร็จสมบูรณ์";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "คุณอาจป้อนกุญแจกู้คืนไม่ถูกต้องหรืออุปกรณ์เครื่องเก่าของคุณอาจดำเนินการสำรองข้อมูลไม่เสร็จสมบูรณ์ \n\nโปรดตรวจสอบให้แน่ใจว่าคุณกำลังลงทะเบียนโดยใช้หมายเลขโทรศัพท์และกุญแจกู้คืนเดียวกันกับที่บันทึกไว้ในตอนที่เปิดใช้งานการสำรองข้อมูลที่ปลอดภัยของ Notelet และตรวจสอบว่าอุปกรณ์เครื่องเก่าของคุณดำเนินการสำรองข้อมูลเสร็จสมบูรณ์";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "คุณป้อนกุญแจกู้คืนเกินจำนวนครั้งที่กำหนดแล้ว การจำกัดจำนวนครั้งเป็นไปเพื่อความปลอดภัยของคุณ โปรดลองอีกครั้งในอีก 1 ชั่วโมง";
@@ -8939,7 +8939,7 @@
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_DISABLED_TOAST" = "หากต้องการเปลี่ยนการตั้งค่านี้ ให้ไปที่หัวข้อ “คนที่สามารถเห็นหมายเลขโทรศัพท์ของฉัน” แล้วเลือก “ไม่อนุญาตให้ใครเห็น”";
 
 /* The description for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
-"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "การตั้งค่า “คนที่สามารถใช้หมายเลขโทรศัพท์ค้นหาฉันได้” เป็น “ไม่อนุญาตให้ใครค้นหา” จะทำให้ผู้ใช้คนอื่นค้นหาคุณได้ยากขึ้นบน Signal";
+"SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_DESCRIPTION" = "การตั้งค่า “คนที่สามารถใช้หมายเลขโทรศัพท์ค้นหาฉันได้” เป็น “ไม่อนุญาตให้ใครค้นหา” จะทำให้ผู้ใช้คนอื่นค้นหาคุณได้ยากขึ้นบน Notelet";
 
 /* The title for a sheet asking for confirmation that the user wants to set their phone number discoverability to 'nobody'. */
 "SETTINGS_PHONE_NUMBER_DISCOVERABILITY_NOBODY_CONFIRMATION_TITLE" = "ต้องการดำเนินการต่อหรือไม่";
@@ -8960,7 +8960,7 @@
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_ACTION" = "ปิดการเตือนความจำ";
 
 /* The explanation for the dialog asking user to confirm their PIN to disable reminders */
-"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "ทำให้แน่ใจว่าคุณสามารถจดจำหรือเก็บรักษารหัส PIN ของคุณอย่างปลอดภัยเพราะมันไม่สามารถจะกู้คืนมาได้ ถ้าคุณลืมรหัส PIN ของคุณ ข้อมูลของคุณอาจจะสูญหายเมื่อคุณลงทะเบียนบัญชี Signal ของคุณอีกครั้ง";
+"SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_EXPLANATION" = "ทำให้แน่ใจว่าคุณสามารถจดจำหรือเก็บรักษารหัส PIN ของคุณอย่างปลอดภัยเพราะมันไม่สามารถจะกู้คืนมาได้ ถ้าคุณลืมรหัส PIN ของคุณ ข้อมูลของคุณอาจจะสูญหายเมื่อคุณลงทะเบียนบัญชี Notelet ของคุณอีกครั้ง";
 
 /* The title for the dialog asking user to confirm their PIN to disable reminders */
 "SETTINGS_PIN_REMINDER_DISABLE_CONFIRMATION_TITLE" = "ยืนยันรหัส PIN สำหรับ Notelet ของคุณ";

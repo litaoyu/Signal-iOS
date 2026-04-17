@@ -635,10 +635,10 @@
 "BACKUP_ONBOARDING_KEY_INTRO_TITLE" = "'रिकवरी की'";
 
 /* Body for a sheet shown when your Backup plan is downgraded. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "आपके बैकअप सब्सक्रिप्शन की समयसीमा समाप्त हो गई है। ऐसा इसलिए, क्योंकि आपने जो पेमेंट मेथड सेट किया है उससे यह रिन्यू नहीं हो सका।\n\nमीडिया का बैकअप जारी रखने के लिए फिर से सब्सक्रिप्शन लें। आपके पास Signal बैकअप के मुफ़्त प्लान का ऐक्सेस बना रहेगा।";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY" = "आपके बैकअप सब्सक्रिप्शन की समयसीमा समाप्त हो गई है। ऐसा इसलिए, क्योंकि आपने जो पेमेंट मेथड सेट किया है उससे यह रिन्यू नहीं हो सका।\n\nमीडिया का बैकअप जारी रखने के लिए फिर से सब्सक्रिप्शन लें। आपके पास Notelet बैकअप के मुफ़्त प्लान का ऐक्सेस बना रहेगा।";
 
 /* Body for a sheet shown when your Backup plan is downgraded because you stopped using TestFlight. */
-"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "TestFlight का इस्तेमाल नहीं करने की वजह से, आपके बैकअप सब्सक्रिप्शन की समयसीमा समाप्त हो गई है।\n\nमीडिया का बैकअप जारी रखने के लिए फिर से सब्सक्रिप्शन लें। आपके पास Signal बैकअप के मुफ़्त प्लान का ऐक्सेस बना रहेगा।";
+"BACKUP_PLAN_DOWNGRADED_SHEET_BODY_TESTFLIGHT" = "TestFlight का इस्तेमाल नहीं करने की वजह से, आपके बैकअप सब्सक्रिप्शन की समयसीमा समाप्त हो गई है।\n\nमीडिया का बैकअप जारी रखने के लिए फिर से सब्सक्रिप्शन लें। आपके पास Notelet बैकअप के मुफ़्त प्लान का ऐक्सेस बना रहेगा।";
 
 /* Primary button for a sheet shown when your Backup plan is downgraded. */
 "BACKUP_PLAN_DOWNGRADED_SHEET_PRIMARY_BUTTON" = "बैकअप मैनेज करें";
@@ -797,7 +797,7 @@
 "BACKUP_SETTINGS_BACKUPS_DISABLED_SECTION_FOOTER" = "बैकअप बंद कर दिया गया है। साथ ही, आपका डेटा Notelet की सिक्योर स्टोरेज सर्विस से डिलीट कर दिया गया है।";
 
 /* Description for a progress view tracking media being downloaded in service of disabling Backups. */
-"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "बैकअप बंद कर दिए गए हैं। डिवाइस पर जो भी मीडिया उपलब्ध नहीं है, उसे अभी डाउनलोड किया जा रहा है। डाउनलोड हो जाने के बाद, Signal की सिक्योर स्टोरेज सर्विस से आपका डेटा डिलीट कर दिया जाएगा।";
+"BACKUP_SETTINGS_BACKUPS_DISABLING_DOWNLOADING_MEDIA_PROGRESS_VIEW_DESCRIPTION" = "बैकअप बंद कर दिए गए हैं। डिवाइस पर जो भी मीडिया उपलब्ध नहीं है, उसे अभी डाउनलोड किया जा रहा है। डाउनलोड हो जाने के बाद, Notelet की सिक्योर स्टोरेज सर्विस से आपका डेटा डिलीट कर दिया जाएगा।";
 
 /* Message for a view indicating we failed to delete the user's Backup due to an unexpected error. */
 "BACKUP_SETTINGS_BACKUPS_DISABLING_GENERIC_ERROR_MESSAGE" = "कोई गड़बड़ी हुई। कृपया सपोर्ट टीम से संपर्क करें।";
@@ -1742,7 +1742,7 @@
 "CARD_DONATION_EXPIRATION_DATE_PLACEHOLDER" = "माह/वर्ष";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the body text of that sheet. */
-"CARD_DONATION_READ_MORE_SHEET_BODY" = "डोनेट करने पर, Notelet आपकी कोई भी निजी जानकारी न तो इकट्ठा करता है और न ही उसे स्टोर करता है।\n\nहम आपसे डोनेशन पाने के लिए Stripe को अपने पेमेंट प्रोसेसर के रूप में इस्तेमाल करते हैं। आपकी ओर से उसे दी गई किसी भी जानकारी को न तो ऐक्सेस करते हैं, न स्टोर और न ही उसे सेव करते हैं।\n\nSignal आपके डोनेशन को आपके Signal अकाउंट से न तो कनेक्ट करता है, न ही वह ऐसा कर सकता है।आपके सहयोग के लिए धन्यवाद!";
+"CARD_DONATION_READ_MORE_SHEET_BODY" = "डोनेट करने पर, Notelet आपकी कोई भी निजी जानकारी न तो इकट्ठा करता है और न ही उसे स्टोर करता है।\n\nहम आपसे डोनेशन पाने के लिए Stripe को अपने पेमेंट प्रोसेसर के रूप में इस्तेमाल करते हैं। आपकी ओर से उसे दी गई किसी भी जानकारी को न तो ऐक्सेस करते हैं, न स्टोर और न ही उसे सेव करते हैं।\n\nNotelet आपके डोनेशन को आपके Notelet अकाउंट से न तो कनेक्ट करता है, न ही वह ऐसा कर सकता है।आपके सहयोग के लिए धन्यवाद!";
 
 /* Users can choose to learn more about their credit/debit card donations, which will open a sheet with additional information. This is the title of that sheet. */
 "CARD_DONATION_READ_MORE_SHEET_TITLE" = "आपकी जानकारी गोपनीय है";
@@ -3206,7 +3206,7 @@
 "DONATION_RECEIPT_EXPORT_RECEIPT_BUTTON" = "रसीद शेयर करें";
 
 /* Footer text at the bottom of donation receipts */
-"DONATION_RECEIPT_FOOTER" = "Notelet को सहयोग देने के लिए धन्यवाद। आपका सहयोग हमें ओपन सोर्स प्राइवेसी वाली टेक्नोलॉजी विकसित करने के हमारे मिशन को आगे बढ़ाने में मदद करता है। यह टेक्नोलॉजी मुक्त अभिव्यक्ति की रक्षा करती है और दुनिया भर के लाखों-करोड़ों लोगों को सुरक्षित तरीके से आपस में जुड़ने और बातचीत करने की सुविधा देती है। अगर आप अमेरिका के निवासी हैं, तो कृपया इस रसीद को अपने टैक्स रिकॉर्ड के लिए संभालकर रखें। Signal Technology Foundation, अमेरिका में रजिस्टर एक गैर-लाभकारी संस्था है। इसे डोनेशन देने से इंटरनल रेवेन्यू कोड की धारा 501c3 के तहत टैक्स में छूट मिलती है। हमारी फ़ेडरल टैक्स ID है: 82-4506840.";
+"DONATION_RECEIPT_FOOTER" = "Notelet को सहयोग देने के लिए धन्यवाद। आपका सहयोग हमें ओपन सोर्स प्राइवेसी वाली टेक्नोलॉजी विकसित करने के हमारे मिशन को आगे बढ़ाने में मदद करता है। यह टेक्नोलॉजी मुक्त अभिव्यक्ति की रक्षा करती है और दुनिया भर के लाखों-करोड़ों लोगों को सुरक्षित तरीके से आपस में जुड़ने और बातचीत करने की सुविधा देती है। अगर आप अमेरिका के निवासी हैं, तो कृपया इस रसीद को अपने टैक्स रिकॉर्ड के लिए संभालकर रखें। Notelet Technology Foundation, अमेरिका में रजिस्टर एक गैर-लाभकारी संस्था है। इसे डोनेशन देने से इंटरनल रेवेन्यू कोड की धारा 501c3 के तहत टैक्स में छूट मिलती है। हमारी फ़ेडरल टैक्स ID है: 82-4506840.";
 
 /* Title for receipts for donations given on a friend's behalf */
 "DONATION_RECEIPT_FOR_DONATION_ON_BEHALF_OF_A_FRIEND" = "दोस्त के बदले डोनेशन";
@@ -3389,7 +3389,7 @@
 "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR" = "EDIT_MESSAGE_SEND_MESSAGE_UNKNOWN_ERROR";
 
 /* body of email sent to contacts when inviting to install Signal. Embeds {{link to install Signal}} and {{link to the Signal home page}} */
-"EMAIL_INVITE_BODY" = "नमस्ते,\n\nआजकल मैं अपने iPhone की चैट को सुरक्षित और गोपनीय रखने के लिए Notelet इस्तेमाल कर रहा/रही हूं। मेरे खयाल से आपको भी इसे इंस्टॉल करना चाहिए, ताकि हम खुलकर चैट कर सकें और हमें यह भरोसा रहे कि हमारे मैसेज और कॉल सिर्फ़ हम दोनों के बीच सीमित हैं।\n\nSignal फ़िलहाल iPhone, Android और डेस्कटॉप पर उपलब्ध है। यहां से इसे डाउनलोड करें: %1$@\n\nSignal आपके मौजूदा मैसेजिंग ऐप की तरह ही काम करता है। इसमें आपके पास फ़ोटो और वीडियो भेजने, कॉल करने, और ग्रुप चैट करने की सुविधा होती है। सबसे अच्छी बात यह है कि इसमें आपकी बातचीत को कोई तीसरा व्यक्ति नहीं देख या सुन सकता है, यहां तक कि Signal बनाने वाले लोग भी नहीं!\n\nSignal के बारे में ज़्यादा जानकारी यहां पढ़ें: %2$@";
+"EMAIL_INVITE_BODY" = "नमस्ते,\n\nआजकल मैं अपने iPhone की चैट को सुरक्षित और गोपनीय रखने के लिए Notelet इस्तेमाल कर रहा/रही हूं। मेरे खयाल से आपको भी इसे इंस्टॉल करना चाहिए, ताकि हम खुलकर चैट कर सकें और हमें यह भरोसा रहे कि हमारे मैसेज और कॉल सिर्फ़ हम दोनों के बीच सीमित हैं।\n\nNotelet फ़िलहाल iPhone, Android और डेस्कटॉप पर उपलब्ध है। यहां से इसे डाउनलोड करें: %1$@\n\nNotelet आपके मौजूदा मैसेजिंग ऐप की तरह ही काम करता है। इसमें आपके पास फ़ोटो और वीडियो भेजने, कॉल करने, और ग्रुप चैट करने की सुविधा होती है। सबसे अच्छी बात यह है कि इसमें आपकी बातचीत को कोई तीसरा व्यक्ति नहीं देख या सुन सकता है, यहां तक कि Notelet बनाने वाले लोग भी नहीं!\n\nNotelet के बारे में ज़्यादा जानकारी यहां पढ़ें: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
 "EMAIL_INVITE_SUBJECT" = "आइए Notelet पर स्विच करें";
@@ -5012,7 +5012,7 @@
 "LINKED_DEVICE_NOTIFICATION_TITLE" = "आपने नया डिवाइस लिंक किया";
 
 /* Message for an action sheet telling users how to link a device, when trying to open an external device-linking URL. */
-"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "इस Notelet अकाउंट से डेस्कटॉप या iPad को लिंक करने के लिए, लिंक्ड डिवाइस पर जाएँ और \"नया डिवाइस लिंक करें\" पर टैप करके QR कोड को फिर से स्कैन करें। पक्का करें कि आप वही QR कोड स्कैन करें जो सीधा Signal से आता है।";
+"LINKED_DEVICE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "इस Notelet अकाउंट से डेस्कटॉप या iPad को लिंक करने के लिए, लिंक्ड डिवाइस पर जाएँ और \"नया डिवाइस लिंक करें\" पर टैप करके QR कोड को फिर से स्कैन करें। पक्का करें कि आप वही QR कोड स्कैन करें जो सीधा Notelet से आता है।";
 
 /* Message for an action sheet telling users how to link a device, when trying to open a device-linking URL from the in-app camera. */
 "LINKED_DEVICE_URL_OPENED_ACTION_SHEET_IN_APP_CAMERA_MESSAGE" = "ऐसा लगता है कि आप Notelet डिवाइस को लिंक करने की कोशिश कर रहे हैं। 'जारी रखें' पर टैप करें और फिर \"नया डिवाइस लिंक करें\" पर टैप करें और QR कोड को फिर से स्कैन करें।";
@@ -6029,7 +6029,7 @@
 "ONBOARDING_MODE_SWITCH_BUTTON_REGISTERING" = "iPhone लिंक करें";
 
 /* explanation to the user they're switching from linking to registering flow */
-"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "'iPad रजिस्टर करें' पर टैप करने से आपके पास या तो नया Notelet अकाउंट बनाने या फिर अपने मौजूदा अकाउंट को इस iPad पर ले जाने का विकल्प मिलता है। ऐसा करने से, इस फ़ोन नंबर से लिंक बाकी सभी डिवाइस पर Signal बंद हो जाएगा, जिन पर फ़िलहाल यह चालू है।";
+"ONBOARDING_MODE_SWITCH_EXPLANATION_PROVISIONING" = "'iPad रजिस्टर करें' पर टैप करने से आपके पास या तो नया Notelet अकाउंट बनाने या फिर अपने मौजूदा अकाउंट को इस iPad पर ले जाने का विकल्प मिलता है। ऐसा करने से, इस फ़ोन नंबर से लिंक बाकी सभी डिवाइस पर Notelet बंद हो जाएगा, जिन पर फ़िलहाल यह चालू है।";
 
 /* explanation to the user they're switching from registering to linking flow */
 "ONBOARDING_MODE_SWITCH_EXPLANATION_REGISTERING" = "'iPhone लिंक करें' पर टैप करने से अपने फ़ोन को किसी मौजूदा अकाउंट से जोड़ा जा सकता है। हालांकि, आम तौर पर फ़ोन लिंक करने की सलाह नहीं दी जाती। ऐसा इसलिए, क्योंकि इससे कुछ सुविधाएं सीमित रूप से काम करने लगती है, जैसे कि कॉल करना।";
@@ -7253,7 +7253,7 @@
 "QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_ACTION_TITLE" = "QR कोड स्कैन करें";
 
 /* Message for an action sheet telling users how to use quick restore, when trying to open an external quick restore URL. */
-"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "इस अकाउंट को किसी नए डिवाइस पर ट्रांसफ़र करने के लिए, ‘जारी रखें’ पर टैप करें और Notelet कैमरे की मदद से QR कोड स्कैन करें। यह ध्यान रखें कि सिर्फ़ वे ही QR कोड स्कैन करें जो सीधे Signal से मिले हों।";
+"QUICK_RESTORE_URL_OPENED_ACTION_SHEET_EXTERNAL_URL_MESSAGE" = "इस अकाउंट को किसी नए डिवाइस पर ट्रांसफ़र करने के लिए, ‘जारी रखें’ पर टैप करें और Notelet कैमरे की मदद से QR कोड स्कैन करें। यह ध्यान रखें कि सिर्फ़ वे ही QR कोड स्कैन करें जो सीधे Notelet से मिले हों।";
 
 /* Accessibility label stating the author of the message to which you are replying. Embeds: {{ the author of the message to which you are replying }} {{ original message }}. */
 "QUOTED_REPLY_ACCESSIBILITY_LABEL_FORMAT" = "इन्हें जवाब दिया जा रहा है: %1$@। %2$@";
@@ -7382,13 +7382,13 @@
 "REGISTER_2FA_FORGOT_PIN_ALERT_TITLE" = "क्या आपको मदद चाहिए?";
 
 /* Alert body for a forgotten SVR (V2) PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "आपका पिन 4+ अंकों का एक कोड होता है, जिसे आपने ही बनाया था। यह न्यूमेरिक या अल्फ़ान्यूमेरिक हो सकता है। अगर आपको अपना पिन याद नहीं है, तो आपको अपना अकाउंट दोबारा रजिस्टर करने से पहले 7 दिन इंतज़ार करना होगा। अगर आपने Signal सिक्योर बैकअप चालू किया हुआ है, तो अपनी 'रिकवरी की' के साथ आगे बढ़ें।";
+"REGISTER_2FA_FORGOT_SVR_PIN_ALERT_MESSAGE" = "आपका पिन 4+ अंकों का एक कोड होता है, जिसे आपने ही बनाया था। यह न्यूमेरिक या अल्फ़ान्यूमेरिक हो सकता है। अगर आपको अपना पिन याद नहीं है, तो आपको अपना अकाउंट दोबारा रजिस्टर करने से पहले 7 दिन इंतज़ार करना होगा। अगर आपने Notelet सिक्योर बैकअप चालू किया हुआ है, तो अपनी 'रिकवरी की' के साथ आगे बढ़ें।";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they cannot necessarily create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "आपका पिन 4+ डिजिट का एक कोड होता है, जिसे आपने ही बनाया था। यह न्यूमेरिक या अल्फ़ान्यूमेरिक हो सकता है। अगर आपको अपना पिन याद नहीं है, तो आपके पास रजिस्टर करके अपना अकाउंट इस्तेमाल करने का विकल्प मौजूद है। हालांकि, ऐसा करने पर सेव की गईं कुछ सेटिंग खो सकती हैं, जैसे कि आपकी प्रोफ़ाइल से जुड़ी जानकारी। अगर आपने Signal सिक्योर बैकअप चालू किया हुआ है, तो अपनी 'रिकवरी की' के साथ आगे बढ़ें।";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_ALERT_MESSAGE" = "आपका पिन 4+ डिजिट का एक कोड होता है, जिसे आपने ही बनाया था। यह न्यूमेरिक या अल्फ़ान्यूमेरिक हो सकता है। अगर आपको अपना पिन याद नहीं है, तो आपके पास रजिस्टर करके अपना अकाउंट इस्तेमाल करने का विकल्प मौजूद है। हालांकि, ऐसा करने पर सेव की गईं कुछ सेटिंग खो सकती हैं, जैसे कि आपकी प्रोफ़ाइल से जुड़ी जानकारी। अगर आपने Notelet सिक्योर बैकअप चालू किया हुआ है, तो अपनी 'रिकवरी की' के साथ आगे बढ़ें।";
 
 /* Alert body for a forgotten SVR (V2) PIN when the user doesn't have reglock and they can create a new PIN */
-"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "आपका पिन 4+ डिजिट का एक कोड होता है। यह कोड सिर्फ़ अंकों वाला या अक्षरों और अंकों का मिश्रण हो सकता है। अगर आपको अपना पिन याद नहीं है, तो आपके पास नया पिन बनाने का विकल्प मौजूद है। रजिस्टर करके अपना अकाउंट इस्तेमाल किया जा सकता है। हालांकि, ऐसा करने पर सेव की गईं कुछ सेटिंग खो सकती हैं, जैसे कि आपकी प्रोफ़ाइल से जुड़ी जानकारी। अगर आपने Signal सिक्योर बैकअप चालू किया हुआ है, तो अपनी 'रिकवरी की' के साथ आगे बढ़ें।";
+"REGISTER_2FA_FORGOT_SVR_PIN_WITHOUT_REGLOCK_AND_CAN_CREATE_NEW_PIN_ALERT_MESSAGE" = "आपका पिन 4+ डिजिट का एक कोड होता है। यह कोड सिर्फ़ अंकों वाला या अक्षरों और अंकों का मिश्रण हो सकता है। अगर आपको अपना पिन याद नहीं है, तो आपके पास नया पिन बनाने का विकल्प मौजूद है। रजिस्टर करके अपना अकाउंट इस्तेमाल किया जा सकता है। हालांकि, ऐसा करने पर सेव की गईं कुछ सेटिंग खो सकती हैं, जैसे कि आपकी प्रोफ़ाइल से जुड़ी जानकारी। अगर आपने Notelet सिक्योर बैकअप चालू किया हुआ है, तो अपनी 'रिकवरी की' के साथ आगे बढ़ें।";
 
 /* Alert title explaining what happens if you forget your 'two-factor auth pin'. */
 "REGISTER_2FA_INVALID_PIN_ALERT_TITLE" = "पिन सही नहीं है";
@@ -7436,7 +7436,7 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_GENERIC_TITLE" = "ट्रांसफ़र पूरा नहीं किया जा सका";
 
 /* Body for a sheet warning users about an incorrect recovery key. */
-"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "हो सकता है कि आपने अपनी 'रिकवरी की' गलत डाली हो या अपने पुराने डिवाइस पर एक बैकअप भी पूरा न किया हो। \n\nरजिस्टर करते समय वही फ़ोन नंबर और 'रिकवरी की' इस्तेमाल करें, जो आपने Signal सिक्योर बैकअप चालू करते समय सेव की थी। साथ ही, इसकी पुष्टि कर लें कि आपके पुराने डिवाइस ने बैकअप पूरा कर लिया है।";
+"REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_BODY" = "हो सकता है कि आपने अपनी 'रिकवरी की' गलत डाली हो या अपने पुराने डिवाइस पर एक बैकअप भी पूरा न किया हो। \n\nरजिस्टर करते समय वही फ़ोन नंबर और 'रिकवरी की' इस्तेमाल करें, जो आपने Notelet सिक्योर बैकअप चालू करते समय सेव की थी। साथ ही, इसकी पुष्टि कर लें कि आपके पुराने डिवाइस ने बैकअप पूरा कर लिया है।";
 
 /* Body for a sheet warning users about an incorrect recovery key and having hit a rate limit on retries. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_RATE_LIMIT_BODY" = "आपको जितनी बार ‘रिकवरी की’ डालने की अनुमति थी, आपने वह सीमा पूरी कर ली है। आपकी सुरक्षा के लिए, 'रिकवरी की' डालने की एक सीमा तय की गई है। अब 1 घंटा इंतज़ार करें और फिर से कोशिश करें।";
@@ -8513,7 +8513,7 @@
 "SETTINGS_PAYMENTS_DEACTIVATE_TITLE" = "पेमेंट की सुविधा बंद करें";
 
 /* Explanation of the 'deactivate payments with balance' process in the 'deactivate payments' settings. */
-"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "हमारा सुझाव है कि भुगतान निष्क्रिय करने से पहले आप अपनी धनराशि को किसी अन्य वॉलेट पते पर ट्रांसफ़र कर लें। यदि आप अपनी धनराशि को अभी ट्रांसफर करना नहीं चुनते हैं तो भुगतानों को फिर से सक्रिय करने की स्थिति में वह धनराशि Signal से लिंक किए गए आपके वॉलेट में बनी रहेगी।";
+"SETTINGS_PAYMENTS_DEACTIVATE_WITH_BALANCE_EXPLANATION" = "हमारा सुझाव है कि भुगतान निष्क्रिय करने से पहले आप अपनी धनराशि को किसी अन्य वॉलेट पते पर ट्रांसफ़र कर लें। यदि आप अपनी धनराशि को अभी ट्रांसफर करना नहीं चुनते हैं तो भुगतानों को फिर से सक्रिय करने की स्थिति में वह धनराशि Notelet से लिंक किए गए आपके वॉलेट में बनी रहेगी।";
 
 /* Description for the 'deactivate payments confirmation' UI in the payment settings. */
 "SETTINGS_PAYMENTS_DEACTIVATE_WITHOUT_TRANSFER_CONFIRM_DESCRIPTION" = "यदि आप भुगतान फिर से सक्रिय करना चुनते हैं तो आपका बैलेंस Notelet से लिंक किए हुए आपके वॉलेट में ही रहेगा।";
