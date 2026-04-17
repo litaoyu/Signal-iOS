@@ -92,6 +92,7 @@ public class SgxWebsocketConnectionImpl<Configurator: SgxWebsocketConfigurator>:
                 webSocket.send(data: client.initialRequest())
                 return webSocket.waitForResponse()
             }.map(on: scheduler) { handshakeResponse -> Configurator.Client in
+                print("handshakeResponse size:", handshakeResponse.count)
                 try client.completeHandshake(handshakeResponse)
                 return client
             }

@@ -183,6 +183,7 @@ final class WebSocketPromise: SSKWebSocketDelegate {
         case WebSocketError.closeError(statusCode: WebSocketError.normalClosure, closeReason: _):
             Logger.info("WebSocket: Socket closed normally")
         default:
+            
             Logger.warn("WebSocket: Socket closed with error: \(error)")
         }
 
@@ -196,6 +197,15 @@ final class WebSocketPromise: SSKWebSocketDelegate {
     }
 
     func websocket(_ socket: SSKWebSocket, didReceiveData data: Data) {
+        // 🔥 加这里
+        Logger.info("🔥 SVR2 handshakeResponse raw bytes size: \(data.count)")
+        Logger.info("🔥 hex: \(data.map { String(format: "%02x", $0) }.joined())")
+        print("🔥 raw NSData: \(data as NSData)")
+        
+
+        if let str = String(data: data, encoding: .utf8) {
+            print("🔥 utf8 string:\n\(str)")
+        }
         updateState { state in
             state.receivedMessages.append(data)
         }
