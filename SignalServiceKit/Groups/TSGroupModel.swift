@@ -209,8 +209,8 @@ public final class TSGroupModelV2: TSGroupModel {
         let protoData = try builder.buildSerializedData()
 
         let protoBase64Url = protoData.asBase64Url
-
-        let urlString = "https://signal.group/#\(protoBase64Url)"
+        // TODO: : - ##@@!! 去聊分享地址需替换
+        let urlString = "https://notelet.group/#\(protoBase64Url)"
         guard let url = URL(string: urlString) else {
             throw OWSAssertionError("Could not construct url.")
         }

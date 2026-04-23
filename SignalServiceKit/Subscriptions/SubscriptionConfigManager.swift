@@ -54,6 +54,15 @@ public class SubscriptionConfigManager {
 
         let donationConfig: DonationSubscriptionConfiguration = try .from(responseBodyData: responseBodyData)
         let backupConfig: BackupSubscriptionConfiguration = try .from(responseBodyData: responseBodyData)
+        
+//        let backupConfig = BackupSubscriptionConfiguration(
+//            storageAllowanceBytes: 100_000_000_000,
+//            freeTierMediaDays: 45
+//        )
+//     
+//
+        _ = DonationSubscriptionConfiguration.mock()
+//
 
         await db.awaitableWrite { tx in
             kvStore.writeValue(dateProvider(), forKey: StoreKeys.lastFetchDate, tx: tx)
@@ -66,6 +75,7 @@ public class SubscriptionConfigManager {
         )
     }
 
+    
     // MARK: Donations
 
     /// Returns a `DonationSubscriptionConfiguration` either fetched live from
@@ -163,6 +173,10 @@ public struct BackupSubscriptionConfiguration: Equatable {
             let backup: BackupObject
         }
 
+        let aaa  = String(data: responseBodyData, encoding: .utf8)!
+        
+        
+        print("##@@!! aaaaa = \(aaa)")
         let topLevelObject = try JSONDecoder().decode(TopLevelObject.self, from: responseBodyData)
         let backupObject = topLevelObject.backup
 
@@ -384,7 +398,10 @@ public struct DonationSubscriptionConfiguration {
     /// Boost and gift one-time donations have well-known levels and are
     /// expected. Any other levels are interpreted as subscription levels.
     private static func parseLevels(fromParser parser: ParamParser) throws -> BadgedLevels {
-        let levelsJson: [String: [String: Any]] = try parser.required(key: "levels")
+        let levelsJson: [String: Any] = try parser.required(key: "levels")
+        
+        
+        
         var badgesByLevel: [UInt: BadgedLevel] = try levelsJson.reduce(into: [:]) { partialResult, kv in
             let (levelString, json) = kv
 
@@ -392,7 +409,7 @@ public struct DonationSubscriptionConfiguration {
                 throw ParseError.invalidBadgeLevel(levelString: levelString)
             }
 
-            let levelParser = ParamParser(json)
+            let levelParser = ParamParser(json as? [String : Any] ?? [:])
 
             partialResult[level] = BadgedLevel(
                 value: level,
@@ -659,5 +676,85 @@ public struct DonationSubscriptionConfiguration {
         }
 
         return result
+    }
+}
+
+
+extension DonationSubscriptionConfiguration {
+
+    static func mock() -> DonationSubscriptionConfiguration {
+
+        _ = try! ProfileBadge(jsonDictionary: [
+            "id": "mock",
+            "category": "donor",
+            "name": "Mock",
+            "description": "Mock",
+            "sprites6": ["a","a","a","a","a","a"]
+        ])
+
+        let boostLevel = OneTimeBadgeLevel.boostBadge.rawValue.asNSNumber.stringValue
+        let giftLevel = OWSGiftBadge.Level.signalGift.rawLevel.asNSNumber.stringValue
+
+        let json: [String: Any] = [
+            "levels": [
+                boostLevel: [
+                    "name": "Boost",
+                    "badge": [
+                        "id": "boost",
+                        "category": "donor",
+                        "name": "Boost",
+                        "description": "Mock",
+                        "sprites6": ["a","a","a","a","a","a"]
+                    ]
+                ],
+                giftLevel: [
+                    "name": "Gift",
+                    "badge": [
+                        "id": "gift",
+                        "category": "donor",
+                        "name": "Gift",
+                        "description": "Mock",
+                        "sprites6": ["a","a","a","a","a","a"]
+                    ]   
+                ],
+                "3": [
+                    "name": "Sub",
+                    "badge": [
+                        "id": "sub",
+                        "category": "donor",
+                        "name": "Sub",
+                        "description": "Mock",
+                        "sprites6": ["a","a","a","a","a","a"]
+                    ]
+                ]
+            ],
+
+            "currencies": [
+                "USD": [
+                    "minimum": 1,
+                    "oneTime": [
+                        boostLevel: [5, 10],
+                        giftLevel: [3]
+                    ],
+                    "subscription": [
+                        "3": 5
+                    ],
+                    "supportedPaymentMethods": ["CARD"]
+                ]
+            ],
+
+            "sepaMaximumEuros": 10000,
+
+            "backup": [
+                "freeTierMediaDays": 30,
+                "levels": [
+                    "201": [
+                        "storageAllowanceBytes": 1000000000
+                    ]
+                ]
+            ]
+        ]
+
+        return try! DonationSubscriptionConfiguration.from(responseBodyDict: json)
     }
 }
