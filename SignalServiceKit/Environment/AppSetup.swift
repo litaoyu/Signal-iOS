@@ -519,6 +519,17 @@ extension AppSetup.GlobalsContinuation {
             tsAccountManager: tsAccountManager,
         )
 
+        let inactivePrimaryDeviceStore = InactivePrimaryDeviceStore()
+        let chatConnectionManager = ChatConnectionManagerImpl(
+            accountManager: tsAccountManager,
+            appContext: appContext,
+            appExpiry: appExpiry,
+            appReadiness: appReadiness,
+            db: db,
+            inactivePrimaryDeviceStore: inactivePrimaryDeviceStore,
+            libsignalNet: libsignalNet,
+        )
+
         let backupRequestManager = BackupRequestManagerImpl(
             backupAuthCredentialManager: BackupAuthCredentialManagerImpl(
                 authCredentialStore: authCredentialStore,
@@ -531,6 +542,7 @@ extension AppSetup.GlobalsContinuation {
             ),
             backupCDNCredentialStore: backupCDNCredentialStore,
             backupSettingsStore: backupSettingsStore,
+            chatConnectionManager: chatConnectionManager,
             dateProvider: dateProvider,
             db: db,
             networkManager: networkManager,
@@ -555,34 +567,6 @@ extension AppSetup.GlobalsContinuation {
         )
 
         let attachmentThumbnailService = AttachmentThumbnailServiceImpl(remoteConfigProvider: remoteConfigProvider)
-        let attachmentUploadManager = AttachmentUploadManagerImpl(
-            accountKeyStore: accountKeyStore,
-            attachmentEncrypter: Upload.Wrappers.AttachmentEncrypter(),
-            attachmentStore: attachmentStore,
-            attachmentUploadStore: attachmentUploadStore,
-            attachmentThumbnailService: attachmentThumbnailService,
-            backupRequestManager: backupRequestManager,
-            dateProvider: dateProvider,
-            db: db,
-            fileSystem: Upload.Wrappers.FileSystem(),
-            interactionStore: interactionStore,
-            networkManager: networkManager,
-            remoteConfigProvider: remoteConfigManager,
-            signalService: signalService,
-            sleepTimer: Upload.Wrappers.SleepTimer(),
-            storyStore: storyStore,
-        )
-
-        let attachmentBackfillManager = AttachmentBackfillManager(
-            attachmentStore: attachmentStore,
-            attachmentUploadManager: attachmentUploadManager,
-            db: db,
-            interactionStore: interactionStore,
-            notificationPresenter: notificationPresenter,
-            recipientDatabaseTable: recipientDatabaseTable,
-            syncMessageSender: messageSenderJobQueue,
-            threadStore: threadStore,
-        )
 
         let backupAttachmentDownloadQueueStatusManager = BackupAttachmentDownloadQueueStatusManagerImpl(
             appContext: appContext,
@@ -668,7 +652,7 @@ extension AppSetup.GlobalsContinuation {
             orphanedBackupAttachmentScheduler: orphanedBackupAttachmentScheduler,
             profileManager: profileManager,
             reachabilityManager: reachabilityManager,
-            remoteConfigManager: remoteConfigManager,
+            remoteConfigProvider: remoteConfigManager,
             signalService: signalService,
             stickerManager: AttachmentDownloadManagerImpl.Wrappers.StickerManager(),
             storyStore: storyStore,
@@ -677,77 +661,6 @@ extension AppSetup.GlobalsContinuation {
         )
         let backupAttachmentDownloadScheduler = BackupAttachmentDownloadSchedulerImpl(
             backupAttachmentDownloadStore: backupAttachmentDownloadStore,
-        )
-        let backupAttachmentCoordinator = testDependencies.backupAttachmentCoordinator ?? BackupAttachmentCoordinatorImpl(
-            appContext: appContext,
-            appReadiness: appReadiness,
-            backupSettingsStore: backupSettingsStore,
-            db: db,
-            downloadRunner: BackupAttachmentDownloadQueueRunnerImpl(
-                appContext: appContext,
-                attachmentStore: attachmentStore,
-                attachmentDownloadManager: attachmentDownloadManager,
-                attachmentUploadStore: attachmentUploadStore,
-                backupAttachmentDownloadStore: backupAttachmentDownloadStore,
-                backupAttachmentUploadScheduler: backupAttachmentUploadScheduler,
-                backupMediaErrorNotificationPresenter: backupMediaErrorNotificationPresenter,
-                backupListMediaManager: backupListMediaManager,
-                backupSettingsStore: backupSettingsStore,
-                dateProvider: dateProvider,
-                db: db,
-                mediaBandwidthPreferenceStore: mediaBandwidthPreferenceStore,
-                progress: backupAttachmentDownloadProgress,
-                remoteConfigProvider: remoteConfigManager,
-                statusManager: backupAttachmentDownloadQueueStatusManager,
-                tsAccountManager: tsAccountManager,
-            ),
-            listMediaManager: backupListMediaManager,
-            offloadingManager: AttachmentOffloadingManagerImpl(
-                attachmentStore: attachmentStore,
-                attachmentThumbnailService: attachmentThumbnailService,
-                backupAttachmentDownloadStore: backupAttachmentDownloadStore,
-                backupAttachmentUploadEraStore: backupAttachmentUploadEraStore,
-                backupSettingsStore: backupSettingsStore,
-                dateProvider: dateProvider,
-                db: db,
-                listMediaManager: backupListMediaManager,
-                orphanedAttachmentCleaner: orphanedAttachmentCleaner,
-                orphanedAttachmentStore: orphanedAttachmentStore,
-                tsAccountManager: tsAccountManager,
-            ),
-            orphanRunner: OrphanedBackupAttachmentQueueRunnerImpl(
-                accountKeyStore: accountKeyStore,
-                appReadiness: appReadiness,
-                attachmentStore: attachmentStore,
-                backupRequestManager: backupRequestManager,
-                backupSettingsStore: backupSettingsStore,
-                dateProvider: dateProvider,
-                db: db,
-                listMediaManager: backupListMediaManager,
-                orphanedBackupAttachmentStore: orphanedBackupAttachmentStore,
-                tsAccountManager: tsAccountManager,
-            ),
-            orphanStore: orphanedBackupAttachmentStore,
-            tsAccountManager: tsAccountManager,
-            uploadRunner: BackupAttachmentUploadQueueRunnerImpl(
-                accountKeyStore: accountKeyStore,
-                attachmentStore: attachmentStore,
-                attachmentUploadManager: attachmentUploadManager,
-                backupAttachmentUploadScheduler: backupAttachmentUploadScheduler,
-                backupAttachmentUploadStore: backupAttachmentUploadStore,
-                backupAttachmentUploadEraStore: backupAttachmentUploadEraStore,
-                backupListMediaManager: backupListMediaManager,
-                backupMediaErrorNotificationPresenter: backupMediaErrorNotificationPresenter,
-                backupRequestManager: backupRequestManager,
-                backupSettingsStore: backupSettingsStore,
-                dateProvider: dateProvider,
-                db: db,
-                notificationPresenter: notificationPresenter,
-                orphanedBackupAttachmentStore: orphanedBackupAttachmentStore,
-                progress: backupAttachmentUploadProgress,
-                statusManager: backupAttachmentUploadQueueStatusManager,
-                tsAccountManager: tsAccountManager,
-            ),
         )
 
         let attachmentManager = AttachmentManagerImpl(
@@ -1107,7 +1020,6 @@ extension AppSetup.GlobalsContinuation {
             tsAccountManager: tsAccountManager,
         )
 
-        let inactivePrimaryDeviceStore = InactivePrimaryDeviceStore()
         let keyTransparencyStore = KeyTransparencyStore()
 
         let registrationStateChangeManager = RegistrationStateChangeManagerImpl(
@@ -1117,6 +1029,7 @@ extension AppSetup.GlobalsContinuation {
             backupSubscriptionManager: backupSubscriptionManager,
             backupTestFlightEntitlementManager: backupTestFlightEntitlementManager,
             blockedRecipientStore: blockedRecipientStore,
+            chatConnectionManager: chatConnectionManager,
             cron: cron,
             db: db,
             dmConfigurationStore: disappearingMessagesConfigurationStore,
@@ -1134,16 +1047,108 @@ extension AppSetup.GlobalsContinuation {
             udManager: udManager,
             versionedProfiles: versionedProfiles,
         )
+        chatConnectionManager.onRegistrationStateChange = { [weak registrationStateChangeManager] isDelinkedOrDeregistered, tx in
+            registrationStateChangeManager?.setIsDeregisteredOrDelinked(isDelinkedOrDeregistered, tx: tx)
+        }
 
-        let chatConnectionManager = ChatConnectionManagerImpl(
-            accountManager: tsAccountManager,
-            appContext: appContext,
-            appExpiry: appExpiry,
-            appReadiness: appReadiness,
+        let attachmentUploadManager = AttachmentUploadManagerImpl(
+            accountKeyStore: accountKeyStore,
+            attachmentEncrypter: Upload.Wrappers.AttachmentEncrypter(),
+            attachmentStore: attachmentStore,
+            attachmentUploadStore: attachmentUploadStore,
+            attachmentThumbnailService: attachmentThumbnailService,
+            backupRequestManager: backupRequestManager,
+            chatConnectionManager: chatConnectionManager,
+            dateProvider: dateProvider,
             db: db,
-            inactivePrimaryDeviceStore: inactivePrimaryDeviceStore,
-            libsignalNet: libsignalNet,
-            registrationStateChangeManager: registrationStateChangeManager,
+            fileSystem: Upload.Wrappers.FileSystem(),
+            interactionStore: interactionStore,
+            remoteConfigProvider: remoteConfigManager,
+            signalService: signalService,
+            sleepTimer: Upload.Wrappers.SleepTimer(),
+            storyStore: storyStore,
+        )
+        let backupAttachmentCoordinator = testDependencies.backupAttachmentCoordinator ?? BackupAttachmentCoordinatorImpl(
+            appContext: appContext,
+            appReadiness: appReadiness,
+            backupSettingsStore: backupSettingsStore,
+            db: db,
+            downloadRunner: BackupAttachmentDownloadQueueRunnerImpl(
+                appContext: appContext,
+                attachmentStore: attachmentStore,
+                attachmentDownloadManager: attachmentDownloadManager,
+                attachmentUploadStore: attachmentUploadStore,
+                backupAttachmentDownloadStore: backupAttachmentDownloadStore,
+                backupAttachmentUploadScheduler: backupAttachmentUploadScheduler,
+                backupMediaErrorNotificationPresenter: backupMediaErrorNotificationPresenter,
+                backupListMediaManager: backupListMediaManager,
+                backupSettingsStore: backupSettingsStore,
+                dateProvider: dateProvider,
+                db: db,
+                mediaBandwidthPreferenceStore: mediaBandwidthPreferenceStore,
+                progress: backupAttachmentDownloadProgress,
+                remoteConfigProvider: remoteConfigManager,
+                statusManager: backupAttachmentDownloadQueueStatusManager,
+                tsAccountManager: tsAccountManager,
+            ),
+            listMediaManager: backupListMediaManager,
+            offloadingManager: AttachmentOffloadingManagerImpl(
+                attachmentStore: attachmentStore,
+                attachmentThumbnailService: attachmentThumbnailService,
+                backupAttachmentDownloadStore: backupAttachmentDownloadStore,
+                backupAttachmentUploadEraStore: backupAttachmentUploadEraStore,
+                backupSettingsStore: backupSettingsStore,
+                dateProvider: dateProvider,
+                db: db,
+                listMediaManager: backupListMediaManager,
+                orphanedAttachmentCleaner: orphanedAttachmentCleaner,
+                orphanedAttachmentStore: orphanedAttachmentStore,
+                tsAccountManager: tsAccountManager,
+            ),
+            orphanRunner: OrphanedBackupAttachmentQueueRunnerImpl(
+                accountKeyStore: accountKeyStore,
+                appReadiness: appReadiness,
+                attachmentStore: attachmentStore,
+                backupRequestManager: backupRequestManager,
+                backupSettingsStore: backupSettingsStore,
+                dateProvider: dateProvider,
+                db: db,
+                listMediaManager: backupListMediaManager,
+                orphanedBackupAttachmentStore: orphanedBackupAttachmentStore,
+                tsAccountManager: tsAccountManager,
+            ),
+            orphanStore: orphanedBackupAttachmentStore,
+            tsAccountManager: tsAccountManager,
+            uploadRunner: BackupAttachmentUploadQueueRunnerImpl(
+                accountKeyStore: accountKeyStore,
+                attachmentStore: attachmentStore,
+                attachmentUploadManager: attachmentUploadManager,
+                backupAttachmentUploadScheduler: backupAttachmentUploadScheduler,
+                backupAttachmentUploadStore: backupAttachmentUploadStore,
+                backupAttachmentUploadEraStore: backupAttachmentUploadEraStore,
+                backupListMediaManager: backupListMediaManager,
+                backupMediaErrorNotificationPresenter: backupMediaErrorNotificationPresenter,
+                backupRequestManager: backupRequestManager,
+                backupSettingsStore: backupSettingsStore,
+                dateProvider: dateProvider,
+                db: db,
+                notificationPresenter: notificationPresenter,
+                orphanedBackupAttachmentStore: orphanedBackupAttachmentStore,
+                progress: backupAttachmentUploadProgress,
+                statusManager: backupAttachmentUploadQueueStatusManager,
+                tsAccountManager: tsAccountManager,
+            ),
+        )
+
+        let attachmentBackfillManager = AttachmentBackfillManager(
+            attachmentStore: attachmentStore,
+            attachmentUploadManager: attachmentUploadManager,
+            db: db,
+            interactionStore: interactionStore,
+            notificationPresenter: notificationPresenter,
+            recipientDatabaseTable: recipientDatabaseTable,
+            syncMessageSender: messageSenderJobQueue,
+            threadStore: threadStore,
         )
 
         let accountChecker = AccountChecker(

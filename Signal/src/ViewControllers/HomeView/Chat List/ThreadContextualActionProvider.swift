@@ -87,7 +87,8 @@ extension ThreadContextualActionProvider where Self: UIViewController {
         if
             let groupThread = threadViewModel.threadRecord as? TSGroupThread,
             let groupModel = groupThread.groupModel as? TSGroupModelV2,
-            let localAci = tsAccountManager.localIdentifiersWithMaybeSneakyTransaction?.aci
+            let localAci = tsAccountManager.localIdentifiersWithMaybeSneakyTransaction?.aci,
+            groupModel.groupMembership.isLocalUserFullOrInvitedMember
         {
             actions.append(leaveGroupContextualAction(
                 threadViewModel: threadViewModel,
@@ -305,6 +306,7 @@ extension ThreadContextualActionProvider where Self: UIViewController {
 
             ModalActivityIndicatorViewController.present(
                 fromViewController: self,
+                title: CommonStrings.deletingModal,
             ) { [weak self] modal in
                 guard let self else { return }
 

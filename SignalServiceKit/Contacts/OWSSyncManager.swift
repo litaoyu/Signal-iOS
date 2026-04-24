@@ -348,35 +348,21 @@ extension OWSSyncManager: SyncManagerProtocol, SyncManagerProtocolSwift {
                 tx: transaction,
             )
         case .block:
-            SSKEnvironment.shared.blockingManagerRef.addBlockedThread(thread, blockMode: .remote, transaction: transaction)
+            SSKEnvironment.shared.blockingManagerRef.addBlockedThread(thread, blockMode: .remote, shouldLeaveIfGroup: false, transaction: transaction)
         case .blockAndDelete:
             DependenciesBridge.shared.threadSoftDeleteManager.softDelete(
                 threads: [thread],
                 sendDeleteForMeSyncMessage: false,
                 tx: transaction,
             )
-            SSKEnvironment.shared.blockingManagerRef.addBlockedThread(thread, blockMode: .remote, transaction: transaction)
+            SSKEnvironment.shared.blockingManagerRef.addBlockedThread(thread, blockMode: .remote, shouldLeaveIfGroup: false, transaction: transaction)
         case .spam:
             TSInfoMessage(thread: thread, messageType: .reportedSpam).anyInsert(transaction: transaction)
         case .blockAndSpam:
-            SSKEnvironment.shared.blockingManagerRef.addBlockedThread(thread, blockMode: .remote, transaction: transaction)
+            SSKEnvironment.shared.blockingManagerRef.addBlockedThread(thread, blockMode: .remote, shouldLeaveIfGroup: false, transaction: transaction)
             TSInfoMessage(thread: thread, messageType: .reportedSpam).anyInsert(transaction: transaction)
         case .unknown, .none:
             owsFailDebug("unexpected message request response type")
-        }
-    }
-
-    public func sendMessageRequestResponseSyncMessage(thread: TSThread, responseType: OutgoingMessageRequestResponseSyncMessage.ResponseType) {
-        Logger.info("")
-
-        let tsAccountManager = DependenciesBridge.shared.tsAccountManager
-        guard tsAccountManager.registrationStateWithMaybeSneakyTransaction.isRegistered else {
-            owsFailDebug("Unexpectedly tried to send sync message before registration.")
-            return
-        }
-
-        SSKEnvironment.shared.databaseStorageRef.asyncWrite { transaction in
-            self.sendMessageRequestResponseSyncMessage(thread: thread, responseType: responseType, transaction: transaction)
         }
     }
 

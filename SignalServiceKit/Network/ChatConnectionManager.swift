@@ -47,6 +47,23 @@ public protocol ChatConnectionManager {
         timeout: TimeInterval,
         do callback: @escaping (Service.Api) async throws -> Output,
     ) async throws -> Output where Service: UnauthServiceSelector
+
+    /// Access a libsignal "service" on the active authenticated connection.
+    ///
+    /// Intended to be used with code completion; ``AuthServiceSelector``
+    /// has static members for each valid service. See the docs for that protocol
+    /// for under-the-hood information.
+    ///
+    /// This will attempt to hold the connection open until the operation
+    /// completes, so make sure to do any complex processing of the result
+    /// *outside* the callback.
+    ///
+    /// This method can be called from any thread.
+    func withAuthServiceImpl<Service, Output>(
+        _ service: Service,
+        timeout: TimeInterval,
+        do callback: @escaping (Service.Api) async throws -> Output,
+    ) async throws -> Output where Service: AuthServiceSelector
 }
 
 extension ChatConnectionManager {
@@ -64,12 +81,33 @@ extension ChatConnectionManager {
     ) async throws -> Output where Service: UnauthServiceSelector {
         return try await withUnauthServiceImpl(service, timeout: timeout, do: callback)
     }
+
+    public func withAuthService<Service, Output>(
+        _ service: Service,
+        timeout: TimeInterval = .infinity,
+        do callback: @escaping (Service.Api) async throws -> Output,
+    ) async throws -> Output where Service: AuthServiceSelector {
+        return try await withAuthServiceImpl(service, timeout: timeout, do: callback)
+    }
 }
 
 public class ChatConnectionManagerImpl: ChatConnectionManager {
     private let connectionIdentified: OWSAuthConnectionUsingLibSignal
     private let connectionUnidentified: OWSUnauthConnectionUsingLibSignal
     private var connections: [OWSChatConnection] { [connectionIdentified, connectionUnidentified] }
+
+    // TODO: This is a workaround to solve the circular dependency between
+    // ChatConnectionManager and RegistrationStateChangeManager. In the event that
+    // someday RegistrationStateChangeManager is split up into smaller pieces, this
+    // can be revisited.
+    public var onRegistrationStateChange: ((_ isDelinkedOrDeregisterd: Bool, _ tx: DBWriteTransaction) -> Void)? {
+        get {
+            connectionIdentified.onRegistrationStateChange
+        }
+        set {
+            connectionIdentified.onRegistrationStateChange = newValue
+        }
+    }
 
     @MainActor
     public init(
@@ -80,7 +118,6 @@ public class ChatConnectionManagerImpl: ChatConnectionManager {
         db: any DB,
         inactivePrimaryDeviceStore: InactivePrimaryDeviceStore,
         libsignalNet: Net,
-        registrationStateChangeManager: RegistrationStateChangeManager,
     ) {
         self.connectionIdentified = OWSAuthConnectionUsingLibSignal(
             libsignalNet: libsignalNet,
@@ -90,7 +127,6 @@ public class ChatConnectionManagerImpl: ChatConnectionManager {
             appReadiness: appReadiness,
             db: db,
             inactivePrimaryDeviceStore: inactivePrimaryDeviceStore,
-            registrationStateChangeManager: registrationStateChangeManager,
         )
         self.connectionUnidentified = OWSUnauthConnectionUsingLibSignal(
             libsignalNet: libsignalNet,
@@ -178,6 +214,18 @@ public class ChatConnectionManagerImpl: ChatConnectionManager {
         }
     }
 
+    // This method can be called from any thread.
+    public func withAuthServiceImpl<Service, Output>(
+        _ service: Service,
+        timeout: TimeInterval,
+        do callback: @escaping (Service.Api) async throws -> Output,
+    ) async throws -> Output where Service: AuthServiceSelector {
+        try await connectionIdentified.withLibsignalConnection(timeout: timeout) { connection in
+            // This force-cast is guaranteed by AuthServiceSelector only being provided for valid service protocols.
+            try await callback(connection as! Service.Api)
+        }
+    }
+
     // MARK: -
 
     public var hasEmptiedInitialQueue: Bool {
@@ -253,6 +301,14 @@ public class ChatConnectionManagerMock: ChatConnectionManager {
         timeout: TimeInterval,
         do callback: @escaping (Service.Api) async throws -> Output,
     ) async throws -> Output where Service: UnauthServiceSelector {
+        fatalError("must override for tests")
+    }
+
+    public func withAuthServiceImpl<Service, Output>(
+        _ service: Service,
+        timeout: TimeInterval,
+        do callback: @escaping (Service.Api) async throws -> Output,
+    ) async throws -> Output where Service: AuthServiceSelector {
         fatalError("must override for tests")
     }
 }

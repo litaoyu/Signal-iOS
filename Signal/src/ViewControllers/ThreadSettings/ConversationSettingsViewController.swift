@@ -654,7 +654,10 @@ class ConversationSettingsViewController: OWSTableViewController2, BadgeCollecti
                 showEndGroupConfirmation(title: nil, description: finalConfirmationDescription, action: {
                     Task { @MainActor in
                         do {
-                            try await ModalActivityIndicatorViewController.presentAndPropagateResult(from: self) { [weak self] in
+                            try await ModalActivityIndicatorViewController.presentAndPropagateResult(
+                                from: self,
+                                title: CommonStrings.updatingModal,
+                            ) { [weak self] in
                                 guard let self else { return }
                                 guard let groupThread = thread as? TSGroupThread else { return }
                                 try await GroupManager.terminateGroup(groupModel: groupModelV2, threadId: groupThread.sqliteRowId!)
@@ -683,26 +686,6 @@ class ConversationSettingsViewController: OWSTableViewController2, BadgeCollecti
     }
 
     func didTapBlockThread() {
-        if
-            let groupThread = thread as? TSGroupThread,
-            let groupModel = groupThread.groupModel as? TSGroupModelV2,
-            let localAci = DependenciesBridge.shared.tsAccountManager.localIdentifiersWithMaybeSneakyTransaction?.aci,
-            GroupManager.canLocalUserLeaveGroupWithoutChoosingNewAdmin(
-                localAci: localAci,
-                groupMembership: groupModel.groupMembership,
-            )
-        {
-            LeaveGroupCoordinator(
-                groupThread: groupThread,
-                groupModel: groupModel,
-                localAci: localAci,
-                onSuccess: { [weak self] in
-                    self?.navigationController?.popViewController(animated: true)
-                },
-            ).startLeaveGroupFlow(rootViewController: self)
-            return
-        }
-
         // Blocking auto-leaves the group on its own.
         BlockListUIUtils.showBlockThreadActionSheet(thread, from: self) { [weak self] _ in
             self?.reloadThreadAndUpdateContent()

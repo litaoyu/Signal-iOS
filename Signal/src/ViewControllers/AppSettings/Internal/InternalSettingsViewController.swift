@@ -187,7 +187,7 @@ class InternalSettingsViewController: OWSTableViewController2 {
             let db = DependenciesBridge.shared.db
 
             db.write { tx in
-                backupSettingsStore.wipeHaveBackupsEverBeenEnabled(tx: tx)
+                backupSettingsStore.setShouldOverrideShowBackupsOnboarding(true, tx: tx)
             }
 
             self?.presentToast(text: "Backups onboarding enabled!")
@@ -427,6 +427,7 @@ private extension InternalSettingsViewController {
         do {
             (backupKey, exportMetadata) = try await ModalActivityIndicatorViewController.presentAndPropagateResult(
                 from: self,
+                title: "Exporting...",
             ) {
                 let (messageBackupKey, localIdentifiers) = try db.read { tx in
                     let localIdentifiers = tsAccountManager.localIdentifiers(tx: tx)!

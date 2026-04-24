@@ -23,6 +23,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
     private let downloadabilityChecker: DownloadabilityChecker
     private let progressStates: ProgressStates
     private let queueLoader: TaskQueueLoader<DownloadTaskRunner>
+    private let remoteConfigProvider: any RemoteConfigProvider
     private let tsAccountManager: TSAccountManager
 
     public init(
@@ -45,10 +46,10 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
         orphanedBackupAttachmentScheduler: OrphanedBackupAttachmentScheduler,
         profileManager: ProfileManager,
         reachabilityManager: SSKReachabilityManager,
-        remoteConfigManager: RemoteConfigManager,
+        remoteConfigProvider: any RemoteConfigProvider,
         signalService: OWSSignalServiceProtocol,
         stickerManager: Shims.StickerManager,
-        storyStore: StoryStore,
+        storyStore: any StoryStore,
         threadStore: ThreadStore,
         tsAccountManager: TSAccountManager,
     ) {
@@ -86,6 +87,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
             mediaBandwidthPreferenceStore: mediaBandwidthPreferenceStore,
             profileManager: profileManager,
             reachabilityManager: reachabilityManager,
+            storyStore: storyStore,
             threadStore: threadStore,
         )
         let taskRunner = DownloadTaskRunner(
@@ -100,7 +102,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
             decrypter: decrypter,
             downloadQueue: downloadQueue,
             downloadabilityChecker: downloadabilityChecker,
-            remoteConfigManager: remoteConfigManager,
+            remoteConfigProvider: remoteConfigProvider,
             stickerManager: stickerManager,
             tsAccountManager: tsAccountManager,
         )
@@ -110,6 +112,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
             db: db,
             runner: taskRunner,
         )
+        self.remoteConfigProvider = remoteConfigProvider
         self.tsAccountManager = tsAccountManager
 
         appReadiness.runNowOrWhenMainAppDidBecomeReadyAsync { [weak self] in
@@ -132,16 +135,19 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
         self.beginDownloadingIfNecessary()
     }
 
+    private func maxEncryptedBackupDownloadSize() -> UInt64 {
+        return 1_000_000_000
+    }
+
     public func downloadBackup(
         metadata: BackupReadCredential,
         progress: OWSProgressSink?,
     ) async throws -> URL {
         let uuid = UUID()
         let downloadState = DownloadState(type: .backup(metadata: metadata, uuid: uuid))
-        let maxDownloadSize = BackupArchive.Constants.maxDownloadSizeBytes
         return try await self.downloadQueue.enqueueDownload(
             downloadState: downloadState,
-            maxDownloadSizeBytes: maxDownloadSize,
+            maxDownloadSizeBytes: maxEncryptedBackupDownloadSize(),
             expectedDownloadSize: .useHeadRequest,
             progress: progress,
         )
@@ -154,7 +160,11 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
         let downloadState = DownloadState(type: .backup(metadata: metadata, uuid: uuid))
         var prefixLength = BackupNonce.metadataHeaderByteLengthUpperBound
         while true {
-            let (cdnInfo, prefix) = try await self.downloadQueue.performPrefixRequest(downloadState: downloadState, length: prefixLength)
+            let (cdnInfo, prefix) = try await self.downloadQueue.performPrefixRequest(
+                downloadState: downloadState,
+                maxDownloadSizeBytes: maxEncryptedBackupDownloadSize(),
+                length: prefixLength,
+            )
             do throws(BackupNonce.MetadataHeader.ParsingError) {
                 let metadataHeader = try BackupNonce.MetadataHeader.from(prefixBytes: prefix)
                 return BackupCdnInfo(
@@ -185,7 +195,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
         progress: OWSProgressSink?,
     ) async throws -> URL {
         // We want to avoid large downloads from a compromised or buggy service.
-        let maxDownloadSize = RemoteConfig.current.attachmentMaxEncryptedReceiveBytes
+        let maxDownloadSize = self.remoteConfigProvider.currentConfig().attachmentMaxEncryptedReceiveBytes
         let downloadState = DownloadState(type: .transientAttachment(metadata, uuid: UUID()))
         let encryptedFileUrl = try await self.downloadQueue.enqueueDownload(
             downloadState: downloadState,
@@ -476,7 +486,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
         private let decrypter: Decrypter
         private let downloadabilityChecker: DownloadabilityChecker
         private let downloadQueue: DownloadQueue
-        private let remoteConfigManager: RemoteConfigManager
+        private let remoteConfigProvider: any RemoteConfigProvider
         private let stickerManager: Shims.StickerManager
         let store: Store
         private let tsAccountManager: TSAccountManager
@@ -493,7 +503,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
             decrypter: Decrypter,
             downloadQueue: DownloadQueue,
             downloadabilityChecker: DownloadabilityChecker,
-            remoteConfigManager: RemoteConfigManager,
+            remoteConfigProvider: any RemoteConfigProvider,
             stickerManager: Shims.StickerManager,
             tsAccountManager: TSAccountManager,
         ) {
@@ -508,7 +518,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
             self.decrypter = decrypter
             self.downloadQueue = downloadQueue
             self.downloadabilityChecker = downloadabilityChecker
-            self.remoteConfigManager = remoteConfigManager
+            self.remoteConfigProvider = remoteConfigProvider
             self.stickerManager = stickerManager
             self.store = DownloadTaskRecordStore(store: attachmentDownloadStore)
             self.tsAccountManager = tsAccountManager
@@ -654,7 +664,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                 // Only proactively expire if the upload is old enough
                 let uploadTimestamp = refetchedAttachment.latestTransitTierInfo?.uploadTimestamp,
                 uploadTimestamp < now,
-                now - uploadTimestamp >= remoteConfigManager.currentConfig().messageQueueTimeMs
+                now - uploadTimestamp >= remoteConfigProvider.currentConfig().messageQueueTimeMs
             {
                 return .unretryableError(TransitTierExpiredError(transitTierInfo: transitTierInfoBeforeDownloadAttempt))
             }
@@ -785,7 +795,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                         unencryptedSize: UInt64(safeCast: $0),
                     ) ?? UInt64(UInt32.max)))
                 }) ?? .useHeadRequest
-                let attachmentLimits = IncomingAttachmentLimits.currentLimits()
+                let attachmentLimits = IncomingAttachmentLimits.currentLimits(remoteConfig: remoteConfigProvider.currentConfig())
                 switch Attachment.ContentTypeRaw(mimeType: attachment.mimeType) {
                 case .image, .animatedImage:
                     maxDownloadSizeBytes = attachmentLimits.maxEncryptedImageBytes
@@ -793,7 +803,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                     maxDownloadSizeBytes = attachmentLimits.maxEncryptedBytes
                 }
             case .mediaTierFullsize:
-                let cdnNumber = attachment.mediaTierInfo?.cdnNumber ?? remoteConfigManager.currentConfig().mediaTierFallbackCdnNumber
+                let cdnNumber = attachment.mediaTierInfo?.cdnNumber ?? remoteConfigProvider.currentConfig().mediaTierFallbackCdnNumber
                 guard
                     let mediaTierInfo = attachment.mediaTierInfo,
                     let mediaName = attachment.mediaName,
@@ -822,9 +832,9 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                 downloadSizeSource = .estimatedSizeBytes(UInt(Cryptography.estimatedMediaTierCDNSize(
                     unencryptedSize: UInt64(safeCast: mediaTierInfo.unencryptedByteCount),
                 ) ?? UInt64(UInt32.max)))
-                maxDownloadSizeBytes = RemoteConfig.current.attachmentMaxEncryptedReceiveBytes
+                maxDownloadSizeBytes = remoteConfigProvider.currentConfig().attachmentMaxEncryptedReceiveBytes
             case .mediaTierThumbnail:
-                let cdnNumber = attachment.thumbnailMediaTierInfo?.cdnNumber ?? remoteConfigManager.currentConfig().mediaTierFallbackCdnNumber
+                let cdnNumber = attachment.thumbnailMediaTierInfo?.cdnNumber ?? remoteConfigProvider.currentConfig().mediaTierFallbackCdnNumber
                 guard
                     attachment.thumbnailMediaTierInfo != nil || MimeTypeUtil.isSupportedVisualMediaMimeType(attachment.mimeType),
                     let mediaName = attachment.mediaName,
@@ -869,7 +879,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                 downloadSizeSource = .estimatedSizeBytes(UInt(Cryptography.estimatedMediaTierCDNSize(
                     unencryptedSize: UInt64(safeCast: AttachmentThumbnailQuality.backupThumbnailMaxSizeBytes),
                 ) ?? UInt64(UInt32.max)))
-                maxDownloadSizeBytes = RemoteConfig.current.attachmentMaxEncryptedReceiveBytes
+                maxDownloadSizeBytes = remoteConfigProvider.currentConfig().attachmentMaxEncryptedReceiveBytes
             }
 
             let downloadedFileUrl: URL
@@ -1081,6 +1091,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
         private let mediaBandwidthPreferenceStore: MediaBandwidthPreferenceStore
         private let profileManager: ProfileManager
         private let reachabilityManager: SSKReachabilityManager
+        private let storyStore: any StoryStore
         private let threadStore: ThreadStore
 
         init(
@@ -1091,6 +1102,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
             mediaBandwidthPreferenceStore: MediaBandwidthPreferenceStore,
             profileManager: ProfileManager,
             reachabilityManager: SSKReachabilityManager,
+            storyStore: any StoryStore,
             threadStore: ThreadStore,
         ) {
             self.attachmentStore = attachmentStore
@@ -1100,6 +1112,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
             self.mediaBandwidthPreferenceStore = mediaBandwidthPreferenceStore
             self.profileManager = profileManager
             self.reachabilityManager = reachabilityManager
+            self.storyStore = storyStore
             self.threadStore = threadStore
         }
 
@@ -1256,25 +1269,52 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                 return false
             }
 
-            let threadRowId: Int64
+            let thread: TSThread?
             switch owner {
-            case .message(.oversizeText), .message(.sticker):
-                return false
-            case .message(.bodyAttachment(let metadata)):
-                threadRowId = metadata.threadRowId
-            case .message(.quotedReply(let metadata)):
-                threadRowId = metadata.threadRowId
-            case .message(.linkPreview(let metadata)):
-                threadRowId = metadata.threadRowId
-            case .message(.contactAvatar(let metadata)):
-                threadRowId = metadata.threadRowId
-            case .storyMessage, .thread:
+            case .message(let source):
+                let threadRowId: TSThread.RowId
+                switch source {
+                case .oversizeText:
+                    // These are bodyAttachments that branch based on their MIME type and
+                    // aren't processed as media files.
+                    return false
+                case .sticker(let metadata):
+                    threadRowId = metadata.threadRowId
+                case .bodyAttachment(let metadata):
+                    threadRowId = metadata.threadRowId
+                case .quotedReply(let metadata):
+                    threadRowId = metadata.threadRowId
+                case .linkPreview(let metadata):
+                    threadRowId = metadata.threadRowId
+                case .contactAvatar(let metadata):
+                    threadRowId = metadata.threadRowId
+                }
+                thread = threadStore.fetchThread(rowId: threadRowId, tx: tx)
+            case .storyMessage(let source):
+                let storyMessage = storyStore.fetchStoryMessage(rowId: source.storyMessageRowId, tx: tx)
+                guard let storyMessage else {
+                    owsFailDebug("can't check downloadability for non-existent owner")
+                    return true
+                }
+                switch storyMessage.direction {
+                case .outgoing:
+                    // Ignore outgoing stories for purposes of pending message requests.
+                    return false
+                case .incoming:
+                    break
+                }
+                if let groupId = storyMessage.groupId {
+                    thread = threadStore.fetchGroupThread(groupId: groupId, tx: tx)
+                } else {
+                    thread = threadStore.fetchContactThreads(serviceId: storyMessage.authorAci, tx: tx).first
+                }
+            case .thread:
                 // Ignore non-message cases for purposes of pending message request.
                 return false
             }
 
             // If there's not a thread, err on the safe side and don't download it.
-            guard let thread = threadStore.fetchThread(rowId: threadRowId, tx: tx) else {
+            guard let thread else {
                 return true
             }
 
@@ -1569,11 +1609,12 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
         /// limited number of bytes.
         fileprivate func performPrefixRequest(
             downloadState: DownloadState,
+            maxDownloadSizeBytes: UInt64,
             length: UInt16,
         ) async throws -> (AttachmentDownloads.CdnInfo, Data?) {
             let urlSession = await self.signalService.sharedUrlSessionForCdn(
                 cdnNumber: downloadState.cdnNumber(),
-                maxResponseSize: BackupArchive.Constants.maxDownloadSizeBytes,
+                maxResponseSize: maxDownloadSizeBytes,
             )
             let urlPath = try downloadState.urlPath()
             var headers = downloadState.additionalHeaders()
@@ -1740,10 +1781,6 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                     downloadResponse = try await downloadTask!.value
                 }
                 let downloadUrl = downloadResponse.downloadUrl
-                let fileSize = try OWSFileSystem.fileSize(of: downloadUrl)
-                guard fileSize <= maxDownloadSizeBytes else {
-                    throw OWSGenericError("Attachment download length exceeds max size.")
-                }
                 let tmpFile = OWSFileSystem.temporaryFileUrl(
                     fileExtension: nil,
                     isAvailableWhileDeviceLocked: false,

@@ -23,6 +23,18 @@ extension ConversationViewController: CVComponentDelegate {
         self.loadCoordinator.enqueueReloadWithoutCaches()
     }
 
+    // MARK: - Collapse Sets
+
+    public func didTapCollapseSet(collapseSetId: String) {
+        AssertIsOnMainThread()
+        if viewState.expandedCollapseSets.contains(collapseSetId) {
+            viewState.expandedCollapseSets.remove(collapseSetId)
+        } else {
+            viewState.expandedCollapseSets.insert(collapseSetId)
+        }
+        loadCoordinator.enqueueReload()
+    }
+
     // MARK: - Double-Tap
 
     public func didDoubleTapTextViewItem(_ viewModel: CVItemViewModelImpl) {
@@ -156,7 +168,7 @@ extension ConversationViewController: CVComponentDelegate {
 
     // MARK: -
 
-    public func willBecomeVisibleWithFailedOrPendingDownloads(_ message: TSMessage) {
+    public func willBecomeVisibleWithSkippedDownloads(_ message: TSMessage) {
         AssertIsOnMainThread()
 
         if viewState.manuallyCanceledDownloadsMessageIds.contains(message.uniqueId) {
@@ -219,7 +231,7 @@ extension ConversationViewController: CVComponentDelegate {
         }
     }
 
-    public func didTapFailedOrPendingDownloads(_ message: TSMessage) {
+    public func didTapSkippedDownloads(_ message: TSMessage) {
         AssertIsOnMainThread()
 
         let db = DependenciesBridge.shared.db
@@ -956,7 +968,7 @@ extension ConversationViewController: CVComponentDelegate {
                 SSKEnvironment.shared.databaseStorageRef.write { tx in
                     SSKEnvironment.shared.blockingManagerRef.addBlockedAddress(
                         address,
-                        blockMode: .localShouldLeaveGroups,
+                        blockMode: .local,
                         transaction: tx,
                     )
                 }
@@ -1436,6 +1448,21 @@ extension ConversationViewController: CVComponentDelegate {
             alignment: .centerIfNotEntirelyOnScreen,
             isAnimated: true,
         )
+    }
+
+    public func didTapSafetyTips() {
+        let viewController = SafetyTipsViewController()
+        viewController.delegate = self
+        present(viewController, animated: true)
+    }
+}
+
+// MARK: - SafetyTipsViewControllerDelegate
+
+extension ConversationViewController: SafetyTipsViewControllerDelegate {
+    public func didTapViewMoreSafetyTips() {
+        let viewController = MoreSafetyTipsViewController()
+        present(viewController, animated: true)
     }
 }
 

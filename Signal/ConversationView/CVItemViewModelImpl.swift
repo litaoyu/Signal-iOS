@@ -143,7 +143,7 @@ public class CVItemViewModelImpl: CVComponentStateWrapper {
         return componentState.bodyMediaAttachmentStreams.map(\.attachmentStream)
     }
 
-    public var hasUnloadedAttachments: Bool {
+    private var hasUnloadedAttachments: Bool {
 
         if componentState.bodyText == .oversizeTextDownloading {
             return true
@@ -263,7 +263,7 @@ extension CVItemViewModelImpl {
         }
 
         switch messageCellType {
-        case .unknown, .dateHeader, .typingIndicator, .unreadIndicator, .threadDetails, .systemMessage, .unknownThreadWarning, .defaultDisappearingMessageTimer:
+        case .unknown, .dateHeader, .typingIndicator, .unreadIndicator, .threadDetails, .systemMessage, .unknownThreadWarning, .defaultDisappearingMessageTimer, .collapseSet:
             return false
         case .giftBadge:
             return false

@@ -390,9 +390,10 @@ public enum CVComponentKey: CustomStringConvertible, CaseIterable {
     case unreadIndicator
     case typingIndicator
     case threadDetails
-    case failedOrPendingDownloads
+    case skippedDownloads
     case unknownThreadWarning
     case defaultDisappearingMessageTimer
+    case collapseSet
     case messageRoot
 
     public var description: String {
@@ -445,12 +446,14 @@ public enum CVComponentKey: CustomStringConvertible, CaseIterable {
             return ".threadDetails"
         case .unknownThreadWarning:
             return ".unknownThreadWarning"
-        case .failedOrPendingDownloads:
-            return ".failedOrPendingDownloads"
+        case .skippedDownloads:
+            return ".skippedDownloads"
         case .sendFailureBadge:
             return ".sendFailureBadge"
         case .defaultDisappearingMessageTimer:
             return ".defaultDisappearingMessageTimer"
+        case .collapseSet:
+            return ".collapseSet"
         case .messageRoot:
             return ".messageRoot"
         case .poll:

@@ -83,6 +83,7 @@ public class ConversationAvatarView: UIView, CVView, PrimaryImageView {
             case fortyEight
             case fiftySix
             case sixtyFour
+            case seventyFour
             case eighty
             case eightyEight
             case oneHundredTwelve
@@ -111,6 +112,8 @@ public class ConversationAvatarView: UIView, CVView, PrimaryImageView {
                     self = .fiftySix
                 case Self.sixtyFour.diameter:
                     self = .sixtyFour
+                case Self.seventyFour.diameter:
+                    self = .seventyFour
                 case Self.eighty.diameter:
                     self = .eighty
                 case Self.eightyEight.diameter:
@@ -992,6 +995,7 @@ extension ConversationAvatarView.Configuration.SizeClass {
         case .fortyEight: return 48
         case .fiftySix: return 56
         case .sixtyFour: return 64
+        case .seventyFour: return 74
         case .eighty: return 80
         case .eightyEight: return 88
         case .oneHundredTwelve: return 112
@@ -1007,8 +1011,8 @@ extension ConversationAvatarView.Configuration.SizeClass {
         case ..<24: return 0
         case 24...36: return 16
         case 36..<40: return CGFloat(diameter).inverseLerp(36, 40).lerp(16, 24)
-        case 40...64: return 24
-        case 64..<80: return CGFloat(diameter).inverseLerp(64, 80).lerp(24, 36)
+        case 40...74: return 24
+        case 64..<80: return CGFloat(diameter).inverseLerp(74, 80).lerp(24, 36)
         case 80...112: return 36
         case 112...: return (CGFloat(diameter) / 112) * 36
         default: return 0
@@ -1027,6 +1031,7 @@ extension ConversationAvatarView.Configuration.SizeClass {
         case .fortyEight: return CGPoint(x: 28, y: 30)
         case .fiftySix: return CGPoint(x: 32, y: 38)
         case .sixtyFour: return CGPoint(x: 40, y: 46)
+        case .seventyFour: return CGPoint(x: 48, y: 54)
         case .eighty: return CGPoint(x: 44, y: 52)
         case .eightyEight: return CGPoint(x: 49, y: 56)
         case .oneHundredTwelve: return CGPoint(x: 74, y: 80)
@@ -1065,6 +1070,7 @@ extension ConversationAvatarView.Configuration.SizeClass {
         case .fortyEight: return 5
         case .fiftySix: return 5
         case .sixtyFour: return 5
+        case .seventyFour: return 5
         case .eighty: return 5
         case .eightyEight: return 6
         case .oneHundredTwelve: return 6
@@ -1083,6 +1089,7 @@ extension ConversationAvatarView.Configuration.SizeClass {
         case .fortyEight: return 2
         case .fiftySix: return 2
         case .sixtyFour: return 2
+        case .seventyFour: return 3
         case .eighty: return 3
         case .eightyEight: return 3
         case .oneHundredTwelve: return 3

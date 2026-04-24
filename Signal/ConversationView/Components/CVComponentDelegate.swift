@@ -34,6 +34,10 @@ public protocol CVComponentDelegate: AnyObject, AudioMessageViewDelegate, CVPoll
 
     func didTapSystemMessageItem(_ item: CVTextLabel.Item)
 
+    // MARK: - Collapse Sets
+
+    func didTapCollapseSet(collapseSetId: String)
+
     // MARK: - Double-Tap
 
     func didDoubleTapTextViewItem(_ itemViewModel: CVItemViewModelImpl)
@@ -89,9 +93,9 @@ public protocol CVComponentDelegate: AnyObject, AudioMessageViewDelegate, CVPoll
 
     // MARK: -
 
-    func willBecomeVisibleWithFailedOrPendingDownloads(_ message: TSMessage)
+    func willBecomeVisibleWithSkippedDownloads(_ message: TSMessage)
 
-    func didTapFailedOrPendingDownloads(_ message: TSMessage)
+    func didTapSkippedDownloads(_ message: TSMessage)
 
     func didCancelDownload(_ message: TSMessage, attachmentId: Attachment.IDType)
 
@@ -275,6 +279,8 @@ public protocol CVComponentDelegate: AnyObject, AudioMessageViewDelegate, CVPoll
     func didTapViewPoll(pollInteractionUniqueId: String)
 
     func didTapViewPinnedMessage(pinnedMessageUniqueId: String)
+
+    func didTapSafetyTips()
 }
 
 // MARK: -

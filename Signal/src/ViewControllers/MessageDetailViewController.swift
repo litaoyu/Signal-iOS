@@ -1036,6 +1036,8 @@ extension MessageDetailViewController: CVComponentDelegate {
 
     func didTapSystemMessageItem(_ item: CVTextLabel.Item) {}
 
+    func didTapCollapseSet(collapseSetId: String) {}
+
     // MARK: - Double-Tap
 
     func didDoubleTapTextViewItem(_ itemViewModel: CVItemViewModelImpl) {}
@@ -1099,9 +1101,9 @@ extension MessageDetailViewController: CVComponentDelegate {
 
     // MARK: -
 
-    func willBecomeVisibleWithFailedOrPendingDownloads(_ message: TSMessage) {}
+    func willBecomeVisibleWithSkippedDownloads(_ message: TSMessage) {}
 
-    func didTapFailedOrPendingDownloads(_ message: TSMessage) {}
+    func didTapSkippedDownloads(_ message: TSMessage) {}
 
     func didCancelDownload(_ message: TSMessage, attachmentId: Attachment.IDType) {}
 
@@ -1344,6 +1346,8 @@ extension MessageDetailViewController: CVComponentDelegate {
     func didTapVoteOnPoll(poll: OWSPoll, optionIndex: UInt32, isUnvote: Bool) {}
 
     func didTapViewPinnedMessage(pinnedMessageUniqueId: String) {}
+
+    func didTapSafetyTips() {}
 }
 
 extension MessageDetailViewController: UINavigationControllerDelegate {

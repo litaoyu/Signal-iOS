@@ -9,14 +9,13 @@ public import LibSignalClient
 public enum BlockMode {
     case remote
     case restoreFromBackup
-    case localShouldLeaveGroups
-    case localShouldNotLeaveGroups
+    case local
 
-    var locallyInitiated: Bool {
+    var isLocallyInitiated: Bool {
         switch self {
         case .remote, .restoreFromBackup:
             return false
-        case .localShouldLeaveGroups, .localShouldNotLeaveGroups:
+        case .local:
             return true
         }
     }
@@ -149,7 +148,7 @@ public class BlockingManager {
 
         Logger.info("Added blocked address: \(address)")
 
-        if blockMode.locallyInitiated {
+        if blockMode.isLocallyInitiated {
             SSKEnvironment.shared.storageServiceManagerRef.recordPendingUpdates(updatedAddresses: [address])
         }
 
@@ -170,7 +169,7 @@ public class BlockingManager {
             // If we're restoring from a Backup, avoid the side effect of
             // inserting a message. One either existed in the backup or not.
             break
-        case .remote, .localShouldLeaveGroups, .localShouldNotLeaveGroups:
+        case .remote, .local:
             // Insert an info message that we blocked this user.
             let threadStore = DependenciesBridge.shared.threadStore
             let interactionStore = DependenciesBridge.shared.interactionStore
@@ -182,7 +181,7 @@ public class BlockingManager {
             }
         }
 
-        didUpdate(wasLocallyInitiated: blockMode.locallyInitiated, tx: tx)
+        didUpdate(wasLocallyInitiated: blockMode.isLocallyInitiated, tx: tx)
     }
 
     public func removeBlockedAddress(
@@ -226,7 +225,7 @@ public class BlockingManager {
         didUpdate(wasLocallyInitiated: wasLocallyInitiated, tx: tx)
     }
 
-    public func addBlockedGroupId(_ groupId: Data, blockMode: BlockMode, transaction: DBWriteTransaction) {
+    public func addBlockedGroupId(_ groupId: Data, blockMode: BlockMode, shouldLeave: Bool, transaction: DBWriteTransaction) {
         guard GroupManager.isValidGroupIdOfAnyKind(groupId) else {
             owsFailDebug("Can't block invalid groupId: \(groupId.toHex())")
             return
@@ -243,16 +242,13 @@ public class BlockingManager {
         let groupThread = TSGroupThread.fetch(groupId: groupId, transaction: transaction)
         owsAssertDebug(groupThread != nil, "Must have TSGroupThread in order to block it.")
 
-        if blockMode.locallyInitiated, let masterKey = try? (groupThread?.groupModel as? TSGroupModelV2)?.masterKey() {
+        if blockMode.isLocallyInitiated, let masterKey = try? (groupThread?.groupModel as? TSGroupModelV2)?.masterKey() {
             SSKEnvironment.shared.storageServiceManagerRef.recordPendingUpdates(updatedGroupV2MasterKeys: [masterKey])
         }
 
         if let groupThread {
             // Quit the group if we're a member.
-            if
-                blockMode == .localShouldLeaveGroups,
-                groupThread.groupModel.groupMembership.isLocalUserMemberOfAnyKind
-            {
+            if shouldLeave, groupThread.groupModel.groupMembership.isLocalUserMemberOfAnyKind {
                 GroupManager.leaveGroupOrDeclineInviteAsyncWithoutUI(
                     groupThread: groupThread,
                     tx: transaction,
@@ -264,7 +260,7 @@ public class BlockingManager {
                 // If we're restoring from a Backup, avoid the side effect of
                 // inserting a message. One either existed in the backup or not.
                 break
-            case .remote, .localShouldLeaveGroups, .localShouldNotLeaveGroups:
+            case .remote, .local:
                 // Insert an info message that we blocked this group.
                 DependenciesBridge.shared.interactionStore.insertInteraction(
                     TSInfoMessage(thread: groupThread, messageType: .blockedGroup),
@@ -273,7 +269,7 @@ public class BlockingManager {
             }
         }
 
-        didUpdate(wasLocallyInitiated: blockMode.locallyInitiated, tx: transaction)
+        didUpdate(wasLocallyInitiated: blockMode.isLocallyInitiated, tx: transaction)
     }
 
     public func removeBlockedGroup(groupId: Data, wasLocallyInitiated: Bool, transaction: DBWriteTransaction) {
@@ -333,11 +329,11 @@ public class BlockingManager {
         }
     }
 
-    public func addBlockedThread(_ thread: TSThread, blockMode: BlockMode, transaction: DBWriteTransaction) {
+    public func addBlockedThread(_ thread: TSThread, blockMode: BlockMode, shouldLeaveIfGroup: Bool, transaction: DBWriteTransaction) {
         if let contactThread = thread as? TSContactThread {
             addBlockedAddress(contactThread.contactAddress, blockMode: blockMode, transaction: transaction)
         } else if let groupThread = thread as? TSGroupThread {
-            addBlockedGroupId(groupThread.groupId, blockMode: blockMode, transaction: transaction)
+            addBlockedGroupId(groupThread.groupId, blockMode: blockMode, shouldLeave: shouldLeaveIfGroup, transaction: transaction)
         } else {
             owsFailDebug("Invalid thread: \(type(of: thread))")
         }

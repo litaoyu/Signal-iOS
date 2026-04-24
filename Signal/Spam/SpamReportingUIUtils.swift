@@ -4,14 +4,15 @@
 //
 
 import LibSignalClient
-public import SignalServiceKit
+import SignalServiceKit
+import SignalUI
 
-public enum ReportSpamUIUtils {
+enum ReportSpamUIUtils {
     /// Called only if the user reports spam.
     /// The `Bool` parameter represents if the thread was also blocked.
-    public typealias Completion = (Bool) -> Void
+    typealias Completion = (Bool) -> Void
 
-    public static func showReportSpamActionSheet(
+    static func showReportSpamActionSheet(
         _ thread: TSThread,
         isBlocked: Bool,
         from viewController: UIViewController,
@@ -21,7 +22,7 @@ public enum ReportSpamUIUtils {
         viewController.presentActionSheet(actionSheet)
     }
 
-    public static func createReportSpamActionSheet(for thread: TSThread, isBlocked: Bool, completion: Completion? = nil) -> ActionSheetController {
+    static func createReportSpamActionSheet(for thread: TSThread, isBlocked: Bool, completion: Completion? = nil) -> ActionSheetController {
         let actionSheetTitle = OWSLocalizedString(
             "MESSAGE_REQUEST_REPORT_CONVERSATION_TITLE",
             comment: "Action sheet title to confirm reporting a conversation as spam via a message request.",
@@ -39,8 +40,11 @@ public enum ReportSpamUIUtils {
                     comment: "Action sheet action to confirm reporting a conversation as spam via a message request.",
                 ),
                 handler: { _ in
-                    SSKEnvironment.shared.databaseStorageRef.write { tx in
-                        Self.reportSpam(in: thread, tx: tx)
+                    let spamReport = SSKEnvironment.shared.databaseStorageRef.write { tx in
+                        return Self.buildSpamReport(in: thread, tx: tx)
+                    }
+                    Task {
+                        try? await spamReport?.submit(using: SSKEnvironment.shared.networkManagerRef)
                     }
                     completion?(false)
                 },
@@ -54,8 +58,11 @@ public enum ReportSpamUIUtils {
                         comment: "Action sheet action to confirm blocking and reporting spam for a thread via a message request.",
                     ),
                     handler: { _ in
-                        SSKEnvironment.shared.databaseStorageRef.write { tx in
-                            Self.blockAndReport(in: thread, tx: tx)
+                        let spamReport = SSKEnvironment.shared.databaseStorageRef.write { tx in
+                            return Self.blockAndBuildSpamReport(in: thread, tx: tx)
+                        }
+                        Task {
+                            try? await spamReport?.submit(using: SSKEnvironment.shared.networkManagerRef)
                         }
                         completion?(true)
                     },
@@ -66,7 +73,7 @@ public enum ReportSpamUIUtils {
         return actionSheet
     }
 
-    public static func successfulReportText(didBlock: Bool) -> String {
+    static func successfulReportText(didBlock: Bool) -> String {
         if didBlock {
             OWSLocalizedString(
                 "MESSAGE_REQUEST_SPAM_REPORTED_AND_BLOCKED",
@@ -80,31 +87,38 @@ public enum ReportSpamUIUtils {
         }
     }
 
-    public static func blockAndReport(in thread: TSThread, tx: DBWriteTransaction) {
+    static func blockAndBuildSpamReport(in thread: TSThread, tx: DBWriteTransaction) -> SpamReport? {
         SSKEnvironment.shared.blockingManagerRef.addBlockedThread(
             thread,
-            blockMode: .localShouldNotLeaveGroups,
+            blockMode: .local,
+            shouldLeaveIfGroup: false,
             transaction: tx,
         )
 
-        Self.reportSpam(in: thread, tx: tx)
+        let result = Self._buildSpamReport(in: thread, tx: tx)
 
         SSKEnvironment.shared.syncManagerRef.sendMessageRequestResponseSyncMessage(
             thread: thread,
             responseType: .blockAndSpam,
+            transaction: tx,
         )
+
+        return result
     }
 
-    public static func report(in thread: TSThread, tx: DBWriteTransaction) {
-        Self.reportSpam(in: thread, tx: tx)
+    static func buildSpamReport(in thread: TSThread, tx: DBWriteTransaction) -> SpamReport? {
+        let result = Self._buildSpamReport(in: thread, tx: tx)
 
         SSKEnvironment.shared.syncManagerRef.sendMessageRequestResponseSyncMessage(
             thread: thread,
-            responseType: .blockAndSpam,
+            responseType: .spam,
+            transaction: tx,
         )
+
+        return result
     }
 
-    private static func reportSpam(in thread: TSThread, tx: DBWriteTransaction) {
+    private static func _buildSpamReport(in thread: TSThread, tx: DBWriteTransaction) -> SpamReport? {
         var aci: Aci?
         var isGroup = false
         if let contactThread = thread as? TSContactThread {
@@ -113,21 +127,24 @@ public enum ReportSpamUIUtils {
             isGroup = true
             let accountManager = DependenciesBridge.shared.tsAccountManager
             guard let localIdentifiers = accountManager.localIdentifiers(tx: tx) else {
-                return owsFailDebug("Missing local identifiers")
+                owsFailDebug("Missing local identifiers")
+                return nil
             }
             let groupMembership = groupThread.groupModel.groupMembership
             if let invitedAtServiceId = groupMembership.localUserInvitedAtServiceId(localIdentifiers: localIdentifiers) {
                 aci = groupMembership.addedByAci(forInvitedMember: invitedAtServiceId)
             }
         } else {
-            return owsFailDebug("Unexpected thread type for reporting spam \(type(of: thread))")
+            owsFailDebug("Unexpected thread type for reporting spam \(type(of: thread))")
+            return nil
         }
 
         let infoMessage = TSInfoMessage(thread: thread, messageType: .reportedSpam)
         infoMessage.anyInsert(transaction: tx)
 
         guard let aci else {
-            return owsFailDebug("Missing ACI for reporting spam")
+            owsFailDebug("Missing ACI for reporting spam")
+            return nil
         }
 
         // We only report a selection of the N most recent messages
@@ -137,12 +154,9 @@ public enum ReportSpamUIUtils {
         var guidsToReport = Set<String>()
         do {
             if isGroup {
-                guard
-                    let localIdentifiers: LocalIdentifiers =
-                    DependenciesBridge.shared.tsAccountManager.localIdentifiers(tx: tx)
-                else {
+                guard let localIdentifiers = DependenciesBridge.shared.tsAccountManager.localIdentifiers(tx: tx) else {
                     owsFailDebug("Unable to find local identifiers")
-                    return
+                    return nil
                 }
                 try InteractionFinder(
                     threadUniqueId: thread.uniqueId,
@@ -189,40 +203,17 @@ public enum ReportSpamUIUtils {
             owsFailDebug("Failed to lookup guids to report \(error)")
         }
 
-        var reportingToken: SpamReportingToken?
-        do {
-            reportingToken = try SpamReportingTokenRecord.reportingToken(
-                for: aci,
-                database: tx.database,
-            )
-        } catch {
-            owsFailBeta("Failed to look up spam reporting token. Continuing on, as the parameter is optional. Error: \(error)")
-        }
+        let reportingToken = SpamReportingTokenRecord.reportingToken(for: aci, database: tx.database)
 
         guard !guidsToReport.isEmpty else {
             Logger.warn("No messages with serverGuids to report.")
-            return
+            return nil
         }
 
-        Logger.info(
-            "Reporting \(guidsToReport.count) message(s) from \(aci) as spam. We \(reportingToken == nil ? "do not have" : "have") a reporting token",
+        return SpamReport(
+            aci: aci,
+            serverGuids: guidsToReport,
+            reportingToken: reportingToken,
         )
-
-        Task {
-            do {
-                try await withThrowingTaskGroup(of: Void.self) { group in
-                    for guid in guidsToReport {
-                        let request = OWSRequestFactory.reportSpam(from: aci, withServerGuid: guid, reportingToken: reportingToken)
-                        group.addTask {
-                            _ = try await SSKEnvironment.shared.networkManagerRef.asyncRequest(request)
-                        }
-                    }
-                    try await group.waitForAll()
-                }
-                Logger.info("Successfully reported \(guidsToReport.count) message(s) from \(aci) as spam.")
-            } catch {
-                owsFailDebug("Failed to report message(s) from \(aci) as spam with error: \(error)")
-            }
-        }
     }
 }

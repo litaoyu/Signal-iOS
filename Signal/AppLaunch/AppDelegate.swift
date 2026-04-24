@@ -792,12 +792,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         cron.scheduleFrequently(
             mustBeRegistered: true,
             mustBeConnected: true,
-            operation: {
-                try await blockingManager.syncBlockListIfNecessary(force: false)
-            },
-            handleResult: { _ in
-                // Handled internally by BlockingManager.
-            },
+            operation: { try await blockingManager.syncBlockListIfNecessary(force: false) },
         )
 
         // Warm the "available emoji" cache, intentionally off the main thread.
@@ -1276,7 +1271,10 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
                             proceedTitle: wipeAppDataActionTitle,
                             proceedStyle: .destructive,
                             proceedAction: { _ in
-                                ModalActivityIndicatorViewController.present(fromViewController: viewController) { _ in
+                                ModalActivityIndicatorViewController.present(
+                                    fromViewController: viewController,
+                                    title: CommonStrings.deletingModal,
+                                ) { _ in
                                     SignalApp.shared.resetAppDataAndExit(keyFetcher: keyFetcher)
                                 }
                             },

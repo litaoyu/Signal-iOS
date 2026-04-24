@@ -653,6 +653,7 @@ class DonateViewController: OWSViewController, OWSNavigationChildController {
 
         ModalActivityIndicatorViewController.present(
             fromViewController: self,
+            title: CommonStrings.updatingModal,
             canCancel: false,
             asyncBlock: { modal in
                 do {
@@ -785,8 +786,7 @@ class DonateViewController: OWSViewController, OWSNavigationChildController {
             )
         }
 
-        // Start fetching the donation configuration.
-        async let donationConfiguration = { () async throws -> DonationConfiguration in
+        let donationConfigurationClosure = { () async throws -> DonationConfiguration in
             let donationConfiguration = try await DonationSubscriptionManager.fetchDonationConfiguration()
 
             let boostBadge = donationConfiguration.boost.badge
@@ -802,16 +802,17 @@ class DonateViewController: OWSViewController, OWSNavigationChildController {
             }
 
             return donationConfiguration
-        }()
+        }
 
         // Start loading the current subscription.
         async let currentSubscription = DonationViewsUtil.loadCurrentSubscription(subscriberID: subscriberID)
 
         do {
+            let donationConfiguration = try await donationConfigurationClosure()
             return currentState.loaded(
-                oneTimeConfig: try await donationConfiguration.boost,
-                monthlyConfig: try await donationConfiguration.subscription,
-                paymentMethodsConfig: try await donationConfiguration.paymentMethods,
+                oneTimeConfig: donationConfiguration.boost,
+                monthlyConfig: donationConfiguration.subscription,
+                paymentMethodsConfig: donationConfiguration.paymentMethods,
                 currentMonthlySubscription: try await currentSubscription,
                 subscriberID: subscriberID,
                 previousMonthlySubscriptionCurrencyCode: previousSubscriberCurrencyCode,

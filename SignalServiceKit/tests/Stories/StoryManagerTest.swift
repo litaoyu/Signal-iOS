@@ -64,14 +64,14 @@ class StoryManagerTest: SSKBaseTest {
         let author = Aci.randomForTesting()
         let storyMessage = try Self.makePrivateStory()
 
-        try write {
-            try StoryManager.processIncomingStoryMessage(
+        write {
+            XCTAssertNil(try? StoryManager.processIncomingStoryMessage(
                 storyMessage,
                 timestamp: timestamp,
                 author: author,
                 localIdentifiers: .forUnitTests,
                 transaction: $0,
-            )
+            ))
 
             // Message should not have been created.
             let message = StoryFinder.story(
@@ -93,31 +93,31 @@ class StoryManagerTest: SSKBaseTest {
         let profileManager = SSKEnvironment.shared.profileManagerRef
         let recipientFetcher = DependenciesBridge.shared.recipientFetcher
 
-        try write {
+        write {
             var recipient = recipientFetcher.fetchOrCreate(serviceId: author, tx: $0)
             profileManager.addRecipientToProfileWhitelist(&recipient, userProfileWriter: .localUser, tx: $0)
 
             SSKEnvironment.shared.blockingManagerRef.addBlockedAddress(
                 SignalServiceAddress(author),
-                blockMode: .localShouldNotLeaveGroups,
+                blockMode: .local,
                 transaction: $0,
             )
 
-            try StoryManager.processIncomingStoryMessage(
+            XCTAssertNil(try? StoryManager.processIncomingStoryMessage(
                 privateStoryMessage,
                 timestamp: timestamp,
                 author: author,
                 localIdentifiers: .forUnitTests,
                 transaction: $0,
-            )
+            ))
 
-            try StoryManager.processIncomingStoryMessage(
+            XCTAssertNil(try? StoryManager.processIncomingStoryMessage(
                 groupStoryMessage,
                 timestamp: timestamp,
                 author: author,
                 localIdentifiers: .forUnitTests,
                 transaction: $0,
-            )
+            ))
 
             // Message should not have been created.
             let message = StoryFinder.story(
@@ -141,7 +141,7 @@ class StoryManagerTest: SSKBaseTest {
         let profileManager = SSKEnvironment.shared.profileManagerRef
         let recipientFetcher = DependenciesBridge.shared.recipientFetcher
 
-        try write {
+        write {
             var recipient = recipientFetcher.fetchOrCreate(serviceId: author, tx: $0)
             profileManager.addRecipientToProfileWhitelist(&recipient, userProfileWriter: .localUser, tx: $0)
 
@@ -150,17 +150,18 @@ class StoryManagerTest: SSKBaseTest {
             ).anyInsert(transaction: $0)
             SSKEnvironment.shared.blockingManagerRef.addBlockedGroupId(
                 groupId,
-                blockMode: .localShouldNotLeaveGroups,
+                blockMode: .local,
+                shouldLeave: false,
                 transaction: $0,
             )
 
-            try StoryManager.processIncomingStoryMessage(
+            XCTAssertNil(try? StoryManager.processIncomingStoryMessage(
                 storyMessage,
                 timestamp: timestamp,
                 author: author,
                 localIdentifiers: .forUnitTests,
                 transaction: $0,
-            )
+            ))
 
             // Message should not have been created.
             let message = StoryFinder.story(
@@ -189,13 +190,13 @@ class StoryManagerTest: SSKBaseTest {
 
             try Self.makeGroupThread(secretParams: secretParams, transaction: $0)
 
-            try StoryManager.processIncomingStoryMessage(
+            XCTAssertNil(try? StoryManager.processIncomingStoryMessage(
                 storyMessage,
                 timestamp: timestamp,
                 author: author,
                 localIdentifiers: .forUnitTests,
                 transaction: $0,
-            )
+            ))
 
             // Message should not have been created.
             let message = StoryFinder.story(
@@ -224,13 +225,13 @@ class StoryManagerTest: SSKBaseTest {
 
             try Self.makeGroupThread(secretParams: secretParams, announcementOnly: true, members: [author], transaction: $0)
 
-            try StoryManager.processIncomingStoryMessage(
+            XCTAssertNil(try? StoryManager.processIncomingStoryMessage(
                 storyMessage,
                 timestamp: timestamp,
                 author: author,
                 localIdentifiers: .forUnitTests,
                 transaction: $0,
-            )
+            ))
 
             // Message should not have been created.
             let message = StoryFinder.story(
@@ -361,7 +362,7 @@ class StoryManagerTest: SSKBaseTest {
         let recipientFetcher = DependenciesBridge.shared.recipientFetcher
 
         try write {
-            try StoryMessage.create(
+            _ = try StoryMessage.create(
                 withIncomingStoryMessage: storyMessage,
                 timestamp: timestamp,
                 receivedTimestamp: timestamp,
@@ -372,13 +373,13 @@ class StoryManagerTest: SSKBaseTest {
             var recipient = recipientFetcher.fetchOrCreate(serviceId: author, tx: $0)
             profileManager.addRecipientToProfileWhitelist(&recipient, userProfileWriter: .localUser, tx: $0)
 
-            try StoryManager.processIncomingStoryMessage(
+            XCTAssertNil(try? StoryManager.processIncomingStoryMessage(
                 storyMessage,
                 timestamp: timestamp,
                 author: author,
                 localIdentifiers: .forUnitTests,
                 transaction: $0,
-            )
+            ))
 
             let count = try StoryMessage
                 .filter(Column(StoryMessage.columnName(.timestamp)) == timestamp)
