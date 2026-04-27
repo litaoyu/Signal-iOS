@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "立即更新";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Notelet 無法正常啟動。請將除錯日誌傳送至 support@Notelet.org 以讓我們解決問題。";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Notelet 無法正常啟動。請將除錯日誌傳送至 support@notelet.org 以讓我們解決問題。";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "照樣開啟 Notelet";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "請將除錯日誌傳送至 support@Notelet.org 協助我們解決問題。";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "請將除錯日誌傳送至 support@notelet.org 協助我們解決問題。";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "無法開啟 Notelet";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "未知資料庫版本";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Notelet 先前嘗試開啟的時候發生問題。請將除錯記錄檔傳送至 support@Notelet.org 協助解決此問題。";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Notelet 先前嘗試開啟的時候發生問題。請將除錯記錄檔傳送至 support@notelet.org 協助解決此問題。";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "先前未能開啟 Notelet";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "儲存空間不足";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "無法還原從舊裝置轉移的資料。請將除錯日誌傳送至 support@Notelet.org 以便我們修正問題。重新安裝 Notelet 可能會導致訊息紀錄遺失。";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "無法還原從舊裝置轉移的資料。請將除錯日誌傳送至 support@notelet.org 以便我們修正問題。重新安裝 Notelet 可能會導致訊息紀錄遺失。";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "無法完成傳送資料";
@@ -368,13 +368,13 @@
 "ATTACHMENT_APPROVAL_MEDIA_QUALITY_TITLE" = "媒體的品質";
 
 /* Notification body shown when media sync to a linked device is complete. */
-"ATTACHMENT_BACKFILL_FINISHED_NOTIFICATION" = "Finished syncing with Notelet on your linked device.";
+"ATTACHMENT_BACKFILL_FINISHED_NOTIFICATION" = "已與已連結裝置上的 Notelet 完成同步。";
 
 /* Notification body shown when media sync to a linked device was interrupted. */
-"ATTACHMENT_BACKFILL_INTERRUPTED_NOTIFICATION" = "Open Notelet to continue syncing with your linked device";
+"ATTACHMENT_BACKFILL_INTERRUPTED_NOTIFICATION" = "開啟 Notelet 以繼續與已連結裝置同步";
 
 /* Notification body shown while syncing media to a linked device. */
-"ATTACHMENT_BACKFILL_SYNCING_NOTIFICATION" = "Syncing with Notelet on your linked device";
+"ATTACHMENT_BACKFILL_SYNCING_NOTIFICATION" = "與已連結裝置上的 Notelet 進行同步";
 
 /* Generic filename for an attachment with no known name */
 "ATTACHMENT_DEFAULT_FILENAME" = "附件";
@@ -461,7 +461,7 @@
 "ATTACHMENT_LABEL" = "附件";
 
 /* Displayed in a full screen modal when app is processing media that was pasted into message compose field. */
-"ATTACHMENT_PASTING" = "Pasting…";
+"ATTACHMENT_PASTING" = "正在貼上…";
 
 /* Alert title when picking a document fails for an unknown reason */
 "ATTACHMENT_PICKER_DOCUMENTS_FAILED_ALERT_TITLE" = "無法選取檔案。";
@@ -1322,7 +1322,7 @@
 "CALL_LINK_CREATE" = "建立通話連結";
 
 /* Displayed in a full screen modal view when creating a Call Link */
-"CALL_LINK_CREATING_MODAL" = "Creating…";
+"CALL_LINK_CREATING_MODAL" = "正在建立…";
 
 /* Description of sheet presented when call link creation fails. */
 "CALL_LINK_CREATION_FAILURE_SHEET_DESCRIPTION" = "無法建立通話連結。請檢查你的網路連線，然後重試。";
@@ -1957,6 +1957,15 @@
 /* Title for a view allowing users to choose a Backup plan. */
 "CHOOSE_BACKUP_PLAN_TITLE" = "選擇備份計畫";
 
+/* VoiceOver hint for an expanded collapse set button. */
+"COLLAPSE_SET_ACCESSIBILITY_HINT_COLLAPSE" = "隱藏更新";
+
+/* VoiceOver hint for a collapsed collapse set button. */
+"COLLAPSE_SET_ACCESSIBILITY_HINT_EXPAND" = "顯示更新";
+
+/* Short label shown in a collapsed timer-changes set indicating the timer is now disabled. */
+"COLLAPSE_SET_TIMER_DISABLED" = "已停用";
+
 /* Title for the color & wallpaper settings view. */
 "COLOR_AND_WALLPAPER_SETTINGS_TITLE" = "聊天色彩與背景";
 
@@ -2547,9 +2556,6 @@
 
 /* Indicator that a value has been copied to the clipboard. */
 "COPIED_TO_CLIPBOARD" = "已複製到剪貼簿";
-
-/* ActionSheet title */
-"CORRUPTED_SESSION_DESCRIPTION" = "重設對話後，便能收到來自 %1$@ 的訊息，但無法恢復已損壞的訊息。";
 
 /* No comment provided by engineer. */
 "COUNTRYCODE_SELECT_TITLE" = "選取國家代碼";
@@ -3401,7 +3407,7 @@
 "EMAIL_INVITE_SUBJECT" = "我們不如改用 Notelet 吧";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "您的裝置尚未設定為傳送電郵。如欲傳送支援請求，請在您的裝置內設定電郵或傳送確認電郵 support@Notelet.org";
+"EMAIL_SIGNAL_MESSAGE" = "您的裝置尚未設定為傳送電郵。如欲傳送支援請求，請在您的裝置內設定電郵或傳送確認電郵 support@notelet.org";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "電郵不可用";
@@ -3572,7 +3578,7 @@
 "ERROR_NETWORK_FAILURE" = "網路出錯。";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "為協助我們改進 Notelet，敬請附上由您的裝置產生的除錯記錄檔，並將此錯誤報告給 support@Notelet.org；%1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "為協助我們改進 Notelet，敬請附上由您的裝置產生的除錯記錄檔，並將此錯誤報告給 support@notelet.org；%1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Notelet 測試版：發生錯誤";
@@ -3655,9 +3661,6 @@
 /* Button that marks user as verified after a successful fingerprint scan. */
 "FINGERPRINT_SCAN_VERIFY_BUTTON" = "標記為已驗證";
 
-/* Label for button to reset a session. */
-"FINGERPRINT_SHRED_KEYMATERIAL_BUTTON" = "重置工作階段";
-
 /* Accessibility label for finishing new group */
 "FINISH_GROUP_CREATION_LABEL" = "完成建立群組";
 
@@ -3686,7 +3689,7 @@
 "GENERIC_ATTACHMENT_LABEL" = "附件";
 
 /* notification title indicating the user generically has a new message */
-"GENERIC_INCOMING_MESSAGE_NOTIFICATION" = "新訊息！";
+"GENERIC_INCOMING_MESSAGE_NOTIFICATION" = "New message";
 
 /* Title for the 'Get Started' banner */
 "GET_STARTED_BANNER_TITLE" = "開始";
@@ -3872,7 +3875,7 @@
 "GROUP_CALL_NO_ONE_HERE" = "暫時只得您一個人";
 
 /* Text indicating you can't take this action because you're not a member of the group */
-"GROUP_CALL_NOT_A_MEMBER" = "This action is unavailable because you’re no longer a member of this group.";
+"GROUP_CALL_NOT_A_MEMBER" = "你已不再是此群組的成員，因此無法執行此操作。";
 
 /* Copy explaining that a user has joined the group call. Embeds {member name} */
 "GROUP_CALL_NOTIFICATION_ONE_JOINED_FORMAT" = "%1$@ 已加入通話";
@@ -3974,7 +3977,7 @@
 "GROUP_CREATED_BY_UNKNOWN_USER" = "群組已創建。";
 
 /* Displayed in a full screen modal when creating a new group. */
-"GROUP_CREATING" = "Creating…";
+"GROUP_CREATING" = "正在建立…";
 
 /* Message shown in conversation view that indicates there were issues with group creation. */
 "GROUP_CREATION_FAILED" = "並非所有成員均可被新增至該群組。請輕觸重試。";
@@ -4022,7 +4025,7 @@
 "GROUP_INVITE_LINK_ENABLED_WITHOUT_APPROVAL_BY_REMOTE_USER_FORMAT" = "%1$@ 已開啟無須經管理員批准的群組連結。";
 
 /* Displayed in a full screen modal when joining a group via an invite link */
-"GROUP_INVITE_LINK_JOINING" = "Joining…";
+"GROUP_INVITE_LINK_JOINING" = "正在加入…";
 
 /* Message indicating that the group invite link was reset. */
 "GROUP_INVITE_LINK_RESET" = " 群組連結已重設。";
@@ -4268,13 +4271,13 @@
 "GROUP_NAME_EDUCATION_SHEET_BULLET_1" = "請小心那些冒充其他組織和企業的群組";
 
 /* Second bullet point for the explainer sheet for group names */
-"GROUP_NAME_EDUCATION_SHEET_BULLET_2" = "群組中成員的個人檔案名稱未經驗證";
+"GROUP_NAME_EDUCATION_SHEET_BULLET_2" = "Notelet 無法驗證姓名和相片";
 
 /* Third bullet point for the explainer sheet for group names */
-"GROUP_NAME_EDUCATION_SHEET_BULLET_3" = "不要與不認識的人分享個人資料";
+"GROUP_NAME_EDUCATION_SHEET_BULLET_3" = "Notelet 絕不會聯絡你來索取你的註冊碼、PIN 碼或恢復金鑰";
 
 /* Fourth bullet point for the explainer sheet for group names */
-"GROUP_NAME_EDUCATION_SHEET_BULLET_4" = "Don’t share personal information with people you don’t know";
+"GROUP_NAME_EDUCATION_SHEET_BULLET_4" = "不要與不認識的人分享個人資料";
 
 /* Header for the explainer sheet for group names */
 "GROUP_NAME_EDUCATION_SHEET_HEADER_FORMAT" = "<bold>群組名稱</bold>由群組成員選擇。";
@@ -4727,10 +4730,10 @@
 "INFO_MESSAGE_ACCEPTED_MESSAGE_REQUEST" = "你已接受訊息請求。";
 
 /* An info message inserted into the chat when you accept a message request in a group chat. */
-"INFO_MESSAGE_ACCEPTED_MESSAGE_REQUEST_GROUP" = "You accepted the group request.";
+"INFO_MESSAGE_ACCEPTED_MESSAGE_REQUEST_GROUP" = "你已接受群組請求。";
 
 /* An info message inserted into the chat when you accept a message request in a 1:1. {{ Embeds name of your chat partner }}. */
-"INFO_MESSAGE_ACCEPTED_MESSAGE_REQUEST_ONE_ON_ONE" = "You accepted %1$@'s message request.";
+"INFO_MESSAGE_ACCEPTED_MESSAGE_REQUEST_ONE_ON_ONE" = "你已接受%1$@的訊息請求。";
 
 /* Header for an action sheet providing options in response to an accepted 1:1 message request. Embeds {{ the name of your chat partner }}. */
 "INFO_MESSAGE_ACCEPTED_MESSAGE_REQUEST_OPTIONS_ACTION_SHEET_HEADER_CONTACT" = "你已接受來自 %1$@ 的訊息請求。如果這是個錯誤，你可以選擇以下操作。";
@@ -4739,7 +4742,7 @@
 "INFO_MESSAGE_ACCEPTED_MESSAGE_REQUEST_OPTIONS_ACTION_SHEET_HEADER_GROUP" = "你已接受來自此群組的訊息請求。如果這是個錯誤，你可以選擇以下操作。";
 
 /* Title for a button shown alongside an info message indicating you accepted a message request. */
-"INFO_MESSAGE_ACCEPTED_MESSAGE_REQUEST_OPTIONS_BUTTON" = "選項";
+"INFO_MESSAGE_ACCEPTED_MESSAGE_REQUEST_OPTIONS_BUTTON" = "封鎖或檢舉…";
 
 /* An info message inserted into a group chat when you block the group. */
 "INFO_MESSAGE_BLOCKED_GROUP" = "你已封鎖此群組。";
@@ -5459,13 +5462,13 @@
 "MESSAGE_REQUEST_BLOCK_GROUP_TITLE_FORMAT" = "要封鎖並離開 %1$@ 嗎？";
 
 /* Message for an action sheet asking the user to confirm if they want to accept a message request. {{ Embeds 'Signal will never' in bolded text }} */
-"MESSAGE_REQUEST_CONFIRM_ACCEPT_MESSAGE" = "Only accept requests from people you trust. %1$@ message you for a registration code, PIN, or recovery key.";
+"MESSAGE_REQUEST_CONFIRM_ACCEPT_MESSAGE" = "僅接受你信任之人的請求。%1$@透過訊息向你索取註冊碼、PIN 碼或恢復金鑰。";
 
 /* Embedded text in the message for an action sheet asking the user to confirm if they want to accept a message request. */
-"MESSAGE_REQUEST_CONFIRM_ACCEPT_MESSAGE_EMBEDDED_BOLD_TEXT" = "Notelet will never";
+"MESSAGE_REQUEST_CONFIRM_ACCEPT_MESSAGE_EMBEDDED_BOLD_TEXT" = "Notelet 絕不會";
 
 /* Title for an action sheet asking the user to confirm if they want to accept a message request */
-"MESSAGE_REQUEST_CONFIRM_ACCEPT_TITLE" = "Accept Request?";
+"MESSAGE_REQUEST_CONFIRM_ACCEPT_TITLE" = "要接受請求嗎？";
 
 /* Action sheet action to confirm deleting a conversation via a message request. */
 "MESSAGE_REQUEST_DELETE_CONVERSATION_ACTION" = "刪除";
@@ -5540,7 +5543,7 @@
 "MESSAGE_REQUEST_VIEW_EXISTING_GROUP_PROMPT" = "要繼續與此群組的聊天，並與其成員分享你的名稱和照片嗎？";
 
 /* A prompt asking if the user wants to accept a conversation invite. */
-"MESSAGE_REQUEST_VIEW_NEW_CONTACT_PROMPT" = "要讓 用戶 傳訊給您，並向對方分享您的名稱和照片嗎？在您接受之前，對方不會知道您已看過其訊息。";
+"MESSAGE_REQUEST_VIEW_NEW_CONTACT_PROMPT" = "要讓此人傳訊息給你，並向對方分享你的名稱和相片嗎？在你接受之前，對方不會知道你已看過其訊息。";
 
 /* A prompt asking if the user wants to accept a group invite. */
 "MESSAGE_REQUEST_VIEW_NEW_GROUP_PROMPT" = "要加入此群組，並向其成員分享您的名稱和照片嗎？在您接受之前，對方不會知道您已看過其訊息。";
@@ -5663,16 +5666,16 @@
 "MISSING_MEDIA_LIBRARY_PERMISSION_TITLE" = "Notelet 需要存取您的照片以使用此功能。";
 
 /* Text on a blocking progress screen that indicates that there's a deletion in progress. */
-"MODAL_DELETING" = "Deleting…";
+"MODAL_DELETING" = "正在刪除...";
 
 /* Text on a blocking progress screen that indicates that there's a preparation in progress. */
-"MODAL_PREPARING" = "Preparing…";
+"MODAL_PREPARING" = "正在準備…";
 
 /* Text on a blocking progress screen that indicates that there's a search in progress. */
-"MODAL_SEARCHING" = "Searching…";
+"MODAL_SEARCHING" = "正在搜尋…";
 
 /* Text on a blocking progress screen that indicates that there's an update in progress. */
-"MODAL_UPDATING" = "Updating…";
+"MODAL_UPDATING" = "正在更新…";
 
 /* An error shown as the title of an alert when try to link a new device & the user is already at the limit. */
 "MULTIDEVICE_PAIRING_MAX_DESC" = "您無法連結更多裝置。";
@@ -7181,16 +7184,16 @@
 "PROFILE_NAME_CHANGE_SYSTEM_NONCONTACT_FORMAT" = "%1$@ 已將個人檔案名稱改為 %2$@。";
 
 /* First bullet point for the explainer sheet for profile names */
-"PROFILE_NAME_EDUCATION_SHEET_BULLET_1" = "個人檔案名稱未經驗證";
+"PROFILE_NAME_EDUCATION_SHEET_BULLET_1" = "Notelet 無法驗證姓名和相片";
 
 /* Second bullet point for the explainer sheet for profile names */
-"PROFILE_NAME_EDUCATION_SHEET_BULLET_2" = "請小心那些冒充他人的帳戶";
+"PROFILE_NAME_EDUCATION_SHEET_BULLET_2" = "Notelet 絕不會聯絡你來索取你的註冊碼、PIN 碼或恢復金鑰";
 
 /* Third bullet point for the explainer sheet for profile names */
-"PROFILE_NAME_EDUCATION_SHEET_BULLET_3" = "不要與不認識的人分享個人資料";
+"PROFILE_NAME_EDUCATION_SHEET_BULLET_3" = "請小心那些冒充他人的帳戶";
 
 /* Fourth bullet point for the explainer sheet for profile names */
-"PROFILE_NAME_EDUCATION_SHEET_BULLET_4" = "Don’t share personal information with people you don’t know";
+"PROFILE_NAME_EDUCATION_SHEET_BULLET_4" = "不要與不認識的人分享個人資料";
 
 /* Header for the explainer sheet for profile names */
 "PROFILE_NAME_EDUCATION_SHEET_HEADER_FORMAT" = "Notelet 上的<bold>個人檔案名稱</bold>由其帳戶持有人選擇。";
@@ -7916,40 +7919,40 @@
 "SAFETY_TIPS_FAKE_BUSINESS_BODY" = "請小心與你聯絡的企業或政府機構。涉及稅務機關、快遞公司等訊息可能是垃圾訊息。";
 
 /* Message title describing the safety tip about unknown or fake businesses. */
-"SAFETY_TIPS_FAKE_BUSINESS_TITLE" = "虛假企業和機構";
+"SAFETY_TIPS_FAKE_BUSINESS_TITLE" = "虛假企業";
 
 /* Title for Safety Tips education screen. */
 "SAFETY_TIPS_HEADER_TITLE" = "安全提示";
 
 /* Message body describing the scams safety tip. */
-"SAFETY_TIPS_LOOK_OUT_FOR_SCAMS_BODY" = "Avoid vague messages that try to get you to reply. Be aware of financial tips and suspicious web links.";
+"SAFETY_TIPS_LOOK_OUT_FOR_SCAMS_BODY" = "請避免回應那些試圖誘使你回覆的含糊訊息。警惕各種理財建議及可疑的網絡連結。";
 
 /* Message title describing the scams safety tip. */
-"SAFETY_TIPS_LOOK_OUT_FOR_SCAMS_TITLE" = "Look out for scams";
+"SAFETY_TIPS_LOOK_OUT_FOR_SCAMS_TITLE" = "提防詐騙";
 
 /* Message contents for the unknown links in messages safety tip. */
 "SAFETY_TIPS_MESSAGE_LINKS_BODY" = "請小心來自陌生人帶有網站連結的訊息。切勿點按來自你不信任之人的連結。";
 
 /* Message title describing the safety tip about unknown links in messages. */
-"SAFETY_TIPS_MESSAGE_LINKS_TITLE" = "帶有連結的訊息";
+"SAFETY_TIPS_MESSAGE_LINKS_TITLE" = "帶有網絡連結的訊息";
 
 /* Message body describing the review names safety tip. */
-"SAFETY_TIPS_REVIEW_NAMES_BODY" = "Look out for the “Name not verified” notice. Everyone sets their own profile name in Notelet.";
+"SAFETY_TIPS_REVIEW_NAMES_BODY" = "請留意「名稱未經驗證」的提示。每位用戶都可在 Notelet 中自行設定個人檔案名稱。";
 
 /* Message body describing the review names safety tip in the 'view more' flow. */
-"SAFETY_TIPS_REVIEW_NAMES_BODY_VIEW_MORE" = "Look out for the “Name not verified” notice. Everyone sets their own profile name and photo in Notelet. If you’re unsure who a new request is from, it’s safer to ignore it.";
+"SAFETY_TIPS_REVIEW_NAMES_BODY_VIEW_MORE" = "請留意「名稱未經驗證」的提示。每位用戶都可在 Notelet 中自行設定個人檔案名稱和相片。如果你不確定新請求是來自誰，最好忽視它。";
 
 /* Message title describing the review names safety tip. */
-"SAFETY_TIPS_REVIEW_NAMES_TITLE" = "Review names and photos";
+"SAFETY_TIPS_REVIEW_NAMES_TITLE" = "檢視姓名與相片";
 
 /* Message body describing the signal chats tip. */
-"SAFETY_TIPS_SIGNAL_CHATS_BODY" = "Notelet will never message you for your registration code, PIN, or recovery key. Never respond to a chat pretending to be Notelet.";
+"SAFETY_TIPS_SIGNAL_CHATS_BODY" = "Notelet 絕不會透過訊息向你索取註冊碼、PIN 碼或恢復金鑰。切勿回覆任何假冒 Notelet 的聊天訊息。";
 
 /* Message body describing the signal chats tip in the 'view more' flow. */
-"SAFETY_TIPS_SIGNAL_CHATS_BODY_VIEW_MORE" = "Notelet will never message you for your registration code, PIN, or recovery key. Don’t reply to chats pretending to be Notelet or Signal Support. Bad actors set up fake names to try to take over your account.";
+"SAFETY_TIPS_SIGNAL_CHATS_BODY_VIEW_MORE" = "Notelet 絕不會透過訊息向你索取註冊碼、PIN 碼或恢復金鑰。切勿回覆任何假冒 Notelet 或 Notelet 支援團隊的聊天訊息。不法分子會使用假名試圖盜用你的帳戶。";
 
 /* Message title describing the signal chats tip. */
-"SAFETY_TIPS_SIGNAL_CHATS_TITLE" = "Don’t respond to chats from Notelet";
+"SAFETY_TIPS_SIGNAL_CHATS_TITLE" = "請勿回覆來自 Notelet 的聊天";
 
 /* Message contents for the vague message safety tip. */
 "SAFETY_TIPS_VAGUE_MESSAGE_BODY" = "垃圾訊息發送者通常會以「你好」等簡單訊息開始吸引你。如你作出回應，他們便可能會進一步與你互動。";
@@ -8463,6 +8466,9 @@
 
 /* Label for the 'video' attachment type in the media download settings. */
 "SETTINGS_MEDIA_DOWNLOAD_TYPE_VIDEO" = "影片";
+
+/* Setting for enabling & disabling the sound effect played when a message is sent. */
+"SETTINGS_MESSAGE_SENT_SOUND" = "Message Sent Sound";
 
 /* Explanation for the 'messaging' privacy settings. */
 "SETTINGS_MESSAGING_FOOTER" = "查看並分享訊息已讀及輸入時間。如果停用，您將無法看到其他人的已讀標記或打字狀態。";
@@ -9572,7 +9578,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "請告訴我們該問題的詳情： ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "請將您的支援請求傳送至 support@Notelet.org";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "請將您的支援請求傳送至 support@notelet.org";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "篩選：%1$@";
@@ -9677,7 +9683,7 @@
 "SYSTEM_MESSAGE_DEFAULT_DISAPPEARING_MESSAGE_TIMER_FORMAT" = "當您發送訊息時，將會設置時效為 %1$@。";
 
 /* Indicator warning about an unknown contact thread */
-"SYSTEM_MESSAGE_UNKNOWN_THREAD_REVIEW_CAREFULLY_WARNING" = "仔細檢查";
+"SYSTEM_MESSAGE_UNKNOWN_THREAD_REVIEW_CAREFULLY_WARNING" = "請仔細檢閱請求";
 
 /* Tap to Replace Emoji string for reaction configuration */
 "TAP_REPLACE_EMOJI" = "輕觸以替換表情符號";
@@ -9728,7 +9734,7 @@
 "THREAD_DETAILS_ONE_MUTUAL_GROUP" = "%1$@ 的成員";
 
 /* Label displayed below profiles */
-"THREAD_DETAILS_PROFILE_NAMES_ARE_NOT_VERIFIED_SUBJECT" = "個人檔案名稱未經驗證";
+"THREAD_DETAILS_PROFILE_NAMES_ARE_NOT_VERIFIED_SUBJECT" = "名稱未經驗證";
 
 /* Indicator that a blurred avatar can be revealed by tapping. */
 "THREAD_DETAILS_TAP_TO_UNBLUR_AVATAR" = "檢視";
@@ -10100,7 +10106,7 @@
 "VIEW_CONTACT_BUTTON" = "檢視聯絡人";
 
 /* Label for the 'view more' button */
-"VIEW_MORE_BUTTON" = "View More";
+"VIEW_MORE_BUTTON" = "檢視更多";
 
 /* Toast alert text shown when tapping on a view-once message that has already been viewed. */
 "VIEW_ONCE_ALREADY_VIEWED_TOAST" = "您已看過此訊息。";
@@ -10109,7 +10115,7 @@
 "VIEW_ONCE_MESSAGES_TOOLTIP" = "輕觸此處以設定此訊息在看過後消失。";
 
 /* Toast alert text shown when tapping on a view-once message that you have sent. */
-"VIEW_ONCE_OUTGOING_TOAST" = "View-once media is deleted after sending";
+"VIEW_ONCE_OUTGOING_TOAST" = "閱後即焚媒體在發送後被刪除";
 
 /* View the photo of a group or user */
 "VIEW_PHOTO" = "檢視照片";
