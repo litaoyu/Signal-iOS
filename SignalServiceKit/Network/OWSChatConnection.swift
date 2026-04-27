@@ -705,12 +705,7 @@ class OWSChatConnectionUsingLibSignal<Connection: ChatConnection & Sendable>: OW
             body = bodyData
         case .parameters(let bodyParameters):
             // TODO: Do we need body & headers for requests with no parameters?
-            do {
-                body = try TSRequest.Body.encodedParameters(bodyParameters)
-            } catch {
-                owsFailDebug("[\(requestId)]: \(error).", logger: request.logger)
-                throw OWSHTTPError.invalidRequest
-            }
+            body = try TSRequest.Body.encodedParameters(bodyParameters)
 
             // If we're going to use the json serialized parameters as our body, we should overwrite
             // the Content-Type on the request.
@@ -723,7 +718,7 @@ class OWSChatConnectionUsingLibSignal<Connection: ChatConnection & Sendable>: OW
         owsAssertDebug(!requestUrl.path.hasPrefix("/"))
 
         guard let httpMethod = request.method.nilIfEmpty else {
-            throw OWSHTTPError.invalidRequest
+            throw OWSAssertionError("invalid http method")
         }
 
         let libsignalRequest = ChatConnection.Request(method: httpMethod, pathAndQuery: "/\(requestUrl.relativeString)", headers: httpHeaders.headers, body: body, timeout: request.timeoutInterval)
@@ -850,7 +845,7 @@ class OWSChatConnectionUsingLibSignal<Connection: ChatConnection & Sendable>: OW
     ) async throws -> Output {
         try await waitUntilReadyAndPerformRequest {
             guard let service = await getOpenConnectionAfterHavingWaited() else {
-                throw SignalError.chatServiceInactive("no connection to chat server")
+                throw OWSHTTPError.networkFailure(.genericFailure)
             }
             try Task.checkCancellation()
             do {
