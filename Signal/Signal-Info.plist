@@ -10,16 +10,7 @@
 		<string>LazyDatabaseMigratorTask</string>
 	</array>
 	<key>BuildDetails</key>
-	<dict>
-		<key>DateTime</key>
-		<string>Fri Apr 24 10:25:17 UTC 2026</string>
-		<key>SignalCommit</key>
-		<string>b30e0329e1d8a284e3e2c8a6fe1db36c1d17f9e7 修改 备份 相关 逻辑</string>
-		<key>Timestamp</key>
-		<integer>1777026317</integer>
-		<key>XCodeVersion</key>
-		<string>2600.2600</string>
-	</dict>
+	<dict/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
