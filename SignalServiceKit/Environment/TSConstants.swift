@@ -158,7 +158,7 @@ public class TSConstantsProduction: TSConstantsProtocol {
     public init() {}
 
     public let mainServiceURL = "https://chat.notechat.me"
-    public let textSecureCDN0ServerURL = "https://chat.notechat.me"
+    public let textSecureCDN0ServerURL = "https://signal-cdn-wy.s3.ap-southeast-1.amazonaws.com"
     public let textSecureCDN2ServerURL = "https://chat.notechat.me"
     public let textSecureCDN3ServerURL = "https://upload.notechat.me"
 //    public let storageServiceURL = "https://storage.signal.org"
